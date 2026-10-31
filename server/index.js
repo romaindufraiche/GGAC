@@ -5,6 +5,7 @@ const compression = require("compression");
 const db = require("./db");
 const render = require("./render");
 const admin = require("./admin");
+const shop = require("./shop");
 
 const app = express();
 app.disable("x-powered-by");
@@ -15,6 +16,12 @@ const ROOT = path.join(__dirname, "..");
 
 // Ressources statiques du site
 app.use("/assets", express.static(path.join(ROOT, "assets"), { maxAge: "7d", index: false }));
+// PDF.js (liseuse) servi localement : les « workers » doivent venir du même domaine
+app.use("/vendor/pdfjs", express.static(path.join(ROOT, "node_modules/pdfjs-dist/build"), {
+  maxAge: "30d", index: false,
+  setHeaders: (res, file) => { if (file.endsWith(".mjs")) res.type("application/javascript"); },
+}));
+app.use("/vendor/pdfjs-cmaps", express.static(path.join(ROOT, "node_modules/pdfjs-dist/cmaps"), { maxAge: "30d", index: false }));
 app.get("/favicon.ico", (req, res) => res.sendFile(path.join(ROOT, "assets/img/favicon.ico")));
 
 // Index de recherche généré depuis la base
@@ -64,6 +71,9 @@ app.get(["/index.php", "/agenda.php", "/contacts.php", "/plan_site.php", "/ident
 
 // Espace d'administration
 app.use("/admin", admin.router);
+
+// Boutique, espace membre, liseuse
+app.use(shop.router);
 
 // Pages du site
 app.get("/:slug.html", async (req, res, next) => {

@@ -76,7 +76,7 @@ router.post("/connexion", wrap(async (req, res) => {
   const email = String(req.body.email || "").trim().toLowerCase();
   const r = await db.q("SELECT * FROM users WHERE email=$1", [email]);
   const u = r.rows[0];
-  if (!u || !db.checkPassword(String(req.body.password || ""), u.pass_hash)) {
+  if (!u || u.role === "membre" || !db.checkPassword(String(req.body.password || ""), u.pass_hash)) {
     a.n++; attempts.set(ip, a);
     return res.redirect(`/admin/connexion?e=1${req.body.next ? `&next=${encodeURIComponent(req.body.next)}` : ""}`);
   }
@@ -97,6 +97,14 @@ router.post("/deconnexion", requireUser, wrap(async (req, res) => {
 }));
 
 router.use(requireUser);
+router.use((req, res, next) => {
+  if (req.user && req.user.role === "membre") return res.status(403).send(loginPage("Ce compte membre n'a pas accès à l'administration."));
+  next();
+});
+router.use(wrap(async (req, res, next) => {
+  if (req.method === "GET") req.newOrders = (await db.q("SELECT count(*)::int n FROM orders WHERE status='nouvelle'")).rows[0].n;
+  next();
+}));
 
 // ---------------------------------------------------------------------------
 // Gabarit de l'administration
@@ -114,6 +122,8 @@ const ICONS = {
   plus: '<path d="M12 5v14M5 12h14"/>',
   trash: '<path d="M3 6h18M8 6V4h8v2M6 6l1 15h10l1-15"/>',
   edit: '<path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/>',
+  book: '<path d="M4 4h6a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H4zM20 4h-6a3 3 0 0 0-3 3v13a2 2 0 0 1 2-2h7z"/>',
+  cart: '<path d="M3 4h2l2.4 11.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 8H6.2"/><circle cx="9" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/>',
   clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/>',
 };
 const icon = (n, cls = "") => `<svg class="ico ${cls}" viewBox="0 0 24 24" aria-hidden="true">${ICONS[n]}</svg>`;
@@ -135,6 +145,8 @@ function adminPage(req, { title, active = "", body, actions = "", scripts = "", 
     ["agenda", "cal", "Agenda"],
     ["pages", "page", "Pages"],
     ["menus", "menu", "Menus"],
+    ["boutique", "book", "Boutique"],
+    ["commandes", "cart", `Commandes${req.newOrders ? ` <em class="badge">${req.newOrders}</em>` : ""}`],
     ["medias", "img", "Médiathèque"],
     ...(req.user.role === "admin" ? [["utilisateurs", "users", "Utilisateurs"], ["reglages", "cog", "Réglages"]] : []),
   ];
@@ -238,6 +250,7 @@ router.get("/", wrap(async (req, res) => {
   const cards = [
     ["cal", evUp.rows.length ? `${evAll.rows[0].n}` : "0", "manifestations", "/admin/agenda"],
     ["clock", perm.rows[0].n, "permanences à venir", "/admin/agenda?tab=permanences"],
+    ["cart", req.newOrders || 0, "commandes à traiter", "/admin/commandes?statut=nouvelle"],
     ["page", pages.rows[0].n, "pages du site", "/admin/pages"],
     ["img", media.rows[0].n, "médias", "/admin/medias"],
     ["eye", Number(visitors).toLocaleString("fr-FR"), "visiteurs", "/admin/reglages"],
@@ -820,13 +833,13 @@ router.post("/profil", wrap(async (req, res) => {
 }));
 
 router.get("/utilisateurs", requireAdmin, wrap(async (req, res) => {
-  const r = await db.q("SELECT id, email, name, role, created_at, last_login FROM users ORDER BY id");
+  const r = await db.q("SELECT id, email, name, role, created_at, last_login FROM users ORDER BY (role='membre'), id");
   const body = `<div class="grid2 grid2--side">
     <section class="card card--flush"><table class="table">
       <thead><tr><th>Nom</th><th>E-mail</th><th>Rôle</th><th>Dernière connexion</th><th></th></tr></thead>
       <tbody>${r.rows
         .map((u) => `<tr><td><span class="avatar avatar--sm">${esc((u.name || u.email).slice(0, 1).toUpperCase())}</span> <strong>${esc(u.name)}</strong></td><td>${esc(u.email)}</td>
-          <td>${u.role === "admin" ? `<span class="tag tag--info">Administrateur</span>` : `<span class="tag">Rédacteur</span>`}</td>
+          <td>${u.role === "admin" ? `<span class="tag tag--info">Administrateur</span>` : u.role === "membre" ? `<span class="tag tag--ok">Membre</span>` : `<span class="tag">Rédacteur</span>`}</td>
           <td class="muted">${fmtDateTime(u.last_login)}</td>
           <td class="actions">${u.id === req.user.id ? `<span class="muted small">vous</span>` : `
             <form method="post" action="/admin/utilisateurs/${u.id}/mot-de-passe" class="inline">${csrfField(req)}<input type="password" name="password" minlength="10" placeholder="Nouveau mot de passe" required><button class="btn btn--sm">OK</button></form>
@@ -838,8 +851,15 @@ router.get("/utilisateurs", requireAdmin, wrap(async (req, res) => {
         <label>Nom<input type="text" name="name" required></label>
         <label>Adresse e-mail<input type="email" name="email" required></label>
         <label>Mot de passe provisoire<input type="text" name="password" minlength="10" required value="${crypto.randomBytes(9).toString("base64url")}"><small>À transmettre à la personne ; elle pourra le changer dans son profil.</small></label>
-        <label>Rôle<select name="role"><option value="editor">Rédacteur — agenda, pages, menus, médias</option><option value="admin">Administrateur — tout, y compris les comptes et réglages</option></select></label>
+        <label>Rôle<select name="role"><option value="membre">Membre — espace membre, liseuse, versions numériques</option><option value="editor">Rédacteur — agenda, pages, menus, boutique, médias</option><option value="admin">Administrateur — tout, y compris les comptes et réglages</option></select></label>
         <button class="btn btn--primary">${icon("plus")} Créer le compte</button>
+      </form>
+      <hr class="sep">
+      <h3>Importer des membres</h3>
+      <form method="post" action="/admin/utilisateurs/import" class="form">${csrfField(req)}
+        <label>Une ligne par membre : <code>adresse e-mail ; nom</code><textarea name="lines" rows="6" placeholder="jean.dupont@exemple.fr ; Jean DUPONT"></textarea>
+        <small>Un mot de passe est généré pour chacun ; la liste s'affiche une seule fois après l'import.</small></label>
+        <button class="btn">Importer</button>
       </form>
     </section></div>`;
   res.send(adminPage(req, { title: "Utilisateurs", active: "utilisateurs", body }));
@@ -852,6 +872,21 @@ router.post("/utilisateurs", requireAdmin, wrap(async (req, res) => {
   ]);
   await db.log(req.user.id, "a créé le compte", email, "/admin/utilisateurs");
   res.redirect("/admin/utilisateurs?ok=created");
+}));
+router.post("/utilisateurs/import", requireAdmin, wrap(async (req, res) => {
+  const created = [];
+  for (const line of String(req.body.lines || "").split(/\r?\n/).slice(0, 2000)) {
+    const [email, name] = line.split(/[;,\t]/).map((x) => (x || "").trim());
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email || "")) continue;
+    const pw = crypto.randomBytes(7).toString("base64url");
+    const r = await db.q("INSERT INTO users(email,name,pass_hash,role) VALUES ($1,$2,$3,'membre') ON CONFLICT (email) DO NOTHING RETURNING id", [email.toLowerCase(), name || "", db.hashPassword(pw)]);
+    if (r.rows.length) created.push({ email: email.toLowerCase(), name, pw });
+  }
+  await db.log(req.user.id, "a importé", `${created.length} membre(s)`, "/admin/utilisateurs");
+  const body = `<section class="card"><p><strong>${created.length} compte(s) membre créé(s).</strong> Notez ou copiez ces mots de passe maintenant : ils ne seront plus affichés.</p>
+    ${created.length ? `<table class="table"><thead><tr><th>E-mail</th><th>Nom</th><th>Mot de passe</th></tr></thead><tbody>${created.map((c) => `<tr><td>${esc(c.email)}</td><td>${esc(c.name)}</td><td><code>${esc(c.pw)}</code></td></tr>`).join("")}</tbody></table>` : ""}
+    <div class="bar"><button type="button" class="btn" data-copy-text="${esc(created.map((c) => `${c.email};${c.name};${c.pw}`).join("\n"))}">Copier la liste</button><a class="btn btn--primary" href="/admin/utilisateurs">Terminé</a></div></section>`;
+  res.send(adminPage(req, { title: "Import des membres", active: "utilisateurs", body }));
 }));
 router.post("/utilisateurs/:id/mot-de-passe", requireAdmin, wrap(async (req, res) => {
   if (String(req.body.password || "").length < 10) return res.status(400).send("Mot de passe trop court (10 caractères minimum).");
@@ -870,14 +905,25 @@ router.post("/utilisateurs/:id/supprimer", requireAdmin, wrap(async (req, res) =
 // Réglages
 // ---------------------------------------------------------------------------
 router.get("/reglages", requireAdmin, wrap(async (req, res) => {
-  const [visitors, since, nPerm, nNews] = await Promise.all([
+  const [visitors, since, nPerm, nNews, ship, luxe, payment] = await Promise.all([
     db.getSetting("visitors", 0), db.getSetting("visitors_since", ""), db.getSetting("permanences_count", 7), db.getSetting("news_events_count", 5),
+    db.getSetting("shipping", {}), db.getSetting("luxe_supplement", 12), db.getSetting("payment_text", ""),
   ]);
   const body = `<form method="post" action="/admin/reglages" class="card form narrow">${csrfField(req)}
     <h3>Compteur de visiteurs</h3>
     <div class="row"><label>Nombre de visiteurs<input type="number" name="visitors" value="${esc(visitors)}" min="0"></label><label>Depuis le<input type="text" name="since" value="${esc(since)}"></label></div>
     <h3>Agenda</h3>
     <div class="row"><label>Permanences affichées<input type="number" name="nPerm" value="${esc(nPerm)}" min="1" max="60"></label><label>Manifestations dans « Actualités »<input type="number" name="nNews" value="${esc(nNews)}" min="0" max="20"></label></div>
+    <h3 id="port">Boutique</h3>
+    <div class="row"><label>Supplément version luxe (€)<input type="number" step="0.01" min="0" name="luxe" value="${esc(luxe)}"></label><span></span></div>
+    <div class="ship">${Object.entries(ship).map(([k, r]) => `
+      <fieldset><legend>Frais de port — ${esc(r.label)}</legend>
+        ${r.type === "unitaire"
+          ? `<div class="row"><label>France, par exemplaire (€)<input type="number" step="0.01" min="0" name="ship_${k}_france" value="${esc(r.france ?? "")}"></label><label>Outre-mer et étranger, par exemplaire (€)<input type="number" step="0.01" min="0" name="ship_${k}_monde" value="${esc(r.monde ?? "")}" placeholder="à confirmer"></label></div>`
+          : `<label>France — paliers « jusqu'à N exemplaires : prix »<input name="ship_${k}_france" value="${esc((r.france || []).map((t) => `${t.max ?? "+"}:${t.price}`).join(" ; "))}"><small>Ex. : 1:9 ; 2:12 ; 6:18 ; +:25</small></label>
+             <label>Outre-mer et étranger<input name="ship_${k}_monde" value="${esc((r.monde || []).map((t) => `${t.max ?? "+"}:${t.price}`).join(" ; "))}" placeholder="vide = à confirmer avec le client"></label>`}
+      </fieldset>`).join("")}</div>
+    <label>Modes de règlement (affichés au panier et sur le bon de commande)<textarea name="payment_text" rows="6">${esc(payment)}</textarea><small>HTML autorisé.</small></label>
     <div class="bar"><button class="btn btn--primary">Enregistrer</button></div>
   </form>`;
   res.send(adminPage(req, { title: "Réglages", active: "reglages", body }));
@@ -887,8 +933,218 @@ router.post("/reglages", requireAdmin, wrap(async (req, res) => {
   await db.setSetting("visitors_since", String(req.body.since || ""));
   await db.setSetting("permanences_count", Math.min(60, Math.max(1, parseInt(req.body.nPerm, 10) || 7)));
   await db.setSetting("news_events_count", Math.min(20, Math.max(0, parseInt(req.body.nNews, 10) || 5)));
+  const ship = await db.getSetting("shipping", {});
+  const tiers = (v) => {
+    const out = String(v || "").split(/[;\n]/).map((x) => x.trim()).filter(Boolean).map((x) => {
+      const [m, p] = x.split(":").map((y) => y.trim());
+      return { max: m === "+" || m === "" ? null : parseInt(m, 10), price: Number(String(p).replace(",", ".")) };
+    }).filter((t) => !Number.isNaN(t.price));
+    return out.length ? out.sort((a, b) => (a.max ?? 1e9) - (b.max ?? 1e9)) : null;
+  };
+  const numv = (v) => (v === "" || v == null ? null : Number(String(v).replace(",", ".")));
+  for (const [k, r] of Object.entries(ship)) {
+    if (req.body[`ship_${k}_france`] === undefined) continue;
+    if (r.type === "unitaire") { r.france = numv(req.body[`ship_${k}_france`]); r.monde = numv(req.body[`ship_${k}_monde`]); }
+    else { r.france = tiers(req.body[`ship_${k}_france`]); r.monde = tiers(req.body[`ship_${k}_monde`]); }
+  }
+  await db.setSetting("shipping", ship);
+  if (req.body.luxe !== undefined) await db.setSetting("luxe_supplement", Math.max(0, Number(req.body.luxe) || 0));
+  if (req.body.payment_text !== undefined) await db.setSetting("payment_text", String(req.body.payment_text));
+  require("./shop").invalidateCatalog();
   await db.log(req.user.id, "a modifié", "les réglages", "/admin/reglages");
   res.redirect("/admin/reglages?ok=saved");
+}));
+
+// ---------------------------------------------------------------------------
+// Boutique : publications, PDF de la liseuse
+// ---------------------------------------------------------------------------
+const shop = require("./shop");
+const money = (v) => (v == null || v === "" ? "—" : shop.eur(v));
+const ACCESS = { achat: "Après achat", membres: "Tous les membres", public: "Tout le monde" };
+
+router.get("/boutique", wrap(async (req, res) => {
+  const r = await db.q("SELECT p.*, m.size AS pdf_size FROM products p LEFT JOIN media m ON m.id=p.pdf_media_id ORDER BY p.kind DESC, p.ref");
+  const withPdf = r.rows.filter((p) => p.pdf_media_id).length;
+  const body = `
+  <div class="toolbar">
+    <input type="search" class="filter" placeholder="Rechercher (référence, titre, auteur)…" data-filter=".prow" autofocus>
+    <div class="chips chips--filter">${[["", "Tout"], ["farda", "Farda"], ["livre", "Livres"], ["pdf", "Avec PDF"], ["nopdf", "Sans PDF"]]
+      .map(([v, l], i) => `<button type="button" class="chip${i ? "" : " is-on"}" data-section="${v}">${l}</button>`).join("")}</div>
+    <span class="muted small">${withPdf} / ${r.rows.length} avec liseuse</span>
+  </div>
+  <section class="card card--flush"><table class="table">
+    <thead><tr><th></th><th>Réf.</th><th>Publication</th><th>Papier</th><th>Numérique</th><th>Liseuse</th><th></th></tr></thead>
+    <tbody>${r.rows.map((p) => `<tr class="prow${p.active ? "" : " is-off"}" data-section="${p.kind}" data-section2="${p.pdf_media_id ? "pdf" : "nopdf"}" data-text="${esc((p.ref + " " + p.title + " " + p.authors).toLowerCase())}">
+      <td class="thumb">${p.cover ? `<img src="${esc(p.cover)}" alt="" loading="lazy">` : ""}</td>
+      <td><code>${esc(p.ref)}</code></td>
+      <td><a class="strong" href="/admin/boutique/${encodeURIComponent(p.ref)}">${esc(p.title)}</a>${p.active ? "" : ` <span class="tag">Masquée</span>`}<br><span class="muted small">${esc(p.authors || p.details || "")}</span></td>
+      <td>${money(p.price_paper)}${p.luxe ? ` <span class="tag">luxe</span>` : ""}</td>
+      <td>${money(p.price_digital)}${p.digital_free_members ? ` <span class="tag tag--ok">gratuit membres</span>` : p.digital_members_only ? ` <span class="tag">membres</span>` : ""}</td>
+      <td>${p.pdf_media_id ? `<span class="tag tag--info">PDF · ${Math.round(p.pdf_size / 1024 / 1024 * 10) / 10} Mo</span><br><span class="muted small">${ACCESS[p.read_access]}</span>` : `<span class="muted small">—</span>`}</td>
+      <td class="actions"><a class="btn btn--sm" href="/admin/boutique/${encodeURIComponent(p.ref)}">${icon("edit")} Modifier</a>${p.pdf_media_id ? `<a class="btn btn--sm btn--ghost" href="/lire/${encodeURIComponent(p.ref)}" target="_blank" title="Ouvrir dans la liseuse">${icon("book")}</a>` : ""}</td>
+    </tr>`).join("")}</tbody></table></section>`;
+  res.send(adminPage(req, { title: `Boutique <span class="count">${r.rows.length}</span>`, active: "boutique", body,
+    actions: `<a class="btn" href="/admin/reglages#port">Frais de port</a><a class="btn btn--primary" href="/admin/boutique/nouvelle">${icon("plus")} Nouvelle publication</a>` }));
+}));
+
+function productForm(req, p, isNew) {
+  const body = `<form method="post" action="${isNew ? "/admin/boutique" : `/admin/boutique/${encodeURIComponent(p.ref)}`}" enctype="multipart/form-data" class="editor-layout">
+    <input type="hidden" name="_csrf" value="${esc(req.csrf)}">
+    <div>
+      <div class="card form">
+        <div class="row"><label>Référence<input name="ref" value="${esc(p.ref || "")}" required pattern="[A-Za-z0-9_\\-]+" ${isNew ? "" : "readonly"}></label>
+          <label>Type<select name="kind"><option value="livre"${p.kind === "livre" ? " selected" : ""}>Livre</option><option value="farda"${p.kind === "farda" ? " selected" : ""}>Farda (revue)</option></select></label></div>
+        <label>Titre<input name="title" value="${esc(p.title || "")}" required></label>
+        <label>Auteurs<input name="authors" value="${esc(p.authors || "")}"></label>
+        <label>Détails<input name="details" value="${esc(p.details || "")}" placeholder="Ex. : 255 pages"></label>
+        <div class="row">
+          <label>Prix papier (€)<input type="number" step="0.01" min="0" name="price_paper" value="${p.price_paper ?? ""}"><small>Vide = non vendu en papier</small></label>
+          <label>Prix numérique (€)<input type="number" step="0.01" min="0" name="price_digital" value="${p.price_digital ?? ""}"><small>Vide = pas de version numérique</small></label>
+        </div>
+        <label class="check"><input type="checkbox" name="luxe" ${p.luxe ? "checked" : ""}><span>Version luxe proposée (supplément défini dans les réglages)</span></label>
+        <label class="check"><input type="checkbox" name="digital_members_only" ${p.digital_members_only ? "checked" : ""}><span>Version numérique réservée aux membres</span></label>
+        <label class="check"><input type="checkbox" name="digital_free_members" ${p.digital_free_members ? "checked" : ""}><span>Version numérique gratuite pour les membres</span></label>
+        <label>Couverture (adresse de l'image)<div class="input-btn"><input name="cover" value="${esc(p.cover || "")}"><button type="button" class="btn btn--sm" data-pick-into="cover">Médiathèque</button></div></label>
+      </div>
+    </div>
+    <aside class="editor-side">
+      <section class="card">
+        <h3>Publication</h3>
+        <label class="switch"><input type="checkbox" name="active" ${p.active !== false ? "checked" : ""}><span></span><em>En vente sur le site</em></label>
+        <div class="bar bar--stack"><button class="btn btn--primary btn--block">${isNew ? "Créer" : "Enregistrer"}</button><a class="btn btn--ghost btn--block" href="/admin/boutique">Retour</a></div>
+        ${p.cover ? `<img class="cover-preview" src="${esc(p.cover)}" alt="">` : ""}
+      </section>
+      <section class="card">
+        <h3>Liseuse (PDF)</h3>
+        ${p.pdf_media_id ? `<p class="small">PDF en place. <a href="/lire/${encodeURIComponent(p.ref)}" target="_blank">Ouvrir dans la liseuse</a></p><label class="check"><input type="checkbox" name="remove_pdf"><span>Retirer le PDF</span></label>` : `<p class="muted small">Ajoutez le PDF de la publication : il remplace Calaméo et s'ouvre dans la liseuse du site.</p>`}
+        <div class="dropzone" data-dropzone><p class="dropzone__hint">${icon("book")}<br>${p.pdf_media_id ? "Remplacer le PDF" : "Glissez le PDF ici"}<br><small>ou cliquez pour choisir (40 Mo max.)</small></p><input type="file" name="pdf" accept="application/pdf"></div>
+        <label>Qui peut lire ?<select name="read_access">${Object.entries(ACCESS).map(([v, l]) => `<option value="${v}"${p.read_access === v ? " selected" : ""}>${l}</option>`).join("")}</select>
+          <small>« Après achat » : les acheteurs de la version numérique (et les membres si elle leur est gratuite).</small></label>
+      </section>
+      ${isNew ? "" : `<section class="card card--danger"><h3>Zone sensible</h3><button class="btn btn--sm btn--danger-ghost" formaction="/admin/boutique/${encodeURIComponent(p.ref)}/supprimer" formnovalidate data-confirm="Supprimer cette publication de la boutique ?">${icon("trash")} Supprimer</button></section>`}
+    </aside>
+  </form>`;
+  return adminPage(req, { title: isNew ? "Nouvelle publication" : esc(p.title), active: "boutique", body, wide: true });
+}
+
+const pdfUpload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 40 * 1024 * 1024 }, fileFilter: (q, f, cb) => cb(null, f.mimetype === "application/pdf") });
+const numOrNull = (v) => (v === "" || v == null ? null : Math.max(0, Number(String(v).replace(",", "."))) || 0);
+
+router.get("/boutique/nouvelle", (req, res) => res.send(productForm(req, { kind: "livre", digital_members_only: true, read_access: "achat", active: true }, true)));
+router.get("/boutique/:ref", wrap(async (req, res, next) => {
+  const p = (await db.q("SELECT * FROM products WHERE ref=$1", [req.params.ref])).rows[0];
+  if (!p) return next();
+  res.send(productForm(req, p, false));
+}));
+async function saveProduct(req, ref, isNew) {
+  const b = req.body;
+  let pdfId;
+  if (req.file) {
+    const r = await db.q("INSERT INTO media(filename,mime,size,data,created_by) VALUES ($1,$2,$3,$4,$5) RETURNING id", [`${ref}.pdf`, "application/pdf", req.file.size, req.file.buffer, req.user.id]);
+    pdfId = r.rows[0].id;
+  }
+  const vals = [String(b.kind === "farda" ? "farda" : "livre"), String(b.title || "").trim(), String(b.authors || "").trim(), String(b.details || "").trim(),
+    numOrNull(b.price_paper), numOrNull(b.price_digital), b.digital_members_only === "on", b.digital_free_members === "on", b.luxe === "on",
+    String(b.cover || "").trim() || null, ["achat", "membres", "public"].includes(b.read_access) ? b.read_access : "achat", b.active === "on"];
+  if (isNew) {
+    await db.q(`INSERT INTO products(kind,title,authors,details,price_paper,price_digital,digital_members_only,digital_free_members,luxe,cover,read_access,active,ref,pdf_media_id)
+      VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14)`, [...vals, ref, pdfId || null]);
+  } else {
+    const old = (await db.q("SELECT pdf_media_id FROM products WHERE ref=$1", [ref])).rows[0];
+    const newPdf = pdfId || (b.remove_pdf === "on" ? null : old?.pdf_media_id);
+    await db.q(`UPDATE products SET kind=$1,title=$2,authors=$3,details=$4,price_paper=$5,price_digital=$6,digital_members_only=$7,digital_free_members=$8,luxe=$9,cover=$10,read_access=$11,active=$12,pdf_media_id=$14,updated_at=now() WHERE ref=$13`, [...vals, ref, newPdf]);
+    if (old?.pdf_media_id && old.pdf_media_id !== newPdf) await db.q("DELETE FROM media WHERE id=$1", [old.pdf_media_id]);
+  }
+  shop.invalidateCatalog();
+}
+router.post("/boutique", pdfUpload.single("pdf"), csrfAfterUpload, wrap(async (req, res) => {
+  const ref = String(req.body.ref || "").trim().toUpperCase().replace(/[^A-Z0-9_-]/g, "");
+  if (!ref) return res.status(400).send("Référence invalide.");
+  if ((await db.q("SELECT 1 FROM products WHERE ref=$1", [ref])).rows.length) return res.status(400).send("Cette référence existe déjà.");
+  await saveProduct(req, ref, true);
+  await db.log(req.user.id, "a ajouté la publication", ref, `/admin/boutique/${ref}`);
+  res.redirect(`/admin/boutique/${encodeURIComponent(ref)}?ok=created`);
+}));
+router.post("/boutique/:ref", pdfUpload.single("pdf"), csrfAfterUpload, wrap(async (req, res) => {
+  await saveProduct(req, req.params.ref, false);
+  await db.log(req.user.id, req.file ? "a ajouté le PDF de" : "a modifié la publication", req.params.ref, `/admin/boutique/${req.params.ref}`);
+  res.redirect(`/admin/boutique/${encodeURIComponent(req.params.ref)}?ok=saved`);
+}));
+router.post("/boutique/:ref/supprimer", upload.none(), csrfAfterUpload, wrap(async (req, res) => {
+  const r = await db.q("DELETE FROM products WHERE ref=$1 RETURNING pdf_media_id", [req.params.ref]);
+  if (r.rows[0]?.pdf_media_id) await db.q("DELETE FROM media WHERE id=$1", [r.rows[0].pdf_media_id]);
+  shop.invalidateCatalog();
+  await db.log(req.user.id, "a supprimé la publication", req.params.ref);
+  res.redirect("/admin/boutique?ok=deleted");
+}));
+
+// ---------------------------------------------------------------------------
+// Commandes
+// ---------------------------------------------------------------------------
+router.get("/commandes", wrap(async (req, res) => {
+  const st = Object.keys(shop.STATUS).includes(req.query.statut) ? req.query.statut : "";
+  const r = await db.q(`SELECT * FROM orders ${st ? "WHERE status=$1" : ""} ORDER BY created_at DESC LIMIT 300`, st ? [st] : []);
+  const counts = (await db.q("SELECT status, count(*)::int n, coalesce(sum(total),0) t FROM orders GROUP BY status")).rows;
+  const cnt = Object.fromEntries(counts.map((c) => [c.status, c]));
+  const body = `
+  <nav class="tabs"><a href="/admin/commandes" class="${st ? "" : "is-active"}">Toutes</a>${Object.entries(shop.STATUS).map(([k, l]) => `<a href="?statut=${k}" class="${st === k ? "is-active" : ""}">${l} <span class="count">${cnt[k]?.n || 0}</span></a>`).join("")}</nav>
+  ${r.rows.length ? `<section class="card card--flush"><table class="table">
+    <thead><tr><th>N°</th><th>Date</th><th>Client</th><th>Articles</th><th>Total</th><th>Statut</th><th></th></tr></thead>
+    <tbody>${r.rows.map((o) => `<tr>
+      <td><a class="strong" href="/admin/commandes/${esc(o.number)}">${esc(o.number)}</a></td>
+      <td class="muted">${fmtDateTime(o.created_at)}</td>
+      <td>${esc(`${o.customer.prenom} ${o.customer.nom}`)}<br><span class="muted small">${esc(o.customer.ville)} · ${esc(o.customer.email)}</span></td>
+      <td>${o.items.reduce((s, i) => s + i.qty, 0)}</td>
+      <td><strong>${shop.eur(o.total)}</strong>${o.shipping == null ? `<br><span class="muted small">port à confirmer</span>` : ""}</td>
+      <td><span class="ostatus ostatus--${o.status}">${shop.STATUS[o.status]}</span></td>
+      <td class="actions"><a class="btn btn--sm" href="/admin/commandes/${esc(o.number)}">Ouvrir</a></td></tr>`).join("")}</tbody></table></section>`
+    : `<div class="empty"><p>Aucune commande${st ? " avec ce statut" : " pour l'instant"}.</p><p class="small">Les visiteurs ajoutent des livres ou des Farda au panier depuis les pages du site, puis valident leur commande.</p></div>`}`;
+  res.send(adminPage(req, { title: "Commandes", active: "commandes", body }));
+}));
+
+router.get("/commandes/:number", wrap(async (req, res, next) => {
+  const o = (await db.q("SELECT * FROM orders WHERE number=$1", [req.params.number])).rows[0];
+  if (!o) return next();
+  const c = o.customer;
+  const steps = ["nouvelle", "payee", "expediee"];
+  const body = `
+  <div class="ostepper">${steps.map((s, i) => `<span class="ostep${steps.indexOf(o.status) >= i ? " is-done" : ""}${o.status === s ? " is-current" : ""}">${shop.STATUS[s]}</span>`).join("")}${o.status === "annulee" ? `<span class="ostep is-cancel">Annulée</span>` : ""}</div>
+  <div class="editor-layout">
+    <div>
+      <section class="card">${shop.orderTable(o)}${o.note ? `<p><strong>Message du client :</strong> ${esc(o.note)}</p>` : ""}</section>
+    </div>
+    <aside class="editor-side">
+      <section class="card">
+        <h3>Client</h3>
+        <p>${esc(`${c.civilite} ${c.prenom} ${c.nom}`.trim())}<br>${esc(c.adresse)}<br>${esc(c.cp)} ${esc(c.ville)}<br>${esc(c.pays)}</p>
+        <p><a href="mailto:${esc(c.email)}?subject=${encodeURIComponent(`Votre commande G.G.A.C. n° ${o.number}`)}">${esc(c.email)}</a>${c.tel ? `<br>${esc(c.tel)}` : ""}</p>
+        <p class="small muted">Règlement prévu : ${esc(o.payment || "—")}<br>Livraison : ${o.zone === "monde" ? "outre-mer / étranger" : "France"}</p>
+      </section>
+      <form class="card form" method="post" action="/admin/commandes/${esc(o.number)}">${csrfField(req)}
+        <h3>Suivi</h3>
+        <label>Statut<select name="status">${Object.entries(shop.STATUS).map(([k, l]) => `<option value="${k}"${o.status === k ? " selected" : ""}>${l}</option>`).join("")}</select></label>
+        ${o.shipping == null ? `<label>Frais de port (€)<input type="number" step="0.01" min="0" name="shipping" placeholder="à confirmer"></label>` : ""}
+        <label>Note interne<textarea name="admin_note" rows="3">${esc(o.admin_note)}</textarea></label>
+        <button class="btn btn--primary btn--block">Enregistrer</button>
+        <p class="small muted">Lien client (bon de commande, lecture des versions numériques une fois réglée) :<br><a href="/commande/${esc(o.token)}" target="_blank">/commande/${esc(o.token.slice(0, 8))}…</a> <button type="button" class="btn btn--sm btn--ghost" data-copy="/commande/${esc(o.token)}">Copier</button></p>
+      </form>
+    </aside>
+  </div>`;
+  res.send(adminPage(req, { title: `Commande ${esc(o.number)}`, active: "commandes", body, wide: true,
+    actions: `<a class="btn btn--ghost" href="/admin/commandes">← Commandes</a><a class="btn" href="/commande/${esc(o.token)}" target="_blank">${icon("eye")} Bon de commande</a>` }));
+}));
+router.post("/commandes/:number", wrap(async (req, res, next) => {
+  const o = (await db.q("SELECT * FROM orders WHERE number=$1", [req.params.number])).rows[0];
+  if (!o) return next();
+  const status = Object.keys(shop.STATUS).includes(req.body.status) ? req.body.status : o.status;
+  let shipping = o.shipping, total = o.total;
+  if (o.shipping == null && req.body.shipping !== undefined && req.body.shipping !== "") {
+    shipping = Math.max(0, Number(String(req.body.shipping).replace(",", ".")) || 0);
+    total = +(Number(o.subtotal) + shipping).toFixed(2);
+  }
+  await db.q("UPDATE orders SET status=$1, shipping=$2, total=$3, admin_note=$4, updated_at=now() WHERE id=$5", [status, shipping, total, String(req.body.admin_note || ""), o.id]);
+  if (status !== o.status) await db.log(req.user.id, `a passé la commande au statut « ${shop.STATUS[status]} » :`, o.number, `/admin/commandes/${o.number}`);
+  res.redirect(`/admin/commandes/${o.number}?ok=saved`);
 }));
 
 module.exports = { router };

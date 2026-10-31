@@ -546,6 +546,9 @@ def build():
         json.dump(seed, fh, ensure_ascii=False)
     # (l'index de recherche est désormais produit par le serveur à partir de la base)
     print(f"{len(index) + 1} pages générées")
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import catalog  # extraction du catalogue + correction d'encodage
+    catalog.main()
 
 
 if __name__ == "__main__":

@@ -233,6 +233,16 @@ ${pageFoot(p.date_maj)}`;
   });
 }
 
+/** Page libre dans le gabarit du site (panier, commande, espace membre…) */
+async function renderShell({ title, h1, main, active = null, side = null, slug = "", bodyClass = "", dateMaj = "" }) {
+  const [c, a] = await Promise.all([chrome(), agendaData()]);
+  const body = `${VINE}
+<h1 class="title"><span class="title__text" data-split>${h1}</span>${FLOURISH}</h1>
+${main}
+${pageFoot(dateMaj)}`;
+  return fill(c, { title, active, side: renderSide(side, slug, renderNews(a)), main: body, bodyClass });
+}
+
 // Index de recherche (mis en cache, invalidé à chaque modification)
 let searchCache = null;
 async function searchIndex() {
@@ -250,4 +260,4 @@ async function searchIndex() {
 }
 const invalidate = () => { searchCache = null; };
 
-module.exports = { renderAgenda, renderPage, searchIndex, invalidate, esc, stripTags, longDate, rangeLabel, nodeLabel, parts, todayIso, stampNow, MOIS, JOURS };
+module.exports = { renderAgenda, renderPage, renderShell, searchIndex, invalidate, esc, stripTags, longDate, rangeLabel, nodeLabel, parts, todayIso, stampNow, MOIS, JOURS };

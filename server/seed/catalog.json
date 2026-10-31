@@ -1,0 +1,7395 @@
+[
+ {
+  "ref": "FARDA001",
+  "kind": "farda",
+  "title": "Farda n° 1",
+  "details": "mars 1993 - 22 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda01.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda01b.jpg",
+  "pages": [
+   "page-10"
+  ]
+ },
+ {
+  "ref": "FARDA002",
+  "kind": "farda",
+  "title": "Farda n° 2",
+  "details": "juillet 1993 - 22 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda02.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda02b.jpg",
+  "pages": [
+   "page-10"
+  ]
+ },
+ {
+  "ref": "FARDA003",
+  "kind": "farda",
+  "title": "Farda n° 3",
+  "details": "novembre 1993 - 22 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda03.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda03b.jpg",
+  "pages": [
+   "page-10"
+  ]
+ },
+ {
+  "ref": "FARDA004",
+  "kind": "farda",
+  "title": "Farda n° 4",
+  "details": "mars 1994 - 24 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda04.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda04b.jpg",
+  "pages": [
+   "page-10"
+  ]
+ },
+ {
+  "ref": "FARDA005",
+  "kind": "farda",
+  "title": "Farda n° 5",
+  "details": "juillet 1994 - 24 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda05.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda05b.jpg",
+  "pages": [
+   "page-10"
+  ]
+ },
+ {
+  "ref": "FARDA006",
+  "kind": "farda",
+  "title": "Farda n° 6",
+  "details": "novembre 1994 - 24 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda06.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda06b.jpg",
+  "pages": [
+   "page-10"
+  ]
+ },
+ {
+  "ref": "FARDA007",
+  "kind": "farda",
+  "title": "Farda n° 7",
+  "details": "mars 1995 - 24 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda07.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda07b.jpg",
+  "pages": [
+   "page-10"
+  ]
+ },
+ {
+  "ref": "FARDA008",
+  "kind": "farda",
+  "title": "Farda n° 8",
+  "details": "juillet 1995 - 24 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda08.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda08b.jpg",
+  "pages": [
+   "page-10"
+  ]
+ },
+ {
+  "ref": "FARDA009",
+  "kind": "farda",
+  "title": "Farda n° 9",
+  "details": "novembre 1995 - 24 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda09.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda09b.jpg",
+  "pages": [
+   "page-10"
+  ]
+ },
+ {
+  "ref": "FARDA010",
+  "kind": "farda",
+  "title": "Farda n° 10",
+  "details": "mars 1996 - 24 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda10.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda10b.jpg",
+  "pages": [
+   "page-10"
+  ]
+ },
+ {
+  "ref": "FARDA011",
+  "kind": "farda",
+  "title": "Farda n° 11",
+  "details": "juillet 1996 - 28 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda11.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda11b.jpg",
+  "pages": [
+   "page-11"
+  ]
+ },
+ {
+  "ref": "FARDA012",
+  "kind": "farda",
+  "title": "Farda n° 12",
+  "details": "novembre 1996 - 28 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda12.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda12b.jpg",
+  "pages": [
+   "page-11"
+  ]
+ },
+ {
+  "ref": "FARDA013",
+  "kind": "farda",
+  "title": "Farda n° 13",
+  "details": "mars 1997 - 24 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda13.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda13b.jpg",
+  "pages": [
+   "page-11"
+  ]
+ },
+ {
+  "ref": "FARDA014",
+  "kind": "farda",
+  "title": "Farda n° 14",
+  "details": "juillet 1997 - 32 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda14.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda14b.jpg",
+  "pages": [
+   "page-11"
+  ]
+ },
+ {
+  "ref": "FARDA015",
+  "kind": "farda",
+  "title": "Farda n° 15",
+  "details": "décembre 1997 - 32 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda15.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda15b.jpg",
+  "pages": [
+   "page-11"
+  ]
+ },
+ {
+  "ref": "FARDA016",
+  "kind": "farda",
+  "title": "Farda n° 16",
+  "details": "avril 1998 - 32 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda16.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda16b.jpg",
+  "pages": [
+   "page-11"
+  ]
+ },
+ {
+  "ref": "FARDA017",
+  "kind": "farda",
+  "title": "Farda n° 17",
+  "details": "août 1998 - 32 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda17.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda17b.jpg",
+  "pages": [
+   "page-11"
+  ]
+ },
+ {
+  "ref": "FARDA018",
+  "kind": "farda",
+  "title": "Farda n° 18",
+  "details": "décembre 1998 - 32 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda18.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda18b.jpg",
+  "pages": [
+   "page-11"
+  ]
+ },
+ {
+  "ref": "FARDA019",
+  "kind": "farda",
+  "title": "Farda n° 19",
+  "details": "avril 1999 - 32 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda19.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda19b.jpg",
+  "pages": [
+   "page-11"
+  ]
+ },
+ {
+  "ref": "FARDA020",
+  "kind": "farda",
+  "title": "Farda n° 20",
+  "details": "août 1999 - 40 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda20.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda20b.jpg",
+  "pages": [
+   "page-11"
+  ]
+ },
+ {
+  "ref": "FARDA021",
+  "kind": "farda",
+  "title": "Farda n° 21",
+  "details": "décembre 1999 - 36 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda21.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda21b.jpg",
+  "pages": [
+   "page-12"
+  ]
+ },
+ {
+  "ref": "FARDA022",
+  "kind": "farda",
+  "title": "Farda n° 22",
+  "details": "avril 2000 - 36 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda22.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda22b.jpg",
+  "pages": [
+   "page-12"
+  ]
+ },
+ {
+  "ref": "FARDA023",
+  "kind": "farda",
+  "title": "Farda n° 23",
+  "details": "août 2000 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda23.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda23b.jpg",
+  "pages": [
+   "page-12"
+  ]
+ },
+ {
+  "ref": "FARDA024",
+  "kind": "farda",
+  "title": "Farda n° 24",
+  "details": "décembre 2000 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda24.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda24b.jpg",
+  "pages": [
+   "page-12"
+  ]
+ },
+ {
+  "ref": "FARDA025",
+  "kind": "farda",
+  "title": "Farda n° 25",
+  "details": "avril 2001 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda25.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda25b.jpg",
+  "pages": [
+   "page-12"
+  ]
+ },
+ {
+  "ref": "FARDA026",
+  "kind": "farda",
+  "title": "Farda n° 26",
+  "details": "août 2001 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda26.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda26b.jpg",
+  "pages": [
+   "page-12"
+  ]
+ },
+ {
+  "ref": "FARDA027",
+  "kind": "farda",
+  "title": "Farda n° 27",
+  "details": "décembre 2001 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda27.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda27b.jpg",
+  "pages": [
+   "page-12"
+  ]
+ },
+ {
+  "ref": "FARDA028",
+  "kind": "farda",
+  "title": "Farda n° 28",
+  "details": "avril 2002 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda28.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda28b.jpg",
+  "pages": [
+   "page-12"
+  ]
+ },
+ {
+  "ref": "FARDA029",
+  "kind": "farda",
+  "title": "Farda n° 29",
+  "details": "août 2002 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda29.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda29b.jpg",
+  "pages": [
+   "page-12"
+  ]
+ },
+ {
+  "ref": "FARDA030",
+  "kind": "farda",
+  "title": "Farda n° 30",
+  "details": "décembre 2002 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda30.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda30b.jpg",
+  "pages": [
+   "page-12"
+  ]
+ },
+ {
+  "ref": "FARDA031",
+  "kind": "farda",
+  "title": "Farda n° 31",
+  "details": "mars 2003 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda31.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda31b.jpg",
+  "pages": [
+   "page-13"
+  ]
+ },
+ {
+  "ref": "FARDA032",
+  "kind": "farda",
+  "title": "Farda n° 32",
+  "details": "juillet 2003 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda32.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda32b.jpg",
+  "pages": [
+   "page-13"
+  ]
+ },
+ {
+  "ref": "FARDA033",
+  "kind": "farda",
+  "title": "Farda n° 33",
+  "details": "novembre 2003 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda33.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda33b.jpg",
+  "pages": [
+   "page-13"
+  ]
+ },
+ {
+  "ref": "FARDA034",
+  "kind": "farda",
+  "title": "Farda n° 34",
+  "details": "mars 2004 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda34.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda34b.jpg",
+  "pages": [
+   "page-13"
+  ]
+ },
+ {
+  "ref": "FARDA035",
+  "kind": "farda",
+  "title": "Farda n° 35",
+  "details": "juillet 2004 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda35.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda35b.jpg",
+  "pages": [
+   "page-13"
+  ]
+ },
+ {
+  "ref": "FARDA036",
+  "kind": "farda",
+  "title": "Farda n° 36",
+  "details": "novembre 2004 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda36.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda36b.jpg",
+  "pages": [
+   "page-13"
+  ]
+ },
+ {
+  "ref": "FARDA037",
+  "kind": "farda",
+  "title": "Farda n° 37",
+  "details": "mars 2005 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda37.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda37b.jpg",
+  "pages": [
+   "page-13"
+  ]
+ },
+ {
+  "ref": "FARDA038",
+  "kind": "farda",
+  "title": "Farda n° 38",
+  "details": "juillet 2005 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda38.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda38b.jpg",
+  "pages": [
+   "page-13"
+  ]
+ },
+ {
+  "ref": "FARDA039",
+  "kind": "farda",
+  "title": "Farda n° 39",
+  "details": "novembre 2005 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda39.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda39b.jpg",
+  "pages": [
+   "page-13"
+  ]
+ },
+ {
+  "ref": "FARDA040",
+  "kind": "farda",
+  "title": "Farda n° 40",
+  "details": "mars 2006 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda40.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda40b.jpg",
+  "pages": [
+   "page-13"
+  ]
+ },
+ {
+  "ref": "FARDA041",
+  "kind": "farda",
+  "title": "Farda n° 41",
+  "details": "juillet 2006 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda41.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda41b.jpg",
+  "pages": [
+   "page-14"
+  ]
+ },
+ {
+  "ref": "FARDA042",
+  "kind": "farda",
+  "title": "Farda n° 42",
+  "details": "novembre 2006 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda42.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda42b.jpg",
+  "pages": [
+   "page-14"
+  ]
+ },
+ {
+  "ref": "FARDA043",
+  "kind": "farda",
+  "title": "Farda n° 43",
+  "details": "mars 2007 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda43.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda43b.jpg",
+  "pages": [
+   "page-14"
+  ]
+ },
+ {
+  "ref": "FARDA044",
+  "kind": "farda",
+  "title": "Farda n° 44",
+  "details": "juillet 2007 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda44.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda44b.jpg",
+  "pages": [
+   "page-14"
+  ]
+ },
+ {
+  "ref": "FARDA045",
+  "kind": "farda",
+  "title": "Farda n° 45",
+  "details": "novembre 2007 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda45.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda45b.jpg",
+  "pages": [
+   "page-14"
+  ]
+ },
+ {
+  "ref": "FARDA046",
+  "kind": "farda",
+  "title": "Farda n° 46",
+  "details": "mars 2008 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda46.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda46b.jpg",
+  "pages": [
+   "page-14"
+  ]
+ },
+ {
+  "ref": "FARDA047",
+  "kind": "farda",
+  "title": "Farda n° 47",
+  "details": "juillet 2008 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda47.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda47b.jpg",
+  "pages": [
+   "page-14"
+  ]
+ },
+ {
+  "ref": "FARDA048",
+  "kind": "farda",
+  "title": "Farda n° 48",
+  "details": "novembre 2008 - 52 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda48.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda48b.jpg",
+  "pages": [
+   "page-14"
+  ]
+ },
+ {
+  "ref": "FARDA049",
+  "kind": "farda",
+  "title": "Farda n° 49",
+  "details": "mars 2009 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda49.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda49b.jpg",
+  "pages": [
+   "page-14"
+  ]
+ },
+ {
+  "ref": "FARDA050",
+  "kind": "farda",
+  "title": "Farda n° 50",
+  "details": "juillet 2009 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda50.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda50b.jpg",
+  "pages": [
+   "page-14"
+  ]
+ },
+ {
+  "ref": "FARDA051",
+  "kind": "farda",
+  "title": "Farda n° 51",
+  "details": "novembre 2009 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda51.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda51b.jpg",
+  "pages": [
+   "page-15"
+  ]
+ },
+ {
+  "ref": "FARDA052",
+  "kind": "farda",
+  "title": "Farda n° 52",
+  "details": "mars 2010 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda52.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda52b.jpg",
+  "pages": [
+   "page-15"
+  ]
+ },
+ {
+  "ref": "FARDA053",
+  "kind": "farda",
+  "title": "Farda n° 53",
+  "details": "juillet 2010 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda53.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda53b.jpg",
+  "pages": [
+   "page-15"
+  ]
+ },
+ {
+  "ref": "FARDA054",
+  "kind": "farda",
+  "title": "Farda n° 54",
+  "details": "novembre 2010 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda54.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda54b.jpg",
+  "pages": [
+   "page-15"
+  ]
+ },
+ {
+  "ref": "FARDA055",
+  "kind": "farda",
+  "title": "Farda n° 55",
+  "details": "mars 2011 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda55.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda55b.jpg",
+  "pages": [
+   "page-15"
+  ]
+ },
+ {
+  "ref": "FARDA056",
+  "kind": "farda",
+  "title": "Farda n° 56",
+  "details": "juillet 2011 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda56.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda56b.jpg",
+  "pages": [
+   "page-15"
+  ]
+ },
+ {
+  "ref": "FARDA057",
+  "kind": "farda",
+  "title": "Farda n° 57",
+  "details": "novembre 2011 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda57.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda57b.jpg",
+  "pages": [
+   "page-15"
+  ]
+ },
+ {
+  "ref": "FARDA058",
+  "kind": "farda",
+  "title": "Farda n° 58",
+  "details": "mars 2012 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda58.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda58b.jpg",
+  "pages": [
+   "page-15"
+  ]
+ },
+ {
+  "ref": "FARDA059",
+  "kind": "farda",
+  "title": "Farda n° 59",
+  "details": "juillet 2012 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda59.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda59b.jpg",
+  "pages": [
+   "page-15"
+  ]
+ },
+ {
+  "ref": "FARDA060",
+  "kind": "farda",
+  "title": "Farda n° 60",
+  "details": "novembre 2012 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda60.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda60b.jpg",
+  "pages": [
+   "page-15"
+  ]
+ },
+ {
+  "ref": "FARDA061",
+  "kind": "farda",
+  "title": "Farda n° 61",
+  "details": "mars 2013 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda61.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda61b.jpg",
+  "pages": [
+   "page-74"
+  ]
+ },
+ {
+  "ref": "FARDA062",
+  "kind": "farda",
+  "title": "Farda n° 62",
+  "details": "juillet 2013 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda62.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda62b.jpg",
+  "pages": [
+   "page-74"
+  ]
+ },
+ {
+  "ref": "FARDA063",
+  "kind": "farda",
+  "title": "Farda n° 63",
+  "details": "novembre 2013 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda63.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda63b.jpg",
+  "pages": [
+   "page-74"
+  ]
+ },
+ {
+  "ref": "FARDA064",
+  "kind": "farda",
+  "title": "Farda n° 64",
+  "details": "mars 2014 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda64.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda64b.jpg",
+  "pages": [
+   "page-74"
+  ]
+ },
+ {
+  "ref": "FARDA065",
+  "kind": "farda",
+  "title": "Farda n° 65",
+  "details": "juillet 2014 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda65.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda65b.jpg",
+  "pages": [
+   "page-74"
+  ]
+ },
+ {
+  "ref": "FARDA066",
+  "kind": "farda",
+  "title": "Farda n° 66",
+  "details": "novembre 2014 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda66.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda66b.jpg",
+  "pages": [
+   "page-74"
+  ]
+ },
+ {
+  "ref": "FARDA067",
+  "kind": "farda",
+  "title": "Farda n° 67",
+  "details": "mars 2015 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda67.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda67b.jpg",
+  "pages": [
+   "page-74"
+  ]
+ },
+ {
+  "ref": "FARDA068",
+  "kind": "farda",
+  "title": "Farda n° 68",
+  "details": "juillet 2015 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda68.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda68b.jpg",
+  "pages": [
+   "page-74"
+  ]
+ },
+ {
+  "ref": "FARDA069",
+  "kind": "farda",
+  "title": "Farda n° 69",
+  "details": "novembre 2015 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda69.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda69b.jpg",
+  "pages": [
+   "page-74"
+  ]
+ },
+ {
+  "ref": "FARDA070",
+  "kind": "farda",
+  "title": "Farda n° 70",
+  "details": "mars 2016 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda70.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda70b.jpg",
+  "pages": [
+   "page-74"
+  ]
+ },
+ {
+  "ref": "FARDA071",
+  "kind": "farda",
+  "title": "Farda n° 71",
+  "details": "juillet 2016 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda71.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda71b.jpg",
+  "pages": [
+   "page-97"
+  ]
+ },
+ {
+  "ref": "FARDA072",
+  "kind": "farda",
+  "title": "Farda n° 72",
+  "details": "novembre 2016 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda72.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda72b.jpg",
+  "pages": [
+   "page-97"
+  ]
+ },
+ {
+  "ref": "FARDA073",
+  "kind": "farda",
+  "title": "Farda n° 73",
+  "details": "mars 2017 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda73.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda73b.jpg",
+  "pages": [
+   "page-97"
+  ]
+ },
+ {
+  "ref": "FARDA074",
+  "kind": "farda",
+  "title": "Farda n° 74",
+  "details": "juillet 2017 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda74.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda74b.jpg",
+  "pages": [
+   "page-97"
+  ]
+ },
+ {
+  "ref": "FARDA075",
+  "kind": "farda",
+  "title": "Farda n° 75",
+  "details": "novembre 2017 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda75.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda75b.jpg",
+  "pages": [
+   "page-97"
+  ]
+ },
+ {
+  "ref": "FARDA076",
+  "kind": "farda",
+  "title": "Farda n° 76",
+  "details": "mars 2018 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda76.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda76b.jpg",
+  "pages": [
+   "page-97"
+  ]
+ },
+ {
+  "ref": "FARDA077",
+  "kind": "farda",
+  "title": "Farda n° 77",
+  "details": "juillet 2018 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda77.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda77b.jpg",
+  "pages": [
+   "page-97"
+  ]
+ },
+ {
+  "ref": "FARDA078",
+  "kind": "farda",
+  "title": "Farda n° 78",
+  "details": "novembre 2018 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda78.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda78b.jpg",
+  "pages": [
+   "page-97"
+  ]
+ },
+ {
+  "ref": "FARDA079",
+  "kind": "farda",
+  "title": "Farda n° 79",
+  "details": "mars 2019 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda79.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda79b.jpg",
+  "pages": [
+   "page-97"
+  ]
+ },
+ {
+  "ref": "FARDA080",
+  "kind": "farda",
+  "title": "Farda n° 80",
+  "details": "juillet 2019 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda80.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda80b.jpg",
+  "pages": [
+   "page-97"
+  ]
+ },
+ {
+  "ref": "FARDA081",
+  "kind": "farda",
+  "title": "Farda n° 81",
+  "details": "novembre 2019 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda81.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda81b.jpg",
+  "pages": [
+   "page-112"
+  ]
+ },
+ {
+  "ref": "FARDA082",
+  "kind": "farda",
+  "title": "Farda n° 82",
+  "details": "mars 2020 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda82.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda82b.jpg",
+  "pages": [
+   "page-112"
+  ]
+ },
+ {
+  "ref": "FARDA083",
+  "kind": "farda",
+  "title": "Farda n° 83",
+  "details": "juillet 2020 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda83.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda83b.jpg",
+  "pages": [
+   "page-112"
+  ]
+ },
+ {
+  "ref": "FARDA084",
+  "kind": "farda",
+  "title": "Farda n° 84",
+  "details": "novembre 2020 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda84.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda84b.jpg",
+  "pages": [
+   "page-112"
+  ]
+ },
+ {
+  "ref": "FARDA085",
+  "kind": "farda",
+  "title": "Farda n° 85",
+  "details": "mars 2021 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda85.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda85b.jpg",
+  "pages": [
+   "page-112"
+  ]
+ },
+ {
+  "ref": "FARDA086",
+  "kind": "farda",
+  "title": "Farda n° 86",
+  "details": "juillet 2021 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda86.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda86b.jpg",
+  "pages": [
+   "page-112"
+  ]
+ },
+ {
+  "ref": "FARDA087",
+  "kind": "farda",
+  "title": "Farda n° 87",
+  "details": "novembre 2021 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda87.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda87b.jpg",
+  "pages": [
+   "page-112"
+  ]
+ },
+ {
+  "ref": "FARDA088",
+  "kind": "farda",
+  "title": "Farda n° 88",
+  "details": "mars 2022 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda88.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda88b.jpg",
+  "pages": [
+   "page-112"
+  ]
+ },
+ {
+  "ref": "FARDA089",
+  "kind": "farda",
+  "title": "Farda n° 89",
+  "details": "juillet 2022 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda89.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda89b.jpg",
+  "pages": [
+   "page-112"
+  ]
+ },
+ {
+  "ref": "FARDA090",
+  "kind": "farda",
+  "title": "Farda n° 90",
+  "details": "novembre 2022 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda90.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda90b.jpg",
+  "pages": [
+   "page-112"
+  ]
+ },
+ {
+  "ref": "FARDA091",
+  "kind": "farda",
+  "title": "Farda n° 91",
+  "details": "mars 2023 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda91.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda91b.jpg",
+  "pages": [
+   "page-136"
+  ]
+ },
+ {
+  "ref": "FARDA092",
+  "kind": "farda",
+  "title": "Farda n° 92",
+  "details": "juillet 2023 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda92.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda92b.jpg",
+  "pages": [
+   "page-136"
+  ]
+ },
+ {
+  "ref": "FARDA093",
+  "kind": "farda",
+  "title": "Farda n° 93",
+  "details": "novembre 2023 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda93.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda93b.jpg",
+  "pages": [
+   "page-136"
+  ]
+ },
+ {
+  "ref": "FARDA094",
+  "kind": "farda",
+  "title": "Farda n° 94",
+  "details": "mars 2024 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda94.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda94b.jpg",
+  "pages": [
+   "page-136"
+  ]
+ },
+ {
+  "ref": "FARDA095",
+  "kind": "farda",
+  "title": "Farda n° 95",
+  "details": "juillet 2024 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda95.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda95b.jpg",
+  "pages": [
+   "page-136"
+  ]
+ },
+ {
+  "ref": "FARDA096",
+  "kind": "farda",
+  "title": "Farda n° 96",
+  "details": "novembre 2024 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda96.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda96b.jpg",
+  "pages": [
+   "page-136"
+  ]
+ },
+ {
+  "ref": "FARDA097",
+  "kind": "farda",
+  "title": "Farda n° 97",
+  "details": "mars 2025 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda97.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda97b.jpg",
+  "pages": [
+   "page-136"
+  ]
+ },
+ {
+  "ref": "FARDA098",
+  "kind": "farda",
+  "title": "Farda n° 98",
+  "details": "août 2025 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda98.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda98b.jpg",
+  "pages": [
+   "page-136"
+  ]
+ },
+ {
+  "ref": "FARDA099",
+  "kind": "farda",
+  "title": "Farda n° 99",
+  "details": "novembre 2025 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda99.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda99b.jpg",
+  "pages": [
+   "page-136"
+  ]
+ },
+ {
+  "ref": "FARDA100",
+  "kind": "farda",
+  "title": "Farda n° 100",
+  "details": "mars 2026 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda100.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda100b.jpg",
+  "pages": [
+   "page-136"
+  ]
+ },
+ {
+  "ref": "FARDA101",
+  "kind": "farda",
+  "title": "Farda n° 101",
+  "details": "juillet 2026 - 48 pages",
+  "price_paper": 4.0,
+  "price_digital": 3.0,
+  "digital_members_only": false,
+  "digital_free_members": true,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/farda101.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/farda101b.jpg",
+  "pages": [
+   "page-144"
+  ]
+ },
+ {
+  "ref": "DF01",
+  "kind": "livre",
+  "title": "Beaumont-en-Cambrésis (2e édition)",
+  "authors": "Daniel HERBIN et Gérard DOMISE-PAGNEN",
+  "details": "235 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF01.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF01b.jpg",
+  "pages": [
+   "page-26",
+   "page-27"
+  ]
+ },
+ {
+  "ref": "DF02",
+  "kind": "livre",
+  "title": "Beaumont-en-Cambrésis (2e édition)",
+  "authors": "Daniel HERBIN et Gérard DOMISE-PAGNEN",
+  "details": "240 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF02.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF02b.jpg",
+  "pages": [
+   "page-26",
+   "page-27"
+  ]
+ },
+ {
+  "ref": "DF03",
+  "kind": "livre",
+  "title": "Thun-Saint-Martin (2e édition)",
+  "authors": "Daniel VÉREZ, André HOURIEZ, Bernard LESSCHAEVE et Gérard DOMISE-PAGNEN",
+  "details": "290 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF03.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF03b.jpg",
+  "pages": [
+   "page-26",
+   "page-39"
+  ]
+ },
+ {
+  "ref": "DF04",
+  "kind": "livre",
+  "title": "Thun-Saint-Martin (2e édition)",
+  "authors": "Daniel VÉREZ, André HOURIEZ, Bernard LESSCHAEVE et Gérard DOMISE-PAGNEN",
+  "details": "303 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF04.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF04b.jpg",
+  "pages": [
+   "page-26",
+   "page-39"
+  ]
+ },
+ {
+  "ref": "DF05",
+  "kind": "livre",
+  "title": "Estrun (2e édition)",
+  "authors": "Cécile DUHOUX, Marie-Élise DUHOUX-DUJANCOURT Élisabeth MAIRESSE et Gérard DOMISE-PAGNEN",
+  "details": "257 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF05.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF05b.jpg",
+  "pages": [
+   "page-26",
+   "page-34"
+  ]
+ },
+ {
+  "ref": "DF06",
+  "kind": "livre",
+  "title": "Estrun (2e édition)",
+  "authors": "Cécile DUHOUX, Marie-Élise DUHOUX-DUJANCOURT Élisabeth MAIRESSE et Gérard DOMISE-PAGNEN",
+  "details": "239 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF06.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF06b.jpg",
+  "pages": [
+   "page-26",
+   "page-34"
+  ]
+ },
+ {
+  "ref": "DF07",
+  "kind": "livre",
+  "title": "Gouy-Saint-André",
+  "authors": "Pierre PIETRZAK et Gérard DOMISE-PAGNEN",
+  "details": "262 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF07.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF07b.jpg",
+  "pages": [
+   "page-26",
+   "page-36"
+  ]
+ },
+ {
+  "ref": "DF08",
+  "kind": "livre",
+  "title": "Gouy-Saint-André",
+  "authors": "Pierre PIETRZAK et Gérard DOMISE-PAGNEN",
+  "details": "252 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF08.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF08b.jpg",
+  "pages": [
+   "page-26",
+   "page-36"
+  ]
+ },
+ {
+  "ref": "DF09",
+  "kind": "livre",
+  "title": "Villers-en-Cauchies (2e édition)",
+  "authors": "Pierre MÉRIAUX, Bernard LESSCHAEVE et Gérard DOMISE-PAGNEN",
+  "details": "352 pages",
+  "price_paper": 35.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF09.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF09b.jpg",
+  "pages": [
+   "page-26",
+   "page-40"
+  ]
+ },
+ {
+  "ref": "DF10",
+  "kind": "livre",
+  "title": "Villers-en-Cauchies (2e édition)",
+  "authors": "Pierre MÉRIAUX, Bernard LESSCHAEVE et Gérard DOMISE-PAGNEN",
+  "details": "378 pages",
+  "price_paper": 35.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF10.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF10b.jpg",
+  "pages": [
+   "page-26",
+   "page-40"
+  ]
+ },
+ {
+  "ref": "DF100",
+  "kind": "livre",
+  "title": "Troisvilles",
+  "authors": "Daniel HERBIN et Gérard DOMISE-PAGNEN",
+  "details": "344 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF100.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF100b.jpg",
+  "pages": [
+   "page-115",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF101",
+  "kind": "livre",
+  "title": "Troisvilles",
+  "authors": "Daniel HERBIN et Gérard DOMISE-PAGNEN",
+  "details": "312 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF101.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF101b.jpg",
+  "pages": [
+   "page-115",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF102",
+  "kind": "livre",
+  "title": "Troisvilles",
+  "authors": "Daniel HERBIN et Gérard DOMISE-PAGNEN",
+  "details": "379 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF102.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF102b.jpg",
+  "pages": [
+   "page-115",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF103",
+  "kind": "livre",
+  "title": "Cauroir",
+  "authors": "Louis PLOUQUET et Gérard DOMISE-PAGNEN",
+  "details": "354 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF103.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF103b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF104",
+  "kind": "livre",
+  "title": "Caudry",
+  "authors": "Jacky FOUBERT et Gérard DOMISE-PAGNEN",
+  "details": "338 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF104.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF104b.jpg",
+  "pages": [
+   "page-116",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF105",
+  "kind": "livre",
+  "title": "Caudry",
+  "authors": "Jacky FOUBERT et Gérard DOMISE-PAGNEN",
+  "details": "341 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF105.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF105b.jpg",
+  "pages": [
+   "page-116",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF106",
+  "kind": "livre",
+  "title": "Caudry",
+  "authors": "Jacky FOUBERT et Gérard DOMISE-PAGNEN",
+  "details": "276 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF106.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF106b.jpg",
+  "pages": [
+   "page-116",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF107",
+  "kind": "livre",
+  "title": "Caudry",
+  "authors": "Jacky FOUBERT et Gérard DOMISE-PAGNEN",
+  "details": "409 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF107.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF107b.jpg",
+  "pages": [
+   "page-116",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF108",
+  "kind": "livre",
+  "title": "Caudry",
+  "authors": "Jacky FOUBERT et Gérard DOMISE-PAGNEN",
+  "details": "314 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF108.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF108b.jpg",
+  "pages": [
+   "page-116",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF109",
+  "kind": "livre",
+  "title": "Caudry",
+  "authors": "Jacky FOUBERT et Gérard DOMISE-PAGNEN",
+  "details": "334 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF109.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF109b.jpg",
+  "pages": [
+   "page-116",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF11",
+  "kind": "livre",
+  "title": "Beauvois-en-Cambrésis (2e édition)",
+  "authors": "Gérard BOUBET, Henri GRIÈRE et Gérard DOMISE-PAGNEN",
+  "details": "400 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF11.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF11b.jpg",
+  "pages": [
+   "page-26",
+   "page-28"
+  ]
+ },
+ {
+  "ref": "DF110",
+  "kind": "livre",
+  "title": "Caudry",
+  "authors": "Jacky FOUBERT et Gérard DOMISE-PAGNEN",
+  "details": "430 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF110.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF110b.jpg",
+  "pages": [
+   "page-116",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF111",
+  "kind": "livre",
+  "title": "Caudry",
+  "authors": "Jacky FOUBERT et Gérard DOMISE-PAGNEN",
+  "details": "383 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF111.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF111b.jpg",
+  "pages": [
+   "page-116",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF112",
+  "kind": "livre",
+  "title": "Caudry",
+  "authors": "Jacky FOUBERT et Gérard DOMISE-PAGNEN",
+  "details": "301 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF112.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF112b.jpg",
+  "pages": [
+   "page-116",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF113",
+  "kind": "livre",
+  "title": "Caudry",
+  "authors": "Jacky FOUBERT et Gérard DOMISE-PAGNEN",
+  "details": "268 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF113.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF113b.jpg",
+  "pages": [
+   "page-116",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF114",
+  "kind": "livre",
+  "title": "Rieux-en-Cambrésis",
+  "authors": "Jean-Pierre MICHAUT et Gérard DOMISE-PAGNEN",
+  "details": "300 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF114.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF114b.jpg",
+  "pages": [
+   "page-118",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF115",
+  "kind": "livre",
+  "title": "Rieux-en-Cambrésis",
+  "authors": "Jean-Pierre MICHAUT et Gérard DOMISE-PAGNEN",
+  "details": "354 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF115.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF115b.jpg",
+  "pages": [
+   "page-118",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF116",
+  "kind": "livre",
+  "title": "Rieux-en-Cambrésis",
+  "authors": "Jean-Pierre MICHAUT et Gérard DOMISE-PAGNEN",
+  "details": "396 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF116.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF116b.jpg",
+  "pages": [
+   "page-118",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF117",
+  "kind": "livre",
+  "title": "Hendecourt-lès-Cagnicourt",
+  "authors": "Jean-Michel FOULON et Gérard DOMISE-PAGNEN",
+  "details": "387 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF117.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF117b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF118",
+  "kind": "livre",
+  "title": "Dehéries",
+  "authors": "Vincent CASIEZ, Gérard DOMISE-PAGNEN et Raphaël WIART",
+  "details": "92 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF118.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF118b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF119",
+  "kind": "livre",
+  "title": "Esnes",
+  "authors": "Patrice GUINET et Gérard DOMISE-PAGNEN",
+  "details": "413 pages",
+  "price_paper": 35.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF119.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF119b.jpg",
+  "pages": [
+   "page-119",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF12",
+  "kind": "livre",
+  "title": "Beauvois-en-Cambrésis (2e édition)",
+  "authors": "Gérard BOUBET, Henri GRIÈRE et Gérard DOMISE-PAGNEN",
+  "details": "412 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF12.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF12b.jpg",
+  "pages": [
+   "page-26",
+   "page-28"
+  ]
+ },
+ {
+  "ref": "DF120",
+  "kind": "livre",
+  "title": "Esnes",
+  "authors": "Patrice GUINET et Gérard DOMISE-PAGNEN",
+  "details": "379 pages",
+  "price_paper": 35.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF120.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF120b.jpg",
+  "pages": [
+   "page-119",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF121",
+  "kind": "livre",
+  "title": "Briastre",
+  "authors": "Daniel HERBIN et Gérard DOMISE-PAGNEN",
+  "details": "223 pages",
+  "price_paper": 25.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF121.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF121b.jpg",
+  "pages": [
+   "page-120",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF122",
+  "kind": "livre",
+  "title": "Briastre",
+  "authors": "Daniel HERBIN et Gérard DOMISE-PAGNEN",
+  "details": "231 pages",
+  "price_paper": 25.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF122.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF122b.jpg",
+  "pages": [
+   "page-120",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF123",
+  "kind": "livre",
+  "title": "Ors",
+  "authors": "Louis PLOUQUET et Gérard DOMISE-PAGNEN",
+  "details": "376 pages",
+  "price_paper": 35.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF123.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF123b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF124",
+  "kind": "livre",
+  "title": "Banteux",
+  "authors": "Jean DOFFE (†), Pierre PIETRZAK et Gérard DOMISE-PAGNEN",
+  "details": "250 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF124.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF124b.jpg",
+  "pages": [
+   "page-122",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF125",
+  "kind": "livre",
+  "title": "Banteux",
+  "authors": "Jean DOFFE (†), Pierre PIETRZAK et Gérard DOMISE-PAGNEN",
+  "details": "268 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF125.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF125b.jpg",
+  "pages": [
+   "page-122",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF126",
+  "kind": "livre",
+  "title": "Bantouzelle",
+  "authors": "Jean DOFFE (†), Pierre PIETRZAK et Gérard DOMISE-PAGNEN",
+  "details": "275 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF126.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF126b.jpg",
+  "pages": [
+   "page-124",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF127",
+  "kind": "livre",
+  "title": "Bantouzelle",
+  "authors": "Jean DOFFE (†), Pierre PIETRZAK et Gérard DOMISE-PAGNEN",
+  "details": "289 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF127.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF127b.jpg",
+  "pages": [
+   "page-124",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF128",
+  "kind": "livre",
+  "title": "Villers-Plouich",
+  "authors": "Pierre PIETRZAK et Gérard DOMISE-PAGNEN",
+  "details": "276 pages",
+  "price_paper": 30.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF128.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF128b.jpg",
+  "pages": [
+   "page-125",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF129",
+  "kind": "livre",
+  "title": "Villers-Plouich",
+  "authors": "Pierre PIETRZAK et Gérard DOMISE-PAGNEN",
+  "details": "261 pages",
+  "price_paper": 30.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF129.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF129b.jpg",
+  "pages": [
+   "page-125",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF13",
+  "kind": "livre",
+  "title": "Inchy (2e édition)",
+  "authors": "Daniel HERBIN et Gérard DOMISE-PAGNEN",
+  "details": "379 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF13.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF13b.jpg",
+  "pages": [
+   "page-26",
+   "page-29"
+  ]
+ },
+ {
+  "ref": "DF130",
+  "kind": "livre",
+  "title": "Villers-Guislain",
+  "authors": "Pierre PIETRZAK et Gérard DOMISE-PAGNEN",
+  "details": "259 pages",
+  "price_paper": 30.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF130.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF130b.jpg",
+  "pages": [
+   "page-126",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF131",
+  "kind": "livre",
+  "title": "Villers-Guislain",
+  "authors": "Pierre PIETRZAK et Gérard DOMISE-PAGNEN",
+  "details": "338 pages",
+  "price_paper": 30.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF131.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF131b.jpg",
+  "pages": [
+   "page-126",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF132",
+  "kind": "livre",
+  "title": "Villers-Guislain",
+  "authors": "Pierre PIETRZAK et Gérard DOMISE-PAGNEN",
+  "details": "273 pages",
+  "price_paper": 30.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF132.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF132b.jpg",
+  "pages": [
+   "page-126",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF133",
+  "kind": "livre",
+  "title": "Ribécourt-la-Tour",
+  "authors": "Jean-François DUCHATELLE, Pierre PIETRZAK et Gérard DOMISE-PAGNEN",
+  "details": "378 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF133.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF133b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF134",
+  "kind": "livre",
+  "title": "Naves",
+  "authors": "Gérard DOMISE-PAGNEN",
+  "details": "268 pages",
+  "price_paper": 30.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF134.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF134b.jpg",
+  "pages": [
+   "page-128",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF135",
+  "kind": "livre",
+  "title": "Naves",
+  "authors": "Gérard DOMISE-PAGNEN",
+  "details": "241 pages",
+  "price_paper": 25.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF135.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF135b.jpg",
+  "pages": [
+   "page-128",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF136",
+  "kind": "livre",
+  "title": "Graincourt-lès-Havrincourt",
+  "authors": "Éveline MERCIER et Gérard DOMISE-PAGNEN",
+  "details": "275 pages",
+  "price_paper": 30.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF136.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF136b.jpg",
+  "pages": [
+   "page-130",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF137",
+  "kind": "livre",
+  "title": "Graincourt-lès-Havrincourt",
+  "authors": "Éveline MERCIER et Gérard DOMISE-PAGNEN",
+  "details": "327 pages",
+  "price_paper": 30.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF137.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF137b.jpg",
+  "pages": [
+   "page-130",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF138",
+  "kind": "livre",
+  "title": "Graincourt-lès-Havrincourt",
+  "authors": "Éveline MERCIER et Gérard DOMISE-PAGNEN",
+  "details": "442 pages",
+  "price_paper": 35.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF138.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF138b.jpg",
+  "pages": [
+   "page-130",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF139",
+  "kind": "livre",
+  "title": "Boussières-en-Cambrésis",
+  "authors": "Albert LEMOINE et Gérard DOMISE-PAGNEN",
+  "details": "213 pages",
+  "price_paper": 25.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF139.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF139b.jpg",
+  "pages": [
+   "page-131",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF14",
+  "kind": "livre",
+  "title": "Inchy (2e édition)",
+  "authors": "Daniel HERBIN et Gérard DOMISE-PAGNEN",
+  "details": "376 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF14.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF14b.jpg",
+  "pages": [
+   "page-26",
+   "page-29"
+  ]
+ },
+ {
+  "ref": "DF140",
+  "kind": "livre",
+  "title": "Boussières-en-Cambrésis",
+  "authors": "Albert LEMOINE et Gérard DOMISE-PAGNEN",
+  "details": "251 pages",
+  "price_paper": 30.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF140.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF140b.jpg",
+  "pages": [
+   "page-131",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF141",
+  "kind": "livre",
+  "title": "Gonnelieu",
+  "authors": "Pierre PIETRZAK et Gérard DOMISE-PAGNEN",
+  "details": "269 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF141.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF141b.jpg",
+  "pages": [
+   "page-132",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF142",
+  "kind": "livre",
+  "title": "Gonnelieu",
+  "authors": "Pierre PIETRZAK et Gérard DOMISE-PAGNEN",
+  "details": "258 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF142.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF142b.jpg",
+  "pages": [
+   "page-132",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF143",
+  "kind": "livre",
+  "title": "Saint-Hilaire-lez-Cambrai",
+  "authors": "Jean-Jacques CARREZ et Gérard DOMISE-PAGNEN",
+  "details": "249 pages",
+  "price_paper": 25.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF143.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF143b.jpg",
+  "pages": [
+   "page-133",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF144",
+  "kind": "livre",
+  "title": "Saint-Hilaire-lez-Cambrai",
+  "authors": "Jean-Jacques CARREZ et Gérard DOMISE-PAGNEN",
+  "details": "262 pages",
+  "price_paper": 30.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF144.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF144b.jpg",
+  "pages": [
+   "page-133",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF145",
+  "kind": "livre",
+  "title": "Saint-Hilaire-lez-Cambrai",
+  "authors": "Jean-Jacques CARREZ et Gérard DOMISE-PAGNEN",
+  "details": "454 pages",
+  "price_paper": 35.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF145.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF145b.jpg",
+  "pages": [
+   "page-133",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF146",
+  "kind": "livre",
+  "title": "Saint-Hilaire-lez-Cambrai",
+  "authors": "Jean-Jacques CARREZ et Gérard DOMISE-PAGNEN",
+  "details": "336 pages",
+  "price_paper": 30.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF146.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF146b.jpg",
+  "pages": [
+   "page-133",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF147",
+  "kind": "livre",
+  "title": "Saint-Vaast-en-Cambrésis",
+  "authors": "Louis PLOUQUET et Gérard DOMISE-PAGNEN",
+  "details": "366 pages",
+  "price_paper": 35.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF147.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF147b.jpg",
+  "pages": [
+   "page-134",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF148",
+  "kind": "livre",
+  "title": "Saint-Vaast-en-Cambrésis",
+  "authors": "Louis PLOUQUET et Gérard DOMISE-PAGNEN",
+  "details": "320 pages",
+  "price_paper": 30.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF148.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF148b.jpg",
+  "pages": [
+   "page-134",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF149",
+  "kind": "livre",
+  "title": "Saint-Vaast-en-Cambrésis",
+  "authors": "Louis PLOUQUET et Gérard DOMISE-PAGNEN",
+  "details": "323 pages",
+  "price_paper": 30.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF149.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF149b.jpg",
+  "pages": [
+   "page-134",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF15",
+  "kind": "livre",
+  "title": "Awoingt (2e édition)",
+  "authors": "Patrice GUINET et Gérard DOMISE-PAGNEN",
+  "details": "255 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF15.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF15b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF150",
+  "kind": "livre",
+  "title": "Béthencourt",
+  "authors": "Daniel HERBIN et Gérard DOMISE-PAGNEN",
+  "details": "340 pages",
+  "price_paper": 30.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF150.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF150b.jpg",
+  "pages": [
+   "page-135",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF151",
+  "kind": "livre",
+  "title": "Béthencourt",
+  "authors": "Daniel HERBIN et Gérard DOMISE-PAGNEN",
+  "details": "364 pages",
+  "price_paper": 35.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF151.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF151b.jpg",
+  "pages": [
+   "page-135",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF152",
+  "kind": "livre",
+  "title": "Honnecourt-sur-Escaut",
+  "authors": "Pierre PIETRZAK et Gérard DOMISE-PAGNEN",
+  "details": "273 pages",
+  "price_paper": 30.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF152.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF152b.jpg",
+  "pages": [
+   "page-138",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF153",
+  "kind": "livre",
+  "title": "Honnecourt-sur-Escaut",
+  "authors": "Pierre PIETRZAK et Gérard DOMISE-PAGNEN",
+  "details": "286 pages",
+  "price_paper": 30.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF153.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF153b.jpg",
+  "pages": [
+   "page-138",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF154",
+  "kind": "livre",
+  "title": "Honnecourt-sur-Escaut",
+  "authors": "Pierre PIETRZAK et Gérard DOMISE-PAGNEN",
+  "details": "330 pages",
+  "price_paper": 30.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF154.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF154b.jpg",
+  "pages": [
+   "page-138",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF155",
+  "kind": "livre",
+  "title": "Honnecourt-sur-Escaut",
+  "authors": "Pierre PIETRZAK et Gérard DOMISE-PAGNEN",
+  "details": "345 pages",
+  "price_paper": 30.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF155.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF155b.jpg",
+  "pages": [
+   "page-138",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF156",
+  "kind": "livre",
+  "title": "Cattenières (2e édition)",
+  "authors": "Jérôme COYEZ (†), Élisabeth MAIRESSE et Gérard DOMISE-PAGNEN",
+  "details": "316 pages",
+  "price_paper": 30.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF156.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF156b.jpg",
+  "pages": [
+   "page-26",
+   "page-33"
+  ]
+ },
+ {
+  "ref": "DF157",
+  "kind": "livre",
+  "title": "Abancourt",
+  "authors": "Louis PLOUQUET et Gérard DOMISE-PAGNEN",
+  "details": "373 pages",
+  "price_paper": 35.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF157.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF157b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF158",
+  "kind": "livre",
+  "title": "Gouzeaucourt",
+  "authors": "Pierre PIETRZAK et Gérard DOMISE-PAGNEN",
+  "details": "416 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF158.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF158b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF159",
+  "kind": "livre",
+  "title": "Gouzeaucourt",
+  "authors": "Pierre PIETRZAK et Gérard DOMISE-PAGNEN",
+  "details": "453 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF159.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF159b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF16",
+  "kind": "livre",
+  "title": "Bertry (2e édition)",
+  "authors": "Jacky FOUBERT et Gérard DOMISE-PAGNEN",
+  "details": "416 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF16.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF16b.jpg",
+  "pages": [
+   "page-26",
+   "page-31"
+  ]
+ },
+ {
+  "ref": "DF160",
+  "kind": "livre",
+  "title": "Gouzeaucourt",
+  "authors": "Pierre PIETRZAK et Gérard DOMISE-PAGNEN",
+  "details": "443 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF160.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF160b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF161",
+  "kind": "livre",
+  "title": "Gouzeaucourt",
+  "authors": "Pierre PIETRZAK et Gérard DOMISE-PAGNEN",
+  "details": "311 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF161.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF161b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF162",
+  "kind": "livre",
+  "title": "Cuvillers",
+  "authors": "Louis PLOUQUET et Gérard DOMISE-PAGNEN",
+  "details": "206 pages",
+  "price_paper": 25.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF162.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF162b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF163",
+  "kind": "livre",
+  "title": "Reumont",
+  "authors": "Jacky FOUBERT et Gérard DOMISE-PAGNEN",
+  "details": "331 pages",
+  "price_paper": 30.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF163.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF163b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF164",
+  "kind": "livre",
+  "title": "Estourmel",
+  "authors": "Louis PLOUQUET et Gérard DOMISE-PAGNEN",
+  "details": "344 pages",
+  "price_paper": 30.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF164.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF164b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF165",
+  "kind": "livre",
+  "title": "Maretz",
+  "authors": "Christian LEMAÎTRE et Gérard DOMISE-PAGNEN",
+  "details": "429 pages",
+  "price_paper": 35.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF165.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF165b.jpg",
+  "pages": [
+   "page-141",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF166",
+  "kind": "livre",
+  "title": "Maretz",
+  "authors": "Christian LEMAÎTRE et Gérard DOMISE-PAGNEN",
+  "details": "351 pages",
+  "price_paper": 35.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF166.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF166b.jpg",
+  "pages": [
+   "page-141",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF167",
+  "kind": "livre",
+  "title": "Maretz",
+  "authors": "Christian LEMAÎTRE et Gérard DOMISE-PAGNEN",
+  "details": "293 pages",
+  "price_paper": 30.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF167.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF167b.jpg",
+  "pages": [
+   "page-141",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF168",
+  "kind": "livre",
+  "title": "Escaudœuvres (3e édition)",
+  "authors": "Gérard DOMISE-PAGNEN et Didier FRÉMICOURT",
+  "details": "434 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF168.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF168b.jpg",
+  "pages": [
+   "page-26",
+   "page-90"
+  ]
+ },
+ {
+  "ref": "DF169",
+  "kind": "livre",
+  "title": "Escaudœuvres (3e édition)",
+  "authors": "Gérard DOMISE-PAGNEN et Didier FRÉMICOURT",
+  "details": "455 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF169.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF169b.jpg",
+  "pages": [
+   "page-26",
+   "page-90"
+  ]
+ },
+ {
+  "ref": "DF17",
+  "kind": "livre",
+  "title": "Bertry (2e édition)",
+  "authors": "Jacky FOUBERT et Gérard DOMISE-PAGNEN",
+  "details": "290 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF17.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF17b.jpg",
+  "pages": [
+   "page-26",
+   "page-31"
+  ]
+ },
+ {
+  "ref": "DF170",
+  "kind": "livre",
+  "title": "Haucourt-en-Cambrésis",
+  "authors": "Patrice GUINET, Pierre PIETRZAK et Gérard DOMISE-PAGNEN",
+  "details": "347 pages",
+  "price_paper": 30.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF170.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF170b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF171",
+  "kind": "livre",
+  "title": "Carnières",
+  "authors": "Louis PLOUQUET et Gérard DOMISE-PAGNEN",
+  "details": "332 pages",
+  "price_paper": 30.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF171.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF171b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF172",
+  "kind": "livre",
+  "title": "Carnières",
+  "authors": "Louis PLOUQUET et Gérard DOMISE-PAGNEN",
+  "details": "321 pages",
+  "price_paper": 30.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF172.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF172b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF173",
+  "kind": "livre",
+  "title": "Carnières",
+  "authors": "Louis PLOUQUET et Gérard DOMISE-PAGNEN",
+  "details": "284 pages",
+  "price_paper": 30.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF173.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF173b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF174",
+  "kind": "livre",
+  "title": "Marbaix",
+  "authors": "Gérard DOMISE-PAGNEN",
+  "details": "387 pages",
+  "price_paper": 35.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF174.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF174b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF175",
+  "kind": "livre",
+  "title": "Mazinghien",
+  "authors": "Élisabeth MAIRESSE et Gérard DOMISE-PAGNEN",
+  "details": "248 pages",
+  "price_paper": 25.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF175.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF175b.jpg",
+  "pages": [
+   "page-26",
+   "page-62"
+  ]
+ },
+ {
+  "ref": "DF176",
+  "kind": "livre",
+  "title": "Mazinghien",
+  "authors": "Élisabeth MAIRESSE et Gérard DOMISE-PAGNEN",
+  "details": "283 pages",
+  "price_paper": 30.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF175.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF175b.jpg",
+  "pages": [
+   "page-26",
+   "page-62"
+  ]
+ },
+ {
+  "ref": "DF177",
+  "kind": "livre",
+  "title": "Fressies",
+  "authors": "Louis PLOUQUET et Gérard DOMISE-PAGNEN",
+  "details": "386 pages",
+  "price_paper": 35.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF177.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF177b.jpg",
+  "pages": [
+   "page-26",
+   "page-62"
+  ]
+ },
+ {
+  "ref": "DF18",
+  "kind": "livre",
+  "title": "Bertry (2e édition)",
+  "authors": "Jacky FOUBERT et Gérard DOMISE-PAGNEN",
+  "details": "417 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF18.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF18b.jpg",
+  "pages": [
+   "page-26",
+   "page-31"
+  ]
+ },
+ {
+  "ref": "DF19",
+  "kind": "livre",
+  "title": "Cattenières (2e édition)",
+  "authors": "Jérôme COYEZ (†), Élisabeth MAIRESSE et Gérard DOMISE-PAGNEN",
+  "details": "263 pages",
+  "price_paper": 30.0,
+  "price_digital": 15.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF19.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF19b.jpg",
+  "pages": [
+   "page-26",
+   "page-33"
+  ]
+ },
+ {
+  "ref": "DF20",
+  "kind": "livre",
+  "title": "Bourlon (2e édition)",
+  "authors": "Éveline MERCIER et Gérard DOMISE-PAGNEN",
+  "details": "421 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF20.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF20b.jpg",
+  "pages": [
+   "page-26",
+   "page-32"
+  ]
+ },
+ {
+  "ref": "DF21",
+  "kind": "livre",
+  "title": "Bourlon (2e édition)",
+  "authors": "Éveline MERCIER et Gérard DOMISE-PAGNEN",
+  "details": "432 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF21.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF21b.jpg",
+  "pages": [
+   "page-26",
+   "page-32"
+  ]
+ },
+ {
+  "ref": "DF22",
+  "kind": "livre",
+  "title": "Sains-lès-Marquion (2e édition)",
+  "authors": "Éveline MERCIER et Gérard DOMISE-PAGNEN",
+  "details": "350 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF22.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF22b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF23",
+  "kind": "livre",
+  "title": "Fontaine-au-Pire (2e édition)",
+  "authors": "Henri GRIÈRE, Gérard BOUBET et Gérard DOMISE-PAGNEN",
+  "details": "335 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF23.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF23b.jpg",
+  "pages": [
+   "page-26",
+   "page-35"
+  ]
+ },
+ {
+  "ref": "DF24",
+  "kind": "livre",
+  "title": "Fontaine-au-Pire (2e édition)",
+  "authors": "Henri GRIÈRE, Gérard BOUBET et Gérard DOMISE-PAGNEN",
+  "details": "347 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF24.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF24b.jpg",
+  "pages": [
+   "page-26",
+   "page-35"
+  ]
+ },
+ {
+  "ref": "DF25",
+  "kind": "livre",
+  "title": "Proville (2e édition)",
+  "authors": "Chantal ILLES-DEVAUX, Jean-Claude DEFER et Gérard DOMISE-PAGNEN",
+  "details": "341 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF25.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF25b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF26",
+  "kind": "livre",
+  "title": "Ramillies (2e édition)",
+  "authors": "Didier FRÉMICOURT, Albert LEMOINE, Bernard LESSCHAEVE et Gérard DOMISE-PAGNEN",
+  "details": "269 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF26.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF26b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF27",
+  "kind": "livre",
+  "title": "Beauvois-en-Cambrésis (2e édition)",
+  "authors": "Gérard BOUBET, Henri GRIÈRE et Gérard DOMISE-PAGNEN",
+  "details": "367 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF27.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF27b.jpg",
+  "pages": [
+   "page-26",
+   "page-28"
+  ]
+ },
+ {
+  "ref": "DF28",
+  "kind": "livre",
+  "title": "Niergnies",
+  "authors": "Patrice GUINET et Gérard DOMISE-PAGNEN",
+  "details": "326 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF28.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF28b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF29",
+  "kind": "livre",
+  "title": "Flesquières (2e édition)",
+  "authors": "Éveline MERCIER et Gérard DOMISE-PAGNEN",
+  "details": "284 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF29.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF29b.jpg",
+  "pages": [
+   "page-26",
+   "page-63"
+  ]
+ },
+ {
+  "ref": "DF30",
+  "kind": "livre",
+  "title": "Lebucquière (2e édition)",
+  "authors": "Éveline MERCIER et Gérard DOMISE-PAGNEN",
+  "details": "332 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF30.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF30b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF31",
+  "kind": "livre",
+  "title": "Fontaine-au-Pire (2e édition)",
+  "authors": "Henri GRIÈRE, Gérard BOUBET et Gérard DOMISE-PAGNEN",
+  "details": "282 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF31.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF31b.jpg",
+  "pages": [
+   "page-26",
+   "page-35"
+  ]
+ },
+ {
+  "ref": "DF32",
+  "kind": "livre",
+  "title": "Honnechy (2e édition)",
+  "authors": "Jacky FOUBERT, Christian LEMAÎTRE et Gérard DOMISE-PAGNEN",
+  "details": "307 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF32.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF32b.jpg",
+  "pages": [
+   "page-26",
+   "page-65"
+  ]
+ },
+ {
+  "ref": "DF33",
+  "kind": "livre",
+  "title": "Honnechy (2e édition)",
+  "authors": "Jacky FOUBERT, Christian LEMAÎTRE et Gérard DOMISE-PAGNEN",
+  "details": "307 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF33.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF33b.jpg",
+  "pages": [
+   "page-26",
+   "page-65"
+  ]
+ },
+ {
+  "ref": "DF34",
+  "kind": "livre",
+  "title": "Vélu (2e édition)",
+  "authors": "Éveline MERCIER et Gérard DOMISE-PAGNEN",
+  "details": "263 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF34.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF34b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF35",
+  "kind": "livre",
+  "title": "Mœuvres",
+  "authors": "Jean-Michel FOULON et Gérard DOMISE-PAGNEN",
+  "details": "368 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF35.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF35b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF36",
+  "kind": "livre",
+  "title": "Fontaine-Notre-Dame",
+  "authors": "Pierre PIETRZAK et Gérard DOMISE-PAGNEN",
+  "details": "279 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF36.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF36b.jpg",
+  "pages": [
+   "page-26",
+   "page-69"
+  ]
+ },
+ {
+  "ref": "DF37",
+  "kind": "livre",
+  "title": "Fontaine-Notre-Dame",
+  "authors": "Pierre PIETRZAK et Gérard DOMISE-PAGNEN",
+  "details": "391 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF37.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF37b.jpg",
+  "pages": [
+   "page-26",
+   "page-69"
+  ]
+ },
+ {
+  "ref": "DF38",
+  "kind": "livre",
+  "title": "Fontaine-Notre-Dame",
+  "authors": "Pierre PIETRZAK et Gérard DOMISE-PAGNEN",
+  "details": "361 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF38.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF38b.jpg",
+  "pages": [
+   "page-26",
+   "page-69"
+  ]
+ },
+ {
+  "ref": "DF39",
+  "kind": "livre",
+  "title": "Thun-L'Évêque",
+  "authors": "Daniel VÉREZ, Bernard LESSCHAEVE et Gérard DOMISE-PAGNEN",
+  "details": "366 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF39.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF39b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF40",
+  "kind": "livre",
+  "title": "Inchy-en-Artois (2e édition)",
+  "authors": "Éveline MERCIER et Gérard DOMISE-PAGNEN",
+  "details": "383 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF40.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF40b.jpg",
+  "pages": [
+   "page-26",
+   "page-71"
+  ]
+ },
+ {
+  "ref": "DF41",
+  "kind": "livre",
+  "title": "Inchy-en-Artois (2e édition)",
+  "authors": "Éveline MERCIER et Gérard DOMISE-PAGNEN",
+  "details": "336 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF41.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF41b.jpg",
+  "pages": [
+   "page-26",
+   "page-71"
+  ]
+ },
+ {
+  "ref": "DF42",
+  "kind": "livre",
+  "title": "Trescault (2e édition)",
+  "authors": "Jean-François DUCHATELLE et Gérard DOMISE-PAGNEN",
+  "details": "302 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF42.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF42b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF43",
+  "kind": "livre",
+  "title": "Noyelles-sur-Escaut",
+  "authors": "Pierre PIETRZAK, Jean DOFFE et Gérard DOMISE-PAGNEN",
+  "details": "281 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF43.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF43b.jpg",
+  "pages": [
+   "page-26",
+   "page-73"
+  ]
+ },
+ {
+  "ref": "DF44",
+  "kind": "livre",
+  "title": "Noyelles-sur-Escaut",
+  "authors": "Pierre PIETRZAK, Jean DOFFE et Gérard DOMISE-PAGNEN",
+  "details": "284 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF44.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF44b.jpg",
+  "pages": [
+   "page-26",
+   "page-73"
+  ]
+ },
+ {
+  "ref": "DF45",
+  "kind": "livre",
+  "title": "Anneux",
+  "authors": "Pierre PIETRZAK, Jean DOFFE, Maurice POURPOINT et Gérard DOMISE-PAGNEN",
+  "details": "313 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF45.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF45b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF46",
+  "kind": "livre",
+  "title": "Wambaix",
+  "authors": "Patrice GUINET et Gérard DOMISE-PAGNEN",
+  "details": "318 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF46.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF46b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF47",
+  "kind": "livre",
+  "title": "Quéant",
+  "authors": "Éveline MERCIER et Gérard DOMISE-PAGNEN",
+  "details": "349 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF47.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF47b.jpg",
+  "pages": [
+   "page-26",
+   "page-78"
+  ]
+ },
+ {
+  "ref": "DF48",
+  "kind": "livre",
+  "title": "Quéant",
+  "authors": "Éveline MERCIER et Gérard DOMISE-PAGNEN",
+  "details": "312 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF48.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF48b.jpg",
+  "pages": [
+   "page-26",
+   "page-78"
+  ]
+ },
+ {
+  "ref": "DF49",
+  "kind": "livre",
+  "title": "Cantaing-sur-Escaut",
+  "authors": "Raphaël WIART, Pierre PIETRZAK et Gérard DOMISE-PAGNEN",
+  "details": "224 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF49.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF49b.jpg",
+  "pages": [
+   "page-26",
+   "page-79"
+  ]
+ },
+ {
+  "ref": "DF50",
+  "kind": "livre",
+  "title": "Cantaing-sur-Escaut",
+  "authors": "Raphaël WIART, Pierre PIETRZAK et Gérard DOMISE-PAGNEN",
+  "details": "226 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF50.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF50b.jpg",
+  "pages": [
+   "page-26",
+   "page-79"
+  ]
+ },
+ {
+  "ref": "DF51",
+  "kind": "livre",
+  "title": "Raillencourt-Sainte-Olle",
+  "authors": "Éveline MERCIER et Gérard DOMISE-PAGNEN",
+  "details": "331 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF51.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF51b.jpg",
+  "pages": [
+   "page-26",
+   "page-80"
+  ]
+ },
+ {
+  "ref": "DF52",
+  "kind": "livre",
+  "title": "Raillencourt-Sainte-Olle",
+  "authors": "Éveline MERCIER et Gérard DOMISE-PAGNEN",
+  "details": "354 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF52.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF52b.jpg",
+  "pages": [
+   "page-26",
+   "page-80"
+  ]
+ },
+ {
+  "ref": "DF53",
+  "kind": "livre",
+  "title": "Sailly-lez-Cambrai",
+  "authors": "Éveline MERCIER et Gérard DOMISE-PAGNEN",
+  "details": "322 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF53.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF53b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF54",
+  "kind": "livre",
+  "title": "Sancourt",
+  "authors": "Albert LEMOINE, Geneviève ROULIN et Gérard DOMISE-PAGNEN",
+  "details": "210 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF54.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF54b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF55",
+  "kind": "livre",
+  "title": "Cagnoncles",
+  "authors": "Pierre MÉRIAUX (†), André HOURIEZ et Gérard DOMISE-PAGNEN",
+  "details": "402 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF55.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF55b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF56",
+  "kind": "livre",
+  "title": "Doignies",
+  "authors": "Jean-Michel FOULON et Gérard DOMISE-PAGNEN",
+  "details": "320 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF56.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF56b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF57",
+  "kind": "livre",
+  "title": "Maurois",
+  "authors": "Jacky FOUBERT et Gérard DOMISE-PAGNEN",
+  "details": "332 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF57.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF57b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF58",
+  "kind": "livre",
+  "title": "Blécourt",
+  "authors": "Albert LEMOINE et Gérard DOMISE-PAGNEN",
+  "details": "212 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF58.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF58b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF59",
+  "kind": "livre",
+  "title": "Rumilly-en-Cambrésis",
+  "authors": "Daniel NORMAND, Jean DOFFE et Gérard DOMISE-PAGNEN",
+  "details": "371 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF59.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF59b.jpg",
+  "pages": [
+   "page-26",
+   "page-89"
+  ]
+ },
+ {
+  "ref": "DF60",
+  "kind": "livre",
+  "title": "Rumilly-en-Cambrésis",
+  "authors": "Daniel NORMAND, Jean DOFFE et Gérard DOMISE-PAGNEN",
+  "details": "433 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF59.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF59b.jpg",
+  "pages": [
+   "page-26",
+   "page-89"
+  ]
+ },
+ {
+  "ref": "DF61",
+  "kind": "livre",
+  "title": "Rumilly-en-Cambrésis",
+  "authors": "Daniel NORMAND, Jean DOFFE et Gérard DOMISE-PAGNEN",
+  "details": "361 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF59.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF59b.jpg",
+  "pages": [
+   "page-26",
+   "page-89"
+  ]
+ },
+ {
+  "ref": "DF62",
+  "kind": "livre",
+  "title": "Escaudœuvres (3e édition)",
+  "authors": "Gérard DOMISE-PAGNEN et Didier FRÉMICOURT",
+  "details": "341 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF62.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF62b.jpg",
+  "pages": [
+   "page-26",
+   "page-90"
+  ]
+ },
+ {
+  "ref": "DF63",
+  "kind": "livre",
+  "title": "Escaudœuvres (3e édition)",
+  "authors": "Gérard DOMISE-PAGNEN et Didier FRÉMICOURT",
+  "details": "284 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF63.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF63b.jpg",
+  "pages": [
+   "page-26",
+   "page-90"
+  ]
+ },
+ {
+  "ref": "DF64",
+  "kind": "livre",
+  "title": "Escaudœuvres (3e édition)",
+  "authors": "Gérard DOMISE-PAGNEN et Didier FRÉMICOURT",
+  "details": "388 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF64.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF64b.jpg",
+  "pages": [
+   "page-26",
+   "page-90"
+  ]
+ },
+ {
+  "ref": "DF65",
+  "kind": "livre",
+  "title": "Escaudœuvres (3e édition)",
+  "authors": "Gérard DOMISE-PAGNEN et Didier FRÉMICOURT",
+  "details": "323 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF65.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF65b.jpg",
+  "pages": [
+   "page-26",
+   "page-90"
+  ]
+ },
+ {
+  "ref": "DF67",
+  "kind": "livre",
+  "title": "Boursies",
+  "authors": "Jean-Michel FOULON et Gérard DOMISE-PAGNEN",
+  "details": "429 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF67.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF67b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF68",
+  "kind": "livre",
+  "title": "Marquion",
+  "authors": "Éveline MERCIER et Gérard DOMISE-PAGNEN",
+  "details": "298 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF68.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF68b.jpg",
+  "pages": [
+   "page-26",
+   "page-94"
+  ]
+ },
+ {
+  "ref": "DF69",
+  "kind": "livre",
+  "title": "Marquion",
+  "authors": "Éveline MERCIER et Gérard DOMISE-PAGNEN",
+  "details": "281 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF69.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF69b.jpg",
+  "pages": [
+   "page-26",
+   "page-94"
+  ]
+ },
+ {
+  "ref": "DF70",
+  "kind": "livre",
+  "title": "Masnières",
+  "authors": "Jean DOFFE et Gérard DOMISE-PAGNEN",
+  "details": "380 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF70.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF70b.jpg",
+  "pages": [
+   "page-26",
+   "page-93"
+  ]
+ },
+ {
+  "ref": "DF71",
+  "kind": "livre",
+  "title": "Masnières",
+  "authors": "Jean DOFFE et Gérard DOMISE-PAGNEN",
+  "details": "366 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF71.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF71b.jpg",
+  "pages": [
+   "page-26",
+   "page-93"
+  ]
+ },
+ {
+  "ref": "DF72",
+  "kind": "livre",
+  "title": "Masnières",
+  "authors": "Jean DOFFE et Gérard DOMISE-PAGNEN",
+  "details": "361 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF72.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF72b.jpg",
+  "pages": [
+   "page-26",
+   "page-93"
+  ]
+ },
+ {
+  "ref": "DF73",
+  "kind": "livre",
+  "title": "Masnières",
+  "authors": "Jean DOFFE et Gérard DOMISE-PAGNEN",
+  "details": "271 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF73.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF73b.jpg",
+  "pages": [
+   "page-26",
+   "page-93"
+  ]
+ },
+ {
+  "ref": "DF74",
+  "kind": "livre",
+  "title": "Hermies",
+  "authors": "Éveline MERCIER et Gérard DOMISE-PAGNEN",
+  "details": "442 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF74.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF74b.jpg",
+  "pages": [
+   "page-26",
+   "page-96"
+  ]
+ },
+ {
+  "ref": "DF75",
+  "kind": "livre",
+  "title": "Hermies",
+  "authors": "Éveline MERCIER et Gérard DOMISE-PAGNEN",
+  "details": "413 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF75.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF75b.jpg",
+  "pages": [
+   "page-26",
+   "page-96"
+  ]
+ },
+ {
+  "ref": "DF76",
+  "kind": "livre",
+  "title": "Hermies",
+  "authors": "Éveline MERCIER et Gérard DOMISE-PAGNEN",
+  "details": "317 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF76.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF76b.jpg",
+  "pages": [
+   "page-26",
+   "page-96"
+  ]
+ },
+ {
+  "ref": "DF77",
+  "kind": "livre",
+  "title": "Hermies",
+  "authors": "Éveline MERCIER et Gérard DOMISE-PAGNEN",
+  "details": "347 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF77.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF77b.jpg",
+  "pages": [
+   "page-26",
+   "page-96"
+  ]
+ },
+ {
+  "ref": "DF78",
+  "kind": "livre",
+  "title": "Buissy",
+  "authors": "Jean-Michel FOULON et Gérard DOMISE-PAGNEN",
+  "details": "240 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF78.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF78b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF79",
+  "kind": "livre",
+  "title": "Bertry (2e édition)",
+  "authors": "Jacky FOUBERT et Gérard DOMISE-PAGNEN",
+  "details": "365 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF79.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF79b.jpg",
+  "pages": [
+   "page-26",
+   "page-31"
+  ]
+ },
+ {
+  "ref": "DF80",
+  "kind": "livre",
+  "title": "Flesquières (2e édition)",
+  "authors": "Éveline MERCIER et Gérard DOMISE-PAGNEN",
+  "details": "249 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF80.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF80b.jpg",
+  "pages": [
+   "page-26",
+   "page-63"
+  ]
+ },
+ {
+  "ref": "DF81",
+  "kind": "livre",
+  "title": "Pronville-en-Artois",
+  "authors": "Éveline MERCIER et Gérard DOMISE-PAGNEN",
+  "details": "414 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF81.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF81b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF82",
+  "kind": "livre",
+  "title": "Iwuy",
+  "authors": "André HOURIEZ, Martial BISIAUX et Gérard DOMISE-PAGNEN",
+  "details": "349 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF82.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF82b.jpg",
+  "pages": [
+   "page-102",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF83",
+  "kind": "livre",
+  "title": "Iwuy",
+  "authors": "André HOURIEZ, Martial BISIAUX et Gérard DOMISE-PAGNEN",
+  "details": "379 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF83.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF83b.jpg",
+  "pages": [
+   "page-102",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF84",
+  "kind": "livre",
+  "title": "Iwuy",
+  "authors": "André HOURIEZ, Martial BISIAUX et Gérard DOMISE-PAGNEN",
+  "details": "285 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF84.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF84b.jpg",
+  "pages": [
+   "page-102",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF85",
+  "kind": "livre",
+  "title": "Iwuy",
+  "authors": "André HOURIEZ, Martial BISIAUX et Gérard DOMISE-PAGNEN",
+  "details": "322 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF85.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF85b.jpg",
+  "pages": [
+   "page-102",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF86",
+  "kind": "livre",
+  "title": "Iwuy",
+  "authors": "André HOURIEZ, Martial BISIAUX et Gérard DOMISE-PAGNEN",
+  "details": "320 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF86.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF86b.jpg",
+  "pages": [
+   "page-102",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF87",
+  "kind": "livre",
+  "title": "Bévillers",
+  "authors": "Patrice GUINET et Gérard DOMISE-PAGNEN",
+  "details": "258 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF87.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF87b.jpg",
+  "pages": [
+   "page-103",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF88",
+  "kind": "livre",
+  "title": "Bévillers",
+  "authors": "Patrice GUINET et Gérard DOMISE-PAGNEN",
+  "details": "359 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF88.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF88b.jpg",
+  "pages": [
+   "page-103",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF89",
+  "kind": "livre",
+  "title": "Viesly",
+  "authors": "Daniel HERBIN et Gérard DOMISE-PAGNEN",
+  "details": "400 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF89.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF89b.jpg",
+  "pages": [
+   "page-104",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF90",
+  "kind": "livre",
+  "title": "Viesly",
+  "authors": "Daniel HERBIN et Gérard DOMISE-PAGNEN",
+  "details": "362 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF90.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF90b.jpg",
+  "pages": [
+   "page-104",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF91",
+  "kind": "livre",
+  "title": "Viesly",
+  "authors": "Daniel HERBIN et Gérard DOMISE-PAGNEN",
+  "details": "418 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF91.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF91b.jpg",
+  "pages": [
+   "page-104",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF92",
+  "kind": "livre",
+  "title": "Baralle",
+  "authors": "Jean-Michel FOULON et Gérard DOMISE-PAGNEN",
+  "details": "404 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF92.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF92b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF93",
+  "kind": "livre",
+  "title": "Sauchy-Cauchy",
+  "authors": "Éveline MERCIER et Gérard DOMISE-PAGNEN",
+  "details": "426 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF93.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF93b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF94",
+  "kind": "livre",
+  "title": "Sauchy-Lestrée",
+  "authors": "Éveline MERCIER et Gérard DOMISE-PAGNEN",
+  "details": "285 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF94.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF94b.jpg",
+  "pages": [
+   "page-108",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF95",
+  "kind": "livre",
+  "title": "Sauchy-Lestrée",
+  "authors": "Éveline MERCIER et Gérard DOMISE-PAGNEN",
+  "details": "288 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF95.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF95b.jpg",
+  "pages": [
+   "page-108",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF96",
+  "kind": "livre",
+  "title": "Eswars",
+  "authors": "Daniel VÉREZ, Albert LEMOINE et Gérard DOMISE-PAGNEN",
+  "details": "259 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF96.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF96b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF97",
+  "kind": "livre",
+  "title": "Épinoy",
+  "authors": "Éveline MERCIER et Gérard DOMISE-PAGNEN",
+  "details": "257 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF97.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF97b.jpg",
+  "pages": [
+   "page-110",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF98",
+  "kind": "livre",
+  "title": "Épinoy",
+  "authors": "Éveline MERCIER et Gérard DOMISE-PAGNEN",
+  "details": "256 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF98.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF98b.jpg",
+  "pages": [
+   "page-110",
+   "page-26"
+  ]
+ },
+ {
+  "ref": "DF99",
+  "kind": "livre",
+  "title": "Villers-lès-Cagnicourt",
+  "authors": "Jean-Michel FOULON et Gérard DOMISE-PAGNEN",
+  "details": "216 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/DF99.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/DF99b.jpg",
+  "pages": [
+   "page-26"
+  ]
+ },
+ {
+  "ref": "EG01",
+  "kind": "livre",
+  "title": "L'histoire de Beaumont dans le Cambrésis",
+  "authors": "Daniel HERBIN",
+  "details": "81 pages",
+  "price_paper": 15.0,
+  "price_digital": 5.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG01.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG01b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG02",
+  "kind": "livre",
+  "title": "Chronique de Villers-en-Cauchies",
+  "authors": "Pierre et Nicole MÉRIAUX",
+  "details": "104 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG02.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG02b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG03",
+  "kind": "livre",
+  "title": "Le répertoire de Maître TABARY, notaire à Cambrai",
+  "authors": "Daniel NORMAND",
+  "details": "1804 164 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG03.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG03b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG04",
+  "kind": "livre",
+  "title": "Le répertoire de Maître TABARY, notaire à Cambrai",
+  "authors": "Daniel NORMAND",
+  "details": "172 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG04.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG04b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG05",
+  "kind": "livre",
+  "title": "Le répertoire de Maître TABARY, notaire à Cambrai",
+  "authors": "Daniel NORMAND",
+  "details": "200 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG05.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG05b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG06",
+  "kind": "livre",
+  "title": "Ascendance et parentèle de Jean YANNE sur Estrun",
+  "authors": "Gérard DOMISE-PAGNEN",
+  "details": "28 pages",
+  "price_paper": 5.0,
+  "price_digital": null,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG06.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG06b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG08",
+  "kind": "livre",
+  "title": "Les manuscrits de l'abbé MUTTE",
+  "authors": "Robert ROLAND (†) et Jean DOFFE",
+  "details": "50 pages",
+  "price_paper": 10.0,
+  "price_digital": 5.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG08.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG08b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG09",
+  "kind": "livre",
+  "title": "Tabellion de Cambrai",
+  "authors": "Robert ROLAND (†) et Jean DOFFE",
+  "details": "208 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG09.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG09b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG10",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Fontaine-Notre-Dame morts pour la France",
+  "authors": "Pierre PIETRZAK et Christian JARRELOT",
+  "details": "316 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG10.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG10b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG100",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de La Groise morts pour la France",
+  "authors": "Pierre DÉMARET",
+  "details": "139 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG100.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG100b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG101",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Landrecies morts pour la France",
+  "authors": "Pierre DÉMARET",
+  "details": "370 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG101.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG101b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG102",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Landrecies morts pour la France",
+  "authors": "Pierre DÉMARET",
+  "details": "284 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG102.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG102b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG103",
+  "kind": "livre",
+  "title": "Les \"Poilus\" du Cateau-Cambrésis morts pour la France",
+  "authors": "Pierre DÉMARET",
+  "details": "1914 357 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG103.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG103b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG104",
+  "kind": "livre",
+  "title": "Les \"Poilus\" du Cateau-Cambrésis morts pour la France",
+  "authors": "Pierre DÉMARET",
+  "details": "1915 317 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG104.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG104b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG105",
+  "kind": "livre",
+  "title": "Les \"Poilus\" du Cateau-Cambrésis morts pour la France",
+  "authors": "Pierre DÉMARET",
+  "details": "1916 269 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG105.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG105b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG106",
+  "kind": "livre",
+  "title": "Les \"Poilus\" du Cateau-Cambrésis morts pour la France",
+  "authors": "Pierre DÉMARET",
+  "details": "1918 303 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG106.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG106b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG107",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Pommereuil morts pour la France",
+  "authors": "Pierre DÉMARET",
+  "details": "346 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG107.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG107b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG108",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Mazinghien morts pour la France",
+  "authors": "Pierre DÉMARET",
+  "details": "125 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG108.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG108b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG109",
+  "kind": "livre",
+  "title": "Les \"Poilus\" d'Ors morts pour la France",
+  "authors": "Pierre DÉMARET",
+  "details": "223 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG109.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG109b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG11",
+  "kind": "livre",
+  "title": "La monographie de Fontaine-Notre-Dame",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN et Christian JARRELOT",
+  "details": "285 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG11.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG11b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG110",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Rejet-de-Beaulieu morts pour la France",
+  "authors": "Pierre DÉMARET",
+  "details": "136 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG110.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG110b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG111",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Dehéries morts pour la France",
+  "authors": "Pierre DÉMARET",
+  "details": "53 pages",
+  "price_paper": 10.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG111.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG111b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG113",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Troisvilles morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "287 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG113.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG113b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG114",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Rieux-en-Cambrésis morts pour la France (2e édition)",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "272 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG114.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG114b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG115",
+  "kind": "livre",
+  "title": "Les \"Poilus\" d'Hendecourt-lès-Cagnicourt morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "227 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG115.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG115b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG116",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Graincourt-lès-Havrincourt morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "247 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG116.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG116b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG117",
+  "kind": "livre",
+  "title": "Les \"Poilus\" d'Esnes morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "300 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG117.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG117b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG118",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Briastre morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "236 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG118.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG118b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG119",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Naves morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "239 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG119.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG119b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG12",
+  "kind": "livre",
+  "title": "Voyage en cartes postales et photographies dans le village de Fontaine-Notre-Dame",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN et Christian JARRELOT",
+  "details": "300 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG12.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG12b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG120",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Boussières-en-Cambrésis morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "237 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG120.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG120b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG121",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Saint-Hilaire-lez-Cambrai morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "315 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG121.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG121b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG122",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Saint-Vaast-en-Cambrésis morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "310 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG122.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG122b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG123",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Béthencourt morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "282 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG123.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG123b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG125",
+  "kind": "livre",
+  "title": "Les Catillonnais hors du commun",
+  "authors": "Pierre DÉMARET",
+  "details": "195 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG125.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG125b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG126",
+  "kind": "livre",
+  "title": "Catillon-sur-Sambre, les combats des 17, 18, 19 mai 1940",
+  "authors": "Pierre DÉMARET",
+  "details": "156 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG126.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG126b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG127",
+  "kind": "livre",
+  "title": "Les \"Poilus\" d'Estourmel morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "222 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG127.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG127b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG129",
+  "kind": "livre",
+  "title": "Diocèses de Cambrai et Lille 185 ecclésiastiques morts au champs d'honneur Guerre 1914-1918",
+  "authors": "Pierre DÉMARET",
+  "details": "185 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG129.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG129b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG13",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Cantaing-sur-Escaut morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "150 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG13.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG13b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG14",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Masnières morts pour la France (2e édition)",
+  "authors": "Jean DOFFE, Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "354 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG14.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG14b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG15",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Proville morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "150 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG15.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG15b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG16",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Marcoing morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "225 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG16.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG16b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG17",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Noyelles-sur-Escaut morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "150 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG17.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG17b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG18",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Neuville-Saint-Rémy morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "250 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG18.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG18b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG19",
+  "kind": "livre",
+  "title": "Les \"Poilus\" d'Escaudœuvres morts pour la France (3e édition)",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN et Gérard DOMISE-PAGNEN",
+  "details": "402 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG19.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG19b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG20",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Rumilly-en-Cambrésis morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "370 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG20.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG20b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG21",
+  "kind": "livre",
+  "title": "Louise, la fille de l'éclusier",
+  "authors": "Jean-Claude DEFER",
+  "details": "120 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG21.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG21b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG22",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Flesquières morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "178 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG22.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG22b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG23",
+  "kind": "livre",
+  "title": "Les \"Poilus\" d'Anneux morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "160 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG23.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG23b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG24",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Ribécourt-la-Tour morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "180 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG24.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG24b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG25",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Crèvecœur-sur-l'Escaut et des Rues-des-Vignes morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "",
+  "price_paper": null,
+  "price_digital": null,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/visuel_non_dispo.jpg",
+  "cover_big": null,
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG26",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Lesdain morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "207 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG26.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG26b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG27",
+  "kind": "livre",
+  "title": "Les \"Poilus\" d'Abancourt morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "168 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG27.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG27b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG28",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Gouzeaucourt morts pour la France (2e édition)",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "308 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG28.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG28b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG29",
+  "kind": "livre",
+  "title": "Les \"Poilus\" d'Honnecourt-sur-Escaut morts pour la France (2e édition)",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "270 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG29.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG29b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG30",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Gonnelieu morts pour la France (2e édition)",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "212 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG30.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG30b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG31",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Banteux morts pour la France (2e édition)",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "200 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG31.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG31b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG32",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Bantouzelle morts pour la France (2e édition)",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "211 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG32.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG32b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG33",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Villers-Guislain morts pour la France (2e édition)",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "296 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG33.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG33b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG34",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Villers-Plouich morts pour la France (2e édition)",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "241 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG34.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG34b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG35",
+  "kind": "livre",
+  "title": "Sainte Saturnine, une sainte européenne",
+  "authors": "Bertrand FAUVARQUE",
+  "details": "25 pages",
+  "price_paper": 5.0,
+  "price_digital": null,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG35.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG35b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG36",
+  "kind": "livre",
+  "title": "L'histoire de Proville racontée à Amandine par Papa Charlie",
+  "authors": "Jean-Claude DEFER et Michel LEFEBVRE",
+  "details": "135 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG36.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG36b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG37",
+  "kind": "livre",
+  "title": "La chapelle CRÉPIN (Notre-Dame-des-Champs) à Proville",
+  "authors": "Jean-Claude DEFER",
+  "details": "61 pages",
+  "price_paper": 15.0,
+  "price_digital": 5.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG37.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG37b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG38",
+  "kind": "livre",
+  "title": "Le livre d'or des Petites Sœurs des Pauvres d'Escaudœuvres",
+  "authors": "Gérard DOMISE-PAGNEN",
+  "details": "170 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG38.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG38b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG39",
+  "kind": "livre",
+  "title": "Les \"Poilus\" d'Awoingt morts pour la France",
+  "authors": "Patrice GUINET et Pierre PIETRZAK",
+  "details": "177 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG39.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG39b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG40",
+  "kind": "livre",
+  "title": "Les \"Poilus\" d'Iwuy morts pour la France (2e édition)",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "307 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG40.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG40b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG41",
+  "kind": "livre",
+  "title": "Les \"Poilus\" d'Aubencheul-au-Bac morts pour la France",
+  "authors": "Pierre PIETRZAK, Isabelle PIETRZAK-DELALIN et Christian DUMONT",
+  "details": "173 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG41.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG41b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG42",
+  "kind": "livre",
+  "title": "Les \"Poilus\" d'Haynecourt morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "184 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG42.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG42b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG43",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Sailly-lez-Cambrai morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "192 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG43.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG43b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG44",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Cagnoncles morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "168 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG44.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG44b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG45",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Quéant morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "205 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG45.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG45b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG46",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Doignies morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "170 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG46.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG46b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG47",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Vélu morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "144 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG47.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG47b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG48",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Lebucquière morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "169 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG48.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG48b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG49",
+  "kind": "livre",
+  "title": "Les \"Poilus\" d'Hem-Lenglet morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "170 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG49.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG49b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG50",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Quiévy morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "353 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG50.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG50b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG51",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Cambrai morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "391 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG51.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG51b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG52",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Cambrai morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "263 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG52.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG52b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG53",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Carnières morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "",
+  "price_paper": null,
+  "price_digital": null,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/visuel_non_dispo.jpg",
+  "cover_big": null,
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG54",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Séranvillers et Forenville morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN et Bruno BARRIER",
+  "details": "182 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG54.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG54b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG55",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Caudry morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "240 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG55.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG55b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG56",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Caudry morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "234 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG56.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG56b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG57",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Trescault morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "162 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG57.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG57b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG58",
+  "kind": "livre",
+  "title": "Les \"Poilus\" d'Hermies morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "251 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG58.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG58b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG59",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Marquion morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "184 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG59.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG59b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG60",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Sancourt morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "160 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG60.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG60b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG61",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Boursies morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "178 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG61.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG61b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG62",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Beaumont-en-Cambrésis morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "221 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG62.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG62b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG63",
+  "kind": "livre",
+  "title": "Les \"Poilus\" d'Inchy morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "223 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG63.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG63b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG64",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Raillencourt-Sainte-Olle morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "277 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG64.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG64b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG65",
+  "kind": "livre",
+  "title": "Les \"Poilus\" d'Honnechy morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "220 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG65.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG65b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG66",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Blécourt morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "165 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG66.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG66b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG67",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Maurois morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "209 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG67.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG67b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG68",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Mœuvres morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "194 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG68.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG68b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG69",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Viesly morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "300 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG69.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG69b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG70",
+  "kind": "livre",
+  "title": "L'histoire de Proville racontée à Amandine par Papa Charlie",
+  "authors": "Jean-Claude DEFER et Michel LEFEBVRE",
+  "details": "155 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG70.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG70b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG71",
+  "kind": "livre",
+  "title": "\"Notre village au fil du temps... Participation à l'histoire de Metz-en-Couture (Pas-de-Calais)\"",
+  "authors": "Jacques DUCAMP",
+  "details": "264 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG71.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG71b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG72",
+  "kind": "livre",
+  "title": "\"Notre village au fil du temps... Participation à l'histoire de Metz-en-Couture (Pas-de-Calais)\"",
+  "authors": "Jacques DUCAMP",
+  "details": "253 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG72.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG72b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG73",
+  "kind": "livre",
+  "title": "\"Notre village au fil du temps... Participation à l'histoire de Metz-en-Couture (Pas-de-Calais)\"",
+  "authors": "Jacques DUCAMP",
+  "details": "257 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG73.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG73b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG74",
+  "kind": "livre",
+  "title": "\"Notre village au fil du temps... Participation à l'histoire de Metz-en-Couture (Pas-de-Calais)\"",
+  "authors": "Jacques DUCAMP",
+  "details": "291 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG74.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG74b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG75",
+  "kind": "livre",
+  "title": "\"Notre village au fil du temps... Participation à l'histoire de Metz-en-Couture (Pas-de-Calais)\"",
+  "authors": "Jacques DUCAMP",
+  "details": "302 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG75.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG75b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG76",
+  "kind": "livre",
+  "title": "\"Notre village au fil du temps... Participation à l'histoire de Metz-en-Couture (Pas-de-Calais)\"",
+  "authors": "Jacques DUCAMP",
+  "details": "268 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG76.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG76b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG77",
+  "kind": "livre",
+  "title": "\"Notre village au fil du temps... Participation à l'histoire de Metz-en-Couture (Pas-de-Calais)\"",
+  "authors": "Jacques DUCAMP",
+  "details": "309 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG77.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG77b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG78",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Cuvillers morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "184 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG78.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG78b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG79",
+  "kind": "livre",
+  "title": "Histoire et patrimoine de Busigny depuis la Préhistoire",
+  "authors": "Michel CASIEZ",
+  "details": "452 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG79.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG79b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG80",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Pronville-en-Artois morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "199 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG80.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG80b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG81",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Sains-lès-Marquion morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "166 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG81.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG81b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG82",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Bantigny morts pour la France",
+  "authors": "Raymond LEFEBVRE, Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "",
+  "price_paper": null,
+  "price_digital": null,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/visuel_non_dispo.jpg",
+  "cover_big": null,
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG83",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Buissy morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "169 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG83.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG83b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG84",
+  "kind": "livre",
+  "title": "Les \"Poilus\" d'Inchy-en-Artois morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "260 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG84.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG84b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG85",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Ramillies morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "255 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG85.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG85b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG86",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Baralle morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "216 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG86.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG86b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG87",
+  "kind": "livre",
+  "title": "1917-2017, Charlie raconte aux enfants la bataille de Cambrai",
+  "authors": "Jean-Claude DEFER",
+  "details": "90 pages",
+  "price_paper": 15.0,
+  "price_digital": 5.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG87.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG87b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG88",
+  "kind": "livre",
+  "title": "Chroniques d'un notable provillois : Jean CHENU",
+  "authors": "Jean-Pierre MICHAUT",
+  "details": "53 pages",
+  "price_paper": 10.0,
+  "price_digital": 5.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG88.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG88b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG89",
+  "kind": "livre",
+  "title": "Les \"Poilus\" d'Écourt-Saint-Quentin morts pour la France",
+  "authors": "Thierry WIART, Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "338 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG89.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG89b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG90",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Sauchy-Lestrée morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "225 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG90.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG90b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG91",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Sauchy-Cauchy morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "197 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG91.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG91b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG92",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Thun-l'Évêque morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "250 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG92.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG92b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG93",
+  "kind": "livre",
+  "title": "Les \"Poilus\" d'Eswars morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "147 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG93.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG93b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG94",
+  "kind": "livre",
+  "title": "Les \"Poilus\" d'Épinoy morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "214 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG94.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG94b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG95",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Villers-lès-Cagnicourt morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "187 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG95.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG95b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG96",
+  "kind": "livre",
+  "title": "Mes jeunes années neuvilloises et cambrésiennes",
+  "authors": "Jean-Claude DEFER",
+  "details": "250 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG96.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG96b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG97",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Cauroir morts pour la France",
+  "authors": "Isabelle et Pierre PIETRZAK-DELALIN",
+  "details": "189 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG97.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG97b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG98",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Bazuel morts pour la France",
+  "authors": "Pierre DÉMARET",
+  "details": "151 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG98.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG98b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "EG99",
+  "kind": "livre",
+  "title": "Les \"Poilus\" de Catillon-sur-Sambre morts pour la France",
+  "authors": "Pierre DÉMARET",
+  "details": "361 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": true,
+  "cover": "https://www.ggac.fr/fichiers/image/EG99.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/EG99b.jpg",
+  "pages": [
+   "page-23"
+  ]
+ },
+ {
+  "ref": "FC01",
+  "kind": "livre",
+  "title": "Les PLUVINAGE",
+  "authors": "Charles SÉGARD et Maurice LEVEUGLE",
+  "details": "120 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/FC01.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/FC01b.jpg",
+  "pages": [
+   "page-25"
+  ]
+ },
+ {
+  "ref": "FC03",
+  "kind": "livre",
+  "title": "Malincourt",
+  "authors": "Jean-Pierre GION et Gilles MESNIL",
+  "details": "184 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/FC03.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/FC03b.jpg",
+  "pages": [
+   "page-25"
+  ]
+ },
+ {
+  "ref": "FC06",
+  "kind": "livre",
+  "title": "Busigny",
+  "authors": "Philippe DERIEUX",
+  "details": "114 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/FC06.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/FC06b.jpg",
+  "pages": [
+   "page-25"
+  ]
+ },
+ {
+  "ref": "FC08",
+  "kind": "livre",
+  "title": "Montrécourt",
+  "authors": "Michel LEDUC et Gérard DOMISE-PAGNEN",
+  "details": "38 pages",
+  "price_paper": 10.0,
+  "price_digital": 5.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/FC08.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/FC08b.jpg",
+  "pages": [
+   "page-25"
+  ]
+ },
+ {
+  "ref": "FC09",
+  "kind": "livre",
+  "title": "Cambrai (paroisse Saint-Aubert)",
+  "authors": "Jean DOFFE",
+  "details": "12 pages",
+  "price_paper": 5.0,
+  "price_digital": null,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/FC09.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/FC09b.jpg",
+  "pages": [
+   "page-25"
+  ]
+ },
+ {
+  "ref": "FC10",
+  "kind": "livre",
+  "title": "Cambrai (paroisse Sainte-Croix)",
+  "authors": "Jean DOFFE",
+  "details": "127 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/FC10.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/FC10b.jpg",
+  "pages": [
+   "page-25"
+  ]
+ },
+ {
+  "ref": "FC16",
+  "kind": "livre",
+  "title": "Bullecourt",
+  "authors": "Jean-Claude FOURNIER",
+  "details": "50 pages",
+  "price_paper": 10.0,
+  "price_digital": 5.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/FC16.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/FC16b.jpg",
+  "pages": [
+   "page-25"
+  ]
+ },
+ {
+  "ref": "FC17",
+  "kind": "livre",
+  "title": "Écourt-Saint-Quentin",
+  "authors": "Gérard DELFOLIE",
+  "details": "118 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/FC17.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/FC17b.jpg",
+  "pages": [
+   "page-25"
+  ]
+ },
+ {
+  "ref": "FC18",
+  "kind": "livre",
+  "title": "Écourt-Saint-Quentin",
+  "authors": "Gérard DELFOLIE",
+  "details": "136 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/FC18.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/FC18b.jpg",
+  "pages": [
+   "page-25"
+  ]
+ },
+ {
+  "ref": "FC19",
+  "kind": "livre",
+  "title": "Boiry-Notre-Dame",
+  "authors": "Jean-Claude FOURNIER",
+  "details": "34 pages",
+  "price_paper": 10.0,
+  "price_digital": 5.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/FC19.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/FC19b.jpg",
+  "pages": [
+   "page-25"
+  ]
+ },
+ {
+  "ref": "FC22",
+  "kind": "livre",
+  "title": "Saint-Aubert",
+  "authors": "Philippe BARBET",
+  "details": "160 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/FC22.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/FC22b.jpg",
+  "pages": [
+   "page-25"
+  ]
+ },
+ {
+  "ref": "FC23",
+  "kind": "livre",
+  "title": "Saint-Aubert",
+  "authors": "Philippe BARBET",
+  "details": "160 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/FC23.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/FC23b.jpg",
+  "pages": [
+   "page-25"
+  ]
+ },
+ {
+  "ref": "FC24",
+  "kind": "livre",
+  "title": "Saint-Aubert",
+  "authors": "Philippe BARBET",
+  "details": "276 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/FC24.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/FC24b.jpg",
+  "pages": [
+   "page-25"
+  ]
+ },
+ {
+  "ref": "FC25",
+  "kind": "livre",
+  "title": "Saint-Aubert",
+  "authors": "Philippe BARBET",
+  "details": "289 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/FC25.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/FC25b.jpg",
+  "pages": [
+   "page-25"
+  ]
+ },
+ {
+  "ref": "FC30",
+  "kind": "livre",
+  "title": "Havrincourt",
+  "authors": "Gérard DELFOLIE",
+  "details": "204 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/FC30.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/FC30b.jpg",
+  "pages": [
+   "page-25"
+  ]
+ },
+ {
+  "ref": "FC31",
+  "kind": "livre",
+  "title": "Saint-Aubert",
+  "authors": "Philippe BARBET",
+  "details": "283 pages",
+  "price_paper": 30.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/FC31.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/FC31b.jpg",
+  "pages": [
+   "page-25"
+  ]
+ },
+ {
+  "ref": "FC32",
+  "kind": "livre",
+  "title": "Saint-Aubert",
+  "authors": "Philippe BARBET",
+  "details": "213 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/FC32.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/FC32b.jpg",
+  "pages": [
+   "page-25"
+  ]
+ },
+ {
+  "ref": "FC34",
+  "kind": "livre",
+  "title": "Les DISLAIRE",
+  "authors": "Daniel DISLAIRE",
+  "details": "91 pages",
+  "price_paper": 20.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/FC34.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/FC34b.jpg",
+  "pages": [
+   "page-25"
+  ]
+ },
+ {
+  "ref": "FC35",
+  "kind": "livre",
+  "title": "Saudemont",
+  "authors": "Gérard DELFOLIE",
+  "details": "37 pages",
+  "price_paper": 10.0,
+  "price_digital": 5.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/FC35.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/FC35b.jpg",
+  "pages": [
+   "page-25"
+  ]
+ },
+ {
+  "ref": "FC36",
+  "kind": "livre",
+  "title": "Hem-Lenglet",
+  "authors": "Claude WILS",
+  "details": "200 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/FC36.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/FC36b.jpg",
+  "pages": [
+   "page-25"
+  ]
+ },
+ {
+  "ref": "FC40",
+  "kind": "livre",
+  "title": "Saint-Aubert",
+  "authors": "Philippe BARBET",
+  "details": "350 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/FC40.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/FC40b.jpg",
+  "pages": [
+   "page-25"
+  ]
+ },
+ {
+  "ref": "FC41",
+  "kind": "livre",
+  "title": "Saint-Aubert",
+  "authors": "Philippe BARBET",
+  "details": "350 pages",
+  "price_paper": 35.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/FC41.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/FC41b.jpg",
+  "pages": [
+   "page-25"
+  ]
+ },
+ {
+  "ref": "FC54",
+  "kind": "livre",
+  "title": "Fressain",
+  "authors": "Serge MOREAU",
+  "details": "234 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/FC54.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/FC54b.jpg",
+  "pages": [
+   "page-25"
+  ]
+ },
+ {
+  "ref": "FC60",
+  "kind": "livre",
+  "title": "Palluel",
+  "authors": "Gérard DELFOLIE",
+  "details": "26 pages",
+  "price_paper": 5.0,
+  "price_digital": null,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/FC60.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/FC60b.jpg",
+  "pages": [
+   "page-25"
+  ]
+ },
+ {
+  "ref": "GC01",
+  "kind": "livre",
+  "title": "Histoire des familles du Cambrésis - Tome 1",
+  "authors": "Jean DOFFE",
+  "details": "246 pages",
+  "price_paper": 25.0,
+  "price_digital": 10.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/GC01.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/GC01b.jpg",
+  "pages": [
+   "page-24"
+  ]
+ },
+ {
+  "ref": "GC02",
+  "kind": "livre",
+  "title": "Généalogie de HOVES, DOFFE",
+  "authors": "Jean DOFFE",
+  "details": "78 pages",
+  "price_paper": 15.0,
+  "price_digital": 5.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/GC02.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/GC02b.jpg",
+  "pages": [
+   "page-24"
+  ]
+ },
+ {
+  "ref": "GC03",
+  "kind": "livre",
+  "title": "Famille MITTERRAND, ascendance de Frédéric MITTERRAND",
+  "authors": "Jean DOFFE et Gérard DOMISE-PAGNEN",
+  "details": "86 pages",
+  "price_paper": 15.0,
+  "price_digital": 5.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/GC03.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/GC03b.jpg",
+  "pages": [
+   "page-24"
+  ]
+ },
+ {
+  "ref": "GC04",
+  "kind": "livre",
+  "title": "Descendance d'Hubert BOCQUET d'Escaudœuvres",
+  "authors": "Gérard DOMISE-PAGNEN",
+  "details": "65 pages",
+  "price_paper": 15.0,
+  "price_digital": 5.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/GC04.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/GC04b.jpg",
+  "pages": [
+   "page-24"
+  ]
+ },
+ {
+  "ref": "GC05",
+  "kind": "livre",
+  "title": "Masnières, généalogies verrières",
+  "authors": "Jean DOFFE",
+  "details": "48 pages",
+  "price_paper": 10.0,
+  "price_digital": 5.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/GC05.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/GC05b.jpg",
+  "pages": [
+   "page-24"
+  ]
+ },
+ {
+  "ref": "GC06",
+  "kind": "livre",
+  "title": "Généalogie et étude des BALIQUE",
+  "authors": "Didier FRÉMICOURT, Jean DOFFE et Bernadette FLAHAUT",
+  "details": "51 pages",
+  "price_paper": 10.0,
+  "price_digital": 5.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/GC06.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/GC06b.jpg",
+  "pages": [
+   "page-24"
+  ]
+ },
+ {
+  "ref": "GC07",
+  "kind": "livre",
+  "title": "Ils ont fait l'histoire des deux villages Inchy et Beaumont",
+  "authors": "Daniel HERBIN",
+  "details": "50 pages",
+  "price_paper": 10.0,
+  "price_digital": 5.0,
+  "digital_members_only": true,
+  "digital_free_members": false,
+  "luxe": false,
+  "cover": "https://www.ggac.fr/fichiers/image/GC07.jpg",
+  "cover_big": "https://www.ggac.fr/fichiers/image/GC07b.jpg",
+  "pages": [
+   "page-24"
+  ]
+ }
+]

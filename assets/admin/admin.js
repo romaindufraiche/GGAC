@@ -110,7 +110,7 @@
       const q = filter.value.trim().toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
       rows.forEach((r) => {
         const t = r.dataset.text.normalize("NFD").replace(/[̀-ͯ]/g, "");
-        r.hidden = !(t.includes(q) && (!section || r.dataset.section === section));
+        r.hidden = !(t.includes(q) && (!section || r.dataset.section === section || r.dataset.section2 === section));
       });
     };
     filter.addEventListener("input", apply);
@@ -133,6 +133,13 @@
       setTimeout(() => (b.textContent = old), 1500);
     })
   );
+  $$("[data-copy-text]").forEach((b) => b.addEventListener("click", async () => {
+    try { await navigator.clipboard.writeText(b.dataset.copyText); b.textContent = "Copié ✓"; } catch { prompt("Liste :", b.dataset.copyText); }
+  }));
+  $$("[data-pick-into]").forEach((b) => b.addEventListener("click", async () => {
+    const url = await pickMedia();
+    if (url) { const f = b.form.querySelector(`[name="${b.dataset.pickInto}"]`); f.value = url; f.dispatchEvent(new Event("input")); }
+  }));
   $$("[data-pick]").forEach((b) => b.addEventListener("click", () => window.parent.postMessage({ ggacPick: b.dataset.pick }, location.origin)));
 
   function pickMedia() {

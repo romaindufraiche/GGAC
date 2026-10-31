@@ -99,6 +99,46 @@ CREATE TABLE IF NOT EXISTS permanences (
   hours TEXT NOT NULL DEFAULT 'de 14h00 à 17h00'
 );
 
+CREATE TABLE IF NOT EXISTS products (
+  id SERIAL PRIMARY KEY,
+  ref TEXT UNIQUE NOT NULL,
+  kind TEXT NOT NULL DEFAULT 'livre',
+  title TEXT NOT NULL,
+  authors TEXT NOT NULL DEFAULT '',
+  details TEXT NOT NULL DEFAULT '',
+  price_paper NUMERIC(8,2),
+  price_digital NUMERIC(8,2),
+  digital_members_only BOOLEAN NOT NULL DEFAULT true,
+  digital_free_members BOOLEAN NOT NULL DEFAULT false,
+  luxe BOOLEAN NOT NULL DEFAULT false,
+  cover TEXT,
+  cover_big TEXT,
+  pages TEXT[] NOT NULL DEFAULT '{}',
+  pdf_media_id INT REFERENCES media(id) ON DELETE SET NULL,
+  read_access TEXT NOT NULL DEFAULT 'achat',
+  active BOOLEAN NOT NULL DEFAULT true,
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+CREATE TABLE IF NOT EXISTS orders (
+  id SERIAL PRIMARY KEY,
+  number TEXT UNIQUE NOT NULL,
+  token TEXT UNIQUE NOT NULL,
+  user_id INT REFERENCES users(id) ON DELETE SET NULL,
+  status TEXT NOT NULL DEFAULT 'nouvelle',
+  customer JSONB NOT NULL,
+  zone TEXT NOT NULL DEFAULT 'france',
+  items JSONB NOT NULL,
+  subtotal NUMERIC(10,2) NOT NULL,
+  shipping NUMERIC(10,2),
+  total NUMERIC(10,2) NOT NULL,
+  payment TEXT NOT NULL DEFAULT '',
+  note TEXT NOT NULL DEFAULT '',
+  admin_note TEXT NOT NULL DEFAULT '',
+  created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
 CREATE TABLE IF NOT EXISTS activity (
   id SERIAL PRIMARY KEY,
   user_id INT REFERENCES users(id) ON DELETE SET NULL,
@@ -178,6 +218,29 @@ async function migrate() {
       client.release();
     }
     console.log(`${data.pages.length} pages importées.`);
+  }
+
+  // Catalogue de la boutique
+  const prod = await q("SELECT count(*)::int AS n FROM products");
+  if (prod.rows[0].n === 0 && fs.existsSync(path.join(seedDir, "catalog.json"))) {
+    const cat = JSON.parse(fs.readFileSync(path.join(seedDir, "catalog.json"), "utf8"));
+    for (const p of cat) {
+      await q(
+        `INSERT INTO products(ref,kind,title,authors,details,price_paper,price_digital,digital_members_only,digital_free_members,luxe,cover,cover_big,pages,read_access)
+         VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14) ON CONFLICT (ref) DO NOTHING`,
+        [p.ref, p.kind, p.title, p.authors || "", p.details || "", p.price_paper, p.price_digital, !!p.digital_members_only, !!p.digital_free_members, !!p.luxe, p.cover, p.cover_big, p.pages || [], p.kind === "farda" ? "membres" : "achat"]
+      );
+    }
+    console.log(`${cat.length} publications importées dans la boutique.`);
+  }
+  if ((await getSetting("shipping")) === null) {
+    await setSetting("shipping", {
+      livre: { label: "Livres", type: "paliers", france: [{ max: 1, price: 9 }, { max: 2, price: 12 }, { max: 6, price: 18 }, { max: null, price: 25 }], monde: null },
+      farda: { label: "Farda", type: "unitaire", france: 4.3, monde: 7 },
+    });
+    await setSetting("luxe_supplement", 12);
+    await setSetting("payment_text",
+      "<p>Le règlement s'effectue à l'ordre du G.G.A.C. selon les moyens suivants :</p><ul><li>pour la France : par chèque ou mandat postal.</li><li>pour l'étranger : par mandat postal international ou International Money Order en euros (seules possibilités acceptées).</li><li>pour tous : en espèces lors des permanences.</li></ul>");
   }
 
   // Premier compte administrateur
