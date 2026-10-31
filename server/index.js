@@ -6,6 +6,7 @@ const db = require("./db");
 const render = require("./render");
 const admin = require("./admin");
 const shop = require("./shop");
+const genealogy = require("./genealogy");
 
 const app = express();
 app.disable("x-powered-by");
@@ -74,6 +75,7 @@ app.use("/admin", admin.router);
 
 // Boutique, espace membre, liseuse
 app.use(shop.router);
+app.use(genealogy.router);
 
 // Pages du site
 app.get("/:slug.html", async (req, res, next) => {

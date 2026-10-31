@@ -122,6 +122,7 @@ const ICONS = {
   plus: '<path d="M12 5v14M5 12h14"/>',
   trash: '<path d="M3 6h18M8 6V4h8v2M6 6l1 15h10l1-15"/>',
   edit: '<path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/>',
+  tree: '<path d="M12 22v-8M12 17l-5-4M12 15l5-5"/><circle cx="6" cy="10" r="3.2"/><circle cx="17" cy="8" r="3.4"/><circle cx="11.5" cy="6" r="4"/>',
   book: '<path d="M4 4h6a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H4zM20 4h-6a3 3 0 0 0-3 3v13a2 2 0 0 1 2-2h7z"/>',
   cart: '<path d="M3 4h2l2.4 11.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 8H6.2"/><circle cx="9" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/>',
   clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/>',
@@ -146,6 +147,7 @@ function adminPage(req, { title, active = "", body, actions = "", scripts = "", 
     ["pages", "page", "Pages"],
     ["menus", "menu", "Menus"],
     ["boutique", "book", "Boutique"],
+    ["genealogie", "tree", "Généalogie"],
     ["commandes", "cart", `Commandes${req.newOrders ? ` <em class="badge">${req.newOrders}</em>` : ""}`],
     ["medias", "img", "Médiathèque"],
     ...(req.user.role === "admin" ? [["utilisateurs", "users", "Utilisateurs"], ["reglages", "cog", "Réglages"]] : []),
@@ -1146,5 +1148,8 @@ router.post("/commandes/:number", wrap(async (req, res, next) => {
   if (status !== o.status) await db.log(req.user.id, `a passé la commande au statut « ${shop.STATUS[status]} » :`, o.number, `/admin/commandes/${o.number}`);
   res.redirect(`/admin/commandes/${o.number}?ok=saved`);
 }));
+
+// Généalogie (arbres, GEDCOM, personnes, familles)
+require("./admin-genealogy")(router, { adminPage, csrfField, icon, wrap, requireAdmin, fmtDateTime });
 
 module.exports = { router };

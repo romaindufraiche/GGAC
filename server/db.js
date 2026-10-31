@@ -139,6 +139,59 @@ CREATE TABLE IF NOT EXISTS orders (
   updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
+CREATE TABLE IF NOT EXISTS gen_trees (
+  id TEXT PRIMARY KEY,
+  name TEXT NOT NULL,
+  description TEXT NOT NULL DEFAULT '',
+  source TEXT NOT NULL DEFAULT '',
+  imported_at TIMESTAMPTZ,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+CREATE TABLE IF NOT EXISTS gen_people (
+  tree TEXT NOT NULL REFERENCES gen_trees(id) ON DELETE CASCADE,
+  id TEXT NOT NULL,
+  given TEXT NOT NULL DEFAULT '',
+  surname TEXT NOT NULL DEFAULT '',
+  suffix TEXT NOT NULL DEFAULT '',
+  sex CHAR(1) NOT NULL DEFAULT '',
+  alt_names TEXT[] NOT NULL DEFAULT '{}',
+  birth_date TEXT NOT NULL DEFAULT '', birth_place TEXT NOT NULL DEFAULT '', birth_year INT, birth_sort INT,
+  chr_date TEXT NOT NULL DEFAULT '', chr_place TEXT NOT NULL DEFAULT '', chr_year INT,
+  death_date TEXT NOT NULL DEFAULT '', death_place TEXT NOT NULL DEFAULT '', death_year INT,
+  buri_date TEXT NOT NULL DEFAULT '', buri_place TEXT NOT NULL DEFAULT '', buri_year INT,
+  crem BOOLEAN NOT NULL DEFAULT false,
+  deceased BOOLEAN NOT NULL DEFAULT false,
+  privacy TEXT NOT NULL DEFAULT 'auto',
+  living BOOLEAN NOT NULL DEFAULT false,
+  occupation TEXT NOT NULL DEFAULT '',
+  notes TEXT NOT NULL DEFAULT '',
+  branch TEXT NOT NULL DEFAULT '',
+  famc TEXT,
+  extra JSONB NOT NULL DEFAULT '[]',
+  n_given TEXT NOT NULL DEFAULT '', n_surname TEXT NOT NULL DEFAULT '', n_alt TEXT NOT NULL DEFAULT '',
+  n_birth_place TEXT NOT NULL DEFAULT '', n_chr_place TEXT NOT NULL DEFAULT '', n_death_place TEXT NOT NULL DEFAULT '', n_buri_place TEXT NOT NULL DEFAULT '',
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+  PRIMARY KEY (tree, id)
+);
+CREATE INDEX IF NOT EXISTS gen_people_surname ON gen_people(tree, n_surname, n_given);
+CREATE INDEX IF NOT EXISTS gen_people_famc ON gen_people(tree, famc);
+
+CREATE TABLE IF NOT EXISTS gen_families (
+  tree TEXT NOT NULL REFERENCES gen_trees(id) ON DELETE CASCADE,
+  id TEXT NOT NULL,
+  husband TEXT, wife TEXT,
+  children TEXT[] NOT NULL DEFAULT '{}',
+  marr_date TEXT NOT NULL DEFAULT '', marr_place TEXT NOT NULL DEFAULT '', marr_year INT,
+  div BOOLEAN NOT NULL DEFAULT false,
+  notes TEXT NOT NULL DEFAULT '',
+  extra JSONB NOT NULL DEFAULT '[]',
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+  PRIMARY KEY (tree, id)
+);
+CREATE INDEX IF NOT EXISTS gen_families_h ON gen_families(tree, husband);
+CREATE INDEX IF NOT EXISTS gen_families_w ON gen_families(tree, wife);
+
 CREATE TABLE IF NOT EXISTS activity (
   id SERIAL PRIMARY KEY,
   user_id INT REFERENCES users(id) ON DELETE SET NULL,

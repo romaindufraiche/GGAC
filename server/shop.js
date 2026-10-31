@@ -297,6 +297,8 @@ router.get("/espace-membre.html", wrap(async (req, res) => {
     main = `<div class="member">
       <div class="member-head"><p>Bonjour <strong>${esc(m.name || m.email)}</strong></p>
         <form method="post" action="/membre/deconnexion"><button class="btn-ink btn-ink--ghost" type="submit">Déconnexion</button></form></div>
+      <a class="member-gen" href="/genealogie"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 58V34M32 44l-11-9M32 40l11-11"/><circle cx="20" cy="28" r="9"/><circle cx="44" cy="22" r="10"/><circle cx="31" cy="20" r="12"/></svg>
+        <span><b>Arbres généalogiques</b><small>Recherche de personnes et de familles, fiches, arbres d'ascendance et de descendance</small></span></a>
       <h2 class="block__title">Ma bibliothèque</h2>
       ${lib.length ? `<div class="shelf">${lib
         .map((p, i) => `<a class="shelf__book" href="/lire/${encodeURIComponent(p.ref)}" style="--i:${Math.min(i, 30)}"><span class="shelf__cover">${p.cover ? `<img src="${esc(p.cover)}" alt="" loading="lazy">` : ""}</span><span class="shelf__title">${esc(p.title)}</span><span class="shelf__meta">${esc(p.details || "")}</span></a>`)
@@ -423,4 +425,4 @@ router.get("/pdf", (req, res) => {
   }).on("error", () => res.sendStatus(502));
 });
 
-module.exports = { router, invalidateCatalog, quote, STATUS, orderTable, eur };
+module.exports = { router, currentMember, invalidateCatalog, quote, STATUS, orderTable, eur };

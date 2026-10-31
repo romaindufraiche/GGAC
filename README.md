@@ -21,6 +21,18 @@ Refonte du site du Groupe des Généalogistes Amateurs du Cambrésis : site publ
 - **Médiathèque** : images et PDF stockés en base.
 - **Utilisateurs** (administrateurs / rédacteurs) et **Réglages** (compteur de visiteurs, nombre d'éléments affichés).
 
+## Généalogie
+
+- **Espace membre** (`/genealogie`, membres connectés) : recherche avancée (opérateurs contient / égal / commence par / finit par / existe,
+  années ±2/5/10 ans, avant/après, ET/OU, conjoints, décès), recherche familles, index des patronymes, fiche individuelle,
+  arbre d'ascendance animé (2 à 6 générations, navigation sans rechargement) et descendance dépliable.
+- **Administration** (`/admin/genealogie`) : arbres, import GEDCOM (UTF-8, ANSI, ANSEL ; le contenu de l'arbre est remplacé),
+  export GEDCOM 5.5.1, formulaires de saisie des personnes et des familles (parents, conjoints, enfants, autocomplétion),
+  dates saisies en clair (« 12/03/1756 », « vers 1750 ») converties au format GEDCOM.
+- **Vie privée** : les personnes probablement vivantes (pas de décès connu, née il y a moins de 100 ans) sont masquées ;
+  réglable dans l'admin et forçable fiche par fiche.
+- `tests/make-fixture.js` génère un fichier GEDCOM **fictif** (`tests/fixtures/`) pour les essais.
+
 ## Variables d'environnement
 
 | Variable | Rôle |
