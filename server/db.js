@@ -12,11 +12,16 @@ if (!url) {
 }
 // SSL pour les connexions externes (Render « External URL ») ; l'URL interne de Render n'en a pas besoin.
 const needSsl = process.env.PGSSL === "require" || /\.render\.com/.test(url);
+// Toutes les tables du site vivent dans un schéma dédié : la base peut être partagée
+// avec une autre application sans risque de collision.
+const SCHEMA_NAME = (process.env.PGSCHEMA || "ggac").replace(/[^a-z0-9_]/gi, "");
 const pool = new Pool({
+  options: `-c search_path=${SCHEMA_NAME}`,
   connectionString: url,
   ssl: needSsl ? { rejectUnauthorized: false } : false,
   max: 5,
 });
+
 
 const q = (text, params) => pool.query(text, params);
 
@@ -125,6 +130,7 @@ async function setSetting(key, value) {
 }
 
 async function migrate() {
+  await q(`CREATE SCHEMA IF NOT EXISTS ${SCHEMA_NAME}`);
   await q(SCHEMA);
   const seedDir = path.join(__dirname, "seed");
 
