@@ -210,6 +210,7 @@ async function migrate() {
       await setSetting("visitors_since", "12/03/10");
       await setSetting("site_updated", "2026-10-31");
       await setSetting("permanences_count", 7);
+      await setSetting("seed_version", 2);
       await setSetting("news_events_count", 5);
     } catch (e) {
       await client.query("ROLLBACK");
@@ -218,6 +219,20 @@ async function migrate() {
       client.release();
     }
     console.log(`${data.pages.length} pages importées.`);
+  }
+
+  // Mise à jour du contenu d'origine (version 2 : boutons d'achat, encodage corrigé).
+  // Seules les pages jamais modifiées depuis l'administration sont mises à jour.
+  const SEED_VERSION = 2;
+  if ((await getSetting("seed_version", 1)) < SEED_VERSION) {
+    const data = JSON.parse(zlib.gunzipSync(fs.readFileSync(path.join(seedDir, "pages.json.gz"))).toString("utf8"));
+    let n = 0;
+    for (const p of data.pages) {
+      const r = await q("UPDATE pages SET content=$1, h1=$2, title=$3 WHERE slug=$4 AND updated_by IS NULL AND content<>$1", [p.content, p.h1, p.title, p.slug]);
+      n += r.rowCount;
+    }
+    await setSetting("seed_version", SEED_VERSION);
+    if (n) console.log(`${n} pages d'origine mises à jour.`);
   }
 
   // Catalogue de la boutique
