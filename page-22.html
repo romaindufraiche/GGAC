@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Questions parues dans les numéros 51 à 60 de Farda - Groupe des Généalogistes Amateurs du Cambrésis</title>
+  <meta name="author" content="Raphaël WIART" />
+  <meta name="theme-color" content="#f4ede0" />
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+  <link rel="alternate" type="application/rss+xml" title="Flux RSS du site officiel du G.G.A.C." href="https://www.ggac.fr/rss.xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  
+</head>
+<body id="haut" class="">
+
+  <!-- Intro : une goutte d'encre qui révèle la page -->
+  <div class="intro" aria-hidden="true">
+    <svg class="intro__seal" viewBox="0 0 120 140">
+      <path class="intro__shield" d="M10 10 H110 V70 C110 105 85 122 60 132 C35 122 10 105 10 70 Z" />
+    </svg>
+  </div>
+
+  <div class="progress" aria-hidden="true"><span></span></div>
+  <canvas class="dust" aria-hidden="true"></canvas>
+
+  <!-- Barre utilitaire -->
+  <div class="topbar">
+    <div class="wrap topbar__inner">
+      <p class="topbar__maj"><span class="bleu">Mis à jour le 31/10/26</span> - <span class="counter" data-count="119617">119 617</span> visiteurs depuis le 12/03/10</p>
+      <nav class="quick" aria-label="Liens rapides">
+        <a href="agenda.html">Agenda</a>
+        <a href="page-5.html">Adhésion</a>
+        <a href="https://www.ggac.fr/fichiers/file/tarifs_publications.pdf" target="_blank" rel="noopener">Tarifs</a>
+        <a href="https://www.ggac.fr/fichiers/file/commande.pdf" target="_blank" rel="noopener">Commande</a>
+        <a href="https://www.ggac.fr/rss.xml" class="quick__rss">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="3" cy="13" r="2"/><path d="M1 7a8 8 0 0 1 8 8M1 2a13 13 0 0 1 13 13"/></svg>
+          Flux RSS</a>
+      </nav>
+      <form class="search" action="https://www.ggac.fr/rechercher.php" method="post" name="recherche">
+        <label class="sr-only" for="requete">Rechercher sur le site</label>
+        <input name="requete" type="search" id="requete" placeholder="Rechercher sur le site" autocomplete="off" aria-controls="search-results" />
+        <button type="submit" name="ok" id="ok">OK</button>
+        <ul class="search__results" id="search-results" hidden></ul>
+      </form>
+    </div>
+  </div>
+
+  <!-- En-tête -->
+  <header class="hero">
+    <svg class="vine vine--hero" viewBox="0 0 260 240" aria-hidden="true">
+      <use href="#vine" />
+    </svg>
+    <div class="wrap hero__inner">
+      <a class="brand" href="index.html" title="Retour à la page d'accueil">
+        <span class="brand__shields"><img src="assets/img/shields.png" alt="" width="195" height="125" /></span>
+        <span class="brand__name" aria-label="Groupe des Généalogistes Amateurs du Cambrésis">
+          <span class="line"><span class="w"><b>G</b>roupe</span></span>
+          <span class="line">des <span class="w"><b>G</b>énéalogistes</span></span>
+          <span class="line"><span class="w"><b>A</b>mateurs</span> du <span class="w"><b>C</b>ambrésis</span></span>
+        </span>
+      </a>
+      <div class="hero__frames" aria-hidden="true">
+        <figure class="frame frame--manuscrit" data-depth="0.25"><img src="assets/img/manuscrit.jpg" alt="" /></figure>
+        <figure class="frame frame--photo" data-depth="0.6"><img src="assets/img/photo.jpg" alt="" /></figure>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation principale -->
+  <nav class="nav" aria-label="Navigation principale">
+    <div class="wrap nav__inner">
+      <button class="nav__burger" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span><span class="sr-only">Menu</span></button>
+      <ul class="menu" id="menu">
+<li class=""><a class="menu__top" href="index.html">Accueil</a></li>
+<li class="has-sub"><button class="menu__top" aria-expanded="false">L&#x27;association</button><div class="sub"><ul class="sub__col"><li><a href="agenda.html">Agenda</a></li><li><a href="page-3.html">Présentation</a></li><li><a href="page-53.html">Assemblée générale 2025</a></li><li><a href="page-142.html">Scaldobrésia 2025</a></li><li><a href="page-106.html">Retraite et bénévolat</a></li><li><a href="page-4.html">Zone d&#x27;action</a></li><li><a href="page-5.html">Adhésion</a></li><li><a href="page-6.html">Conseil d&#x27;administration</a></li><li><a href="page-7.html">Membres fondateurs</a></li><li><a href="page-8.html">Membres donateurs</a></li></ul></div></li>
+<li class="has-sub is-active"><button class="menu__top" aria-expanded="false">Publications</button><div class="sub sub--wide"><ul class="sub__col"><li><a href="page-62.html">Nouvelles publications</a></li><li class="has-fly"><a href="page-9.html">Farda</a><ul class="fly"><li><a href="page-10.html">Farda n° 1 à 10</a></li><li><a href="page-11.html">Farda n° 11 à 20</a></li><li><a href="page-12.html">Farda n° 21 à 30</a></li><li><a href="page-13.html">Farda n° 31 à 40</a></li><li><a href="page-14.html">Farda n° 41 à 50</a></li><li><a href="page-15.html">Farda n° 51 à 60</a></li><li><a href="page-74.html">Farda n° 61 à 70</a></li><li><a href="page-97.html">Farda n° 71 à 80</a></li><li><a href="page-112.html">Farda n° 81 à 90</a></li><li><a href="page-136.html">Farda n° 91 à 100</a></li><li><a href="page-144.html">Farda n° 101 à 110</a></li></ul></li><li class="has-fly"><a href="page-16.html">Questions des membres</a><ul class="fly"><li><a href="page-17.html">Questions des Farda n° 1 à 10</a></li><li><a href="page-18.html">Questions des Farda n° 11 à 20</a></li><li><a href="page-19.html">Questions des Farda n° 21 à 30</a></li><li><a href="page-20.html">Questions des Farda n° 31 à 40</a></li><li><a href="page-21.html">Questions des Farda n° 41 à 50</a></li><li><a href="page-22.html">Questions des Farda n° 51 à 60</a></li><li><a href="page-75.html">Questions des Farda n° 61 à 70</a></li><li><a href="page-98.html">Questions des Farda n° 71 à 80</a></li><li><a href="page-113.html">Questions des Farda n° 81 à 90</a></li><li><a href="page-137.html">Questions des Farda n° 91 à 100</a></li><li><a href="https://www.ggac.fr/index.php?page=145">Questions des Farda n° 101 à 110</a></li></ul></li><li><a href="page-23.html">Éditions du G.G.A.C.</a></li><li><a href="page-24.html">Généalogies du Cambrésis</a></li><li><a href="page-25.html">Fardes cambrésiennes</a></li></ul><div class="sub__dict"><a class="sub__dict-title" href="page-26.html">Dictionnaires des familles</a><ul class="dict"><li><a href="page-76.html">Anneux</a></li><li><a href="page-30.html">Awoingt</a></li><li><a href="page-122.html">Banteux</a></li><li><a href="page-124.html">Bantouzelle</a></li><li><a href="page-105.html">Baralle</a></li><li><a href="page-27.html">Beaumont-en-Cis</a></li><li><a href="page-28.html">Beauvois-en-Cis</a></li><li><a href="page-31.html">Bertry</a></li><li><a href="page-135.html">Béthencourt</a></li><li><a href="page-103.html">Bévillers</a></li><li><a href="page-88.html">Blécourt</a></li><li><a href="page-32.html">Bourlon</a></li><li><a href="page-92.html">Boursies</a></li><li><a href="page-131.html">Boussières-en-Cambrésis</a></li><li><a href="page-120.html">Briastre</a></li><li><a href="page-99.html">Buissy</a></li><li><a href="page-84.html">Cagnoncles</a></li><li><a href="page-79.html">Cantaing-sur-Escaut</a></li><li><a href="page-33.html">Cattenières</a></li><li><a href="page-116.html">Caudry</a></li><li><a href="page-114.html">Cauroir</a></li><li><a href="page-123.html">Dehéries</a></li><li><a href="page-86.html">Doignies</a></li><li><a href="page-110.html">Épinoy</a></li><li><a href="page-90.html">Escaudœuvres</a></li><li><a href="page-119.html">Esnes</a></li><li><a href="page-139.html">Estourmel</a></li><li><a href="page-34.html">Estrun</a></li><li><a href="page-109.html">Eswars</a></li><li><a href="page-63.html">Flesquières</a></li><li><a href="page-35.html">Fontaine-au-Pire</a></li><li><a href="page-69.html">Fontaine-Notre-Dame</a></li><li><a href="page-132.html">Gonnelieu</a></li><li><a href="page-36.html">Gouy-Saint-André</a></li><li><a href="page-130.html">Graincourt-lès-Havrincourt</a></li><li><a href="page-117.html">Hendecourt-lès-Cagnicourt</a></li><li><a href="page-96.html">Hermies</a></li><li><a href="page-65.html">Honnechy</a></li><li><a href="page-138.html">Honnecourt-sur-Escaut</a></li><li><a href="page-29.html">Inchy</a></li><li><a href="page-71.html">Inchy-en-Artois</a></li><li><a href="page-102.html">Iwuy</a></li><li><a href="page-67.html">Lebucquière</a></li><li><a href="page-141.html">Maretz</a></li><li><a href="page-94.html">Marquion</a></li><li><a href="page-93.html">Masnières</a></li><li><a href="page-87.html">Maurois</a></li><li><a href="page-66.html">Mœuvres</a></li><li><a href="page-128.html">Naves</a></li><li><a href="page-60.html">Niergnies</a></li><li><a href="page-73.html">Noyelles-sur-Escaut</a></li><li><a href="page-121.html">Ors</a></li><li><a href="page-101.html">Pronville-en-Artois</a></li><li><a href="page-37.html">Proville</a></li><li><a href="page-78.html">Quéant</a></li><li><a href="page-80.html">Raillencourt-Sainte-Olle</a></li><li><a href="page-61.html">Ramillies</a></li><li><a href="page-140.html">Reumont</a></li><li><a href="page-127.html">Ribécourt-la-Tour</a></li><li><a href="page-118.html">Rieux-en-Cambrésis</a></li><li><a href="page-89.html">Rumilly-en-Cis</a></li><li><a href="page-81.html">Sailly-lez-Cambrai</a></li><li><a href="page-38.html">Sains-lès-Marquion</a></li><li><a href="page-133.html">Saint-Hilaire-lez-Cambrai</a></li><li><a href="page-134.html">Saint-Vaast-en-Cambrésis</a></li><li><a href="page-82.html">Sancourt</a></li><li><a href="page-107.html">Sauchy-Cauchy</a></li><li><a href="page-108.html">Sauchy-Lestrée</a></li><li><a href="page-91.html">Séranvillers-Forenville</a></li><li><a href="page-70.html">Thun-l&#x27;Évêque</a></li><li><a href="page-39.html">Thun-Saint-Martin</a></li><li><a href="page-72.html">Trescault</a></li><li><a href="page-115.html">Troisvilles</a></li><li><a href="page-68.html">Vélu</a></li><li><a href="page-104.html">Viesly</a></li><li><a href="page-40.html">Villers-en-Cauchies</a></li><li><a href="page-126.html">Villers-Guislain</a></li><li><a href="page-111.html">Villers-lès-Cagnicourt</a></li><li><a href="page-125.html">Villers-Plouich</a></li><li><a href="page-77.html">Wambaix</a></li></ul></div></div></li>
+<li class="has-sub"><button class="menu__top" aria-expanded="false">Bibliothèque</button><div class="sub"><ul class="sub__col"><li><a href="page-41.html">Bulletins et revues</a></li><li><a href="page-42.html">Contrats de mariage et autres...</a></li><li><a href="page-55.html">Catalogue</a></li></ul></div></li>
+<li class="has-sub"><button class="menu__top" aria-expanded="false">Divers</button><div class="sub"><ul class="sub__col"><li><a href="page-85.html">Archives en ligne</a></li><li><a href="page-47.html">Armorial</a></li><li><a href="page-59.html">Pairies du Cambrésis</a></li><li><a href="page-48.html">Paroisses de Cambrai</a></li><li><a href="page-58.html">Carte de CASSINI</a></li><li><a href="page-49.html">Revue des revues</a></li><li><a href="page-51.html">Liens utiles</a></li></ul></div></li>
+<li class="has-sub"><button class="menu__top" aria-expanded="false">Contacts</button><div class="sub"><ul class="sub__col"><li><a href="contacts.html">Nous écrire</a></li><li><a href="page-56.html">Coordonnées</a></li></ul></div></li>
+<li class="menu__member"><a class="menu__top" href="espace-membre.html">Espace membre</a></li>
+      </ul>
+      <span class="menu__ink" aria-hidden="true"></span>
+    </div>
+  </nav>
+
+  <div class="wrap layout">
+
+    <!-- Colonne latérale -->
+    <aside class="side">
+<section class="side__block side__block--long"><h2 class="side__title">Publications</h2><ul class="side__menu"><li><a href="page-62.html">Nouvelles publications</a></li><li><a href="page-9.html">Farda</a></li><li><a href="page-16.html">Questions des membres</a></li><li class="lvl1"><a href="page-17.html">Questions des Farda n° 1 à 10</a></li><li class="lvl1"><a href="page-18.html">Questions des Farda n° 11 à 20</a></li><li class="lvl1"><a href="page-19.html">Questions des Farda n° 21 à 30</a></li><li class="lvl1"><a href="page-20.html">Questions des Farda n° 31 à 40</a></li><li class="lvl1"><a href="page-21.html">Questions des Farda n° 41 à 50</a></li><li class="lvl1"><span class="is-current" aria-current="page">Questions des Farda n° 51 à 60</span></li><li class="lvl1"><a href="page-75.html">Questions des Farda n° 61 à 70</a></li><li class="lvl1"><a href="page-98.html">Questions des Farda n° 71 à 80</a></li><li class="lvl1"><a href="page-113.html">Questions des Farda n° 81 à 90</a></li><li class="lvl1"><a href="page-137.html">Questions des Farda n° 91 à 100</a></li><li class="lvl1"><a href="https://www.ggac.fr/index.php?page=145">Questions des Farda n° 101 à 110</a></li><li><a href="page-23.html">Éditions du G.G.A.C.</a></li><li><a href="page-24.html">Généalogies du Cambrésis</a></li><li><a href="page-25.html">Fardes cambrésiennes</a></li><li><a href="page-26.html">Dictionnaires des familles</a></li></ul></section>
+<section class="side__block side__news">
+        <h2 class="side__title">Actualités</h2>
+        <div class="news" tabindex="0">
+          <div class="news__track">
+            <article class="news__item">
+              <h3>PROCHAINE PERMANENCE</h3>
+              <p>Mercredi 4 novembre 2026 de 14h00 à 17h00 au siège de l'association.</p>
+            </article>
+            <article class="news__item">
+              <h3><a href="agenda.html#ev-1">EXPOSITION ET SORTIE OFFICIELLE DES POILUS DE VILLERS-PLOUICH MORTS POUR LA FRANCE ET DU DICTIONNAIRE DES FAMILLES</a></h3>
+              <p>Du samedi 7 au dimanche 8 novembre 2026 - Salle des fêtes Pierre Mauroy à Villers-Plouich (59)</p>
+            </article>
+            <article class="news__item">
+              <h3><a href="agenda.html#ev-2">SALON DE GÉNÉALOGIE ET D'HISTOIRE</a></h3>
+              <p>Du samedi 7 au dimanche 8 novembre 2026 - Palais des sports de Château-Thierry (02)</p>
+            </article>
+            <article class="news__item">
+              <h3><a href="agenda.html#ev-3">5<sup>E</sup> MARCHÉ D'HISTOIRE LOCALE</a></h3>
+              <p>Du samedi 28 au dimanche 29 novembre 2026 - Salle des fêtes de Fontaine-Notre-Dame (59)</p>
+            </article>
+            <article class="news__item">
+              <h3><a href="agenda.html#ev-4">20<sup>ES</sup> PORTES OUVERTES SUR LA GÉNÉALOGIE</a></h3>
+              <p>Du samedi 6 au dimanche 7 février 2027 - Parc des sports Didier Mounier (rue Albert Dauvergne) à Chevry-Cossigny (77)</p>
+            </article>
+            <article class="news__item">
+              <h3><a href="agenda.html#ev-5">EXPOSITION ET SORTIE OFFICIELLE DES POILUS D'ESNES MORTS POUR LA FRANCE ET DU DICTIONNAIRE DES FAMILLES</a></h3>
+              <p>Du samedi 13 au dimanche 14 mars 2027 - Salle des fêtes d'Esnes (59)</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+    </aside>
+
+    <!-- Contenu -->
+    <main class="content">
+<svg class="vine vine--content" viewBox="0 0 260 240" aria-hidden="true"><use href="#vine" /></svg>
+<h1 class="title"><span class="title__text" data-split>Questions parues dans les numéros 51 à 60 de Farda</span>
+<svg class="title__flourish" viewBox="0 0 320 30" aria-hidden="true"><path d="M4 18 C 60 4, 110 28, 160 16 S 260 4, 316 16" /><path d="M150 16 c 6 -10 14 -10 10 0 c -4 8 -14 6 -10 0" /></svg></h1>
+<div class="prose">
+
+
+<h2>Questions parues dans Farda n° 51 (novembre 2009) :</h2>
+<p class="ta-j"><strong>09.III.01 BARBET Saint-Aubert XVII<sup>e</sup>-XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche naissance, décès et ascendance de Antoinette BARBET, fille de Maximilien et Françoise HOURIEZ, x 30.04.1710 Saint-Aubert avec Philippe LARGILLIER.</p>
+<p class="ta-r"><span class="bleu">Alain GOMEZ 162</span></p>
+<p class="ta-j"><strong>09.III.02 BEAUVOIS - CARLIER Masnières XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 51</span>) :</strong></p>
+<p class="ta-j">Recherche acte de mariage le 05.11.1817 Masnières, et ascendance du couple : Louis Joseph BEAUVOIS, fils de Jean et Rosalie WATELLE et Marie Rose CARLIER, fille de Jean Florent et Madeleine GAUTIER, d'où Catherine BEAUVOIS, ° 20.09.1818 Masnières.</p>
+<p class="ta-r"><span class="bleu">Nicole DELPLANQUE 882</span></p>
+<p class="ta-j"><strong>09.III.03 BÉLOT Caudry XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 51</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Flore BÉLOT, ° 21.11.1889 Caudry, † 12.02.1980 à Cambrai.</p>
+<p class="ta-r"><span class="bleu">Alain DEHÉE 744</span></p>
+<p class="ta-j"><strong>09.III.04 CACHEUX Saint-Aubert XVII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche naissance et ascendance de Nathalie CACHEUX, fille de Simon et Anne BAUDUIN, x 1696 Saint-Vaast avec Jean DEMOULIN.</p>
+<p class="ta-r"><span class="bleu">Alain GOMEZ 162</span></p>
+<p class="ta-j"><strong>09.III.05 CANONNE Saint-Aubert XVII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche mariage vers 1687 à Saint-Aubert et Ascendance de Charles CANONNE, x avec Brigitte FLAVEGNIES, d'où Marie Jeanne, ° 1697 Saint-Aubert.</p>
+<p class="ta-r"><span class="bleu">Alain GOMEZ 162</span></p>
+<p class="ta-j"><strong>09.III.06 CATTELAIN - DUCHATELLE Selvigny XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 51</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Sophie CATTELAIN, ° 20.08.1820 à Selvigny, fille de Jean Baptiste et Marie Hyacinthe DUCHATELLE.</p>
+<p class="ta-r"><span class="bleu">Alain DEHÉE 744</span></p>
+<p class="ta-j"><strong>09.III.07 DELATTRE - LAOUT Masnières XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 51</span>) :</strong></p>
+<p class="ta-j">Recherche acte de naissance et ascendance de Hortense DELATTRE, ° 21.12.1846 Masnières, fille de Jean Baptiste et Agnès LAOUT.</p>
+<p class="ta-r"><span class="bleu">Nicole DELPLANQUE 882</span></p>
+<p class="ta-j"><strong>09.III.08 RAGON - BEFVE Masnières XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 51</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : Auguste Théophile RAGON, x 30.12.1882 Masnières avec Clémence BEFVE.</p>
+<p class="ta-r"><span class="bleu">Alain DEHÉE 744</span></p>
+<p class="ta-j"><strong>09.III.09 RUFFIN Saint-Aubert XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche naissance vers 1761 à Saint-Aubert et ascendance de Nicolas RUFFIN, fils de Charles Louis et Marie Antoinette CAULIER.</p>
+<p class="ta-r"><span class="bleu">Alain GOMEZ 162</span></p>
+<p class="ta-j"><strong>09.III.10 SAUTIÈRE Saint-Aubert XVII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche tous renseignements sur Jacques SAUTIÈRE, ° ca 1650 Saint-Aubert, fils de Michel et Catherine BERTIN.</p>
+<p class="ta-r"><span class="bleu">Alain GOMEZ 162</span></p>
+<h2>Questions parues dans Farda n° 52 (mars 2010) :</h2>
+<p class="ta-j"><strong>10.I.01 BERLECQUE Élincourt XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 65</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Félicité BERLECQUE, ° 26.04.1804 Élincourt.</p>
+<p class="ta-r"><span class="bleu">Jean DAVAINE 543</span></p>
+<p class="ta-j"><strong>10.I.02 BOULANGER Cambrai XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 52</span>) :</strong></p>
+<p class="ta-j">Recherche naissance et ascendance de Hyacinthe Éléonore Marie Henriette BOULANGER, née vers 1801, † 05.05.1861 Cambrai, x avec Édouard Joseph FIÉVET, cirier, (An IX-1871 Cambrai), d'où un fils Félix Valentin FIÉVET, ° 20.03.1825 Cambrai.</p>
+<p class="ta-r"><span class="bleu">Danièle PARENT-HOLTZ 353</span></p>
+<p class="ta-j"><strong>10.I.03 BRICOUT - BRACQ Beauvois-en-Cambrésis XVII<sup>e</sup>-XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 52</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : Jacques BRICOUT, x avant 1705 avec Anne BRACQ, d'où Marie Françoise BRICOUT, ° ca 1719, x 05.02.1754 à Montigny-en-Cambrésis.</p>
+<p class="ta-r"><span class="bleu">Marie-Noëlle NAVARRE-RICHET 783</span></p>
+<p class="ta-j"><strong>10.I.04 BRICOUT - LAMOUREZ Fontaine-au-Pire XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 52</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : Pierre BRICOUT et Marie Marguerite LAMOUREZ, d'où Marie Reyne, ° 17.12.1706 Fontaine-au-Pire.</p>
+<p class="ta-r"><span class="bleu">Marie-Noëlle NAVARRE-RICHET 783</span></p>
+<p class="ta-j"><strong>10.I.05 CADOT Catillon-sur-Sambre XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 52</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Marie Anne CADOT, ° 26.12.1775 à Catillon, y x 10.04.1795 avec Pierre LACROIX, ° 11.02.1751 Angoulême.</p>
+<p class="ta-r"><span class="bleu">Colette MARLIER 615</span></p>
+<p class="ta-j"><strong>10.I.06 CARON - TASSOUT Crèvecœur-sur-l'Escaut XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 52</span>) :</strong></p>
+<p class="ta-j">Recherche naissance, et ascendance du couple : Philibert CARON, x 22.07.1810 Crèvecœur avec Bonne TASSOUT.</p>
+<p class="ta-r"><span class="bleu">Joël CASTEL 893</span></p>
+<p class="ta-j"><strong>10.I.07 Famille CARRÉ, CARREZ, QUARREZ Cambrésis :</strong></p>
+<p class="ta-j">Comme suite à la généalogie CARRÉ, CARREZ, QUARREZ parue dans Farda n° 17, les recherches menées depuis lors ont elles permis de raccorder le CARRÉ de Rumilly avec la branche de Tilly ?</p>
+<p class="ta-r"><span class="bleu">Jean-Pierre MICHAUT 480</span></p>
+<p class="ta-j"><strong>10.I.08 Michel CRÉPIN Proville XVII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 52</span>) :</strong></p>
+<p class="ta-j">Michel CRÉPIN, x avant 1694 avec Marie Anne SAULTOIS, est-il fils d'Antoine CRÉPIN et de Marie FOURDRAINE ? Dans la négative, qu'elle serait son ascendance ?</p>
+<p class="ta-r"><span class="bleu">Marguerite FRUCHART-LASSELIN 199</span></p>
+<p class="ta-j"><strong>10.I.09 DRUON - LUQUET Becquigny Busigny Maretz Prémont ? XVII<sup>e</sup>-XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche tous renseignements concernant Adrien DRUON, notaire et greffier de Maretz, né en mars 1661 à Busigny, † ?, fils de Jean DRUON, cultivateur, greffier, et de Marguerite BARA, x avant 1706 avec Marie LUQUET, °/† ?.</p>
+<p class="ta-r"><span class="bleu">Jacques DRUON 180</span></p>
+<p class="ta-j"><strong>10.I.10 DU RIEU - TASSE Cambrai XVII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 52</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Marie Françoise TASSE, ° 25.08.1643 Cambrai, x 20.08.1678 Cambrai Ste-Croix avec Bernard DU RIEU. Est-elle la fille d'Antoine TASSE, époux de Marie DEHAMBERGUE, cité dans Farda n° 41, page 24 ?</p>
+<p class="ta-r"><span class="bleu">Jean-Pierre MICHAUT 480</span></p>
+<p class="ta-j"><strong>10.I.11 Famille FLIPOT Masnières XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 52</span>) :</strong></p>
+<p class="ta-j">Dans l'histoire de Masnières de BRETZNER, guerre 1870, on signale la conduite de Jules FLIPOT et Léon DÉGREMONT qui reçurent la médaille militaire pour blessure au cours de la libération de Masnières. Qui est ce Jules FLIPOT ??<br/>
+Je descends de Joseph Louis Désiré FLIPOT arrivé à Masnières en 1850 pour épouser Pauline MOREAU. De Jules, je ne connais que Jules Adolphe, né le 06-03-1840 Wazemmes, marié à Lille en 1863 avec Adomine MIGNOT. Est-ce lui ?</p>
+<p class="ta-r"><span class="bleu">Marguerite FRUCHART-LASSELIN 199</span></p>
+<p class="ta-j"><strong>10.I.12 FOSSIEZ Le Cateau-Cambrésis XVII<sup>e</sup>-XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche ascendance de Marie Catherine FOSSIEZ, ° en 1708 Le Cateau St-Martin.</p>
+<p class="ta-r"><span class="bleu">Marie-Noëlle NAVARRE-RICHET 783</span></p>
+<p class="ta-j"><strong>10.I.13 HINQUE - BOUCHEZ Cambrai XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 65</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance et descendance du couple : Jules Joseph HINQUE, † 07.09.1882 et Henriette Maria BOUCHEZ.</p>
+<p class="ta-r"><span class="bleu">Jean-Pierre CARION 718</span></p>
+<p class="ta-j"><strong>10.I.14 LASSELIN - BAUDHUIN Neuvilly XIX<sup>e</sup>-XX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 65</span>) :</strong></p>
+<p class="ta-j">Recherche naissance et ascendance du couple : François Auguste LASSELIN, ° ca 1876, employé au chemin de fer, habitant Oignies en 1920, et Joséphine BAUDHUIN, ° ca 1875. Il sont parents d'Albert LASSELIN, ° 04.05.1896 à Neuvilly, x 19.02.1920 Lille avec Claire Raymonde GLORIA, ° 06.03.1898 Lille.</p>
+<p class="ta-r"><span class="bleu">Marguerite FRUCHART-LASSELIN 199</span></p>
+<p class="ta-j"><strong>10.I.15 LEBLON - MALÉZIEUX Maurois XVIII<sup>e</sup>-XIX<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche ascendance de Toussaint Joseph LEBLON, ° ca 1758 Maurois, † 15.04.1828 Honnechy, x Marie Françoise MALÉZIEUX.</p>
+<p class="ta-r"><span class="bleu">Colette MARLIER 615</span></p>
+<p class="ta-j"><strong>10.I.16 LEFEBVRE - SÉGARD Maurois XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 52</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Jean Baptiste LEFEBVRE, ° ca 1746 Maurois, † 14.09.1807 Honnechy, x 24.11.1772 avec Catherine Joseph SÉGARD, ° ca 1751, † après 1819.</p>
+<p class="ta-r"><span class="bleu">Colette MARLIER 615</span></p>
+<p class="ta-j"><strong>10.I.17 MARCAILLE - TRIBOU Avesnes-les-Aubert XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 53</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Henri Joseph MARCAILLE, ° ca 1833 Avesnes-les-Aubert, y x 18.05.1855 avec Marie Marthe TRIBOU, ° ca 1836 Avesnes-les-Aubert.</p>
+<p class="ta-r"><span class="bleu">Colette MARLIER 615</span></p>
+<p class="ta-j"><strong>10.I.18 MARCHAND - MAUFROIS Villers-Outréaux XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : Humbert MARCHAND et Jeanne MAUFROIS d'où Anne Françoise, ° 02.02.1707 Villers-Outréaux.</p>
+<p class="ta-r"><span class="bleu">Marie-Noëlle NAVARRE-RICHET 783</span></p>
+<p class="ta-j"><strong>10.I.19 MARTIN Walincourt XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche tous renseignements sur Célestine MARTIN, x vers 1775 Walincourt.</p>
+<p class="ta-r"><span class="bleu">Jean DAVAINE 543</span></p>
+<p class="ta-j"><strong>10.I.20 MÉGUEULLE - JÉSUS Cambrai XVII<sup>e</sup>-XVIII<sup>e</sup> (réponses : <span class="rougegras">Farda n° 52 et 83</span>)  :</strong></p>
+<p class="ta-j">Recherche ascendance de Michel MÉGUEULLE, fils d'Adrien et Guislaine JÉSUS, x par Cm du 03.10.1713 avec Marie Thérèse BÉTRANCOURT de Ramillies.</p>
+<p class="ta-r"><span class="bleu">Jean-Pierre MICHAUT 480</span></p>
+<p class="ta-j"><strong>10.I.21 Famille MILLOT Clary XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 52</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Catherine MILLOT, ° 22.01.1811 Clary.</p>
+<p class="ta-r"><span class="bleu">Marc MILLOT 588</span></p>
+<p class="ta-j"><strong>10.I.22 Famille MILLOT Clary XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 52</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Jean Baptiste MILLOT, ° 19.01.1814 Clary.</p>
+<p class="ta-r"><span class="bleu">Marc MILLOT 588</span></p>
+<p class="ta-j"><strong>10.I.23 Famille MILLOT Clary XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 52</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance d'Eugène MILLOT, † 01.11.1814 Clary.</p>
+<p class="ta-r"><span class="bleu">Marc MILLOT 588</span></p>
+<p class="ta-j"><strong>10.I.24 Famille MILLOT Clary XIX<sup>e</sup> (réponses : <span class="rougegras">Farda n° 52 &amp; 54</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Ferdinand Joseph MILLOT, † 15.12.1822 Clary.</p>
+<p class="ta-r"><span class="bleu">Marc MILLOT 588</span></p>
+<p class="ta-j"><strong>10.I.25 PROYE Élincourt XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche ascendance de Marie Célestine PROYE, ° vers 1775 Élincourt.</p>
+<p class="ta-r"><span class="bleu">Jean DAVAINE 543</span></p>
+<p class="ta-j"><strong>10.I.26 SAINVAST - DUCANT Villers-Outréaux XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : Claude SAINVAST et Anne DUCANT d'où Magdeleine, ° ca 1705 Villers-Outréaux, y x 27.11.1737.</p>
+<p class="ta-r"><span class="bleu">Marie-Noëlle NAVARRE-RICHET 783</span></p>
+<p class="ta-j"><strong>10.I.27 TELLIER - LEDUCQ Saint-Hilaire-lès-Cambrai XVI<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche descendance du couple : Philippe TELLIEZ, ° avant 1511, † après 1553, et Pasques LEDUCQ, ° avant 1511, † après 1567.</p>
+<p class="ta-r"><span class="bleu">Colette MARLIER 615</span></p>
+<p class="ta-j"><strong>10.I.28 RONEZ Barastre XIX<sup>e</sup> (réponses : <span class="rougegras">Farda n° 52 &amp; 54</span>) :</strong></p>
+<p class="ta-j">Recherche naissance, décès et ascendance de Célestin RONEZ, né en 1823 à Barastre.</p>
+<p class="ta-r"><span class="bleu">Michelle BONNEAU-RONET 723</span></p>
+<p class="ta-j"><strong>10.I.29 RONEZ - THÉRON Barastre XIX<sup>e</sup> (réponses : <span class="rougegras">Farda n° 52 &amp; 54</span>) :</strong></p>
+<p class="ta-j">Recherche naissance, mariage, décès et ascendance du couple : Patrice RONEZ alias RONET, x avec Marguerite THÉRON, † vers 1872 Barastre.</p>
+<p class="ta-r"><span class="bleu">Michelle BONNEAU-RONET 723</span></p>
+<h2>Questions parues dans Farda n° 53 (juillet 2010) :</h2>
+<p class="ta-j"><strong>10.II.01 ARFAUT Cambrai XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 66</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance, descendance et frères et sœurs de Fanny Catherine ARFAUT, ° 03.01.1831 Cambrai, y x 23.11.1853 avec Benoît MASSE, ° 21.03.1820 Escaudœuvres.</p>
+<p class="ta-r"><span class="bleu">Daniel DEMURGER 645</span></p>
+<p class="ta-j"><strong>10.II.02 BAS - MOLLET Cauroir Awoingt XIX<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche date et lieu de décès de Grégoire Joseph BAS, ° 27.11.1837 Cauroir, x 12.07.1859 Awoingt avec Sidonie Joseph MOLLET, ° 12.07.1832 Awoingt.</p>
+<p class="ta-r"><span class="bleu">Gilberte SADERNE-POTIER 393</span></p>
+<p class="ta-j"><strong>10.II.03 CARPENTIER - BOUDALIER Sancourt Haynecourt XVII<sup>e</sup>-XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 54</span>) :</strong></p>
+<p class="ta-j">Recherche naissance, décès, ascendance et enfants du couple : Guillaume Louis CARPENTIER de Sancourt (Blécourt), x 08.02.1701 Haynecourt avec Émérentienne BOUDALIER.</p>
+<p class="ta-r"><span class="bleu">Sylvie SUDARA 437</span></p>
+<p class="ta-j"> <strong>10.II.04 DERMY - DELFOLIE Bantouzelle XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : Honoré DERMY et Marguerite DELFOLIE, d'où Pierre DERMY, ° vers 1759 Banteux.</p>
+<p class="ta-r"><span class="bleu">Michelle LESSMANN-DERMY 864</span></p>
+<p class="ta-j"><strong>10.II.05 DERMY - GAILLARD Bantouzelle XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche ascendance et descendance du couple : Honoré DERMY et Marie Barbe GAILLARD.</p>
+<p class="ta-r"><span class="bleu">Michelle LESSMANN-DERMY 864</span></p>
+<p class="ta-j"><strong>10.II.06 de HOLLANDE - de LAIRE Esnes XVII<sup>e</sup>-XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche décès, ascendance et descendance du couple : Jean de HOLLANDE x Jacqueline de LAIRE (testament en 1690). Ils ont au moins 3 fils : Hubert, Clément et Nicolas.</p>
+<p class="ta-r"><span class="bleu">Sylvie SUDARA 437</span></p>
+<p class="ta-j"><strong>10.II.07 DHOLLANDE - LEGROS Thun-Saint-Martin XVII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 54</span>) :</strong></p>
+<p class="ta-j">Recherche naissance, décès, ascendance et enfants du couple : Georges DHOLLANDE de Blécourt, x en 1672 ou 1677 avec Martine LEGROS de Thun-Saint-Martin.</p>
+<p class="ta-r"><span class="bleu">Sylvie SUDARA 437</span></p>
+<p class="ta-j"><strong>10.II.08 DOLLANT - DEMARCQ Estrun XIX<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche ascendance et décès du couple : Constant DOLLANT, ° ca 1800, x avec Glorienne DEMARCQ. Ils ont des enfants à Estrun à partir de 1833.</p>
+<p class="ta-r"><span class="bleu">Sylvie SUDARA 437</span></p>
+<p class="ta-j"><strong>10.II.09 DUPAS - DHOLLANDE Féchain Blécourt XVII<sup>e</sup>-XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 54</span>) :</strong></p>
+<p class="ta-j">Recherche naissance, décès, ascendance et enfants du couple : Michel DUPAS de Féchain, x par Cm du 02.10.1683 (AD59, 2E26-20) avec Marie DHOLLANDE de Blécourt.</p>
+<p class="ta-r"><span class="bleu">Sylvie SUDARA 437</span></p>
+<p class="ta-j"><strong>10.II.10 GAUTIER - DAUCHER Marcoing XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 53</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : Jean Baptiste GAUTIER et Marie Angélique DAUCHER, d'où Pierre Joseph GAUTIER, ° 01.02.1771 Marcoing.</p>
+<p class="ta-r"><span class="bleu">Marie Noëlle NAVARRE-RICHET 783</span></p>
+<p class="ta-j"><strong>10.II.11 LEMONNIER Belgique Flandres XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 53</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance d'Auguste Louis Gustave LEMONNIER, né le 23.02.1863 Saint-Amand-les-Eaux, décédé le 13.02.1944 à Bazainville (78), x 23.05.1885 Hasnon avec Clémence Augustine WATENNE, ° 23.10.1864 Hasnon, fils de N.. LEMONNIER, ° ca 1832, x N.., xx avec Marie ALKER de nationalité allemande, cette dernière étant la mère d'Auguste Louis Gustave LEMONNIER.</p>
+<p class="ta-j">Filiation avec Charles Jean Marie, baron LEMONNIER, ° 12.01.1860 Mons (Belgique), † 11.09.1930, avocat à la cour d'appel, ingénieur des mines, bourgmestre de Bruxelles (1914-1918), inhumé à Bruxelles (il aurait été membre du Parlement belge).</p>
+<p class="ta-r"><span class="bleu">Claude LUBINEAU de KERMASSON 724</span></p>
+<p class="ta-j"><strong>10.II.12 LENGRAND - DELDIQUE Marcoing XVIII<sup>e</sup> (réponses : <span class="rougegras">Farda n° 53 &amp; 54</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : Jean Baptiste LENGRAND et Marie Adrienne DELDIQUE alias LEDIQUE, d'où Alexis, ° 20.05.1781 Marcoing et Roselyne Joseph, ° en 1778 Marcoing.</p>
+<p class="ta-r"><span class="bleu">Marie Noëlle NAVARRE-RICHET 783</span></p>
+<p class="ta-j"><strong>10.II.13 LOR - MACHU Clary Cambrai XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 53</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Florimond LOR, ° 07.11.1855 Clary, x avec Berthe Mathilde MACHU, ° 02.03.1868 Cambrai.</p>
+<p class="ta-r"><span class="bleu">Claude LUBINEAU de KERMASSON 724</span></p>
+<p class="ta-j"><strong>10.II.14 MILLOT Clary XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 53</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Catherine Hortense MILLOT, ° 12.02.1816 Clary.</p>
+<p class="ta-r"><span class="bleu">Marc MILLOT 588</span></p>
+<p class="ta-j"><strong>10.II.15 MILLOT Clary XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 53</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Marie Catherine MILLOT, ° 02.06.1816 Clary.</p>
+<p class="ta-r"><span class="bleu">Marc MILLOT 588</span> </p>
+<p class="ta-j"><strong>10.II.16 MILLOT Clary XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 53</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Marie Désirée MILLOT, ° 11.06.1816 Clary.</p>
+<p class="ta-r"><span class="bleu">Marc MILLOT 588</span></p>
+<p class="ta-j"><strong>10.II.17 MILLOT Clary XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 53</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Marie Françoise MILLOT, x 20.04.1831 Clary avec Béloine Louis HENRY.</p>
+<p class="ta-r"><span class="bleu">Marc MILLOT 588</span></p>
+<p class="ta-j"><strong>10.II.18 MILLOT Masnières XIX<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche ascendance de Victoria MILLOT, ° 03.01.1860 Clary.</p>
+<p class="ta-r"><span class="bleu">Marc MILLOT 588</span></p>
+<p class="ta-j"><strong>10.II.19 MOREAU Masnières XVII<sup>e</sup>-XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 53</span>) :</strong></p>
+<p class="ta-j">Pierre MOREAU, père de Charles et Marie Barbe HÉGO, époux de Marie NELLE, est-il le Pierre, frère de Jean époux de Marie VAILLE, cité dans le Cm du 23.06.1689 de Michel MOREAU, fils de Jean et Marie VAILLE, assisté de Pierre MOREAU, son oncle paternel.</p>
+<p class="ta-r"><span class="bleu">Marguerite FRUCHART 199</span></p>
+<p class="ta-j"><strong>10.II.20 OUDART Montigny-en-Cambrésis XVIII<sup>e</sup>-XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 53</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Henri OUDART, né en 1776 Montigny-en-Cambrésis, x 1810 Cambrai, y † en 1847.</p>
+<p class="ta-r"><span class="bleu">Jacqueline OUDART-TAISNE 829</span></p>
+<p class="ta-j"><strong>10.II.21 SENAY alias SENET Solesmes XVII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 92</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Toussaint SENAY alias SENET, meunier à Solesmes puis au moulin de Carnières à partir de 1623, échevin de Carnières, d'où 2 enfants.</p>
+<p class="ta-r"><span class="bleu">Mireille SENEZ 654</span></p>
+<p class="ta-j"><strong>10.II.22 SENEZ - CAUDRON Lourches Bévillers XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 53</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Marie Joseph CAUDRON, ° 20.07.1851 Lourches, † après 1901, x 16.07.1870 Lourches avec Charles SENEZ, ° 19.12.1849 Bévillers, † après 1901.</p>
+<p class="ta-r"><span class="bleu">Mireille SENEZ 654</span></p>
+<p class="ta-j"><strong>10.II.23 TISON - MÉRIAUX Hordain XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 53</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : Charles Lucien TISON, ° 23.01.1841 Hordain, † après 1901, x 28.05.1860 Hordain avec Octavie MÉRIAUX, ° 22.12.1840 Hordain, † après 1901.</p>
+<p class="ta-r"><span class="bleu">Mireille SENEZ 654</span></p>
+<h2>Questions parues dans Farda n° 54 (novembre 2010) :</h2>
+<p class="ta-j"><strong>10.III.01 BEAUMONT - DHOLLANDE Blécourt XVII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche naissance, mariage, décès de Anne DHOLLANDE, x avec Pierre BEAUMONT. Ils ont eu au moins 2 enfants : Jacques Philippe, ° 08.04.1673 Blécourt, et Jean Baptiste, ° 08.12.1675 Blécourt.</p>
+<p class="ta-r"><span class="bleu">Sylvie SUDARA 437</span></p>
+<p class="ta-j"><strong>10.III.02 BUGNICOURT - MILLOT Clary XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 54</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Bernard BUGNICOURT, x 20.01.1840 avec Marie Michelle MILLOT.</p>
+<p class="ta-r"><span class="bleu">Marc MILLOT 588</span></p>
+<p class="ta-j"><strong>10.III.03 BUGNICOURT - MILLOT Clary XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 54</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Henry BUGNICOURT, x 29.04.1863 avec Catherine Eugénie MILLOT.</p>
+<p class="ta-r"><span class="bleu">Marc MILLOT 588</span></p>
+<p class="ta-j"><strong>10.III.04 CARLIER - DOISY Crèvecœur XVII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 54</span>) :</strong></p>
+<p class="ta-j">Recherche tous renseignements sur Madeleine ou Marie Magne DOISY. Madeleine DOISY épousa par Cm du 03.12.1669 Jean CARLIER.</p>
+<p class="ta-r"><span class="bleu">Nicolas GÜRTLER 688</span></p>
+<p class="ta-j"><strong>10.III.05 CARPENTIER - CRÉPIN Crèvecœur (cense du Quesnet) XVII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche ascendance de Jehanne CRÉPIN, épouse d'Augustin CARPENTIER. En 1663, elle est en procès contre ses fils Charles et Josse CARPENTIER.</p>
+<p class="ta-r"><span class="bleu">Nicolas GÜRTLER 688</span></p>
+<p class="ta-j"><strong>10.III.06 CROISETTE Busigny XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 54</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Jacques CROISETTE, ° vers 1704, veuf de Marie Anne DOUEZ, xx 08.11.1786 Busigny avec Marie Madeleine DRUON.</p>
+<p class="ta-r"><span class="bleu">Marc MILLOT 588</span></p>
+<p class="ta-j"><strong>10.III.07 DELACHE - VINCQ Cambrai XVIIIe, XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 66</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : Pierre Joseph DELACHE, ° vers 10.1787 Cambrai, y † 13.02.1830, x 04.06.1817 Cambrai avec Henriette Josèphe VINCQ (WINCQ), ° vers 04.1793 Cambrai, y † 03.03.1860, d'où Joséphine DELACHE, ° 17.11.1819 Cambrai.</p>
+<p class="ta-r"><span class="bleu">Françoise ABOT-DOUBLET 889</span></p>
+<p class="ta-j"><strong>10.III.08 DELIGNE - CLARO Cambrai XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche tous renseignements, ascendance, actes notariés etc., antérieurs au mariage du couple : Charles Joseph DELINNE (DELIGNE), x 30.01.1708 Cambrai La Madeleine avec Françoise Joseph CLARO.</p>
+<p class="ta-r"><span class="bleu">Jacques DELIGNE 345</span></p>
+<p class="ta-j"><strong>10.III.09 DHOLLANDE - DELABRE Cambrai XVII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche naissance, décès et ascendance et enfants de Antoine DHOLLANDE, x 24.11.1624 Cambrai La Madeleine avec Jeanne DELABRE.</p>
+<p class="ta-r"><span class="bleu">Sylvie SUDARA 437</span></p>
+<p class="ta-j"><strong>10.III.10 DHOLLANDE - GUIDDÉ Cambrai Iwuy XVII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 54</span>) :</strong></p>
+<p class="ta-j">Recherche naissance, décès, ascendance et enfants de Philippe DHOLLANDE de Cambrai, x par Cm du 18.10.1655 (AD59, 2 E 26-137) avec Marie GUIDDÉ d'Iwuy.</p>
+<p class="ta-r"><span class="bleu">Sylvie SUDARA 437</span></p>
+<p class="ta-j"><strong>10.III.11 DINAUX - TRIBOU Cambrai XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 54</span>) :</strong></p>
+<p class="ta-j">Recherche tous renseignements (naissance, décès, mariage et ascendance du couple : Martin Antoine DINAUX, ° ca 1768 Cambrai, et Félicité Aimée TRIBOU, ° ca 1768 Cambrai, d'où un fils Arthur Martin DINAUX, ° 24 fructidor an III Valenciennes.</p>
+<p class="ta-r"><span class="bleu">André CRASQUIN 231</span></p>
+<p class="ta-j"><strong>10.III.12 DIRREZ - DELHAY(E) Clary XIX<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : Jean Michel DIRREZ, x 27.10.1824 Clary avec Catherine DELHAY(E).</p>
+<p class="ta-r"><span class="bleu">Marc MILLOT 588</span></p>
+<p class="ta-j"><strong>10.III.13 DROMARD - GRANSART Carnières XIX<sup>e</sup> (réponses : <span class="rougegras">Farda n° 54 &amp; 60</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Henri Joseph DROMARD, ° vers 1838, fils de Jacob et Marguerite Marie GRANSART.</p>
+<p class="ta-r"><span class="bleu">Alain DEHÉE 744</span></p>
+<p class="ta-j"><strong>10.III.14 FAUCONNIER - MILLEVILLE Bantouzelle XVII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 54</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance d'Antoinette MILLEVILLE, ° ca 1650, x Jehan FAUCONNIER, d'où Jean FAUCONNIER, x avec Marie Joseph RAUT, tous deux décédés avant le 19.11.1735. Antoinette MILLEVILLE est-elle la sœur d'Antoine MILLEVILLE, censier de Montécouvez, ° ca 1680 ?</p>
+<p class="ta-r"><span class="bleu">Nicolas GÜRTLER 688</span></p>
+<p class="ta-j"><strong>10.III.15 FONTAINE Caudry XIX<sup>e</sup>-XX<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche date et lieu de décès d'Amédée Constant FONTAINE, ° 12.11.1879 à Saint Pierre lès Calais (62), fils d'Amédée FONTAINE et de Eugénie LANCIAUX, † en octobre 1914 (à la guerre).</p>
+<p class="ta-r"><span class="bleu">André CRASQUIN 231</span></p>
+<p class="ta-j"><strong>10.III.16 FOULON Anneux XVII<sup>e</sup>-XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche ascendance et tous renseignements sur le sieur Augustin FOULON, ci-devant lieutenant de cavalerie, demeurant à Anneux, qui le 20.12.1701 (AD59, 2E26-407) lègue ses biens à ses quatre neveux et nièces du nom de DELATTRE, donc probablement frère de Michelle FOULON, qui épousa Géry DELATTRE.</p>
+<p class="ta-r"><span class="bleu">Alain SUTTER 799</span></p>
+<p class="ta-j"><strong>10.III.17 GHIENNE - LE BECQ Avesnes-les-Aubert XVIII<sup>e</sup>-XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 55</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : André Joseph GHIENNE, ° 1750 Avesnes-les-Aubert, y † 15.07.1810, y x 12.01.1768 avec Marie Sainte LE BECQ, † 24.04.1817 Avesnes-les-Aubert, d'où : Marie Catherine GHIENNE, ° 01.05.1791 Avesnes-les-Aubert.</p>
+<p class="ta-r"><span class="bleu">Françoise ABOT-DOUBLET 889</span></p>
+<p class="ta-j"><strong>10.III.18 JOHNSTON Anneux XIX<sup>e</sup> (réponses : <span class="rougegras">Farda n° 54 &amp; 55</span>) :</strong></p>
+<p class="ta-j">Recherche tous renseignements sur cette famille établie à Anneux à la suite du mariage en 1817 d'un soldat anglais de l'armée d'occupation avec une jeune fille d'Anneux.</p>
+<p class="ta-r"><span class="bleu">Hervé WILLEMAND 914</span></p>
+<p class="ta-j"><strong>10.III.19 LASSON Ligny XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche nom de la cense occupée à Ligny par Philippe LASSON, ° 1709, † 16.08.1789.</p>
+<p class="ta-r"><span class="bleu">Nicolas GÜRTLER 688</span></p>
+<p class="ta-j"><strong>10.III.20 LEROY - DUSSÉAUX Avesnes-les-Aubert XIX<sup>e</sup> (réponses : <span class="rougegras">Farda n° 54 &amp; 55</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : Léopold LEROY, ° 04.06.1870 Avesnes-les-Aubert, fils de François et Philomène Adélaïde GRANSART, et Maria DUSSÉAUX, ° 1873 Carnières.</p>
+<p class="ta-r"><span class="bleu">Alain DEHÉE 744</span></p>
+<p class="ta-j"><strong>10.III.21 LOUVET - SELLIER Alaincourt Bertry XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 54</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Germain Théodore LOUVET, † 18.12.1801 Bertry.</p>
+<p class="ta-r"><span class="bleu">Alain DEHÉE 744</span></p>
+<p class="ta-j"><strong>10.III.22 MILLOT - LOISEAUX Clary XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 54</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Marie Ange LOISEAUX, x 30.01.1844 Clary avec Jean Baptiste MILLOT.</p>
+<p class="ta-r"><span class="bleu">Marc MILLOT 588</span></p>
+<p class="ta-j"><strong>10.III.23 PORET - TESSON Carnières XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 54</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Augustine Marie PORET, ° 03.11.1837 Carnières, fille de Jean Baptiste et Amélie Joseph TESSON.</p>
+<p class="ta-r"><span class="bleu">Alain DEHÉE 744</span></p>
+<p class="ta-j"><strong>10.III.24 Ferme ou cense du QUESNET à Crèvecœur (réponse : <span class="rougegras">Farda n° 54</span>) :</strong></p>
+<p class="ta-j">Son histoire. Dépendait d'une abbaye avant la Révolution ? Et après ? Comment sur quel cadastre ancien la trouver. Je crois qu'elle fut détruite en 14/18 et à nouveau en 39/45. Vrai ?</p>
+<p class="ta-r"><span class="bleu">Marie Anne GENTOPU 512</span></p>
+<p class="ta-j"><strong>10.III.25 RAMETTE - PLUCHART Villers-en-Cauchies XIX<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche décès de Pierre Joseph RAMETTE, ° 02.11.1828 Villers-en-Cauchies, † après le recensement de 1906, x 07.04.1862 Villers-en-Cauchies avec Marie Isaï PLUCHART.</p>
+<p class="ta-r"><span class="bleu">Françoise ABOT-DOUBLET 889</span></p>
+<p class="ta-j"><strong>10.III.26 STAPHE - DHOLLANDE Cambrai XVII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 54</span>) :</strong></p>
+<p class="ta-j">Recherche naissance, décès et ascendance de Catherine DHOLLANDE de Cambrai, x par Cm du 06.07.1650 (AD59, 2 E 26-137) avec Jean STAPHE de Cambrai.</p>
+<p class="ta-r"><span class="bleu">Sylvie SUDARA 437</span></p>
+<h2>Questions parues dans Farda n° 55 (mars 2011) :</h2>
+<p class="ta-j"><strong>11.I.01 DAUCHET - LOBRY Marcoing XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 55</span>) :</strong></p>
+<p class="ta-j">Recherche mariage et ascendance du couple : Guillaume DAUCHET et Catherine LOBRY, d'où une fille Catherine Joseph DAUCHET, ° 13.07.1693 Marcoing, y † 10.03.1768.</p>
+<p class="ta-r"><span class="bleu">René OUTREQUIN 599</span></p>
+<p class="ta-j"><strong>11.I.02 FLAMENT - CARTEGNIES Le Cateau Solesmes XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche ascendance de Jean André FLAMENT, soldat dans les gardes française en garnison à Solesmes en 1746, x 28.08.1746 Solesmes avec Marie Joseph CARTEGNIES (Cm du 23.08.1746, Mtre DELOFFRE au Quesnoy)</p>
+<p class="ta-r"><span class="bleu">Daniel FLAMENT 621</span></p>
+<p class="ta-j"><strong>11.I.03 GOUBET - LELOIR Marcoing XVII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 55</span>) :</strong></p>
+<p class="ta-j">Recherche mariage et ascendance du couple : Antoine GOUBET, ° 23.10.1645 Marcoing, et Pasquette LELOIR, ° 16.04.1645 Marcoing.</p>
+<p class="ta-r"><span class="bleu">René OUTREQUIN 599</span></p>
+<p class="ta-j"><strong>11.I.04 LECLERCQ - COLMANT Crèvecœur XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 55</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Jean Charles LECLERCQ, x avec Élisabeth COLMANT, xx 14.02.1741 Bony avec Marie Françoise SÉVERIN</p>
+<p class="ta-r"><span class="bleu">Marie Noëlle NAVARRE-RICHET 783</span></p>
+<p class="ta-j"><strong>11.I.05 LEDUCQ - MILLOT Clary XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 55</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : Constant LEDUCQ, x 05.07.1853 Clary avec Marie Hortense MILLOT.</p>
+<p class="ta-r"><span class="bleu">Marc MILLOT 588</span></p>
+<p class="ta-j"><strong>11.I.06 MASSON - DOYEN Cambrai XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : Jean François MASSON, † 20.07.1755 Cambrai, et Marie Magdeleine Joseph DOYEN, d'où une fille Marie Joseph, ° ca 1716, x avec Vincent MILLE.</p>
+<p class="ta-r"><span class="bleu">Daniel FLAMENT 621</span></p>
+<p class="ta-j"><strong>11.I.07 MILLOT Clary XVIII<sup>e</sup>-XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 55</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Marie Rose MILLOT, ° avant 1757 Clary, y † 29.02.1812, x avec Jean Jacques PARENT, ° vers 1748 Clary, y † 19.07.1811.</p>
+<p class="ta-r"><span class="bleu">Marc MILLOT 588</span></p>
+<p class="ta-j"><strong>11.I.08 SÉVERIN - FOUQUET Bony Banteux XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche l'ascendance du couple : Jean SÉVERIN et Barbe FOUQUET, d'où une fille Marie Françoise SÉVERIN, x 14.02.1741 à Bony avec Jean Charles LECLERCQ.</p>
+<p class="ta-r"><span class="bleu">Marie Noëlle NAVARRE-RICHET 783</span></p>
+<p class="ta-j"><strong>11.I.09 TINTURIER - JÉSUS Honnechy XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 55</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : Jean Baptiste TINTURIER, x 03.08.1825 Honnechy avec Claudine JÉSUS.</p>
+<p class="ta-r"><span class="bleu">Marie Noëlle NAVARRE-RICHET 783</span></p>
+<p class="ta-j"><strong>11.I.10 BATAILLE - RICHET Saint-Aubert XIX<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche ascendances, mariage et décès du couple : François Louis BATAILLE, ° vers 1804, x 24.06.1832 Saint Aubert avec Rosalie RICHET, ° vers 1804 Saint Aubert, † après 02.02.1858.</p>
+<p class="ta-r"><span class="bleu">Chantal ILLES-DEVAUX 546</span></p>
+<p class="ta-j"><strong>11.I.11 BOUTMY - LECLERC Wambaix XVII<sup>e</sup>-XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 55</span>) :</strong></p>
+<p class="ta-j">Recherche ascendances, mariage et décès du couple : Robert BOUTMY, x par Cm du 12.10.1701 avec Marie Anne LECLERC alias LECLAIRE, ° vers 1681 Wambaix, † après le 04.01.1733.</p>
+<p class="ta-r"><span class="bleu">Chantal ILLES-DEVAUX 546</span></p>
+<p class="ta-j"><strong>11.I.12 DISLERS - MARCAILLE Saint-Aubert XVII<sup>e</sup>-XVIII<sup>e</sup> (réponses : <span class="rougegras">Farda n° 55 &amp; 57</span>) :</strong></p>
+<p class="ta-j">Recherche ascendances, mariage et décès du couple : Estienne DISLERS, x 10.11.1715 Saint Aubert avec Françoise MARCAILLE alias MÉRÉCAILLE, ° avant 1699.</p>
+<p class="ta-r"><span class="bleu">Chantal ILLES-DEVAUX 546</span></p>
+<p class="ta-j"><strong>11.I.13 FOVEZ - FOCQUET Naves XVII<sup>e</sup>-XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche ascendances, mariage et décès du couple : Joseph FOVEZ, x par Cm du 12.05.1731 avec Marie Anne FOCQUET, ° vers 1694 à Naves.</p>
+<p class="ta-r"><span class="bleu">Chantal ILLES-DEVAUX 546</span></p>
+<p class="ta-j"><strong>11.I.14 MÉRIAUX - LELOIR Cuvillers XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 65</span>) :</strong></p>
+<p class="ta-j">Recherche ascendances, mariage et décès du couple : Rémy Joseph MÉRIAUX, x avec Marie Barbe LELOIR, ° 30.07.1845 Cuvillers, † après 1903.</p>
+<p class="ta-r"><span class="bleu">Chantal ILLES-DEVAUX 546</span></p>
+<h2>Questions parues dans Farda n° 56 (juillet 2011) :</h2>
+<p class="ta-j"><strong>11.II.01 CAILLE - DENIS Banteux XVIII<sup>e</sup>-XX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 65</span>) :</strong></p>
+<p class="ta-j">Recherche mariage et ascendance du couple : Jean Baptiste CAILLE, et Marie Catherine DENIS, d'où Jean Baptiste, ° 13.08.1813 Banteux.</p>
+<p class="ta-r"><span class="bleu">Marcelle GUELUY-CAUDRON 928</span></p>
+<p class="ta-j"><strong>11.II.02 CARON - PATTÉ Gouy-le-Catelet XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 56</span>) :</strong></p>
+<p class="ta-j">Recherche mariage et ascendance du couple : Louis CARON, † 23.03.1775 Gouy, et Marie Nicole PATTÉ, d'où Marie Louise, x 27.02.1770 Gouy.</p>
+<p class="ta-r"><span class="bleu">Marie Noëlle NAVARRE-RICHET 783</span></p>
+<p class="ta-j"><strong>11.II.03 (DE)BAIL - ÉGRET Gouy-le-Catelet XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 56</span>) :</strong></p>
+<p class="ta-j">Recherche mariage et ascendance du couple : Norbert (DE)BAIL et Louise ÉGRET, d'où Anne Joseph, b 12.10.1743 Gouy.</p>
+<p class="ta-r"><span class="bleu">Marie Noëlle NAVARRE-RICHET 783</span></p>
+<p class="ta-j"><strong>11.II.04 DHERBÉCOURT - SAILLY Metz-en-Couture XVII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche ascendance d'André DHERBÉCOURT, de Metz-en-Couture, fils d'Hilarion et Anne DUMONT, x par Cm du 29.01.1699 avec Catherine SAILLY de Ribécourt.</p>
+<p class="ta-r"><span class="bleu">François LEFEBVRE 758</span></p>
+<p class="ta-j"><strong>11.II.05 DUBOIS - MONTIGNY Cambrai XX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 56</span>) :</strong></p>
+<p class="ta-j">Recherche mariage et ascendance du couple : Simon DUBOIS, † 01.02.1841 Cambrai et Marie Martine Isabelle MONTIGNY, † 25.10.1852 Cambrai, d'où Isabelle Flore Agnès, ° vers 1804 Cambrai.</p>
+<p class="ta-r"><span class="bleu">Marcelle GUELUY-CAUDRON 928</span></p>
+<p class="ta-j"><strong>11.II.06 FONTAINE - LANCIAUX Caudry XX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 65</span>) :</strong></p>
+<p class="ta-j">Recherche date et lieu de décès de Amédée Constant FONTAINE, ° 12.11.1879 à Saint-Pierre (Calais 62), fils d'Amédée et de Eugénie LANCIAUX de Caudry. Décédé en octobre 1914, pendant la guerre.</p>
+<p class="ta-r"><span class="bleu">André CRASQUIN 231</span></p>
+<p class="ta-j"><strong>11.II.07 GORGUET Metz-en-Couture XVII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche l'ascendance de Pierre GORGUET, ° ca 1697 Metz-en-Couture, x 10.08.1723 Sorel-le-Grand avec Anne CAPRON.</p>
+<p class="ta-r"><span class="bleu">Marie Noëlle NAVARRE-RICHET 783</span></p>
+<p class="ta-j"><strong>11.II.08 ISRAËL - BIDART Vendhuile XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 56</span>) :</strong></p>
+<p class="ta-j">Recherche mariage et ascendance du couple : Toussaint ISRAËL et Marie BIDART, d'où Anne Joseph Marie, ° 21.12.1742 Vendhuile.</p>
+<p class="ta-r"><span class="bleu">Marie Noëlle NAVARRE-RICHET 783</span></p>
+<p class="ta-j"><strong>11.II.09 LEMAIRE - LANGRAND Haucourt-en-Cis XX<sup>e</sup> (réponses : <span class="rougegras">Farda n° 56 &amp; 57</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : Jean Baptiste LEMAIRE, âgé de 41 ans en avril 1852, et Bernardine LANGRAND, âgée de 38 ans en avril 1852.</p>
+<p class="ta-r"><span class="bleu">Renée Claude BRENNER-LEMAIRE 937</span></p>
+<p class="ta-j"><strong>11.II.10 LENOIR - CHOPIN Mœuvres XVIII<sup>e</sup>-XX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 56</span>) :</strong></p>
+<p class="ta-j">Recherche mariage et ascendance du couple : Géry LENOIR et Eugénie CHOPIN, d'où Augustin Joseph, ° 09.05.1811 Mœuvres.</p>
+<p class="ta-r"><span class="bleu">Marcelle GUELUY-CAUDRON 928</span></p>
+<p class="ta-j"><strong>11.II.11 PLATEAU - PAGNIEN Mœuvres XVIII<sup>e</sup>-XX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 56</span>) :</strong></p>
+<p class="ta-j">Recherche mariage et ascendance du couple : Géry PLATEAU et Séraphine PAGNIEN, d'où François, ° 20.12.1807 Mœuvres.</p>
+<p class="ta-r"><span class="bleu">Marcelle GUELUY-CAUDRON 928</span></p>
+<p class="ta-j"><strong>11.II.12 MILLOT Clary XX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 56</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Victor Joseph MILLOT, ° 04.10.1814 Clary.</p>
+<p class="ta-r"><span class="bleu">Marc MILLOT 588</span></p>
+<p class="ta-j"><strong>11.II.13 MILLOT Clary XX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 56</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Jacques Charlemagne MILLOT, † 06.03.1843 Clary.</p>
+<p class="ta-r"><span class="bleu">Marc MILLOT 588</span></p>
+<p class="ta-j"><strong>11.II.14 MILLOT Clary XX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 56</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Chrysostome MILLOT, † 19.04.1871 Clary.</p>
+<p class="ta-r"><span class="bleu">Marc MILLOT 588</span></p>
+<p class="ta-j"><strong>11.II.15 MILLOT Clary XX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 56</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Constant MILLOT, † 14.05.1811 Clary.</p>
+<p class="ta-r"><span class="bleu">Marc MILLOT 588</span></p>
+<p class="ta-j"><strong>11.II.16 REVERSEZ - LAVALLARD Anneux XVIII<sup>e</sup>-XX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 56</span>) :</strong></p>
+<p class="ta-j">Recherche mariage et ascendance du couple : Antoine Louis REVERSEZ et Catherine Agnès LAVALLARD, née à Anneux, d'où Henri Louis, ° 19.12.1827 Inchy-en-Artois.</p>
+<p class="ta-r"><span class="bleu">Marcelle GUELUY-CAUDRON 928</span></p>
+<p class="ta-j"><strong>11.II.17 VITAUX - CLAISSE Clary XX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 56</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : Cornil VITAUX, ° 1809 Clary, y † 1868, x avec Ambroisine CLAISSE.</p>
+<p class="ta-r"><span class="bleu">Dominique LENGLET 505</span></p>
+<p class="ta-j"><strong>11.II.18 VITAUX - DOUCHEZ Reumont XX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 56</span>) :</strong></p>
+<p class="ta-j">Recherche mariage et ascendance du couple : Cornil VITAUX et Amélie DOUCHEZ, d'où François, ° 14.03.1813 Reumont.</p>
+<p class="ta-r"><span class="bleu">Dominique LENGLET 505</span></p>
+<p class="ta-j"><strong>11.II.19 CARON - NOIRET Oisy-le-Verger Inchy XVIII<sup>e</sup> (réponses : <span class="rougegras">Farda n° 56 &amp; 57</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : Jérôme CARON d'Oisy-le-Verger, x par Cm du 17.11.1705 avec Marie Catherine NOIRET d'Inchy-en-Artois.</p>
+<p class="ta-r"><span class="bleu">Liliane BOTELLA 936</span></p>
+<p class="ta-j"><strong>11.II.20 CORBIN - GOGUILLON Oisy-le-Verger XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 56</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : Nicolas CORBIN, x par Cm du 11.04.1716 avec Marie Antoinette GOGUILLON.</p>
+<p class="ta-r"><span class="bleu">Liliane BOTELLA 936</span></p>
+<p class="ta-j"><strong>11.II.21 DANEL - CARPENTRY Inchy Oisy-le-Verger XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 56</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : Philippe DANEL, veuf d'Antoinette DELMOTTE, d'Inchy-en-Artois, xx par Cm du 26.05.1731 avec Marie Magdeleine CARPENTRY d'Oisy-le-Verger.</p>
+<p class="ta-r"><span class="bleu">Liliane BOTELLA 936</span></p>
+<p class="ta-j"><strong>11.II.22 GOGUILLON - CARON Inchy-en-Artois XVIII<sup>e</sup> (réponses : <span class="rougegras">Farda n° 56 &amp; 57</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : Pierre Louis GOGUILLON, x par Cm du 05.01.1735 avec Catherine Joseph CARON.</p>
+<p class="ta-r"><span class="bleu">Liliane BOTELLA 936</span></p>
+<p class="ta-j"><strong>11.II.23 MAYEUX - HUMÉ Sains-lez-Marquion XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 56</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : André MAYEUX, x par Cm du 17.06.1715 avec Thérèse HUMÉ.</p>
+<p class="ta-r"><span class="bleu">Liliane BOTELLA 936</span></p>
+<p class="ta-j"><strong>11.II.24 THÉRY - CAUDRON Cambrai Buissy-Baralle XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 56</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : Guislain THÉRY de Cambrai, x par Cm du 24.01.1702 avec Marie Anne CAUDRON de Buissy-Baralle.</p>
+<p class="ta-r"><span class="bleu">Liliane BOTELLA 936</span></p>
+<h2>Questions parues dans Farda n° 57 (novembre 2011) :</h2>
+<p class="ta-j"><strong>11.III.01 BOUDALIER Cambrai Aubencheul-au-Bac XVIII<sup>e</sup> (réponses : <span class="rougegras">Farda n° 57 &amp; 60</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Julie Émélie BOUDALIER, ° 1793 Cambrai, † 16.01.1855 Aubencheul-au-Bac, y x 23.11.1814 avec Charles Joseph DUMONT.</p>
+<p class="ta-r"><span class="bleu">Guy LASSALLE</span></p>
+<p class="ta-j"><strong>11.III.02 CARON - PATTÉ Gouy XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche la date de décès après le 24.03.1775 de Marie Nicole PATTÉ et date de décès de son mari Louis CARON.</p>
+<p class="ta-r"><span class="bleu">Marie Noëlle NAVARRE-RICHET 783</span></p>
+<p class="ta-j"><strong>11.III.03 COUSIN - LECLERC Iwuy XVIII<sup>e</sup> (réponses : <span class="rougegras">Farda n° 57, 58, 59, 60 &amp; 61</span>) :</strong></p>
+<p class="ta-j">Recherche dates de naissance (vers 1782) et de décès de Félicité COUSIN, x 14.01.1813 Iwuy avec Pierre François LECLERCQ.</p>
+<p class="ta-r"><span class="bleu">André CRASQUIN 231</span></p>
+<p class="ta-j"><strong>11.III.04 DENIMAL Estrun XVII<sup>e</sup>-XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 57</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Marc Joseph DENIMAL, ° 14.02.1805 Estrun, † 03.03.1877 Aisonville et Bernoville.</p>
+<p class="ta-r"><span class="bleu">Marie Claude VOGEL 803</span></p>
+<p class="ta-j"><strong>11.III.05 DIREZ Maretz XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 65</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Émile DIREZ, ° 24.12.1867 Maretz.</p>
+<p class="ta-r"><span class="bleu">Marc MILLOT 588</span></p>
+<p class="ta-j"><strong>11.III.06 ÉLOIRE - LEMAIRE Reumont Saint Souplet XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche ascendance de Jean Liénard ÉLOIRE, ° ca 1722 Reumont, x 07.02.1747 Saint Souplet avec Marie Anne LEMAIRE.</p>
+<p class="ta-r"><span class="bleu">Marie Noëlle NAVARRE-RICHET 783</span></p>
+<p class="ta-j"><strong>11.III.07 GÉRARD Bévillers XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 57</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Philomène Hyacinthe GÉRARD, ° 09.05.1836 Bévillers, † 1910.</p>
+<p class="ta-r"><span class="bleu">Colette MARLIER 615</span></p>
+<p class="ta-j"><strong>11.III.08 GÉRARD - LESAIGE Avesnes-les-Aubert XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : Adrien GÉRARD, † vers 1701, et Marie LESAIGE.</p>
+<p class="ta-r"><span class="bleu">Colette MARLIER 615</span></p>
+<p class="ta-j"><strong>11.III.09 LEBECQ - ABRAHAM Avesnes-les-Aubert XVII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : Jean LEBECQ, 1630/1690, x avec François ABRAHAM, ° ca 1630.</p>
+<p class="ta-r"><span class="bleu">Colette MARLIER 615</span></p>
+<p class="ta-j"><strong>11.III.10 LECLERC - COUSIN Iwuy XVIII<sup>e</sup> (réponses : <span class="rougegras">Farda n° 57, 58 &amp; 59</span>) :</strong></p>
+<p class="ta-j">Recherche dates de naissance et décès de Pierre François LECLERCQ, x 14.01.1813 Iwuy avec Félicité COUSIN, d'où : Une fille, Marie Adélaïde LECLERCQ, ° 26.10.1813 Iwuy.</p>
+<p class="ta-r"><span class="bleu">André CRASQUIN 231</span></p>
+<p class="ta-j"><strong>11.III.11 LORNE - RICHE Honnechy XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche l'ascendance du couple : Pierre LORNE, x ca 1765 avec Catherine RICHE.</p>
+<p class="ta-r"><span class="bleu">Marie Noëlle NAVARRE-RICHET 783</span></p>
+<p class="ta-j"><strong>11.III.12 MARCQ - LEFEBVRE Cambrai XVIII<sup>e</sup>-XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 57</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Hubert MARCQ, ° 1758, † 16.01.1820 Cambrai, y x 02.10.1787 avec Augustine Joseph LEFEBVRE.</p>
+<p class="ta-r"><span class="bleu">Alain DEHÉE 744</span></p>
+<p class="ta-j"><strong>11.III.13 MILLOT Clary XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 57</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Damarie ou Damarice MILLOT, ° 26.04.1807 Clary, y † 03.03.1818 ?</p>
+<p class="ta-r"><span class="bleu">Marc MILLOT 588</span></p>
+<p class="ta-j"><strong>11.III.14 MILLOT Clary XIX<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche ascendance de Marie Joseph MILLOT, † 22.06.1835 Clary.</p>
+<p class="ta-r"><span class="bleu">Marc MILLOT 588</span></p>
+<p class="ta-j"><strong>11.III.15 MILLOT Clary XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 57</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Marie Françoise MILLOT, ° 22.04.1809 Clary.</p>
+<p class="ta-r"><span class="bleu">Marc MILLOT 588</span></p>
+<p class="ta-j"><strong>11.III.16 MONIEZ Avesnes-les-Aubert XVII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche ascendance de Robert MONIEZ, ° vers 1694 Avesnes les Aubert, † vers 1734.</p>
+<p class="ta-r"><span class="bleu">Colette MARLIER 615</span></p>
+<p class="ta-j"><strong>11.III.17 PARENT - HAPPE Clary XVIII<sup>e</sup>-XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 57</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Marie Jeanne HAPPE, ° avant 1787 Clary, y † 09.04.1860, x avec Jean Jacques PARENT, ° 09.09.1780 Clary.</p>
+<p class="ta-r"><span class="bleu">Marc MILLOT 588</span></p>
+<p class="ta-j"><strong>11.III.18 SANSE - LEBUT Cambrai Somain XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 57</span>) :</strong></p>
+<p class="ta-j">Recherche la dispense de consanguinité du 3<sup>e</sup> degré entre : - Barthélemy SANSE de Cambrai La Madeleine, fils de Philippe et Antoinette ANGER, x 12.04.1752 Somain avec : - Marie Françoise LEBUT de Cambrai La Madeleine. Les témoins au mariage à Somain sont Michel PRÉVOST, oncle maternel du marié, Nicolas Joseph PRÉVOST, cousin germain du marié de Cambrai.</p>
+<p class="ta-r"><span class="bleu">Marguerite FRUCHART-LASSELIN 199</span></p>
+<p class="ta-j"><strong>11.III.19 THIEULLET - MARGERIN Avesnes-les-Aubert XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 57</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : Charles Henri THIEULLET, tisseur, ° vers 1842 Avesnes-les-Aubert, y † 12.12.1910, x avec Maria MARGERIN, ° vers 1847 Avesnes-les-Aubert.</p>
+<p class="ta-r"><span class="bleu">Colette MARLIER 615</span></p>
+<p class="ta-j"><strong>11.III.20 TINTURIER - ÉLOIRE Reumont XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : Nicolas TINTURIER, x ca 1748 avec Marie Anne ÉLOIRE.</p>
+<p class="ta-r"><span class="bleu">Marie Noëlle NAVARRE-RICHET 783</span></p>
+<p class="ta-j"><strong>11.III.21 TRANNOY - TABARY Paillencourt Beugny XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 57</span>) :</strong></p>
+<p class="ta-j">Recherche tous renseignements sur Marie TABARY, épouse d'Hubert TRANNOY, ° 12.04.1841, d'où un fils Louis Hubert Joseph TRANNOY, ° 09.04.1879 Beugny.</p>
+<p class="ta-r"><span class="bleu">André CRASQUIN 231</span></p>
+<p class="ta-j"><strong>11.III.22 BÉLAMI - DESONS Cambrai XVIII<sup>e</sup>-XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 57</span>) :</strong></p>
+<p class="ta-j">Recherche mariage de Jean BÉLAMI, charcutier, ° ca 1753 Aubigny au Bac, † 10.07.1818 Cambrai, fils de Jean François et Marguerite GOBERT de Cambrai, x avec Marie Joseph DESONS ou PESONS.</p>
+<p class="ta-r"><span class="bleu">M<sup>me</sup> GUELUY-CAUDRON 928</span></p>
+<p class="ta-j"><strong>11.III.23 DECUPERE - MARTIN Bapaume Cambrai XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 57</span>) :</strong></p>
+<p class="ta-j">Recherche mariage et ascendance de Antoine Théodore DECUPERE, cabaretier, ° Bapaume, † 21.03.1841 Cambrai, x avec Jeanne Marguerite Françoise MARTIN, † 21.02.1835 Cambrai.</p>
+<p class="ta-r"><span class="bleu">M<sup>me</sup> GUELUY-CAUDRON 928</span></p>
+<p class="ta-j"><strong>11.III.24 DUSSAUSSOIS - GABEZ Clary XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 57</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Jean Baptiste DUSSAUSSOIS, † 03.02.1831 Clary (61 ans), x avec Catherine GABEZ, † 22.10.1858 Walincourt.</p>
+<p class="ta-r"><span class="bleu">Dominique LENGLET 505</span></p>
+<p class="ta-j"><strong>11.III.25 DUSSAUSSOIS - LAMOURET Clary XIX<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : Ferdinand DUSSAUSSOIS, † avant 1808, x avec Marie Joseph LAMOURET, † 06.11.1827 Clary (66 ans).</p>
+<p class="ta-r"><span class="bleu">Dominique LENGLET 505</span></p>
+<p class="ta-j"><strong>11.III.26 LAVALLARD - COLAR Bapaume Cambrai XIX<sup>e</sup> (réponses : <span class="rougegras">Farda n° 57, 58 &amp; 60</span>) :</strong></p>
+<p class="ta-j">Recherche tous renseignements sur le couple : Pierre Antoine LAVALLARD, et Joséphine COLAR, d'où une fille Victoire LAVALLARD, ° 26.09.1842 Anneux, † vers 1917 Inchy-en-Artois.</p>
+<p class="ta-r"><span class="bleu">M<sup>me</sup> GUELUY-CAUDRON 928</span></p>
+<p class="ta-j"><strong>11.III.27 LENGLET Troisvilles XVIII<sup>e</sup>-XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 65</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance paternelle d'Antoine Joseph LENGLET, ° 01.09.1737 Troisvilles, y † 30.11.1823, fils de Martin LENGLET, ° vers 1708 Le Cateau, † 12.04.1749 Troisvilles, époux de Marie Catherine BOITTEAU.</p>
+<p class="ta-r"><span class="bleu">Dominique LENGLET 505</span></p>
+<p class="ta-j"><strong>11.III.28 MERCIER - CHAUWIN Villers-lès-Cagnicourt XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 57</span>) :</strong></p>
+<p class="ta-j">Recherche naissance, mariage et ascendance du couple : Jean Lambert MERCIER, † 10.07.1766 Villers-lès-Cagnicourt, et Constance CHAUWIN, † 07.02.1779 Villers-lès-Cagnicourt.</p>
+<p class="ta-r"><span class="bleu">M<sup>me</sup> GUELUY-CAUDRON 928</span></p>
+<p class="ta-j"><strong>11.III.29 VATINELLE - COQUEREL Inchy-en Artois XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 57</span>) :</strong></p>
+<p class="ta-j">Recherche tous renseignements sur le couple : Jean Louis VATINELLE et Caroline Thérèse COQUEREL, d'où un fils, Jean Charles VATINELLE, employé des contributions indirectes, ° 26.04.1821 Paris 6<sup>e</sup>, † 19.07.1878 Inchy-en-Artois, y x 26.03.1850 avec Cunégonde Augustine CUVELIER, ° 20.03.1828 Inchy-en-Artois, † après 1880. Le couple VATINELLE - COQUERELLE habitait à Paris 6<sup>e</sup>, quai des Grands Augustins, rue Princesse en 1821.</p>
+<p class="ta-r"><span class="bleu">M<sup>me</sup> GUELUY-CAUDRON 928</span></p>
+<h2>Questions parues dans Farda n° 58 (mars 2012) :</h2>
+<p class="ta-j"><strong>12.I.01 ANGER Cambrai XVII<sup>e</sup>-XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 58</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Marie Antoinette ANGER, ° vers 1689, † 22.08.1764 Cambrai St Martin, x 22.11.1712 Cambrai La Madeleine avec Philippe SANSE. Au mariage de leur fils Barthélemy, le 12.04.1752 à Somain, celui-ci a pour témoins : Michel PRÉVOST, son oncle maternel, Nicolas Joseph PRÉVOST, son cousin de Cambrai. J'en déduis que Marie Antoinette ANGER avait une sœur mariée avec Michel PRÉVOST. Je n'ai pas trouvé la naissance de Marie Antoinette. Dans les parrains et marraines sont cités Marie Jeanne ANGER en 1713, Claude Joseph ANGER en 1733.</p>
+<p class="ta-r"><span class="bleu">Marguerite FRUCHART 199</span></p>
+<p class="ta-j"><strong>12.I.02 COQUELET - VITRANT Beauvois-en-Cambrésis XIX<sup>e</sup>-XX<sup>e</sup> (réponses : <span class="rougegras">Farda n° 58, 60 &amp; 62</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : Aimable COQUELET (1861-1937) et Célina VITRANT (1858-1927).</p>
+<p class="ta-r"><span class="bleu">Alain DEHÉE 744</span></p>
+<p class="ta-j"><strong>12.I.03 DELIGNY - LOTH Sains-lès-Marquion XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 58</span>) :</strong></p>
+<p class="ta-j">Recherche mariage du couple : Toussaint DELIGNY et Jérônime LOTH.</p>
+<p class="ta-r"><span class="bleu">Éveline MERCIER 655</span></p>
+<p class="ta-j"><strong>12.I.04 DELSAUX - LEBOUCQ Féchain Cambrai XVII<sup>e</sup>-XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : Jean Antoine DELSAUX et Catherine Françoise LEBOUCQ. Jean Antoine DELSAUX est né à Féchain vers 1673, † 25.07.1739 Cambrai St Martin. Dans l'acte de décès, il est indiqué Jean Antoine DELSAUX, demeurant sur le Grand Marché au coin de la rue des Fromages, natif de Féchain, époux de Catherine LEBOUCQ. Dans un autre acte, il est dit que Jean Antoine DELSAUX était marchand brasseur. Ils se sont mariés le 16.02.1708 Cambrai St Vaast après Cm passé en 1708 devant Mtre WATIER (minute disparue). Catherine Françoise LEBOUCQ est née à Cambrai et y est décédée le 19.11.1773.</p>
+<p class="ta-r"><span class="bleu">Jean Pierre MICHAUT 480</span></p>
+<p class="ta-j"><strong>12.I.05 DRON Élincourt XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 58</span>) :</strong></p>
+<p class="ta-j">Recherche naissance, mariage, ascendance et descendance de Pierre DRON, † 24.04.1780 Élincourt (70 ans), époux d'Ursule DÉGREMONT.</p>
+<p class="ta-r"><span class="bleu">Michèle COEZ 303</span></p>
+<p class="ta-j"><strong>12.I.06 DRON - THOMAS Élincourt XVIII<sup>e</sup>-XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 58</span>) :</strong></p>
+<p class="ta-j">Recherche naissance, mariage et ascendance du couple Pierre Joseph DRON, mulquinier, ° ca 1758, † 14.07.1828 Élincourt (70 ans), x avant 1789 avec Marie Madeleine THOMAS, ° ca 1749, † 10.06.1821 Élincourt (72 ans), d'où 3 enfants : Jean Baptiste, tisseur, ° 04.03.1789, Placide Joseph, ° 09.1791, Henri, mulquinier, ° ca 1795.</p>
+<p class="ta-r"><span class="bleu">Michèle COEZ 303</span></p>
+<p class="ta-j"><strong>12.I.07 FLAMENT Le-Cateau-Cambrésis Solesmes XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche ascendance de Jean André FLAMENT, fils de Jean, soldat dans les gardes française en garnison à Solesmes lorsqu'il y épousa le 28.08.1746 Marie Joseph CARTIGNIES. Contrat de mariage chez Mtre DELOFFRE, notaire au Quesnoy, le 23.08.1746.</p>
+<p class="ta-r"><span class="bleu">Daniel FLAMENT 621</span></p>
+<p class="ta-j"><strong>12.I.08 LEFEBVRE - COUPÉ Beugnies XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 58</span>) :</strong></p>
+<p class="ta-j">Recherche tous renseignements sur le couple : Hyacinthe LEFEBVRE et Anne Jeanne COUPÉ, d'où une fille Marie Aimable Caroline LEFEBVRE, ° 05.11.1751 Beugnies.</p>
+<p class="ta-r"><span class="bleu">André CRASQUIN 231</span></p>
+<p class="ta-j"><strong>12.I.09 MASSON - DOYEN Cambrai XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : Jean François MASSON, † 20.07.1755 Cambrai, y x 11.04.1716 avec Marie Magdeleine Joseph DOYEN, d'où une fille Marie Joseph MASSON, x avec Vincent MILLE.</p>
+<p class="ta-r"><span class="bleu">Daniel FLAMENT 621</span></p>
+<p class="ta-j"><strong>12.I.10 TALFER - BARBOTIN Eswars XVIII<sup>e</sup> (réponses : <span class="rougegras">Farda n° 58 &amp; 62</span>) :</strong></p>
+<p class="ta-j">Recherche tous renseignements sur Pierre Joseph TALFER, ° ca 1763 Eswars, fils d'Éloi et Marie Françoise BARBOTIN.</p>
+<p class="ta-r"><span class="bleu">André CRASQUIN 231</span></p>
+<p class="ta-j"><strong>12.I.11 TELLIER - DELBART Élincourt XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 58</span>) :</strong></p>
+<p class="ta-j">Recherche mariage vers 1760, et ascendance à Élincourt du couple, Norbert TELLIER (Niergnies 1726-1796) et Marie Anne DELBART, ° 1731 Élincourt.</p>
+<p class="ta-r"><span class="bleu">Jean Pierre MICHAUT 480</span></p>
+<p class="ta-j"><strong>12.I.12 CAMBRAY - DESPREZ Hamel XVIII<sup>e</sup>-XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 58</span>) :</strong></p>
+<p class="ta-j">Recherche origine, mariage et ascendance du couple : François CAMBRAY, ° entre 1761 et 1781, † 05.04.1841 Hamel, x avec Marie Angélique DESPREZ, ° vers 1763, † 12.12.1842 à Hamel, d'où plusieurs enfants nés à Hamel à partir de 1800.</p>
+<p class="ta-r"><span class="bleu">Raphaël WIART 898</span></p>
+<p class="ta-j"><strong>12.I.13 BOURSIEZ - MILLOT Clary-en-Cambrésis XIX<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : François BOURSIEZ, x 12.03.1835 Clary avec Isabelle MILLOT.</p>
+<p class="ta-r"><span class="bleu">Marc MILLOT 588</span></p>
+<p class="ta-j"><strong>12.I.14 DOUBLEMART - MILLOT Clary-en-Cambrésis XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 58</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : François Joseph DOUBLEMART, x 04.02.1820 Clary avec Catherine MILLOT.</p>
+<p class="ta-r"><span class="bleu">Marc MILLOT 588</span></p>
+<p class="ta-j"><strong>12.I.15 LESAGE Graincourt-lès-Havrincourt Cauroir XVII<sup>e</sup>-XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 58</span>) :</strong></p>
+<p class="ta-j">Recherche naissance et ascendance de Pierre Michel LESAGE, né à Graincourt, † 15.08.1711 Cauroir, x 30.06.1701 Cauroir avec Francesca de SAINT AUBERT.</p>
+<p class="ta-r"><span class="bleu">Jean François LESAGE</span></p>
+<p class="ta-j"><strong>12.I.16 MILLOT Clary-en-Cambrésis XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 58</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Marie Damarice MILLOT, ° 04.04.1820 Clary.</p>
+<p class="ta-r"><span class="bleu">Marc MILLOT 588</span></p>
+<p class="ta-j"><strong>12.I.17 MILLOT Clary-en-Cambrésis XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 58</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Michel Damas MILLOT, † 29.07.1836 Clary.</p>
+<p class="ta-r"><span class="bleu">Marc MILLOT 588</span></p>
+<p class="ta-j"><strong>12.I.18 de SAINT AUBERT Cauroir XVII<sup>e</sup>-XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 58</span>) :</strong></p>
+<p class="ta-j">Recherche naissance et ascendance de Francesca de SAINT AUBERT, ° vers 1680 Cauroir, y † 28.03.1719, y x 30.06.1701 avec Pierre Michel LESAGE, y xx 21.09.1712 avec Philippe HERBIN.</p>
+<p class="ta-r"><span class="bleu">Jean François LESAGE</span></p>
+<p class="ta-j"><strong>12.I.19 TRANCHANT - CHARLART Bantouzelle XIX<sup>e</sup> (réponses : <span class="rougegras">Farda n° 58 &amp; 59</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance d'Émile TRANCHANT, ° 06.09.1849 Bantouzelle, † 1913 Chauny, fils de Jacques et Angélique CHARLART.</p>
+<p class="ta-r"><span class="bleu">Arnaud GABET 285</span></p>
+<p class="ta-j"><strong>12.I.20 WARGNIES - LESAGE Cantaing XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 58</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : Pierre Louis WARGNY de Cantaing, x 1730 avec Marie Anne LESAGE, d'Inchy en Artois.</p>
+<p class="ta-r"><span class="bleu">Liliane BOTELLA 936</span></p>
+<h2>Questions parues dans Farda n° 59 (juillet 2012) :</h2>
+<p class="ta-j"><strong>12.II.01 BOUDALIER Cambrai Aubigny-au-Bac XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 59</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Julie Émélie BOUDALIER, ° 1793 Cambrai, † 16.01.1855 Aubigny-au-Bac, y x 23.11.1814 avec Charles Joseph DUMONT.</p>
+<p class="ta-r"><span class="bleu">Guy LASSALLE 943</span></p>
+<p class="ta-j"><strong>12.II.02 COURTRAIT - DOR Marquion XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 59</span>) :</strong></p>
+<p class="ta-j">Recherche mariage et ascendance du couple : Vincent COURTRAIT, manouvrier, et Catherine DOR, fileuse, tous deux nés vers 1779 et résidant à Marquion.</p>
+<p class="ta-r"><span class="bleu">Jean Charlemagne DELAPORTE 573</span></p>
+<p class="ta-j"><strong>12.II.03 DELHAL(LE) Lesdain XIX<sup>e</sup> (réponses : <span class="rougegras">Farda n° 59 &amp; 60</span>) :</strong></p>
+<p class="ta-j">Thomas DELHAL, x 12.06.1812 Lesdain avec Marie Bernardine GUINET est-il bien le fils de Thomas DELHAL et Gabrielle PROYE qui se sont marie par Cm du 26.01.1790 (AD59, J 1773/6). Dans les tables décennales on trouve : Thomas DELHAL, † 04.05.1855, Bernardine GUINET, † 29.04.1853.</p>
+<p class="ta-r"><span class="bleu">Marguerite FRUCHART 199</span></p>
+<p class="ta-j"><strong>12.II.04 LASSEREZ - GOSSELET Cambrai XVIII<sup>e</sup>-XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 59</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de François Joseph LASSEREZ, ° vers 1779 Cambrai, y † 27.09.1859, fils de François, ° vers 1754, et de Marie Louise DELCROIX, époux de Albertine GOSSELET.</p>
+<p class="ta-r"><span class="bleu">Alain DEHÉE 744</span></p>
+<p class="ta-j"><strong>12.II.05 LEGROS - VASSEUR Pronville XIX<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche mariage et ascendance du couple : Pierre Guislain LEGROS, berger, né vers 1823 (fils de Pierre Louis et Marie Joseph PAGNIEZ), et Mérentine VASSEUR, ° vers 1828, tous deux résidant à Pronville.</p>
+<p class="ta-r"><span class="bleu">Jean Charlemagne DELAPORTE 573</span></p>
+<p class="ta-j"><strong>12.II.06 LEMAIRE - LOISEL Naves XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche ascendance de Marie Josèphe LOISEL, mariée probablement à Naves, avec Germain Gervais LEMAIRE.</p>
+<p class="ta-r"><span class="bleu">Francis LELONG 597</span></p>
+<p class="ta-j"><strong>12.II.07 LEMER - DELARBRE Naves XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche ascendance de Marie DELARBRE, née à Naves, x avant 1773 avec Maurice LEMER.</p>
+<p class="ta-r"><span class="bleu">Francis LELONG 597</span></p>
+<p class="ta-j"><strong>12.II.08 LEMOINE - VIGNOL Cauroir XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 59</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance d'Anne Monique VIGNOL, x avec Alexandre LEMOINE, maître charpentier à Cauroir (1745-1815).</p>
+<p class="ta-r"><span class="bleu">Francis LELONG 597</span></p>
+<p class="ta-j"><strong>12.II.09 MOREAU - MAILLOT Masnières XVIII<sup>e</sup> (réponses : <span class="rougegras">Farda n° 59 &amp; 60</span>) :</strong></p>
+<p class="ta-j">Dans Farda n° 27, réponse 01.III.57, vous donnez : 8/9 Charles MOREAU, ° ca 1675, † après 1735, x Marie Barbe HÉGO, ° ca 1672, † après 1735. 16/17 Pierre MOREAU, ° ca 1651, † après 1716, x Marie NELLE, † avant 1713. Quel lien établir avec : - Noël MOREAU, x 1706 avec Jeanne HARDUIN, xx 1730 avec Marie Jeanne MASCLET. - Jean François alias Pierre MOREAU, x avec Marie Jeanne GAUTIER. Au mariage de leur fils en 1738, sont témoins, Charles et Noël ses oncles. Charles, Noël et Jean François MOREAU, sont donc frères. Je pensais que Jean François MOREAU époux de Marie Jeanne GAUTIER était fils de Michel MOREAU et Marie Barbe CARRÉ. Pouvez vous m'éclairer ?</p>
+<p class="ta-r"><span class="bleu">Marguerite FRUCHART 199</span></p>
+<p class="ta-j"><strong>12.II.10 TALFER - BODA Eswars XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 59</span>) :</strong></p>
+<p class="ta-j">Recherche naissance à Eswars vers 1769 de Pierre Joseph TALFER, x 9 fructidor an VI Paillencourt avec Angélique BODA, ° 1779 Paillencourt.</p>
+<p class="ta-r"><span class="bleu">André CRASQUIN 231</span></p>
+<p class="ta-j"><strong>12.II.11 TELLIER - DELBART Niergnies Élincourt XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche date exacte du mariage à Élincourt de Norbert TELLIER (Niergnies 1726-1796) et Marie Anne DELBART, ° vers 1731 Élincourt. Date exacte de naissance à Élincourt de Marie Anne DELBART.</p>
+<p class="ta-r"><span class="bleu">Jean Pierre MICHAUT 480</span></p>
+<p class="ta-j"><strong>12.II.12 TRIBOU Cambrai XVII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 59</span>) :</strong></p>
+<p class="ta-j">Recherche naissance et ascendance du couple : Dominique TRIBOU, x 05.07.1697 Cambrai St Nicolas avec Marie Anne COLPART.</p>
+<p class="ta-r"><span class="bleu">Jean Michel TRIBOUT 954</span></p>
+<p class="ta-j"><strong>12.II.13 TRIBOU Cambrai XVII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 59</span>) :</strong></p>
+<p class="ta-j">Recherche naissance et ascendance du couple : Dominique TRIBOU, x 03.07.1665 Cambrai St Georges avec Marie Louise N.. (illisible).</p>
+<p class="ta-r"><span class="bleu">Jean Michel TRIBOUT 954</span></p>
+<p class="ta-j"><strong>12.II.14 TRIBOU Fontaine-Notre-Dame XVII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 59</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance du couple Dominique TRIBOU, x vers 1580 Fontaine-Notre-Dame avec Avoie FOULLON.</p>
+<p class="ta-r"><span class="bleu">Jean Michel TRIBOUT 954</span></p>
+<p class="ta-j"><strong>12.II.15 TRIBOU Cambrai XVII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 59</span>) :</strong></p>
+<p class="ta-j">Dans un mémoire de la Société d'Émulation de Cambrai, note de redressement, on indique trois noms Guillaume, ...., Dominique TRIBOU : 1633-1640. Qu'est ce qu'une note de redressement et que dit cette note au sujet de Dominique TRIBOU ?</p>
+<p class="ta-r"><span class="bleu">Jean Michel TRIBOUT 954</span></p>
+<p class="ta-j"><strong>12.II.16 BROQUET Sauchy-Lestrée XIX<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche ascendance d'Émélie BROCQUET, ° 01.03.1893 Sauchy-Lestrée, fille d'Eudoxie Hélène BROCQUET, femme divorcée, ° 1853.</p>
+<p class="ta-r"><span class="bleu">Alain DEHÉE 744</span></p>
+<p class="ta-j"><strong>12.II.17 CRESPIN Le Buat XVII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 59</span>) :</strong></p>
+<p class="ta-j">Comme suite à la publication dans Farda n° 58 d'une généalogie CRESPIN du Cambrésis peut-on envisager un rapprochement entre cette branche et celle issue d'Aubert CRESPIN, fils de Quentin et Catherine BERNARD, censier d'Anchin-au-Buat, x 05.06.1693 avec Marie Antoinette DUPONT, xx avec Jeanne DERVEAU d'où descendance jointe.</p>
+<p class="ta-r"><span class="bleu">Pierre BAUDRIN 680</span></p>
+<p class="ta-j"><strong>12.II.18 DHEZ - TRIBOUT Bourlon XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : Philippe Antoine DHEZ, † 29.10.1743 Bourlon, et Jeanne TRIBOUT, † 27.04.1743 Bourlon.</p>
+<p class="ta-r"><span class="bleu">Alain DEHÉE 744</span></p>
+<p class="ta-j"><strong>12.II.19 FASCIAUX - HOUZON Paillencourt XIX<sup>e</sup> (réponses : <span class="rougegras">Farda n° 59 &amp; 62</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : - Jean Baptiste FASCIAUX, ° vers 1840 Paillencourt, x avec Philomène HOUZON, ° vers 1850, d'où notamment Maria Joséphine FASCIAUX, ° 25.08.1874 Paillencourt, y x 28.04.1893 avec Victor MAHIEU, ° 06.07.1851 Bouchain, brasseur et maire d'Estrun, y † 26.05.1897.</p>
+<p class="ta-r"><span class="bleu">Alain DEHÉE 744</span></p>
+<h2>Questions parues dans Farda n° 60 (novembre 2012) :</h2>
+<p class="ta-j"><strong>12.III.01 BERQUET - PION Cambrai XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche mariage et ascendance du couple : Jules Joseph BERQUET, ° avant 1700, † vers 1766 Cambrai Ste Croix, x avant 1720 avec Marie Cécile PION, ° avant 1700, † avant 07.02.1747.</p>
+<p class="ta-r"><span class="bleu">Guy LASSALLE 943</span></p>
+<p class="ta-j"><strong>12.III.02 COULLEMONT - CASTIAUX Thun-l'Évêque XVII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 60</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance du couple : Hilaire COULLEMONT et Marguerite CASTIAUX de Thun-l'Évêque.</p>
+<p class="ta-r"><span class="bleu">Jean Pierre MICHAUT 480</span></p>
+<p class="ta-j"><strong>12.III.03 DEGROISE - BÉTRANCOURT Paillencourt XVII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 60</span>) :</strong></p>
+<p class="ta-j">Recherche date et lieu de mariage du couple : Jean François DEGROISE, ° 13.09.1693 Paillencourt, y † 1753, et Jeanne BÉTRANCOURT.</p>
+<p class="ta-r"><span class="bleu">André CRASQUIN 231</span></p>
+<p class="ta-j"><strong>12.III.04 DELAVAL - PILOT Cambrai XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 99</span>) :</strong></p>
+<p class="ta-j">Recherche mariage et ascendance du couple : Nicolas Joseph DELAVAL, ° avant 1700, † avant 29.09.1750, x avant 1725 avec Marie Claire PILOT, ° avant 1700, † avant 29.09.1750.</p>
+<p class="ta-r"><span class="bleu">Guy LASSALLE 943</span></p>
+<p class="ta-j"><strong>12.III.05 DHEZ - TRIBOUT Bourlon XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 60</span>) :</strong></p>
+<p class="ta-j">Recherche mariage et ascendance du couple : Philippe Antoine DHEZ, † avant 1729, et Marie Jeanne TRIBOUT, † 27.04.1743 Bourlon.</p>
+<p class="ta-r"><span class="bleu">Micheline MORAES-DHETZ 832</span></p>
+<p class="ta-j"><strong>12.III.06 LEDUC Saint-Hilaire-lès-Cambrai XX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 60</span>) :</strong></p>
+<p class="ta-j">Recherche dates de naissance et décès de :</p>
+<ul>
+<li>Enfants d'Émile LEDUC, et Adèle HUCHIEZ - LEDUC Émilienne, ° 1901 Saint-Hilaire. - LEDUC Céline, ° 1903 Saint-Hilaire. - LEDUC Fernand, ° 1905 Saint-Hilaire.</li>
+<li>Fille d'Irénée LEDUC et Flore CARREZ. - LEDUC Léontine, ° 1896 Saint-Hilaire, x avec Pierre DÉPOMMIER de Marcoing.</li>
+<li>Décès pendant la Première Guerre de Grégoire LEDUC, ° 06.09.1892 Saint Hilaire, fils d'Irénée et Flore CARREZ.</li>
+</ul>
+<p class="ta-r"><span class="bleu">Clotilde THÉRY 946</span></p>
+<p class="ta-j"><strong>12.III.07 MASNIÈRES Registres BMS et état civil XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 60</span>) :</strong></p>
+<p class="ta-j">Les Archives du Nord mentionnent sur leur site, dans les archives en ligne, l'existence de registres couvrant la période 1761 à 1774. Malheureusement, rien n'est disponible. Est-ce une erreur ou ces registres existent-t-ils vraiment. Si oui, comment les consulter ?</p>
+<p class="ta-r"><span class="bleu">Olivier ROBERT 944</span></p>
+<p class="ta-j"><strong>12.III.08 MÉRIAUX - DIEULOT Paillencourt XVII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 60</span>) :</strong></p>
+<p class="ta-j">Recherche mariage et ascendance du couple : Michel MÉRIAUX, ° ca 1695, † 05.10.1756 Paillencourt, et Anne Jacqueline DIEULOT, ° ca 1703, † 04.12.1776 Paillencourt.</p>
+<p class="ta-r"><span class="bleu">André CRASQUIN 231</span></p>
+<p class="ta-j"><strong>12.III.09 Recensements du Cambrésis (réponse : <span class="rougegras">Farda n° 60</span>) :</strong></p>
+<p class="ta-j">Est-ce que les recensements des communes du Cambrésis de 1692 à 1906 exclu ont été dépouillés et sont quelque part disponibles. Monsieur Raphaël WIART avait relevé le nombre d'habitants par année et par commune dans les numéros 23, 24 et 25 de la revue " Cambrésis Terre d'Histoire". Réjane et Marc MAILLOT, de l'association COURTIL, ont mis sur internet le détail de chaque commune pour l'année 1778. Je cherche le même travail pour le village de Masnières pour tous les autres recensements.</p>
+<p class="ta-r"><span class="bleu">Olivier ROBERT 944</span></p>
+<p class="ta-j"><strong>12.III.10 RICHEZ - CARDON Troisvilles Cambrai XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 60</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Félix Joseph RICHEZ, ° 17.11.1852 Troisvilles, † 08.06.1900 Lille, fils de Félix Joseph, RICHEZ, x 19.03.1849 Troisvilles avec Marie Anne CARDON, † après le 08.06.1900 Cambrai.</p>
+<p class="ta-r"><span class="bleu">Janine HUBAUT-ÉTHUIN 958</span></p>
+<p class="ta-j"><strong>12.III.11 TELLIER - RICHARD Aubigny-au-Bac XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche mariage, et ascendance du couple : Arnould TELLIER, ° 03.03.1708 Aubigny-au-Bac, y † 24.04.1769, x avant 1735 avec Marie Augustine RICHARD, ° avant 1715, † après 29.04.1753.</p>
+<p class="ta-r"><span class="bleu">Guy LASSALLE 943</span></p>
+<p class="ta-j"><strong>12.III.12 TISON - FOCQUET Naves XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche mariage du couple Joseph TISON et Marie Catherine FOCQUET. L'événement a eu lieu entre le 23.08.1741, date du décès à Naves de Marie Jeanne BOUBAY première épouse de Joseph, et le 10.04.1743, date de naissance à Naves de Marie Pasque, premier enfant trouvé à Naves de Joseph et de sa légitime épouse Marie Catherine FOCQUET.</p>
+<p class="ta-r"><span class="bleu">Christiane ARRACHART 912</span></p>
+<p class="ta-j"><strong>12.III.13 TRANNOY - LEFEBVRE Iwuy XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche mariage et ascendance du couple : Antoine TRANNOY, ° ca 1704, † 21.05.1751 Iwuy, et Marie LEFEBVRE.</p>
+<p class="ta-r"><span class="bleu">André CRASQUIN 231</span></p>
+<p class="ta-j"><strong>12.III.14 TRIBOU Raillencourt-Sainte-Olle XVII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 60</span>) :</strong></p>
+<p class="ta-j">Recherche date et lieu de naissance vers 1620, mariage vers 1645 à Raillencourt ou Fontaine-Notre-Dame de Dominique TRIBOU, x Ursule BOUTTEMY. Domiciliés à Raillencourt en 1673 d'après un acte de vente à Fontaine-Notre-Dame.</p>
+<p class="ta-r"><span class="bleu">Jean Michel TRIBOUT 954</span></p>
+<p class="ta-j"><strong>12.III.15 TRIBOU Cambrai XVII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 60</span>) :</strong></p>
+<p class="ta-j">Recherche naissance, décès et paroisse du mariage le 03.07.1665 à Cambrai de Dominique TRIBOUT avec Marie Louise (nom illisible).</p>
+<p class="ta-r"><span class="bleu">Jean Michel TRIBOUT 954</span></p>
+<p class="ta-j"><strong>12.III.16 TRIBOU Cambrai XVII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 60</span>) :</strong></p>
+<p class="ta-j">Recherche naissance et ascendance du couple : Dominique TRIBOU x 05.07.1606 Cambrai St-Nicolas avec Marie Anne COLPART.</p>
+<p class="ta-r"><span class="bleu">Jean Michel TRIBOUT 954</span></p>
+<p class="ta-j"><strong>12.III.17 TRIBOU Fontaine-Notre-Dame XVI<sup>e</sup> (réponse : <span class="rougegras">Farda n° 60</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance de Dominique TRIBOU, x avant 1588 (selon un achat de terrain) avec Avoie FOULLON.</p>
+<p class="ta-r"><span class="bleu">Jean Michel TRIBOUT 954</span></p>
+<p class="ta-j"><strong>12.III.18 Troisvilles BMS état civil (réponse : <span class="rougegras">Farda n° 60</span>) :</strong></p>
+<p class="ta-j">Sur le site des AD59 on ne trouve pour Troisvilles que les tables décennales de l'état civil. Existe-t-il des archives BMS et état civil concernant cette commune.</p>
+<p class="ta-r"><span class="bleu">Janine HUBAUT-ÉTHUIN 958</span></p>
+<p class="ta-j"><strong>12.III.19 VERRIEZ - RÉMY Paillencourt XVII<sup>e</sup>-XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 60</span>) :</strong></p>
+<p class="ta-j">Recherche mariage et ascendance du couple : Jean Hubert VERRIER, ° ca 1694 Paillencourt, y † 25.12.1761, et Marie Élisabeth RÉMY, † 18.05.1750 Paillencourt.</p>
+<p class="ta-r"><span class="bleu">André CRASQUIN 231</span></p> 
+</div>
+<div class="pagefoot">
+  <a class="totop" href="#haut" title="Retour en haut de la page" aria-label="Retour en haut de la page">
+    <svg viewBox="0 0 80 84" aria-hidden="true"><path class="totop__trunk" d="M40 82 V48 M40 60 L28 48 M40 56 L53 44 M40 48 L40 36" />
+    <g class="totop__leaves"><circle cx="40" cy="26" r="14" /><circle cx="24" cy="36" r="11" /><circle cx="56" cy="34" r="12" /><circle cx="28" cy="20" r="9" /><circle cx="52" cy="18" r="10" /></g></svg>
+  </a>
+  <p class="date_maj">Page mise à jour le 14/11/2025 à 21h49</p>
+</div>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <nav class="footer__links" aria-label="Pied de page">
+        <a href="contacts.html">Nous écrire</a>
+        <a href="page-2.html">Mentions légales</a>
+        <a href="plan-du-site.html">Plan du site</a>
+      </nav>
+      <p class="copyright">Raphaël WIART © 2010-2026</p>
+    </div>
+  </footer>
+
+  <!-- Bandeau cookies -->
+  <div class="cookies" role="dialog" aria-live="polite" hidden>
+    <p>Bienvenue sur www.ggac.fr !<br />En poursuivant votre navigation, vous acceptez l'utilisation de cookies permettant d'améliorer votre expérience utilisateur.</p>
+    <div class="cookies__actions">
+      <a href="mentions-cookies.html">En savoir plus</a>
+      <button type="button" class="cookies__ok">J'accepte</button>
+    </div>
+  </div>
+
+  <!-- Visionneuse -->
+  <div class="lightbox" aria-hidden="true">
+    <button class="lightbox__close" aria-label="Fermer">×</button>
+    <figure class="lightbox__fig"><img alt="" /><figcaption></figcaption></figure>
+  </div>
+
+  <!-- Rinceau végétal réutilisable (inspiré du feuillage d'origine) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <g id="vine">
+        <path class="vine__stem" d="M30 200 C 80 170, 120 150, 150 110 C 170 80, 175 50, 160 20" />
+        <path class="vine__stem" d="M150 110 C 190 90, 220 60, 250 25" />
+        <path class="vine__stem" d="M120 145 C 100 120, 75 115, 70 95 C 66 78, 82 66, 96 72 C 108 78, 104 94, 92 92" />
+        <path class="vine__stem" d="M165 92 C 190 100, 205 90, 200 74 C 196 62, 182 62, 180 72 C 178 80, 186 84, 190 80" />
+        <path class="vine__stem" d="M100 165 C 110 185, 130 192, 140 180 C 148 168, 136 158, 128 166" />
+        <path class="vine__stem" d="M80 178 C 70 190, 60 192, 48 186" />
+        <g class="vine__leaves">
+          <path class="leaf" style="--r:-30deg" d="M160 20 c -18 -6 -30 2 -34 14 c 14 4 28 -2 34 -14 z" />
+          <path class="leaf" style="--r:20deg" d="M250 25 c -4 16 -14 24 -24 24 c 2 -14 12 -22 24 -24 z" />
+          <path class="leaf" style="--r:10deg" d="M235 60 c 6 14 4 26 -4 32 c -6 -12 -4 -24 4 -32 z" />
+          <path class="leaf" style="--r:-15deg" d="M48 186 c -16 -4 -28 2 -32 12 c 14 4 26 0 32 -12 z" />
+          <path class="leaf" style="--r:25deg" d="M110 200 c 2 16 -4 28 -12 32 c -4 -12 2 -26 12 -32 z" />
+        </g>
+      </g>
+    </defs>
+  </svg>
+
+  
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

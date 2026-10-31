@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Questions parues dans les numéros 91 à 100 de Farda - Groupe des Généalogistes Amateurs du Cambrésis</title>
+  <meta name="author" content="Raphaël WIART" />
+  <meta name="theme-color" content="#f4ede0" />
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+  <link rel="alternate" type="application/rss+xml" title="Flux RSS du site officiel du G.G.A.C." href="https://www.ggac.fr/rss.xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  
+</head>
+<body id="haut" class="">
+
+  <!-- Intro : une goutte d'encre qui révèle la page -->
+  <div class="intro" aria-hidden="true">
+    <svg class="intro__seal" viewBox="0 0 120 140">
+      <path class="intro__shield" d="M10 10 H110 V70 C110 105 85 122 60 132 C35 122 10 105 10 70 Z" />
+    </svg>
+  </div>
+
+  <div class="progress" aria-hidden="true"><span></span></div>
+  <canvas class="dust" aria-hidden="true"></canvas>
+
+  <!-- Barre utilitaire -->
+  <div class="topbar">
+    <div class="wrap topbar__inner">
+      <p class="topbar__maj"><span class="bleu">Mis à jour le 31/10/26</span> - <span class="counter" data-count="119617">119 617</span> visiteurs depuis le 12/03/10</p>
+      <nav class="quick" aria-label="Liens rapides">
+        <a href="agenda.html">Agenda</a>
+        <a href="page-5.html">Adhésion</a>
+        <a href="https://www.ggac.fr/fichiers/file/tarifs_publications.pdf" target="_blank" rel="noopener">Tarifs</a>
+        <a href="https://www.ggac.fr/fichiers/file/commande.pdf" target="_blank" rel="noopener">Commande</a>
+        <a href="https://www.ggac.fr/rss.xml" class="quick__rss">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="3" cy="13" r="2"/><path d="M1 7a8 8 0 0 1 8 8M1 2a13 13 0 0 1 13 13"/></svg>
+          Flux RSS</a>
+      </nav>
+      <form class="search" action="https://www.ggac.fr/rechercher.php" method="post" name="recherche">
+        <label class="sr-only" for="requete">Rechercher sur le site</label>
+        <input name="requete" type="search" id="requete" placeholder="Rechercher sur le site" autocomplete="off" aria-controls="search-results" />
+        <button type="submit" name="ok" id="ok">OK</button>
+        <ul class="search__results" id="search-results" hidden></ul>
+      </form>
+    </div>
+  </div>
+
+  <!-- En-tête -->
+  <header class="hero">
+    <svg class="vine vine--hero" viewBox="0 0 260 240" aria-hidden="true">
+      <use href="#vine" />
+    </svg>
+    <div class="wrap hero__inner">
+      <a class="brand" href="index.html" title="Retour à la page d'accueil">
+        <span class="brand__shields"><img src="assets/img/shields.png" alt="" width="195" height="125" /></span>
+        <span class="brand__name" aria-label="Groupe des Généalogistes Amateurs du Cambrésis">
+          <span class="line"><span class="w"><b>G</b>roupe</span></span>
+          <span class="line">des <span class="w"><b>G</b>énéalogistes</span></span>
+          <span class="line"><span class="w"><b>A</b>mateurs</span> du <span class="w"><b>C</b>ambrésis</span></span>
+        </span>
+      </a>
+      <div class="hero__frames" aria-hidden="true">
+        <figure class="frame frame--manuscrit" data-depth="0.25"><img src="assets/img/manuscrit.jpg" alt="" /></figure>
+        <figure class="frame frame--photo" data-depth="0.6"><img src="assets/img/photo.jpg" alt="" /></figure>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation principale -->
+  <nav class="nav" aria-label="Navigation principale">
+    <div class="wrap nav__inner">
+      <button class="nav__burger" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span><span class="sr-only">Menu</span></button>
+      <ul class="menu" id="menu">
+<li class=""><a class="menu__top" href="index.html">Accueil</a></li>
+<li class="has-sub"><button class="menu__top" aria-expanded="false">L&#x27;association</button><div class="sub"><ul class="sub__col"><li><a href="agenda.html">Agenda</a></li><li><a href="page-3.html">Présentation</a></li><li><a href="page-53.html">Assemblée générale 2025</a></li><li><a href="page-142.html">Scaldobrésia 2025</a></li><li><a href="page-106.html">Retraite et bénévolat</a></li><li><a href="page-4.html">Zone d&#x27;action</a></li><li><a href="page-5.html">Adhésion</a></li><li><a href="page-6.html">Conseil d&#x27;administration</a></li><li><a href="page-7.html">Membres fondateurs</a></li><li><a href="page-8.html">Membres donateurs</a></li></ul></div></li>
+<li class="has-sub is-active"><button class="menu__top" aria-expanded="false">Publications</button><div class="sub sub--wide"><ul class="sub__col"><li><a href="page-62.html">Nouvelles publications</a></li><li class="has-fly"><a href="page-9.html">Farda</a><ul class="fly"><li><a href="page-10.html">Farda n° 1 à 10</a></li><li><a href="page-11.html">Farda n° 11 à 20</a></li><li><a href="page-12.html">Farda n° 21 à 30</a></li><li><a href="page-13.html">Farda n° 31 à 40</a></li><li><a href="page-14.html">Farda n° 41 à 50</a></li><li><a href="page-15.html">Farda n° 51 à 60</a></li><li><a href="page-74.html">Farda n° 61 à 70</a></li><li><a href="page-97.html">Farda n° 71 à 80</a></li><li><a href="page-112.html">Farda n° 81 à 90</a></li><li><a href="page-136.html">Farda n° 91 à 100</a></li><li><a href="page-144.html">Farda n° 101 à 110</a></li></ul></li><li class="has-fly"><a href="page-16.html">Questions des membres</a><ul class="fly"><li><a href="page-17.html">Questions des Farda n° 1 à 10</a></li><li><a href="page-18.html">Questions des Farda n° 11 à 20</a></li><li><a href="page-19.html">Questions des Farda n° 21 à 30</a></li><li><a href="page-20.html">Questions des Farda n° 31 à 40</a></li><li><a href="page-21.html">Questions des Farda n° 41 à 50</a></li><li><a href="page-22.html">Questions des Farda n° 51 à 60</a></li><li><a href="page-75.html">Questions des Farda n° 61 à 70</a></li><li><a href="page-98.html">Questions des Farda n° 71 à 80</a></li><li><a href="page-113.html">Questions des Farda n° 81 à 90</a></li><li><a href="page-137.html">Questions des Farda n° 91 à 100</a></li><li><a href="https://www.ggac.fr/index.php?page=145">Questions des Farda n° 101 à 110</a></li></ul></li><li><a href="page-23.html">Éditions du G.G.A.C.</a></li><li><a href="page-24.html">Généalogies du Cambrésis</a></li><li><a href="page-25.html">Fardes cambrésiennes</a></li></ul><div class="sub__dict"><a class="sub__dict-title" href="page-26.html">Dictionnaires des familles</a><ul class="dict"><li><a href="page-76.html">Anneux</a></li><li><a href="page-30.html">Awoingt</a></li><li><a href="page-122.html">Banteux</a></li><li><a href="page-124.html">Bantouzelle</a></li><li><a href="page-105.html">Baralle</a></li><li><a href="page-27.html">Beaumont-en-Cis</a></li><li><a href="page-28.html">Beauvois-en-Cis</a></li><li><a href="page-31.html">Bertry</a></li><li><a href="page-135.html">Béthencourt</a></li><li><a href="page-103.html">Bévillers</a></li><li><a href="page-88.html">Blécourt</a></li><li><a href="page-32.html">Bourlon</a></li><li><a href="page-92.html">Boursies</a></li><li><a href="page-131.html">Boussières-en-Cambrésis</a></li><li><a href="page-120.html">Briastre</a></li><li><a href="page-99.html">Buissy</a></li><li><a href="page-84.html">Cagnoncles</a></li><li><a href="page-79.html">Cantaing-sur-Escaut</a></li><li><a href="page-33.html">Cattenières</a></li><li><a href="page-116.html">Caudry</a></li><li><a href="page-114.html">Cauroir</a></li><li><a href="page-123.html">Dehéries</a></li><li><a href="page-86.html">Doignies</a></li><li><a href="page-110.html">Épinoy</a></li><li><a href="page-90.html">Escaudœuvres</a></li><li><a href="page-119.html">Esnes</a></li><li><a href="page-139.html">Estourmel</a></li><li><a href="page-34.html">Estrun</a></li><li><a href="page-109.html">Eswars</a></li><li><a href="page-63.html">Flesquières</a></li><li><a href="page-35.html">Fontaine-au-Pire</a></li><li><a href="page-69.html">Fontaine-Notre-Dame</a></li><li><a href="page-132.html">Gonnelieu</a></li><li><a href="page-36.html">Gouy-Saint-André</a></li><li><a href="page-130.html">Graincourt-lès-Havrincourt</a></li><li><a href="page-117.html">Hendecourt-lès-Cagnicourt</a></li><li><a href="page-96.html">Hermies</a></li><li><a href="page-65.html">Honnechy</a></li><li><a href="page-138.html">Honnecourt-sur-Escaut</a></li><li><a href="page-29.html">Inchy</a></li><li><a href="page-71.html">Inchy-en-Artois</a></li><li><a href="page-102.html">Iwuy</a></li><li><a href="page-67.html">Lebucquière</a></li><li><a href="page-141.html">Maretz</a></li><li><a href="page-94.html">Marquion</a></li><li><a href="page-93.html">Masnières</a></li><li><a href="page-87.html">Maurois</a></li><li><a href="page-66.html">Mœuvres</a></li><li><a href="page-128.html">Naves</a></li><li><a href="page-60.html">Niergnies</a></li><li><a href="page-73.html">Noyelles-sur-Escaut</a></li><li><a href="page-121.html">Ors</a></li><li><a href="page-101.html">Pronville-en-Artois</a></li><li><a href="page-37.html">Proville</a></li><li><a href="page-78.html">Quéant</a></li><li><a href="page-80.html">Raillencourt-Sainte-Olle</a></li><li><a href="page-61.html">Ramillies</a></li><li><a href="page-140.html">Reumont</a></li><li><a href="page-127.html">Ribécourt-la-Tour</a></li><li><a href="page-118.html">Rieux-en-Cambrésis</a></li><li><a href="page-89.html">Rumilly-en-Cis</a></li><li><a href="page-81.html">Sailly-lez-Cambrai</a></li><li><a href="page-38.html">Sains-lès-Marquion</a></li><li><a href="page-133.html">Saint-Hilaire-lez-Cambrai</a></li><li><a href="page-134.html">Saint-Vaast-en-Cambrésis</a></li><li><a href="page-82.html">Sancourt</a></li><li><a href="page-107.html">Sauchy-Cauchy</a></li><li><a href="page-108.html">Sauchy-Lestrée</a></li><li><a href="page-91.html">Séranvillers-Forenville</a></li><li><a href="page-70.html">Thun-l&#x27;Évêque</a></li><li><a href="page-39.html">Thun-Saint-Martin</a></li><li><a href="page-72.html">Trescault</a></li><li><a href="page-115.html">Troisvilles</a></li><li><a href="page-68.html">Vélu</a></li><li><a href="page-104.html">Viesly</a></li><li><a href="page-40.html">Villers-en-Cauchies</a></li><li><a href="page-126.html">Villers-Guislain</a></li><li><a href="page-111.html">Villers-lès-Cagnicourt</a></li><li><a href="page-125.html">Villers-Plouich</a></li><li><a href="page-77.html">Wambaix</a></li></ul></div></div></li>
+<li class="has-sub"><button class="menu__top" aria-expanded="false">Bibliothèque</button><div class="sub"><ul class="sub__col"><li><a href="page-41.html">Bulletins et revues</a></li><li><a href="page-42.html">Contrats de mariage et autres...</a></li><li><a href="page-55.html">Catalogue</a></li></ul></div></li>
+<li class="has-sub"><button class="menu__top" aria-expanded="false">Divers</button><div class="sub"><ul class="sub__col"><li><a href="page-85.html">Archives en ligne</a></li><li><a href="page-47.html">Armorial</a></li><li><a href="page-59.html">Pairies du Cambrésis</a></li><li><a href="page-48.html">Paroisses de Cambrai</a></li><li><a href="page-58.html">Carte de CASSINI</a></li><li><a href="page-49.html">Revue des revues</a></li><li><a href="page-51.html">Liens utiles</a></li></ul></div></li>
+<li class="has-sub"><button class="menu__top" aria-expanded="false">Contacts</button><div class="sub"><ul class="sub__col"><li><a href="contacts.html">Nous écrire</a></li><li><a href="page-56.html">Coordonnées</a></li></ul></div></li>
+<li class="menu__member"><a class="menu__top" href="espace-membre.html">Espace membre</a></li>
+      </ul>
+      <span class="menu__ink" aria-hidden="true"></span>
+    </div>
+  </nav>
+
+  <div class="wrap layout">
+
+    <!-- Colonne latérale -->
+    <aside class="side">
+<section class="side__block side__block--long"><h2 class="side__title">Publications</h2><ul class="side__menu"><li><a href="page-62.html">Nouvelles publications</a></li><li><a href="page-9.html">Farda</a></li><li><a href="page-16.html">Questions des membres</a></li><li class="lvl1"><a href="page-17.html">Questions des Farda n° 1 à 10</a></li><li class="lvl1"><a href="page-18.html">Questions des Farda n° 11 à 20</a></li><li class="lvl1"><a href="page-19.html">Questions des Farda n° 21 à 30</a></li><li class="lvl1"><a href="page-20.html">Questions des Farda n° 31 à 40</a></li><li class="lvl1"><a href="page-21.html">Questions des Farda n° 41 à 50</a></li><li class="lvl1"><a href="page-22.html">Questions des Farda n° 51 à 60</a></li><li class="lvl1"><a href="page-75.html">Questions des Farda n° 61 à 70</a></li><li class="lvl1"><a href="page-98.html">Questions des Farda n° 71 à 80</a></li><li class="lvl1"><a href="page-113.html">Questions des Farda n° 81 à 90</a></li><li class="lvl1"><span class="is-current" aria-current="page">Questions des Farda n° 91 à 100</span></li><li class="lvl1"><a href="https://www.ggac.fr/index.php?page=145">Questions des Farda n° 101 à 110</a></li><li><a href="page-23.html">Éditions du G.G.A.C.</a></li><li><a href="page-24.html">Généalogies du Cambrésis</a></li><li><a href="page-25.html">Fardes cambrésiennes</a></li><li><a href="page-26.html">Dictionnaires des familles</a></li></ul></section>
+<section class="side__block side__news">
+        <h2 class="side__title">Actualités</h2>
+        <div class="news" tabindex="0">
+          <div class="news__track">
+            <article class="news__item">
+              <h3>PROCHAINE PERMANENCE</h3>
+              <p>Mercredi 4 novembre 2026 de 14h00 à 17h00 au siège de l'association.</p>
+            </article>
+            <article class="news__item">
+              <h3><a href="agenda.html#ev-1">EXPOSITION ET SORTIE OFFICIELLE DES POILUS DE VILLERS-PLOUICH MORTS POUR LA FRANCE ET DU DICTIONNAIRE DES FAMILLES</a></h3>
+              <p>Du samedi 7 au dimanche 8 novembre 2026 - Salle des fêtes Pierre Mauroy à Villers-Plouich (59)</p>
+            </article>
+            <article class="news__item">
+              <h3><a href="agenda.html#ev-2">SALON DE GÉNÉALOGIE ET D'HISTOIRE</a></h3>
+              <p>Du samedi 7 au dimanche 8 novembre 2026 - Palais des sports de Château-Thierry (02)</p>
+            </article>
+            <article class="news__item">
+              <h3><a href="agenda.html#ev-3">5<sup>E</sup> MARCHÉ D'HISTOIRE LOCALE</a></h3>
+              <p>Du samedi 28 au dimanche 29 novembre 2026 - Salle des fêtes de Fontaine-Notre-Dame (59)</p>
+            </article>
+            <article class="news__item">
+              <h3><a href="agenda.html#ev-4">20<sup>ES</sup> PORTES OUVERTES SUR LA GÉNÉALOGIE</a></h3>
+              <p>Du samedi 6 au dimanche 7 février 2027 - Parc des sports Didier Mounier (rue Albert Dauvergne) à Chevry-Cossigny (77)</p>
+            </article>
+            <article class="news__item">
+              <h3><a href="agenda.html#ev-5">EXPOSITION ET SORTIE OFFICIELLE DES POILUS D'ESNES MORTS POUR LA FRANCE ET DU DICTIONNAIRE DES FAMILLES</a></h3>
+              <p>Du samedi 13 au dimanche 14 mars 2027 - Salle des fêtes d'Esnes (59)</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+    </aside>
+
+    <!-- Contenu -->
+    <main class="content">
+<svg class="vine vine--content" viewBox="0 0 260 240" aria-hidden="true"><use href="#vine" /></svg>
+<h1 class="title"><span class="title__text" data-split>Questions parues dans les numéros 91 à 100 de Farda</span>
+<svg class="title__flourish" viewBox="0 0 320 30" aria-hidden="true"><path d="M4 18 C 60 4, 110 28, 160 16 S 260 4, 316 16" /><path d="M150 16 c 6 -10 14 -10 10 0 c -4 8 -14 6 -10 0" /></svg></h1>
+<div class="prose">
+
+
+<h2>Questions parues dans Farda n° 91 (mars 2023) :</h2>
+<p class="ta-j"><strong>23.I.01 ROYAUX, Cambrai, XVII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 91</span>) :</strong></p>
+<p class="ta-j">Les racines de la famille de mon épouse semblent se situer à Cambrai : Cornil ROYAUX, armurier né vers 1676, paroisse Sainte-Croix, qui épouse le 1<sup>er</sup> octobre 1732, paroisse Saint-Martin, Marie Élisabeth GRATPANCHE, née le 7 février 1709, paroisse Sainte-Croix, fille de Jacques et de Marie-Barbe DEHAULIN. Je recherche depuis bien longtemps les parents de Cornil. Disposeriez-vous d'informations pouvant m'aider ? </p>
+<p class="ta-r"><span class="bleu">Patrick SANDEVOIR</span></p>
+<p class="ta-j"><strong>23.I.02 BRACQ, Fontaine-au-Pire, XVII<sup>e</sup> :</strong></p>
+<p class="ta-j">Je cherche à vérifier la source de naissance d'Anne BRACQ, qui serait fille d'Adam BRACQ x Jeanne DELSOTHIERE. On a bien preuve de la naissance (baptême) de Jean BRACQ en 1689 et celle de Marie Jeanne en décembre 1690 (baptême le 27/12), mais je n'ai rien trouvé dans les registres sur la première.</p>
+<p class="ta-j">J'ai besoin de comprendre comment Adam BRACQ est dit "non asservi d'enfant" sur son contrat de mariage avec Jeanne OBLIN en 1691 ? Cela signifie que les deux enfants ci-dessus sont morts et que le couple n'est pas le père et la mère de Marie Anne Marguerite BRACQ dite Anne qui est morte en 1744.</p>
+<p class="ta-j">Une généalogiste m'a confirmé que cela figure dans le dictionnaire des familles de Fontaine-au-Pire, ce qui explique le grand nombre de reprises sur Geneanet.  Dans le dictionnaire des familles de Fontaine-au-Pire, j'ai la naissance d'Anne BRACQ née en 1684, mais pas plus de précision à Fontaine-au-Pire. Elle est la fille légitime d'Adam BRACQUE, mulquinier, âgé de 20 ans, et de Jeanne DELASOTTHIERE, âgée de 19 ans. Elle est décédée le lundi 16 mars 1744, à 60 ans à Fontaine-au-Pire. D'avance, merci de votre aide. S'agit d'une erreur dans le dictionnaire ?</p>
+<p class="ta-j">L'acte de décès d'une certaine Anne BRACQ, le 16 mars 1744, ne permet pas de savoir de qui elle est l'épouse et la mère. Comment la rattacher avec certitude à Jacques BRICOUT (époux) et aux enfants ? </p>
+<p class="ta-j">J'ai déjà interrogé Jacky FOUBERT avant de vous déranger voici sa réponse : après vérification, il n'existe pas d'Anne BRACQ en 1684 sur Fontaine-au-Pire. Cette Anne décédée en 1744 à Fontaine n'est donc pas la fille du couple Adam BRACQ x Jeanne DELASOTHIERE.</p>
+<p class="ta-r"><span class="bleu">Dominique FOULON-LENGLET 505</span></p>
+<p class="ta-j"><strong>23.I.03 DHORDAIN, Escaudœuvres, XX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 91</span>) :</strong></p>
+<p class="ta-j">Je recherche tous renseignements sur Marceau DHORDAIN dont le stade de football d'Escaudœuvres porte le nom.</p>
+<p class="ta-r"><span class="bleu">Daniel FERTIN</span></p>
+<p class="ta-j"><strong>23.I.04 LAUDE, Awoingt, XVII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 91</span>) :</strong></p>
+<p class="ta-j">Dans la descendance d'Antoine LAUDE et de Marie Françoise SEGARD, du dictionnaire des familles d'Awoingt, vous parlez de cinq enfants : Jean Antoine né en 1666 ; Jeanne Catherine née en 1669 ; Jean né vers 1670 ; Jean Philippe 1675 (pour moi, j'ai un Philippe Antoine et un Philippe) ; Marie Françoise née en 1673. Pourriez-vous me donner vos sources et copie des documents pour les trois premiers enfants cités plus haut ? Par contre, à mon avis, il manque : Marie Laurence, mariée avec Martin LEFEBVRE.</p>
+<p class="ta-r"><span class="bleu">Michel LAUDE 892</span></p>
+<p class="ta-j"><strong>23.I.05 SENÉ, Carnières, XVI<sup>e</sup>-XVII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 91</span>) :</strong></p>
+<p class="ta-j">Je souhaiterais avoir des renseignements, si possible, concernant Adrien SENÉ, marié à Jeanne COLEAU en 1632 à Carnières (dates de naissance ? décès ?...) et Jean SENÉ, né en 1635, marié à Jeanne LABOU à Carnières (dates de décès ? mariage ?...). Avec mes remerciements pour les renseignements que vous avez la possibilité de me donner.</p>
+<p class="ta-r"><span class="bleu">Pascal SENEZ 1199</span></p>
+<p class="ta-j"><strong>23.I.06 FAREZ, Beauvois-en-Cambrésis, XVI<sup>e</sup> (réponse : <span class="rougegras">Farda n° 91</span>) :</strong></p>
+<p class="ta-j">Dans la descendance d'Olivier FAREZ (1560-1633), il y est dit que l'on connaît son fils Pierre par les actes de justice : époux d'Adrienne LEVEQUES, il est décédé avant 1640. Vous notez, dans le Farda n° 35, 3 enfants : Anne x avant 1640 avec Philippe LE SAGE, Charles à l'origine de la branche de Clary et Théodore qui deviendra prévôt de Villers-Plouich. Vous ne parlez pas de Thomas. </p>
+<p class="ta-j">C'est dans la bibliographie que l'on trouve l'épisode de Charles et Théodore étant en justice pour récupérer 300 florins.</p>
+<p class="ta-j">La revue "Cambrésis Terre d'Histoire" n° 11 dit que Thomas serait le 3<sup>e</sup> fils d'Olivier FARÉ, et serait mort avant 1641. Je cherche à savoir comment on en est arrivé à cette conclusion.</p>
+<p class="ta-j">On sait qu'il est marié à Jeanne SORLIN, qu'il aurait eu - je pense 6 enfants - dont l'un Olivier deviendra mayeur de Beauvois.</p>
+<p class="ta-j">Et, par ailleurs, dans le testament de Marie PILLOIX, il est clairement écrit que Thomas est le fils de Pierre ! Je suppose que vous avez copie de ce testament. Je l'avais trouvé sur le site de Jérôme COYEZ qui, hélas, a été désactivé depuis son décès.</p>
+<p class="ta-r"><span class="bleu">Dominique FOULON-LENGLET 505</span></p>
+<p class="ta-j"><strong>23.I.07 Cambrai, XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 91</span>) :</strong></p>
+<p class="ta-j">En dépouillant les actes de Wadelincourt (Ardennes), un acte de décès du 8 janvier 1775 concerne une femme de Cambrai dont je n'arrive pas à déchiffrer son nom. Sauriez-vous m'aider ?</p>
+<p class="ta-r"><span class="bleu">Isabelle LEFORT</span></p>
+<h2>Questions parues dans Farda n° 92 (juillet 2023) :</h2>
+<p class="ta-j"><strong>23.II.01 Rumilly-en-Cambrésis, XX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 92</span>) :</strong></p>
+<p class="ta-j">Je travaille à la reconstitution de l'itinéraire de ma mère Yolande BRIFFAUT, mariée à Léon-Albert CARREZ à Rumilly-en-Cambrésis le 17 mai 1945. Or, j'ai du mal à trouver en ligne, y compris dans les bibliothèques, des informations sur cette commune à cette époque : vie communale, élections, agriculture, commerces, industries, gendarmerie, faits divers, fêtes communales, monde scolaire et toute information utile. Ma cousine Sylvie MARGARON-BRICLET, qui est membre de votre association, m'a conseillé de prendre contact avec vous car vous auriez travaillé sur cette commune.</p>
+<p class="ta-r"><span class="bleu">Jean-François CORRAL</span></p>
+<p class="ta-j"><strong>23.II.02 Calvaire de Beaumont-en-Cambrésis, 1903 :</strong></p>
+<p class="ta-j">Je suis à la recherche d'un journal ou d'un texte qui parle de la cérémonie de bénédiction du calvaire de Beaumont-en-Cambrésis le 3 juillet 1903.</p>
+<p class="ta-r"><span class="bleu">Daniel HERBIN 566</span></p>
+<p class="ta-j"><strong>23.II.03 CAGNONCLE, Iwuy, Mastaing, XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 92</span>) :</strong></p>
+<p class="ta-j">Malgré mon âge avancé, j'ai conservé un intérêt pour la généalogie. Par hasard, je suis tombé sur un dilemme que voici : dans le dictionnaire des familles d'Iwuy (tome 1, page 208), le sieur CAGNONCLE Jean Jacques, né le 6 juillet 1699 à Mastaing, décédé le 3 mai 1779 à Iwuy, marié à LOCQUET Marie Josèphe (tome 4, page 180) née vers 1703 à Mastaing, décédée le 19 août 1775 à Iwuy. Geneanet donne GANIONCQ Jean Jacques, valet de charrue d'Aniche, né et décédé à Mastaing le 6 juillet 1699 y décédé le 25 septembre 1761 marié par contrat le 30 janvier 1730 (témoin : CANIONCLE Sébastien) avec CAUWET Marie Angélique, née le 3 août 1705 à Aniche, y décédée le 21 janvier 1757. Avez-vous les données permettant de résoudre ce problème. Par avance, merci.</p>
+<p class="ta-r"><span class="bleu">André HOURIEZ 350</span></p>
+<h2>Questions parues dans Farda n° 93 (novembre 2023) :</h2>
+<p class="ta-j"><strong>23.III.01 LEFEBVRE, Cagnoncles, XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 93</span>) :</strong></p>
+<p class="ta-j">Dans le dictionnaire des familles de Cagnoncles, page 261, il est indiqué que Séraphine LEFEBVRE est née 4 avril 1802 et décédée le 3 juin 1815 à Cagnoncles. Cette date serait à corriger. On la retrouve à Marcoing où elle s'est mariée le 2 mai 1820 avec Antoine BEAUVAIS, berger, décédé à Marcoing le 23 mars 1843. Séraphine est décédée à Marcoing le 30 juin 1858.</p>
+<p class="ta-r"><span class="bleu">André HOURIEZ 350</span></p>
+<p class="ta-j"><strong>23.III.02 Homonymie DUBOIS, Iwuy, XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 93</span>) :</strong></p>
+<p class="ta-j">Je fais appel à vos lumières pour voir si vous avez une réponse à un cas d'homonymie qui entraîne pas mal de confusion. Il s'agit de deux individus répertoriés dans le dictionnaire des familles d'Iwuy, tome 2, page 279 : 1) Nicolas DUBOIS, marié le 4 février 1742 avec Marie Angélique DESSAINT (° 1723) ; 2) Nicolas DUBOIS, né le 7 décembre 1721 à Iwuy, marié le 9 janvier 1743 à Iwuy avec Marie Magdeleine CRINCHON (vers 1713-1780). Le premier est présenté sans origine. Auriez-vous des éléments permettant de l'identifier ?</p>
+<p class="ta-r"><span class="bleu">André HOURIEZ 350</span></p>
+<p class="ta-j"><strong>23.III.03 Homonymie PAYEN, Fontaine-au-Pire, XVII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 93</span>) :</strong></p>
+<p class="ta-j">Dans votre dictionnaire des familles de Fontaine-au-Pire, tome III, pour Nicolas PAYEN vous lui donnez deux mariages :  1) PAYEN-DEFORGE, en faisant référence au Cm du 23 octobre 1667, mais il y a une erreur sur ses père et mère car, dans ce document, Nicolas PAYEN est dit fils d'Antoine PAYEN et de Jeanne MAIRESSE. Or, vous le dites fils d'Urbain PANIEZ et de Catherine VITOUX.  2) PAYEN-SORLIN n'est pas situé. Vous le dites également fils d'Urbain PANIEZ et de Catherine VITOUX. Deux hypothèses :  1) Nicolas PAYEN s'est marié deux fois et ses parents sont Antoine PAYEN Jeanne MAIRESSE. 2) On a des homonymes : Nicolas PAYEN (fils d'Antoine PAYEN et de Jeanne MAIRESSE) marié à Jeanne DEFORGE par Cm du 23 octobre 1667 et Nicolas PAYEN (fils d'Urbain PANIEZ et Catherine VITOUX) marié à Adrienne SORLIN dont Nicolas.  Reste à trouver l'acte qui donne les père et mère de ce Nicolas !  Peut-être avez-vous une autre hypothèse ?</p>
+<p class="ta-r"><span class="bleu">Gérard CÉSAIRE</span></p>
+<p class="ta-j"><strong>23.III.04 Mère décédée avant la naissance, Gonnelieu, XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 93</span>) :</strong></p>
+<p class="ta-j">En reprenant le travail de Jean DOFFE sur Crèvecœur-sur-l'Escaut, je suis tombé sur un casse-tête. Dans le fichier contenant les actes de mariages de 1802 à 1892, je trouve le mariage suivant du 22 septembre 1836 : Philippe BARA, tisseur en coton de Gonnelieu, fils de feu Jean-Philippe et d'encore vivante Augustine FOURQUAIN, et Catherine LERICHE, née le 1<sup>er</sup> mars 1815 à Crèvecœur, rue des Vignes, fille de Nicolas et de feue Félicité THÉRON, décédée le 26 octobre 1814. Contrat de mariage du 18 novembre 1836, Maître BOMMIER, Flesquières, AD59, J 1700/34. La mère de Catherine LERICHE est décédée avant la naissance de sa fille. Après vérification des tables décennales, j'ai eu confirmation de ces deux dates.</p>
+<p class="ta-r"><span class="bleu">Pierre PIETRZAK 541</span></p>
+<h2>Questions parues dans Farda n° 94 (mars 2024) :</h2>
+<p class="ta-j"><strong>24.I.01 DABLAIN, XVII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 94</span>) :</strong></p>
+<p class="ta-j">Nous sommes une association qui travaille à la restauration de l'église d'Eppe-Sauvage (59132). Lors d'un travail sur un retable du début XVII<sup>e</sup> siècle une restauratrice à retrouvé une signature A. DABLAIN. Dans le document "La cathédrale de Cambrai", un peintre y travaille de vers 1620 à vers 1635. C'est Adrien DABLAIN qui y est renseigné. Avez-vous des informations concernant cette personne ? </p>
+<p class="ta-r"><span class="bleu">Gérard DEHAIBE</span></p>
+<p class="ta-j"><strong>24.I.02 DUFOUR-LAURENT, XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 94</span>) :</strong></p>
+<p class="ta-j">Je fais des recherches sur des ancêtres dans l'Aisne et plus particulièrement sur le couple Philippe Félix DUFOUR (vers 1764-2 janvier 1797 Cambrai) et Reine LAURENT, son épouse (vers 1764 Cambrai-20 mars 1798 Cambrai). Je ne retrouve pas de trace de leur mariage. Leur fils Philippe Robert DUFOUR, étant né à Cambrai le 27 avril 1793. Je ne retrouve pas non plus trace des parents DUFOUR. Pouvez-vous m'aider ?</p>
+<p class="ta-r"><span class="bleu">Georges LE MOULLEC</span></p>
+<p class="ta-j"><strong>24.I.03 FAREZ, XVI<sup>e</sup> (réponse : <span class="rougegras">Farda n° 94</span>) :</strong></p>
+<p class="ta-j">Je reviens sur Farda 91, page 43.  Maintenant que je regarde en détail, ça coince quelque part. Jehan FAREZ, époux de Marthe DELIMAL, est le frère d'Olivier. On connaît pas mal de choses sur ce dernier. Mais alors, Jehan est né vers 1550-1560. Comment son fils pourrait-il être Toussaint, né vers 1685 ?</p>
+<p class="ta-r"><span class="bleu">Dominique FOULON-LENGLET 505</span></p>
+<p class="ta-j"><strong>24.I.04 Jean de PIERPONT, XVI<sup>e</sup> (réponse : <span class="rougegras">Farda n° 94</span>) :</strong></p>
+<p class="ta-j">Dans le cadre d'une enquête historique et généalogique, je recherche la provenance et les origines d'un Jean de PIERPONT, époux d'Isabelle GOOSSENS, arrivés mariés vers mai 1627 à Bastogne (Luxembourg belge) pour prendre possession d'un office de clerc juré pour lequel il avait été commissionné en novembre 1623 (soit 4 ans plus tôt) ! J'ai découvert qu'il existait une famille de PIERPONT à Cambrai à cette époque et qu'un homonyme avait exercé la charge de bailli de la Feuillie. On trouve aussi trace d'une Jeanne de PIERPONT, baptisée à Cambrai le 12 novembre 1603, fille de Nicolas et de Marguerite LANACHIN. Disposeriez-vous d'informations sur cette famille de PIERPONT (études, données généalogiques...) ?</p>
+<p class="ta-r"><span class="bleu">Jean-Louis SCHMITZ</span></p>
+<p class="ta-j"><strong>24.I.05 Précisions sur l'acte d'Eugène KLEFFERT, XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 94</span>) :</strong></p>
+<p class="ta-j">Quelle était la signification des mentions marginales de l'acte de naissance de Louis Eugène KLEFFERT ? : CA 1109, Rte Civ 12-5-24 et Ascend. 11-7-24. Il faut savoir que cet enfant est né de père non connu et que sa mère, Marie Clara KLEFFERT, est une enfant abandonnée. Concernant les dates "12-5-24" et "11-7-24", elles me font penser qu'elles concernent la mère. En effet, cet acte de naissance est daté de 1864 et il est noté que la mère est âgée de 39 ans. Or 1864 - 39 = 1825. Avez-vous une idée sur ces mentions marginales ?</p>
+<p class="ta-r"><span class="bleu">Françoise DUPONT 787</span></p>
+<p class="ta-j"><strong>24.I.06 MAIRESSE-JOVENAIN, XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 94</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance et renseignements sur Jeanne JOVENAIN ou JOVENIN, née vers 1668 à Saint-Vaast-en-Cambrésis, décédée ???, mariée vers 1697 avec Jacques MAIRESSE, né vers 1668, décédé le 24 janvier 1741 Saint-Vaast-en-Cambrésis.</p>
+<p class="ta-r"><span class="bleu">Danielle HONOREZ 1 088</span></p>
+<p class="ta-j"><strong>24.I.07 SEGARD-MICHAUX, XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche tous renseignements sur chaque membre du couple Claude SEGARD, né vers 1638 Cambrai ?, et Barbe MICHAU. Ce sont les parents d'Ambroise, né vers 1675 Cambrai ?, + 18 février 1727 Cambrai, paroisse de la Madeleine, x 12.04.1707 Condé-sur-Escaut avec Claire Brigitte AMAND.</p>
+<p class="ta-r"><span class="bleu">Danielle HONOREZ 1 088</span></p>
+<p class="ta-j"><strong>24.I.08 DUCHILIEZ, Raillencourt-Sainte-Olle, XX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 94</span>) :</strong></p>
+<p class="ta-j">Je m'intéresse depuis quelques temps maintenant à l'histoire de ma famille. Mon arrière-grand-mère Marie DUCHILIEZ, née à Raillencourt en 1925, a toujours dit à ma mère quelle était orpheline, mais sur son acte de naissance il est noté le nom de ses parents, et sur son acte de décès la mention "A.P". Sur son acte de naissance, il est noté que l'accouchement à eu lieu dans une ferme "MAROUSEZ" je pense. Savez-vous me dire si vous avez des informations la concernant ?</p>
+<p class="ta-r"><span class="bleu">Ophélie LECONTE (Hélesmes)</span></p>
+<p class="ta-j"><strong>24.I.09 FORTIN, Cambrai, XIX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 94</span>) :</strong></p>
+<p class="ta-j">Je fais de la généalogie amateur et je suis à la recherche d'un ancêtre Antoine FORTIN, né de père et de mère inconnus à l'hôpital de Cambrai le 10 janvier 1838. Mes questions sont les suivantes ; est-il possible de retrouver l'identité de sa mère ? Et quid de son adoption, quel a été son parcours jusqu'à son mariage à Strasbourg ? Avez-vous en archive les livrets militaires aussi anciens ?</p>
+<p class="ta-r"><span class="bleu">Isabelle BENCHATER (Courcelles-sur-Viosne)</span></p>
+<h2>Questions parues dans Farda n° 95 (juillet 2024) :</h2>
+<p class="ta-j"><strong>24.II.01 Jean de PIERPONT, XVI<sup>e</sup> (suite de la question 24.I.04) (réponse : <span class="rougegras">Farda n° 95</span>) :</strong></p>
+<p class="ta-j">Je vous remercie d'avoir pris le temps de répondre à mon message. J'ai été positivement étonné de l'information dont vous disposiez sur ce "Jean de PIERPONT, dit l'Ardennais". Je m'intéresse tout particulièrement au personnage car il figure parmi mes ascendants du XVII<sup>e</sup> siècle, à Bastogne. Le problème toujours non résolu reste en fait sa provenance !  L'information généalogique dont vous disposez (et que l'on retrouve sur différents sites) est en partie basée sur les recherches anciennes menées par le défunt Léon de PIERPONT. Cette information est erronée en ce qui concerne le père de Jean de PIERPONT qui ne peut être Henry de PIERPONT ; ceci a été démontré par Marc BELVAUX dans ses recherches sur les familles de PIERPONT (La Famille de PIERPONT, tomes 1 et 2, Office Généalogique et Héraldique de Belgique, Bruxelles, 2010).  Le 6<sup>e</sup> enfant, Jean Baptiste de PIERPONT, prêtre, fait aussi partie des hypothèses de Léon de PIERPONT ; mais je n'ai personnellement trouvé aucune trace de ce Jean Baptiste dans les livres de Justices et diverses autres archives consultées, relatives à Bastogne.  Le blason de Jean de PIERPONT "<em>de sable au fer de moulin d'or</em>" évoque sans doute le métier ou les droits de meunerie tenus par son père (ou son grand-père). Dès lors, il pourrait être issu d'un autre "Jean de PIERPONT", qui fut meunier à Tulteau et est mort vers 1608 (Tulteau est hameau situé un peu au nord de la ville de Huy) ; c'est pour l'instant la piste privilégiée, mais qui reste à démontrer.  Je reste naturellement intéressé par toute nouvelle information concernant les PIERPONT du Cambrésis et le "Jean de PIERPONT, bailli" ! </p>
+<p class="ta-r"><span class="bleu">Jean-Louis SCHMITZ</span></p>
+<p class="ta-j"><strong>24.II.02 VAAST-DESORMAIS, XX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 95</span>) :</strong></p>
+<p class="ta-j">Recherche informations sur le couple Bernard VAAST et Madeleine DESORMAIS.</p>
+<p class="ta-r"><span class="bleu">Gérard DOMISE-PAGNEN 8</span></p>
+<p class="ta-j"><strong>24.II.03 JOVENIN, XVII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 95</span>) :</strong></p>
+<p class="ta-j">Recherche ascendance et renseignements sur Jeanne JOVENAIN ou JOVENIN (° ca 1668 Saint-Vaast-en-Cambrésis, † ?), x ca 1697 avec Jacques MAIRESSE (° ca 1668, † 24.01.1741 Saint-Vaast-en-Cambrésis). </p>
+<p class="ta-r"><span class="bleu">Danielle HONOREZ 1 088</span></p>
+<p class="ta-j"><strong>24.II.04 Descendance du couple SEGARD-MICHAUT, XVII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 95</span>) :</strong></p>
+<p class="ta-j">Recherche tous renseignements sur chaque membre du couple Claude SEGARD (° ca 1638 Cambrai ?) et Barbe MICHAU. Ce sont les parents d'Ambroise (° ca 1675 Cambrai ?, † 18.02.1727 Cambrai, La Madeleine), x 12.04.1707 Condé-sur-l'Escaut avec Claire Brigitte AMAND.</p>
+<p class="ta-r"><span class="bleu">Danielle HONOREZ 1 088</span></p>
+<p class="ta-j"><strong>24.II.05 ILLIOU, Pas-de-Calais, XX<sup>e</sup> :</strong></p>
+<p class="ta-j">Serait-il possible de trouver quelqu'un fréquentant les AD62 qui pourrait me trouver dans les tables de succession et d'absence celle de François Fernand ILIOU († 03.01.1962 Le Touquet-Paris-Plage) ?</p>
+<p class="ta-r"><span class="bleu">Véronique JUSTE</span></p>
+<h2>Questions parues dans Farda n° 96 (novembre 2024) :</h2>
+<p class="ta-j"><strong>24.III.01 CUISETTE-CHAVATTE, XVIII<sup>e</sup> :</strong></p>
+<p class="ta-j">Je vois dans la liste du contrat de mariage de votre site celui de Jean François CUISSETTE x Catherine CHAVATTE le 6 octobre 1704. Il est dit veuf d'Anne CAMBAY et de Marie LANTIEZ.  Le contrat de mariage CUISSETTE x CAMBAY est daté du 9 janvier 1702 (C.G.E.O., tabellion de Bouchain, 1696-1702, p. 98). Pierre Michel CUISSETTE, fils de Jean François x CAMBAY Anne, meurt à Villers-au-Tertre le 22 août 1737, à 28 ans, donc ° ca 1709.  Enfin, dans celui du tabellion de Douai (C.E.G.D., 1705-1709, p. 148), on trouve celui d'Estienne BULTÉ x Françoise CAMBAY, où Anne, sa sœur, mariée à Jean François CUISSET, est citée.  J'avoue avoir un peu de mal à comprendre où ça coince, mais... ça coince, dans l'état actuel des données ci-dessus.  Auriez-vous un conseil ? Merci d'avance, courtoisement.</p>
+<p class="ta-r"><span class="bleu">Francis COQUEAU</span></p>
+<p class="ta-j"><strong>24.III.02 Descendance PARIS de Rieux, XVIII<sup>e</sup> (réponse : <span class="rougegras">Farda n° 96</span>) :</strong></p>
+<p class="ta-j">Le dictionnaire des familles de Rieux-en-Cambrésis comporte une incohérence sur la mère d'Élisabeth et de Pierre Antoine PARIS. Ils sont rattachés à Marguerite BRUILLON alors qu'elle n'a épousé Pierre PARIS qu'en 1708 et que la première femme de celui-ci (Marie LAMAND) est morte en 1710 ?</p>
+<p class="ta-r"><span class="bleu">Raphaël WIART 898</span></p>
+<h2>Questions parues dans Farda n° 97 (mars 2025) :</h2>
+<p class="ta-j"><strong>25.I.01 DELMOTTE, DELAMOTTE, Doignies (réponse : <span class="rougegras">Farda n° 97</span>) :</strong></p>
+<p class="ta-j">Il y a quelques mois, je vous ai acheté quelques dictionnaires des familles, dont Doignies. Je vous félicite de cet énorme travail qui m'a été bien utile pour finaliser la généalogie de mon mari. J'y ai relevé quelques erreurs ou omissions que je vous communique en pièces jointes.</p>
+<p class="ta-r"><span class="bleu">Maryvonne de SAINT-ÉTIENNE, Lézigneux</span></p>
+<p class="ta-j"><strong>25.I.02 Famille COUSIN, Banteux, XX<sup>e</sup> (réponse : <span class="rougegras">Farda n° 97</span>) :</strong></p>
+<p class="ta-j">Recherche décès de Marguerite Jeanne Clotilde COUSIN (° 03.02.1871 Banteux) et Charles COUSIN (° 03.02.1872 Banteux), enfants de Bernardin COUSIN (1838-1903) et Augustine BRICOUT (1841-1925).</p>
+<p class="ta-r"><span class="bleu">Jean-Pierre DELEZENNE 1052</span></p>
+<p class="ta-j"><strong>25.I.03 Moulin de Solesmes, VIII<sup>e</sup> et XVI<sup>e</sup> (réponse : <span class="rougegras">Farda n° 97</span>) :</strong></p>
+<p class="ta-j">Je voudrais des renseignements sur le moulin de Solesmes, appartenant au chapitre métropolitain de Cambrai et tenu par Toussaint SENAY, en 1540. Était-il à vent ou à eau ? Il y en avait un autre, construit à VIII<sup>e</sup> siècle par les moines bénédictins.</p>
+<p class="ta-r"><span class="bleu"></span>Pascal SENEZ 1199</p>
+<p class="ta-j"><strong>25.I.04 CANONNE-RICHEZ, Ligny-en-Cambrésis, XVII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche tous renseignements (°, x, +) du couple Jean CANONNE et Philippotte RICHEZ sur Ligny-en-Cambrésis ou les alentours.</p>
+<p class="ta-r"><span class="bleu">Danielle HONOREZ 1088</span></p>
+<p class="ta-j"><strong>25.I.05 PRÊTRE-VALLÉE, Ligny-en-Cambrésis, VII<sup>e</sup> :</strong></p>
+<p class="ta-j">Recherche tous renseignements (°, x, +) du couple Laurent PRÊTRE et Catherine VALLÉE (alias VALLET ou VALLEZ) sur Ligny-en-Cambrésis ou les alentours.</p>
+<p class="ta-r"><span class="bleu">Danielle HONOREZ 1088</span></p>
+<h2>Questions parues dans Farda n° 98 (août 2025) :</h2>
+<p class="ta-j"><strong>25.II.01 Première Guerre mondiale, identification (réponse : <span class="rougegras">Farda n° 98</span>) :</strong></p>
+<p class="ta-j">Est-il possible de m'aider ? J'aide une demoiselle dont le père était un médecin durant la guerre 1914-1918, mais il était du côté allemand. Cependant, il était Juif et a quitté l'Allemagne en 1934. J'ai deux photographies d'Escaudœuvres de septembre 1918.</p>
+<p class="ta-c"><img alt="" decoding="async" height="449" loading="lazy" src="https://www.ggac.fr/fichiers/image/question_98-1a.jpg" width="700"/></p>
+<p class="ta-c"><img alt="" decoding="async" height="449" loading="lazy" src="https://www.ggac.fr/fichiers/image/question_98-1b.jpg" width="700"/></p>
+<p class="ta-j">Reconnaissez-vous cet emplacement ? Est-ce qu'il existe encore. Est-il possible que vous puissiez me dire où il se trouve actuellement ? Merci beaucoup pour votre aide.</p>
+<p class="ta-r"><span class="bleu">Kenneth MOORE, Lincoln (GB)</span></p>
+<p class="ta-j"><strong>25.II.02 RICHÉ, XVII<sup>e</sup>, Honnechy (réponse : <span class="rougegras">Farda n° 98</span>) :</strong></p>
+<p class="ta-j">Serait-il possible d'en savoir un peu plus sur Hilaire RICHÉ, époux de Marie AFCIN d'Honnechy. Si tout le monde s'accorde à dire qu'il est probablement né vers 1678, les choses se compliquent en ce qui concerne son mariage, j'ai vu, dans les arbres en ligne, plusieurs dates entre 1695 et 1697, lesquelles proposent un lien vers une page des archives que je n'arrive pas à déchiffrer. Pour ce qui est de son décès c'est encore plus fantaisiste. Certains le font mourir à Granada en Andalousie. Si tel est le cas, où peut-on trouver confirmation de cela ?</p>
+<p class="ta-r"><span class="bleu">Dominique FOULON-LENGLET 505</span></p>
+<p class="ta-j"><strong>25.II.03 VALLÉE, XVII<sup>e</sup>, Boussières-en-Cambrésis :</strong></p>
+<p class="ta-j">L'ascendance d'Adrienne VALLÉE publiée dans Farda n° 84 (novembre 2020) en réponse à la question 20. III. 03 me laisse perplexe. Il me semble très peu probable qu'Adrienne VALLÉE soit issue de deux familles anoblies de Lorraine et qu'elle se marie avec un enfant issu de familles de laboureurs du Cambrésis. - Jean Claude VALLÉE, anobli par lettre donnée en la ville de Nancy le 9 décembre 1603 (voir nobiliaire ou Armorial Général de la Lorraine et du Barrois), dont Farda indique qu'il est prévôt de Viesly en 1602. - Idelote OLRY, veuve de Pierre de MUFFEY, fille de noble Nicolas OLRY et d'Anne Jeanne de MOLNET. Tout reposerait sur leur contrat de mariage du 19 décembre 1562 à Boussières-en-Cambrésis. Est-il cohérent que la demoiselle OLRY soit née dans l'Eure alors que ses parents sont des notables de Nancy, qu'elle épouse un type originaire de Nancy et qu'ils viennent se marier à Boussières-en-Cambrésis ? Je veux bien l'admettre si l'on peut me l'expliquer par l'Histoire. J'ai tenté en vain d'obtenir une copie de ce contrat de mariage.</p>
+<p class="ta-r"><span class="bleu">Dominique FOULON-LENGLET 505</span></p>
+<p class="ta-j"><strong>25.II.04 Première Guerre mondiale, Dardanelles (réponse : <span class="rougegras">Farda n° 98</span>) :</strong></p>
+<p class="ta-j">Je suis à la recherche des soldats cambrésiens morts dans les Dardanelles en 1915. Toute nouvelle indication sera la bienvenue. Si vous en avez d'autres avec photo, ce serait le Graal.</p>
+<p class="ta-r"><span class="bleu">Gérard LABBÉ</span></p>
+<p class="ta-j"><strong>25.II.05 ROBERT, XVIII<sup>e</sup>-XIX<sup>e</sup>, Masnières (réponse : <span class="rougegras">Farda n° 98</span>) :</strong></p>
+<p class="ta-j">Je recherche des informations sur deux mères célibataires originaires de Masnières : Honorine ROBERT, née dans les années 1780-1790 à Masnières, fille de François Joseph et Henriette HARDUIN, et sur son fils Vincent Joseph, né de père inconnu le 6 avril 1814 à Masnières. Elle est décédée à Masnières le 10 août 1849. Scholastique ROBERT, née vers 1819 à Masnières, fille de Jean Baptiste et Victoire CHARLET, et sur son fils Jean Baptiste, né de père inconnu le 17 septembre 1841 à Masnières. Elle est décédée à Masnières le 4 avril 1882.</p>
+<p class="ta-r"><span class="bleu">Olivier ROBERT 944</span></p>
+<p class="ta-j"><strong>25.II.06 PONTOY-PLINGUET, XVII<sup>e</sup>-XVIII<sup>e</sup>, Beaurevoir (réponse : <span class="rougegras">Farda n° 98</span>) :</strong></p>
+<p class="ta-j">Je recherche tous renseignements sur l'ascendance de Barbe PONTOY (née vers 1690-décédée avant 1745), épouse d'Étienne DEVILLERS (né vers 1684-décédé en 1759) à Beaurevoir (02110), et sur celle de Marie Catherine PLINGUET (née vers 1680-décédée en 1727), épouse de Bernard LADRIERE (né en 1670-décédé en 1749).</p>
+<p class="ta-r"><span class="bleu">Ferdinand CORTY</span></p>
+<p class="ta-j"><strong>25.II.07 MAFILLE, XIX<sup>e</sup>, Gouzeaucourt (réponse : <span class="rougegras">Farda n° 98</span>) :</strong></p>
+<p class="ta-j">Je recherche des informations et des  photos, sur mes arrière-grands-parents,  dont j'ignorais jusqu'à il y a peu de temps qu'ils étaient originaires de Gouzeaucourt ! Mon grand-père Jean Charles MAFILLE est né à Roisel, ce que j'ignorais aussi. Mon arrière-grand-père s'appelait Joseph Louis MAFILLE et était marié à Émelie Érina LALISSE. Je cherche à comprendre pourquoi ils ont "migrés" au Nouvion-en-Thiérache.</p>
+<p class="ta-r"><span class="bleu">Laurence MAGINOT</span></p>
+<h2>Questions parues dans Farda n° 99 (novembre 2025) :</h2>
+<p class="ta-j"><strong>25.III.01 LAUDE-TOFFLIN ou LOFIN, XVII<sup>e</sup>, Cambrai :</strong></p>
+<p class="ta-j">Un couple qui, apparemment, n'a pas été très étudié est LAUDE x TOFFIN (ou LOFFIN), dont j'ignore totalement l'ascendance et qui a eu, à ma connaissance, 4 enfants sur Cambrai (paroisse Saint-Martin) pour lesquels je n'ai à ce jour trouvé ni mariage, ni descendance : Georges né le 19/07/1626 - (B 1624-1637 – AD59, 5Mi012R021, vue 22/91), Antoine né le 29/08/1628 (B 1624-1637 - 5Mi012R021, vue 18/56), Zabeth née le 17/12/1630 (B 1624-1637 - 5Mi012R021, vue 53/91) et Élisabeth née le 22/11/1632 (B 1624-1637 - 5Mi012R021, vue 61/91). Quoique sur l'acte de baptême d’Antoine, la lecture me donnerait plus THESIEZ comme patronyme maternel. Peut-on m'apporter un éclairage sur cette famille ?</p>
+<p class="ta-r"><span class="bleu">Michel LAUDE 892</span></p>
+<p class="ta-j"><strong>25.III.02 LENGLET, XVII<sup>e</sup>-XVIII<sup>e</sup>, Troisvilles (réponse : <span class="rougegras">Farda n° 99</span>) :</strong></p>
+<p class="ta-j">D'après un grand nombre de généalogistes, Marguerite LENGLET (née avant 1658-31/07/1725 Inchy) serait la fille d’Adrien LENGLET et de Marie MARONNIER. Or le dictionnaire des familles de Troisvilles indique que ce couple n'a eu qu'un seul enfant : François. Pouvez-vous m'éclairer ?</p>
+<p class="ta-r"><span class="bleu">Dominique FOULON-LENGLET 505</span></p>
+<p class="ta-j"><strong>25.III.03 GAILLOT, XVII<sup>e</sup>, Troisvilles (réponse : <span class="rougegras">Farda n° 99</span>) :</strong></p>
+<p class="ta-j">Pouvez-vous m'expliquer ce que signifiait un PACS entre frère et sœur au XVII<sup>e</sup> siècle ? Personne autour de moi n'a su répondre. Il semblerait qu'il y ait plusieurs erreurs en dehors du PACS anachronique. François Joseph GALLIOT (né avant 1610-12/04/1683 Troisvilles) serait, d'après le dictionnaire des familles de Troisvilles, frère d’Anne GAILLOT, tous deux issus de Dominique. François né dans le duché de Lorraine, Anne née en France. Des parents, aucune trace, de l’épouse Anne JOLY, nosn plus. Aucun acte pour corroborer. Il y a vraisemblablement eu une erreur au moment de l’entrée des données.</p>
+<p class="ta-r"><span class="bleu">Dominique FOULON-LENGLET 505</span></p>
+<h2>Questions parues dans Farda n° 100 (mars 2026) :</h2>
+<p class="ta-j"><strong>26.I.01 BRICOUT, XV<sup>e</sup>, Boussières-en-Cambrésis :</strong></p>
+<p class="ta-j">Je cherche une source fiable pour remonter l'ascendance de Marie Madeleine SORLAIN ou SORLIN, au delà des parents dont j'ai la trace via le dictionnaire des familles de Bertry. En effet, les arbres généalogiques présentés sur Internet remontent jusqu'en 1450, via les BRICOUT, DELABRE, etc., mais les seules sources citées sont des pages Geneanet, autrement dit une belle boucle. Est-ce que la question a déjà été posée et traitée antérieurement ? Je n'ai rien trouvé, mais ça peut vouloir dire que je n'ai pas bien vu. C'est toute la branche BRICOUT de Boussières-en-Cambrésis qui m'interpelle Mathieu, Benoît, Jean Noël, etc. La seule source citée, à laquelle nous n'avons pas accès me semble être les archives des Templiers... avec beaucoup de verbes au conditionnel ("serait né...", "aurait épousé...").</p>
+<p class="ta-r"><span class="bleu">Dominique FOULON-LENGLET 505</span></p>
+<p class="ta-j"><strong>26.I.02 DOUCHET, XVIII<sup>e</sup>, Esnes (réponse : <span class="rougegras">Farda n° 100</span>) :</strong></p>
+<p class="ta-j">L'ancêtre de la famille de mon beau-père Maurice DOUCHET est Hubert Joseph, né le 25 mars 1739 à Esnes. Il s'est marié à Metz le 14 février 1765 avec Jeanne BECHAMP, née à Metz le 16 novembre 1741, et y est décédé le 7 frimaire an XII (17 novembre 1803). Ils ont eu 7 enfants nés entre 1765 et 1779 à Metz, sauf deux jumelles nées à Bar-le-Duc en 1773. J'ai identifié un couple qui pourrait être celui des parents d'Hubert : Jean Philippe DOUCHET et Marie Antoinette THUILLIER à Esnes, mais ce n'est qu'une hypothèse. Si vous avez des informations de toutes natures sur la famille DOUCHET, je serais très intéressé.</p>
+<p class="ta-r"><span class="bleu">Jean-Pierre THOMESSE</span></p>
+<p class="ta-j"><strong>26.I.03 TISON, XVIII<sup>e</sup>, Naves, Thun-Saint-Martin (réponse : <span class="rougegras">Farda n° 100</span>) :</strong></p>
+<p class="ta-j">La biographie de Joseph TISON (1707-1777) publiée dans le dictionnaire des familles de Naves montre qu'il a été marié trois fois. Le premier mariage date de 1731 avec Marie Jeanne BOUBAY avec laquelle il a 4 enfants à Naves de 1731 à 1738. Son deuxième mariage a lieu avant 1738 (!) avec Marie Catherine FOCQUET avec laquelle il a 6 enfants à Naves de 1743 à 1752. Visiblement, il doit y avoir deux erreurs : 1) sa première épouse (Marie Jeanne BOUBAY) est dite décédée le 29 juillet /1771 à Thun-Saint-Martin. Ce couple avait-il divorcé pour que Joseph TISON puisse se remarier ? 2) son second mariage devrait avoir eu lieu entre 1738 et 1743, pas avant 1738 car c'est cette année-là que né son dernier enfant du 1<sup>er</sup> lit. Cela pourrait s'expliquer avec l'existence de deux Joseph TISON distincts qui auraient été malencontreusement fusionnés dans les bases des dictionnaires des familles.</p>
+<p class="ta-r"><span class="bleu">Raphaël  WIART 898</span></p>
+<p class="ta-j"><strong>26.I.04 Ancienneté des registres paroissiaux (réponse : <span class="rougegras">Farda n° 100</span>) :</strong></p>
+<p class="ta-j">Mes ancêtres se retrouvent dans les actes paroissiaux, puis d'état civil des communes de Gouzeaucourt, Hermies, Neuville-Bourjonval et accessoirement Doignies, dont j'ai consulté l'intégralité des microfilms. J'ai remarqué que ces actes commencent vers 1730, c'est-à-dire 20 ans après la cession définitive du Cambrésis à la France (fin de la guerre de succession d'Espagne, traité d'Utrecht). Y aurait-il des registres antérieurs conservés par le reste des Provinces Unies et donc archivées à Mons en Belgique ?</p>
+<p class="ta-r"><span class="bleu">Patrick DEFONTAINE 1236</span></p>
+<p class="ta-j"><strong>26.I.05 Tisseurs, XIX<sup>e</sup>, Pas-de-Calais (réponse : <span class="rougegras">Farda n° 100</span>) :</strong></p>
+<p class="ta-j">Mes arrière-grands-parents Antoine Joseph DEFONTAINE et Marie Élisabeth CATHELAIN étaient tisserand (pas mulquinier) et fileuse. Ils travaillaient le tissu dans un petit atelier annexe de leur maisonnette sur l'exploitation agricole restreinte à Hermies, rue d'Havrincourt. Je suppose qu'ils travaillaient le lin de leur champ à façon pour des mulquiniers du village semi-grossistes ou déjà pour des sociétés capitalistes de fabricants de toiles ou de vêtements. Hermies comptait 40 moulins à vent pour faire de l'huile de lin, entre autres. À quelle époque ces sociétés ont-elles apporté du coton brut pour remplacer le lin ? À la naissance de mon grand-père Jean Louis DEFONTAINE, son père Antoine est qualifié de tisseur de coton. Avez-vous publié des livrets sur ces métiers à tisser ?</p>
+<p class="ta-r"><span class="bleu">Patrick DEFONTAINE 1236</span></p>
+<p class="ta-j"><strong>26.I.06 DEFONTAINE, XIX<sup>e</sup>, Hermies, Madrid (réponse : <span class="rougegras">Farda n° 100</span>) :</strong></p>
+<p class="ta-j">Bien que Pierre Antoine DEFONTAINE ne soit pas de ma famille, je suis curieux de savoir ce que cet homonyme, né en 1799 à Hermies, a bien pu faire pour se retrouver condamné à mort à Madrid en 1824.</p>
+<p class="ta-r"><span class="bleu">Patrick DEFONTAINE 1236</span></p>
+<p class="ta-j"><strong>26.I.07 VALLET-RAMETTE, XVII<sup>e</sup>, Ligny-en-Cambrésis (réponse : <span class="rougegras">Farda n° 100</span>) :</strong></p>
+<p class="ta-j">Je recherche sur Ligny-en-Cambrésis des renseignements sur le couple Antoine VALLE(T) et Pâquette RAMETTE (naissance, mariage, décès, parents, enfants, ...).</p>
+<p class="ta-r"><span class="bleu">Danielle HONOREZ-MALLET 1088</span></p> 
+</div>
+<div class="pagefoot">
+  <a class="totop" href="#haut" title="Retour en haut de la page" aria-label="Retour en haut de la page">
+    <svg viewBox="0 0 80 84" aria-hidden="true"><path class="totop__trunk" d="M40 82 V48 M40 60 L28 48 M40 56 L53 44 M40 48 L40 36" />
+    <g class="totop__leaves"><circle cx="40" cy="26" r="14" /><circle cx="24" cy="36" r="11" /><circle cx="56" cy="34" r="12" /><circle cx="28" cy="20" r="9" /><circle cx="52" cy="18" r="10" /></g></svg>
+  </a>
+  <p class="date_maj">Page mise à jour le 05/04/2026 à 14h56</p>
+</div>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <nav class="footer__links" aria-label="Pied de page">
+        <a href="contacts.html">Nous écrire</a>
+        <a href="page-2.html">Mentions légales</a>
+        <a href="plan-du-site.html">Plan du site</a>
+      </nav>
+      <p class="copyright">Raphaël WIART © 2010-2026</p>
+    </div>
+  </footer>
+
+  <!-- Bandeau cookies -->
+  <div class="cookies" role="dialog" aria-live="polite" hidden>
+    <p>Bienvenue sur www.ggac.fr !<br />En poursuivant votre navigation, vous acceptez l'utilisation de cookies permettant d'améliorer votre expérience utilisateur.</p>
+    <div class="cookies__actions">
+      <a href="mentions-cookies.html">En savoir plus</a>
+      <button type="button" class="cookies__ok">J'accepte</button>
+    </div>
+  </div>
+
+  <!-- Visionneuse -->
+  <div class="lightbox" aria-hidden="true">
+    <button class="lightbox__close" aria-label="Fermer">×</button>
+    <figure class="lightbox__fig"><img alt="" /><figcaption></figcaption></figure>
+  </div>
+
+  <!-- Rinceau végétal réutilisable (inspiré du feuillage d'origine) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <g id="vine">
+        <path class="vine__stem" d="M30 200 C 80 170, 120 150, 150 110 C 170 80, 175 50, 160 20" />
+        <path class="vine__stem" d="M150 110 C 190 90, 220 60, 250 25" />
+        <path class="vine__stem" d="M120 145 C 100 120, 75 115, 70 95 C 66 78, 82 66, 96 72 C 108 78, 104 94, 92 92" />
+        <path class="vine__stem" d="M165 92 C 190 100, 205 90, 200 74 C 196 62, 182 62, 180 72 C 178 80, 186 84, 190 80" />
+        <path class="vine__stem" d="M100 165 C 110 185, 130 192, 140 180 C 148 168, 136 158, 128 166" />
+        <path class="vine__stem" d="M80 178 C 70 190, 60 192, 48 186" />
+        <g class="vine__leaves">
+          <path class="leaf" style="--r:-30deg" d="M160 20 c -18 -6 -30 2 -34 14 c 14 4 28 -2 34 -14 z" />
+          <path class="leaf" style="--r:20deg" d="M250 25 c -4 16 -14 24 -24 24 c 2 -14 12 -22 24 -24 z" />
+          <path class="leaf" style="--r:10deg" d="M235 60 c 6 14 4 26 -4 32 c -6 -12 -4 -24 4 -32 z" />
+          <path class="leaf" style="--r:-15deg" d="M48 186 c -16 -4 -28 2 -32 12 c 14 4 26 0 32 -12 z" />
+          <path class="leaf" style="--r:25deg" d="M110 200 c 2 16 -4 28 -12 32 c -4 -12 2 -26 12 -32 z" />
+        </g>
+      </g>
+    </defs>
+  </svg>
+
+  
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

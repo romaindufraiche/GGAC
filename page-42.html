@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contrats de mariage et autres... - Groupe des Généalogistes Amateurs du Cambrésis</title>
+  <meta name="author" content="Raphaël WIART" />
+  <meta name="theme-color" content="#f4ede0" />
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+  <link rel="alternate" type="application/rss+xml" title="Flux RSS du site officiel du G.G.A.C." href="https://www.ggac.fr/rss.xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  
+</head>
+<body id="haut" class="is-big">
+
+  <!-- Intro : une goutte d'encre qui révèle la page -->
+  <div class="intro" aria-hidden="true">
+    <svg class="intro__seal" viewBox="0 0 120 140">
+      <path class="intro__shield" d="M10 10 H110 V70 C110 105 85 122 60 132 C35 122 10 105 10 70 Z" />
+    </svg>
+  </div>
+
+  <div class="progress" aria-hidden="true"><span></span></div>
+  <canvas class="dust" aria-hidden="true"></canvas>
+
+  <!-- Barre utilitaire -->
+  <div class="topbar">
+    <div class="wrap topbar__inner">
+      <p class="topbar__maj"><span class="bleu">Mis à jour le 31/10/26</span> - <span class="counter" data-count="119617">119 617</span> visiteurs depuis le 12/03/10</p>
+      <nav class="quick" aria-label="Liens rapides">
+        <a href="agenda.html">Agenda</a>
+        <a href="page-5.html">Adhésion</a>
+        <a href="https://www.ggac.fr/fichiers/file/tarifs_publications.pdf" target="_blank" rel="noopener">Tarifs</a>
+        <a href="https://www.ggac.fr/fichiers/file/commande.pdf" target="_blank" rel="noopener">Commande</a>
+        <a href="https://www.ggac.fr/rss.xml" class="quick__rss">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="3" cy="13" r="2"/><path d="M1 7a8 8 0 0 1 8 8M1 2a13 13 0 0 1 13 13"/></svg>
+          Flux RSS</a>
+      </nav>
+      <form class="search" action="https://www.ggac.fr/rechercher.php" method="post" name="recherche">
+        <label class="sr-only" for="requete">Rechercher sur le site</label>
+        <input name="requete" type="search" id="requete" placeholder="Rechercher sur le site" autocomplete="off" aria-controls="search-results" />
+        <button type="submit" name="ok" id="ok">OK</button>
+        <ul class="search__results" id="search-results" hidden></ul>
+      </form>
+    </div>
+  </div>
+
+  <!-- En-tête -->
+  <header class="hero">
+    <svg class="vine vine--hero" viewBox="0 0 260 240" aria-hidden="true">
+      <use href="#vine" />
+    </svg>
+    <div class="wrap hero__inner">
+      <a class="brand" href="index.html" title="Retour à la page d'accueil">
+        <span class="brand__shields"><img src="assets/img/shields.png" alt="" width="195" height="125" /></span>
+        <span class="brand__name" aria-label="Groupe des Généalogistes Amateurs du Cambrésis">
+          <span class="line"><span class="w"><b>G</b>roupe</span></span>
+          <span class="line">des <span class="w"><b>G</b>énéalogistes</span></span>
+          <span class="line"><span class="w"><b>A</b>mateurs</span> du <span class="w"><b>C</b>ambrésis</span></span>
+        </span>
+      </a>
+      <div class="hero__frames" aria-hidden="true">
+        <figure class="frame frame--manuscrit" data-depth="0.25"><img src="assets/img/manuscrit.jpg" alt="" /></figure>
+        <figure class="frame frame--photo" data-depth="0.6"><img src="assets/img/photo.jpg" alt="" /></figure>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation principale -->
+  <nav class="nav" aria-label="Navigation principale">
+    <div class="wrap nav__inner">
+      <button class="nav__burger" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span><span class="sr-only">Menu</span></button>
+      <ul class="menu" id="menu">
+<li class=""><a class="menu__top" href="index.html">Accueil</a></li>
+<li class="has-sub"><button class="menu__top" aria-expanded="false">L&#x27;association</button><div class="sub"><ul class="sub__col"><li><a href="agenda.html">Agenda</a></li><li><a href="page-3.html">Présentation</a></li><li><a href="page-53.html">Assemblée générale 2025</a></li><li><a href="page-142.html">Scaldobrésia 2025</a></li><li><a href="page-106.html">Retraite et bénévolat</a></li><li><a href="page-4.html">Zone d&#x27;action</a></li><li><a href="page-5.html">Adhésion</a></li><li><a href="page-6.html">Conseil d&#x27;administration</a></li><li><a href="page-7.html">Membres fondateurs</a></li><li><a href="page-8.html">Membres donateurs</a></li></ul></div></li>
+<li class="has-sub"><button class="menu__top" aria-expanded="false">Publications</button><div class="sub sub--wide"><ul class="sub__col"><li><a href="page-62.html">Nouvelles publications</a></li><li class="has-fly"><a href="page-9.html">Farda</a><ul class="fly"><li><a href="page-10.html">Farda n° 1 à 10</a></li><li><a href="page-11.html">Farda n° 11 à 20</a></li><li><a href="page-12.html">Farda n° 21 à 30</a></li><li><a href="page-13.html">Farda n° 31 à 40</a></li><li><a href="page-14.html">Farda n° 41 à 50</a></li><li><a href="page-15.html">Farda n° 51 à 60</a></li><li><a href="page-74.html">Farda n° 61 à 70</a></li><li><a href="page-97.html">Farda n° 71 à 80</a></li><li><a href="page-112.html">Farda n° 81 à 90</a></li><li><a href="page-136.html">Farda n° 91 à 100</a></li><li><a href="page-144.html">Farda n° 101 à 110</a></li></ul></li><li class="has-fly"><a href="page-16.html">Questions des membres</a><ul class="fly"><li><a href="page-17.html">Questions des Farda n° 1 à 10</a></li><li><a href="page-18.html">Questions des Farda n° 11 à 20</a></li><li><a href="page-19.html">Questions des Farda n° 21 à 30</a></li><li><a href="page-20.html">Questions des Farda n° 31 à 40</a></li><li><a href="page-21.html">Questions des Farda n° 41 à 50</a></li><li><a href="page-22.html">Questions des Farda n° 51 à 60</a></li><li><a href="page-75.html">Questions des Farda n° 61 à 70</a></li><li><a href="page-98.html">Questions des Farda n° 71 à 80</a></li><li><a href="page-113.html">Questions des Farda n° 81 à 90</a></li><li><a href="page-137.html">Questions des Farda n° 91 à 100</a></li><li><a href="https://www.ggac.fr/index.php?page=145">Questions des Farda n° 101 à 110</a></li></ul></li><li><a href="page-23.html">Éditions du G.G.A.C.</a></li><li><a href="page-24.html">Généalogies du Cambrésis</a></li><li><a href="page-25.html">Fardes cambrésiennes</a></li></ul><div class="sub__dict"><a class="sub__dict-title" href="page-26.html">Dictionnaires des familles</a><ul class="dict"><li><a href="page-76.html">Anneux</a></li><li><a href="page-30.html">Awoingt</a></li><li><a href="page-122.html">Banteux</a></li><li><a href="page-124.html">Bantouzelle</a></li><li><a href="page-105.html">Baralle</a></li><li><a href="page-27.html">Beaumont-en-Cis</a></li><li><a href="page-28.html">Beauvois-en-Cis</a></li><li><a href="page-31.html">Bertry</a></li><li><a href="page-135.html">Béthencourt</a></li><li><a href="page-103.html">Bévillers</a></li><li><a href="page-88.html">Blécourt</a></li><li><a href="page-32.html">Bourlon</a></li><li><a href="page-92.html">Boursies</a></li><li><a href="page-131.html">Boussières-en-Cambrésis</a></li><li><a href="page-120.html">Briastre</a></li><li><a href="page-99.html">Buissy</a></li><li><a href="page-84.html">Cagnoncles</a></li><li><a href="page-79.html">Cantaing-sur-Escaut</a></li><li><a href="page-33.html">Cattenières</a></li><li><a href="page-116.html">Caudry</a></li><li><a href="page-114.html">Cauroir</a></li><li><a href="page-123.html">Dehéries</a></li><li><a href="page-86.html">Doignies</a></li><li><a href="page-110.html">Épinoy</a></li><li><a href="page-90.html">Escaudœuvres</a></li><li><a href="page-119.html">Esnes</a></li><li><a href="page-139.html">Estourmel</a></li><li><a href="page-34.html">Estrun</a></li><li><a href="page-109.html">Eswars</a></li><li><a href="page-63.html">Flesquières</a></li><li><a href="page-35.html">Fontaine-au-Pire</a></li><li><a href="page-69.html">Fontaine-Notre-Dame</a></li><li><a href="page-132.html">Gonnelieu</a></li><li><a href="page-36.html">Gouy-Saint-André</a></li><li><a href="page-130.html">Graincourt-lès-Havrincourt</a></li><li><a href="page-117.html">Hendecourt-lès-Cagnicourt</a></li><li><a href="page-96.html">Hermies</a></li><li><a href="page-65.html">Honnechy</a></li><li><a href="page-138.html">Honnecourt-sur-Escaut</a></li><li><a href="page-29.html">Inchy</a></li><li><a href="page-71.html">Inchy-en-Artois</a></li><li><a href="page-102.html">Iwuy</a></li><li><a href="page-67.html">Lebucquière</a></li><li><a href="page-141.html">Maretz</a></li><li><a href="page-94.html">Marquion</a></li><li><a href="page-93.html">Masnières</a></li><li><a href="page-87.html">Maurois</a></li><li><a href="page-66.html">Mœuvres</a></li><li><a href="page-128.html">Naves</a></li><li><a href="page-60.html">Niergnies</a></li><li><a href="page-73.html">Noyelles-sur-Escaut</a></li><li><a href="page-121.html">Ors</a></li><li><a href="page-101.html">Pronville-en-Artois</a></li><li><a href="page-37.html">Proville</a></li><li><a href="page-78.html">Quéant</a></li><li><a href="page-80.html">Raillencourt-Sainte-Olle</a></li><li><a href="page-61.html">Ramillies</a></li><li><a href="page-140.html">Reumont</a></li><li><a href="page-127.html">Ribécourt-la-Tour</a></li><li><a href="page-118.html">Rieux-en-Cambrésis</a></li><li><a href="page-89.html">Rumilly-en-Cis</a></li><li><a href="page-81.html">Sailly-lez-Cambrai</a></li><li><a href="page-38.html">Sains-lès-Marquion</a></li><li><a href="page-133.html">Saint-Hilaire-lez-Cambrai</a></li><li><a href="page-134.html">Saint-Vaast-en-Cambrésis</a></li><li><a href="page-82.html">Sancourt</a></li><li><a href="page-107.html">Sauchy-Cauchy</a></li><li><a href="page-108.html">Sauchy-Lestrée</a></li><li><a href="page-91.html">Séranvillers-Forenville</a></li><li><a href="page-70.html">Thun-l&#x27;Évêque</a></li><li><a href="page-39.html">Thun-Saint-Martin</a></li><li><a href="page-72.html">Trescault</a></li><li><a href="page-115.html">Troisvilles</a></li><li><a href="page-68.html">Vélu</a></li><li><a href="page-104.html">Viesly</a></li><li><a href="page-40.html">Villers-en-Cauchies</a></li><li><a href="page-126.html">Villers-Guislain</a></li><li><a href="page-111.html">Villers-lès-Cagnicourt</a></li><li><a href="page-125.html">Villers-Plouich</a></li><li><a href="page-77.html">Wambaix</a></li></ul></div></div></li>
+<li class="has-sub is-active"><button class="menu__top" aria-expanded="false">Bibliothèque</button><div class="sub"><ul class="sub__col"><li><a href="page-41.html">Bulletins et revues</a></li><li><a href="page-42.html">Contrats de mariage et autres...</a></li><li><a href="page-55.html">Catalogue</a></li></ul></div></li>
+<li class="has-sub"><button class="menu__top" aria-expanded="false">Divers</button><div class="sub"><ul class="sub__col"><li><a href="page-85.html">Archives en ligne</a></li><li><a href="page-47.html">Armorial</a></li><li><a href="page-59.html">Pairies du Cambrésis</a></li><li><a href="page-48.html">Paroisses de Cambrai</a></li><li><a href="page-58.html">Carte de CASSINI</a></li><li><a href="page-49.html">Revue des revues</a></li><li><a href="page-51.html">Liens utiles</a></li></ul></div></li>
+<li class="has-sub"><button class="menu__top" aria-expanded="false">Contacts</button><div class="sub"><ul class="sub__col"><li><a href="contacts.html">Nous écrire</a></li><li><a href="page-56.html">Coordonnées</a></li></ul></div></li>
+<li class="menu__member"><a class="menu__top" href="espace-membre.html">Espace membre</a></li>
+      </ul>
+      <span class="menu__ink" aria-hidden="true"></span>
+    </div>
+  </nav>
+
+  <div class="wrap layout">
+
+    <!-- Colonne latérale -->
+    <aside class="side">
+<section class="side__block"><h2 class="side__title">Bibliothèque</h2><ul class="side__menu"><li><a href="page-41.html">Bulletins et revues</a></li><li><span class="is-current" aria-current="page">Contrats de mariage et autres...</span></li><li><a href="page-55.html">Catalogue</a></li></ul></section>
+<section class="side__block side__news">
+        <h2 class="side__title">Actualités</h2>
+        <div class="news" tabindex="0">
+          <div class="news__track">
+            <article class="news__item">
+              <h3>PROCHAINE PERMANENCE</h3>
+              <p>Mercredi 4 novembre 2026 de 14h00 à 17h00 au siège de l'association.</p>
+            </article>
+            <article class="news__item">
+              <h3><a href="agenda.html#ev-1">EXPOSITION ET SORTIE OFFICIELLE DES POILUS DE VILLERS-PLOUICH MORTS POUR LA FRANCE ET DU DICTIONNAIRE DES FAMILLES</a></h3>
+              <p>Du samedi 7 au dimanche 8 novembre 2026 - Salle des fêtes Pierre Mauroy à Villers-Plouich (59)</p>
+            </article>
+            <article class="news__item">
+              <h3><a href="agenda.html#ev-2">SALON DE GÉNÉALOGIE ET D'HISTOIRE</a></h3>
+              <p>Du samedi 7 au dimanche 8 novembre 2026 - Palais des sports de Château-Thierry (02)</p>
+            </article>
+            <article class="news__item">
+              <h3><a href="agenda.html#ev-3">5<sup>E</sup> MARCHÉ D'HISTOIRE LOCALE</a></h3>
+              <p>Du samedi 28 au dimanche 29 novembre 2026 - Salle des fêtes de Fontaine-Notre-Dame (59)</p>
+            </article>
+            <article class="news__item">
+              <h3><a href="agenda.html#ev-4">20<sup>ES</sup> PORTES OUVERTES SUR LA GÉNÉALOGIE</a></h3>
+              <p>Du samedi 6 au dimanche 7 février 2027 - Parc des sports Didier Mounier (rue Albert Dauvergne) à Chevry-Cossigny (77)</p>
+            </article>
+            <article class="news__item">
+              <h3><a href="agenda.html#ev-5">EXPOSITION ET SORTIE OFFICIELLE DES POILUS D'ESNES MORTS POUR LA FRANCE ET DU DICTIONNAIRE DES FAMILLES</a></h3>
+              <p>Du samedi 13 au dimanche 14 mars 2027 - Salle des fêtes d'Esnes (59)</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+    </aside>
+
+    <!-- Contenu -->
+    <main class="content">
+<svg class="vine vine--content" viewBox="0 0 260 240" aria-hidden="true"><use href="#vine" /></svg>
+<h1 class="title"><span class="title__text" data-split>Contrats de mariage et autres...</span>
+<svg class="title__flourish" viewBox="0 0 320 30" aria-hidden="true"><path d="M4 18 C 60 4, 110 28, 160 16 S 260 4, 316 16" /><path d="M150 16 c 6 -10 14 -10 10 0 c -4 8 -14 6 -10 0" /></svg></h1>
+<div class="prose">
+
+
+<p><span class="bleu"><u>Tarif pour les membres du G.G.A.C. :</u> 2.00 € par acte (franco de port et d'emballage).<br/>
+</span></p>
+<p><span class="bleu"><u>Tarif pour les personnes non adhérentes :</u> 3.00 € par acte (franco de port et d'emballage).<br/>
+</span></p>
+<p>24/10/1687 : <span class="bleu">ABRAHAM Blaise</span> (Escaudœuvres) - <span class="bleu">FOCQUET Catherine</span>, AD59 2E26-8, <strong>602001/1</strong><br/>
+15/02/1719 : <span class="bleu">AIME Augustin</span> (Bertry) - <span class="bleu">de NOYELLES Marie Louise</span>, AD59 2E26-231, <strong>602001/3</strong><br/>
+28/01/1747 : <span class="bleu">AIME Jean Charles</span> (Bertry) - <span class="bleu">GODAR Marie Barbe</span>, <strong>602001/4</strong><br/>
+24/11/1715 : <span class="bleu">AIME Melchior</span> (Bertry) - <span class="bleu">MARLIER Gilette</span>, AD59 2E26-230, <strong>602001/5</strong></p>
+<p>15/05/1713 : <span class="bleu">BACHELET Ignace</span> (Ramillies, vf VALLET Marie Anne) - <span class="bleu">BACHELET Antoinette</span>, AD59 2E26-350/429, <strong>602001/6</strong><br/>
+21/06/1741 : <span class="bleu">BACHELET Michel et PESIER Marie-Françoise</span> (Saint-Aubert) - <span class="bleu">BACHELET Pierre François</span>, donation à leur fils, AD59 2E26-45<br/>
+21/04/1706 : <span class="bleu">BACHELET Titus David</span> (Quéant) - <span class="bleu">LOUVET Marie Catherine</span>, AD59 2E26-227, <strong>602001/7</strong><br/>
+17/07/1677 : <span class="bleu">BAILLET Géry</span> (Fontaine-Notre-Dame, vf PARIS Marie) - <span class="bleu">CHAUWIN Marguerite</span>, AD59 2E26-138, <strong>602001/8</strong><br/>
+08/02/1720 : <span class="bleu">BAILLET Jean Philippe</span> (Fontaine-Notre-Dame) - <span class="bleu">DESCAUDIN Marie Josèphe</span>, AD59 2E26-358/436, <strong>602001/9</strong><br/>
+07/10/1710 : <span class="bleu">BAILLEU Abraham</span> (Maing, vf MIROUX Marie Jeanne de Valenciennes) - <span class="bleu">TACQUET Marguerite</span>, AD62 J707-4, <strong>602001/10</strong><br/>
+05/07/1689 : <span class="bleu">BAILLEUL Nicolas</span> (Avesnes-les-Aubert) - <span class="bleu">VILLAIN Anne</span>, AD59 2E26-23, <strong>602001/11</strong><br/>
+10/10/1752 : <span class="bleu">BAILLIEUX Antoine Joseph</span> (Honnechy) - <span class="bleu">ROUSSEAUX Marie Pasque</span>, AD59 2E26-251, <strong>602001/12</strong><br/>
+31/10/1683 : <span class="bleu">BALEMBOIS Henry</span> (Beauvois-en-Cambrésis) - <span class="bleu">VITOU Marie</span>, AD59 2E26-9, <strong>602001/13</strong><br/>
+29/12/1716 : <span class="bleu">BALEMBOIS Mathieu</span> (Beauvois-en-Cambrésis, vf LEMAIRE Thérèse) - <span class="bleu">DESOURMAIS Antoinette</span>, AD59 2E26-432<br/>
+31/03/1674 : <span class="bleu">BALICQ Blaise</span> (Bantignies) - <span class="bleu">BERNARD Françoise</span>, AD59 2E26-25, <strong>602001/14</strong><br/>
+04/02/1676 : <span class="bleu">BALICQ Jean Martin</span> (Bantigny) - <span class="bleu">GRANSART Noëlle</span>, AD59 2E26-31, <strong>602001/15</strong><br/>
+18/02/1788 : <span class="bleu">BALICQUE Louis</span> (Bantigny), bail de trois ans, <strong>602001/16</strong><br/>
+05/05/1731 : <span class="bleu">BALICQUE Pierre François</span> (Bantigny) - <span class="bleu">PAMART Marie barbe</span>, AD59 2E26-367, <strong>602001/17</strong><br/>
+14/06/1713 : <span class="bleu">BALLEMBOIS Henry</span> (Beauvois-en-Cambrésis) - <span class="bleu">de NOYELLE Magdeleine</span>, AD59 2E26-350, <strong>602001/18</strong><br/>
+03/02/1701 : <span class="bleu">BALLICQUE Jacques</span> (Cambrai) - <span class="bleu">CRESPIN Catherine</span>, AD59 2E26-196, <strong>602001/19</strong><br/>
+06/11/1732 : <span class="bleu">BANS Ambroise</span> (Montigny-en-Cambrésis) - <span class="bleu">HERBET Marie Anne</span>, AD59 2E26-237, <strong>602001/20</strong><br/>
+13/11/1699 : <span class="bleu">BANS Jean</span> (Wambaix, vf TACQUE Reine) - <span class="bleu">PATOU Marie Anne</span>, AD59 2E26-149, <strong>602001/21</strong><br/>
+10/03/1683 : <span class="bleu">BANS Thomas</span> (Cambrai) - <span class="bleu">MOREAU Guillaume</span>, procès, AD59 2E26-139, <strong>602001/22</strong><br/>
+25/04/1690 : <span class="bleu">BARBEE Bartholomé</span> (Saint-Aubert) - <span class="bleu">BERTOU Marie</span>, AD59 2E26-22, <strong>602001/23</strong><br/>
+05/03/1712 : <span class="bleu">BARBEE François</span> (Saint-Aubert) - <span class="bleu">BECAR Antoinette</span>, succession, Officialité 3443, <strong>602001/24</strong><br/>
+03/10/1715 : <span class="bleu">BARBET Michel Marcel</span> (Saint-Aubert) - <span class="bleu">GUILBERT Marie Françoise</span>, AD59 2E26-410, <strong>602001/25</strong><br/>
+13/12/1710 : <span class="bleu">BARBOTIN Martin</span> (Hordain) - <span class="bleu">TISON Marie Françoise</span>, AD62 J1301-28, <strong>602001/26</strong><br/>
+02/06/1706 : <span class="bleu">BARDOU Guillaume</span> (Ligny-en-Cambrésis) - <span class="bleu">GABET Hélène</span>, AD59 2E26-227, <strong>602001/27</strong><br/>
+09/11/1708 : <span class="bleu">BARDOU Nicolas</span> (Haussy) - <span class="bleu">CRESSIN Jeanne</span>, AD62 J1366-42, <strong>602001/28</strong><br/>
+20/11/1713 : <span class="bleu">BARDOUX Robert</span> (Esnes) - <span class="bleu">de RODE Laurence</span>, AD59 2E26-409, <strong>602001/29</strong><br/>
+27/06/1683 : <span class="bleu">BASQUIN Eloy</span> (Troisvilles) - <span class="bleu">OUDART Françoise</span>, AD59 2E26-20, <strong>602001/30</strong><br/>
+19/04/1683 : <span class="bleu">BASQUIN Jean</span> (Honnechy) - <span class="bleu">GAILLOT Anne</span>, succession, AD59 2E26-17, <strong>602001/32</strong><br/>
+16/10/1683 : <span class="bleu">BASQUIN Jean</span> (Troisvilles) - <span class="bleu">CARON Catherine</span>, AD59 2E26-20, <strong>602001/31</strong><br/>
+04/02/1679 : <span class="bleu">BASQUIN Martin</span> (Inchy) - <span class="bleu">VILETTE Marie Barbe</span>, AD59 2E26-20, <strong>602001/33</strong><br/>
+23/10/1690 : <span class="bleu">BASQUIN Robert</span> (Troisvilles) - <span class="bleu">HELOIRE Marie Barbe</span>, AD59 2E26-25, <strong>602001/35</strong><br/>
+19/01/1699 : <span class="bleu">BASQUIN Robert</span> (Troisvilles, vf HELOIRE Marie Barbe) - <span class="bleu">PIGO Marie</span>, AD59 2E26-142, <strong>602001/34</strong><br/>
+25/01/1657 : <span class="bleu">BASTIEN Ambroise</span> (Beauvois-en-Cambrésis) - <span class="bleu">VITOU Marie</span>, AD59 2E26-178, <strong>602001/36</strong><br/>
+28/07/1732 : <span class="bleu">BASTIEN Ambroise</span> (Beauvois-en-Cambrésis, vf LEVEQUE Marie Jeanne) - <span class="bleu">BUNICOUR Marie Catherine</span>, AD59 2E26-369, <strong>602001/37</strong><br/>
+03/01/1644 : <span class="bleu">BASTIEN Antoine</span> (Fontaine-au-Pire) - <span class="bleu">LEDUC Catherine</span>, AD59 2E26-23, <strong>602001/38</strong><br/>
+24/01/1659 : <span class="bleu">BASTIEN Antoine</span> (Fontaine-au-Pire) - <span class="bleu">FARRE Simone</span>, AD59 2E26-178, <strong>602001/39</strong><br/>
+01/02/1686 : <span class="bleu">BASTIEN Jacques</span> (Beauvois-en-Cambrésis) - <span class="bleu">BROUSSE Jeanne Thérèse</span>, AD59 2E26-178, <strong>602001/40</strong><br/>
+01/12/1690 : <span class="bleu">BASTIEN Jacques</span> (Beauvois-en-Cambrésis, vf LANGLET Marie) - <span class="bleu">VITOU Magdeleine</span>, AD59 2E26-9, <strong>602001/41</strong><br/>
+10/05/1704 : <span class="bleu">BASTIEN Mathias</span> (Saint-Hilaire-lez-Cambrai, vf LECLECQ Anne) - <span class="bleu">LE GOEULLE Marie Jeanne</span>, AD59 2E26-24, <strong>602001/42</strong><br/>
+10/09/1630 : <span class="bleu">BASTIEN Nicaise</span> (Beauvois-en-Cambrésis), succession, AD59 2E26-23, <strong>602001/43</strong><br/>
+12/02/1677 : <span class="bleu">BATAILLE Philippe</span> (Naves) - <span class="bleu">CAPELLIER Marie Madeleine</span>, AD59 2E26-9, <strong>602001/44</strong><br/>
+23/06/1659 : <span class="bleu">BAUDRY Cornil</span> (Saint-Vaast-en-Cambrésis) - <span class="bleu">BOISTEAU Marguerite</span>, AD59 2E26-24, <strong>602001/45</strong><br/>
+25/04/1688 : <span class="bleu">BAUDRY Jean</span> (Saint-Aubert) - <span class="bleu">DELSARTE Jeanne</span>, AD59 2E26-22, <strong>602001/46</strong><br/>
+19/07/1819 : <span class="bleu">BAUVOIS Jean Baptiste</span> (Inchy) - <span class="bleu">LECLERCQ Jeanne Reine</span>, donation, <strong>602001/47</strong><br/>
+10/02/1692 : <span class="bleu">BEAUMONT Pierre</span> (Rumilly-en-Cambrésis) - <span class="bleu">BOURDON Marie Jacqueline</span>, AD59 2E26-172, <strong>602002/1</strong><br/>
+12/01/1735 : <span class="bleu">BEAURAIN Joseph</span> (Montigny-en-Cambrésis) - <span class="bleu">DESSE Marie marguerite</span>, AD59 2E26-238, <strong>602002/2</strong><br/>
+25/02/1718 : <span class="bleu">BEAURIN Pierre</span> (Montigny-en-Cambrésis, vf LEBARRE Péronne) - <span class="bleu">FORRIERE Marie Anne</span>, AD59 2E26-434, <strong>602002/3</strong><br/>
+07/01/1699 : <span class="bleu">BEAUVOIS Antoine</span> (Viesly, vf BARA Marie) - <span class="bleu">OBLIN Marie Marthe</span>, AD59 2E26-208, <strong>602002/4</strong><br/>
+16/01/1719 : <span class="bleu">BEAUVOIS Jérôme</span> (Masnières) - <span class="bleu">COPIN Marie Anne</span>, AD59 2E26-356<br/>
+01/02/1713 : <span class="bleu">BEAUVOIS Pierre</span> (Masnières) - <span class="bleu">LEFEBVRE Gertrude</span>, AD59 2E26-149, <strong>602002/5</strong><br/>
+13/05/1718 : <span class="bleu">BEAUVOIS Pierre</span> (Rieux-en-Cambrésis) - <span class="bleu">GARDEZ Marie Josèphe</span>, AD59 2E26-173, <strong>602002/7</strong><br/>
+19/11/1739 : <span class="bleu">BEAUVOIS Pierre</span> (Séranvillers, vf LEFEBVRE Gertrude) - <span class="bleu">PREVOST Norbertine</span>, AD59 2E26-382, <strong>602002/6</strong><br/>
+25/04/1743 : <span class="bleu">BEAUVOIS Pierre</span> (Rieux-en-Cambrésis, vf GARDEZ Marie Josèphe) - <span class="bleu">DOISE Marie Catherine</span>, AD59 2E26-47, <strong>602002/9</strong><br/>
+13/11/1745 : <span class="bleu">BEAUVOIS Pierre</span> (Rieux-en-Cambrésis, vf GARDEZ Marie Josèphe) - <span class="bleu">LOUVET Marie Marguerite</span>, AD59 2E26-50, <strong>602002/8</strong><br/>
+11/05/1773 : <span class="bleu">BEAVILLAIN André</span> (Bournonville/Caudry) - <span class="bleu">BAUDOUIN Michelle</span>, <strong>602002/10</strong><br/>
+08/12/1678 : <span class="bleu">BECART François</span> (Saulzoir) - <span class="bleu">BRASCHELET Brigitte</span>, AD59 2E26-23, <strong>602002/11</strong><br/>
+03/10/1732 : <span class="bleu">BECCART Romain</span> (Saint-Aubert, vf LORQUIN Jeanne) - <span class="bleu">MAIRESSE Marie Marthe</span>, AD59 2E26-369, <strong>602002/12</strong><br/>
+14/05/1718 : <span class="bleu">BEGART Robert</span> (Cambrai, vf CANDELIER Marguerite) - <span class="bleu">DAUTRICOUR Marie Anne</span>, AD59 2E26-218, <strong>602002/13</strong><br/>
+02/11/1723 : <span class="bleu">BEGUIN Jean François</span> (Walincourt) - <span class="bleu">LORQUIN Marie Catherine</span>, AD59 2E26-232, <strong>602002/14</strong><br/>
+02/05/1730 : <span class="bleu">BENOIST Charles</span> (Caullery, vf TAISNE Jeanne) - <span class="bleu">LOR Marie Anne Josèphe</span>, <strong>602002/16</strong><br/>
+07/07/1714 : <span class="bleu">BENOIT Charles</span> (Clary) - <span class="bleu">TAISNE Jeanne</span>, AD59 2E26-410, <strong>602002/17</strong><br/>
+13/05/1699 : <span class="bleu">BENS Jacques</span> (Montigny-en-Cambrésis) - <span class="bleu">BOURSIEZ Anne Thérèse</span>, AD59 2E26-148, <strong>602002/18</strong><br/>
+04/10/1658 : <span class="bleu">BENS Pierre</span> (Wambaix) - <span class="bleu">LEDUCQ Marguerite</span>, AD59 2E26-35, <strong>602002/19</strong><br/>
+15/01/1655 : <span class="bleu">BENSSE Jacques</span> (Naves) - <span class="bleu">de SOURMAY Adrienne</span>, AD59 2E26-29, <strong>602002/20</strong><br/>
+31/10/1715 : <span class="bleu">BEQUART Romain</span> (Saint-Aubert) - <span class="bleu">LORQUIN Jeanne</span>, AD59 2E26-217, <strong>602002/21</strong><br/>
+02/05/1733 : <span class="bleu">BERNARD André</span> (Rieux-en-Cambrésis, vf BATAILLE Michelle) - <span class="bleu">GERARD Marie Josèphe</span>, AD59 2E26-41, <strong>602002/22</strong><br/>
+02/01/1691 : <span class="bleu">BERNARD Guillaume</span> (Cauroir) - <span class="bleu">PAMART Marie Catherine</span>, AD59 2E26-31<br/>
+26/02/1722 : <span class="bleu">BERNARD Ignace</span> (Blécourt), partage de terres, <strong>602002/23</strong><br/>
+07/01/1692 : <span class="bleu">BERNARD Jean</span> (Cauroir) - <span class="bleu">LECERF Marie Catherine</span>, AD59 2E26-31<br/>
+20/03/1700 : <span class="bleu">BERNARD Pierre</span> (Cauroir) - <span class="bleu">PEZIN Thérèse</span>, AD59 2E26-422<br/>
+14/01/1706 : <span class="bleu">BERTIN François</span> (Saint-Aubert, vf JACQUEMART Marie Marthe) - <span class="bleu">CASTELLAIN Françoise</span>, AD59 2E26-156, <strong>602002/24</strong><br/>
+13/06/1722 : <span class="bleu">BERTOU Michel</span> (Saint-Aubert) - <span class="bleu">BECCAR Marie Anne</span>, AD59 2E26-219, <strong>602002/25</strong><br/>
+25/02/1713 : <span class="bleu">BERTOU Nicolas</span> (Saint-Aubert) - <span class="bleu">BECCART Maxellende</span>, AD59 2E26-409, <strong>602002/26</strong><br/>
+06/07/1677 : <span class="bleu">BETRANCOURT Martin</span> (Paillencourt) - <span class="bleu">MEUREN Catherine</span>, AD59 2E26-25, <strong>602002/29</strong><br/>
+27/01/1676 : <span class="bleu">BETRANCOURT Michel</span> (Paillencourt) - <span class="bleu">LEMAIRE Barbe</span>, AD59 2E26-177, <strong>602002/30</strong><br/>
+15/01/1677 : <span class="bleu">BETRANCOURT Paul</span> (Paillencourt) - <span class="bleu">BLA Barbe</span>, AD59 2E26-25, <strong>602002/31</strong><br/>
+19/11/1691 : <span class="bleu">BETTANCOURT Martin</span> (Paillencourt, vf MEUREN Catherine) - <span class="bleu">DUPONT Marie Catherine</span>, AD59 2E26-28, <strong>602002/32</strong><br/>
+01/02/1709 : <span class="bleu">BILLOIR Augustin</span> (Blécourt, vf DEWALLY Marie Anne) - <span class="bleu">DUMONT Jeanne</span>, AD59 2E26-402<br/>
+27/03/1623 : <span class="bleu">BIZET Jean</span> (Bourlon) - <span class="bleu">DUBOIS Jeanne</span>, héritage<br/>
+06/06/1669 : <span class="bleu">BLA Jean</span> (Saint-Vaast-en-Cambrésis) - <span class="bleu">VILLAIN Marguerite</span>, AD59 2E26-24, <strong>602002/33</strong><br/>
+28/01/1719 : <span class="bleu">BLANCHAR Robert</span> (Rumilly-en-Cambrésis) - <span class="bleu">DAVESNE Marie Magdeleine</span>, AD59 2E26-356/436, <strong>602002/34</strong><br/>
+11/04/1722 : <span class="bleu">BLAS Toussaint</span> (Saint-Vaast-en-Cambrésis) - <span class="bleu">PAMARE Marie Josèphe</span>, AD59 2E26-358, <strong>602002/35</strong><br/>
+01/06/1689 : <span class="bleu">BLONDEAU Nicolas</span> (Élincourt) - <span class="bleu">DEWEZ Marguerite</span>, AD59 2E26-177, <strong>602002/36</strong><br/>
+03/05/1692 : <span class="bleu">BLOT Joseph</span> (Élincourt) - <span class="bleu">TAISNE Marie Jeanne</span>, AD59 2E26-96, <strong>602002/37</strong><br/>
+10/02/1699 : <span class="bleu">BLOT Pierre</span> (Walincourt) - <span class="bleu">DEBOURCQUE Laurence</span>, AD59 2E26-196, <strong>602002/38</strong><br/>
+08/11/1676 : <span class="bleu">BLOT Urbain</span> (Clary) - <span class="bleu">GUIENNE Madeleine</span>, AD59 2E26-178, <strong>602002/39</strong><br/>
+27/10/1701 : <span class="bleu">BOCQUET Philippe</span> (Ribécourt-la-Tour) - <span class="bleu">GOUBET Catherine</span>, AD59 2E26-153, <strong>602002/40</strong><br/>
+20/02/1688 : <span class="bleu">BODA Jean Baptiste</span> (Estrun) - <span class="bleu">DELEPLANCQUE Roÿne</span>, AD59 2E26-158, <strong>602002/41</strong><br/>
+07/04/1691 : <span class="bleu">BODAT Michel</span> (Estrun) - <span class="bleu">BETTANCOURT Robertine</span>, AD59 2E26-28, <strong>602002/42</strong><br/>
+09/12/1666 : <span class="bleu">BOISDIN Estienne</span> (Cambrai) - <span class="bleu">HENNE Michelle</span>, AD59 2E26-29, <strong>602002/43</strong><br/>
+12/10/1691 : <span class="bleu">BOISTEAU Jean</span> (Saint-Vaast-en-Cambrésis) - <span class="bleu">LENOTTE Barbe</span>, AD59 2E26-24, <strong>602002/44</strong><br/>
+08/11/1677 : <span class="bleu">BOISTEAU Théodore</span> (Troisvilles) - <span class="bleu">MASCRET Marie</span>, testament, <strong>602002/45</strong><br/>
+07/10/1723 : <span class="bleu">BOITIAU Jacques Benoît</span> (Troisvilles) - <span class="bleu">CLAISSE Marie Antoinette</span>, AD59 2E26-232, <strong>602002/46</strong><br/>
+01/02/1689 : <span class="bleu">BOITTEAU Antoine</span> (Troisvilles) - <span class="bleu">OBLIN Marie Anne</span>, AD59 2E26-20, <strong>602002/47</strong><br/>
+27/10/1690 : <span class="bleu">BOMBARRE Philippe</span> (Troisvilles) - <span class="bleu">LECLERCQ Anne</span>, AD59 2E26-25, <strong>602002/48</strong><br/>
+28/06/1719 : <span class="bleu">BOTTIN Jean Baptiste</span> (Thun-l'Évêque) - <span class="bleu">MARLIERE Marguerite</span>, AD59 2E26-218<br/>
+16/04/1722 : <span class="bleu">BOUBAIS Louis</span> (Crèvecœur-sur-l'Escaut) - <span class="bleu">LESAGE Marie Elisabeth</span>, AD59 2E26-358, <strong>602002/50</strong><br/>
+01/07/1712 : <span class="bleu">BOUBAIX Nicolas</span> (Estrun) - <span class="bleu">BENOIST Marie</span>, AD59 2E26-212, <strong>602002/51</strong><br/>
+14/10/1637 : <span class="bleu">BOUBAIX Servais</span> (Naves) - <span class="bleu">JOLIET Marguerite</span>, AD59 2E26-22, <strong>602002/52</strong><br/>
+23/11/1697 : <span class="bleu">BOUBAY Hubert</span> (Troisvilles) - <span class="bleu">VISSE Antoinette</span>, AD59 2E26-142, <strong>602002/53</strong><br/>
+29/03/1685 : <span class="bleu">BOUBAY Jacques</span> (Thun-Saint-Martin) - <span class="bleu">CAPLIEZ Catherine</span>, héritage, AD59 2E26-7, <strong>602002/54</strong><br/>
+07/02/1699 : <span class="bleu">BOUBAY Jean</span> (Naves) - <span class="bleu">BATAILLE Marie</span>, AD59 2E26-142, <strong>602002/55</strong><br/>
+16/06/1725 : <span class="bleu">BOUBAY Jean Claude</span> (Haucourt-en-Cambrésis) - <span class="bleu">LECLERCQ Jeanne Marguerite</span>, AD59 2E26-361, <strong>602002/56</strong><br/>
+31/01/1733 : <span class="bleu">BOUBAY Nicolas</span> (Naves) - <span class="bleu">BOUBAY Jeanne Thérèse</span>, AD59 2E26-370, <strong>602002/57</strong><br/>
+07/03/1704 : <span class="bleu">BOUBAY Pierre</span> (Naves), testament, AD59 2E26-7, <strong>602003/1</strong><br/>
+27/10/1718 : <span class="bleu">BOUCHELET Josse</span> (Valenciennes) - <span class="bleu">DESBLEUMORTIER Marie Elisabeth</span>, Collection CAFFIAUX 7926, <strong>602003/2</strong><br/>
+31/10/1714 : <span class="bleu">BOUCHEZ Jean François</span> (Crèvecœur-sur-l'Escaut) - <span class="bleu">DOUCHEZ Jeanne</span>, AD59 2E26-198<br/>
+05/05/1690 : <span class="bleu">BOUCHEZ Martin</span> (Marcoing) - <span class="bleu">LESAGE Marie</span>, AD59 2E26-12, <strong>602003/4</strong><br/>
+14/11/1688 : <span class="bleu">BOUCLY Michel</span> (Saint-Aubert) - <span class="bleu">HOURRIER Françoise</span>, AD59 2E26-226, <strong>602003/5</strong><br/>
+24/09/1706 : <span class="bleu">BOUDALIER Philippe</span> (Haynecourt) - <span class="bleu">DEUDON Anne</span>, AD59 2E26-408, <strong>602003/6</strong><br/>
+19/02/1658 : <span class="bleu">BOUFFLERS Bartholomé</span> (Boursies) - <span class="bleu">de HEHNIN Marie</span>, AD59 32429-pages 395 à 400, <strong>602003/7</strong><br/>
+23/02/1764 : <span class="bleu">BOUFFLERS Jean Baptiste</span> (Flesquières) - <span class="bleu">GOUBET Marie Anne Guislaine</span>, AD59 2E J1740-11<br/>
+01/02/1719 : <span class="bleu">BOULANGER Ferdinand</span> (Cambrai (Cantimpré)) - <span class="bleu">de FONTAINE Marie Michelle</span>, AD59 2E26-356, <strong>602003/8</strong><br/>
+19/09/1759 : <span class="bleu">BOULANGER Jean Antoine</span> (Beaumetz-lez-Cambrai) - <span class="bleu">de FONTAINE Angélique</span>, L186-F15, <strong>602003/9</strong><br/>
+26/11/1687 : <span class="bleu">BOULET Alexandre</span> (Estrun) - <span class="bleu">DIEULOT Marie</span>, AD59 2E26-31, <strong>602003/10</strong><br/>
+23/12/1713 : <span class="bleu">BOULET Michel</span> (Estrun) - <span class="bleu">HERBIN Marie Françoise</span>, AD59 2E26-173<br/>
+13/05/1658 : <span class="bleu">BOULLOIGNE François</span> (Ramillies, vf LASNE Elisabeth) - <span class="bleu">LEMAIRE Laurence</span>, AD62 J1429-1, <strong>602003/12</strong><br/>
+31/05/1692 : <span class="bleu">BOULOGNE Pierre</span> (Ramillies) - <span class="bleu">CORTILLEUX Marie Marguerite</span>, donation de terres, AD59 2E26-28, <strong>602003/11</strong><br/>
+30/04/1711 : <span class="bleu">BOULOGNE Pierre</span> (Ramillies, vf MASINGUE Marie Jeanne) - <span class="bleu">GRATTEPANCHE Marie</span>, AD62 J1429, <strong>602003/13</strong><br/>
+07/12/1731 : <span class="bleu">BOULOIGNE Jean Nicolas</span> (Ramillies) - <span class="bleu">MILLIO Maxellende</span>, AD59 2E26-368, <strong>602003/14</strong><br/>
+15/11/1728 : <span class="bleu">BOURGEOIS Louis</span> (Élincourt) - <span class="bleu">MARRONNIEZ Marie Cécile</span>, AD59 2E26-234, <strong>602003/15</strong><br/>
+21/01/1677 : <span class="bleu">BOURLET Martin</span> (Saint-Aubert), partage de terres, AD59 2E26-22, <strong>602003/16</strong><br/>
+12/11/1672 : <span class="bleu">BOURLET Renaud</span> (Clary) - <span class="bleu">PEPIN Marie Magdeleine</span>, AD59 2E26-176, <strong>602003/17</strong><br/>
+04/01/1752 : <span class="bleu">BOURSIEZ Joseph</span> (Clary) - <span class="bleu">POULAIN Marie Josèphe</span>, AD59 2E26-251, <strong>602003/18</strong><br/>
+25/01/1738 : <span class="bleu">BOUTEMY Jean Noël</span> (Estourmel (Chantemelle)) - <span class="bleu">BOUBAY Constance</span>, AD59 2E26-373, <strong>602003/19</strong><br/>
+26/06/1688 : <span class="bleu">BOUTMY Etienne</span> (Rumilly-en-Cambrésis) - <span class="bleu">d'AULTRICOURT Marie Barbe</span>, <strong>602003/20</strong><br/>
+21/04/1708 : <span class="bleu">BOUTROUILLE Hubert</span> (Haynecourt) - <span class="bleu">BRISVILLE Justine</span>, AD59 2E26-173<br/>
+20/05/1717 : <span class="bleu">BRABANT Jean Charles</span> (Paillencourt) - <span class="bleu">CARON Marie Jeanne</span>, AD59 2E26-37, <strong>602003/21</strong><br/>
+21/06/1741 : <span class="bleu">BRACHELET Michel et PESIER Marie Françoise</span> - <span class="bleu">BRACHELET Pierre François</span>, donation à leur fils, AD59 2E26-45, <strong>602003/22</strong><br/>
+05/07/1713 : <span class="bleu">BRACQ Jean</span> (Ligny-en-Cambrésis, vf CARLIER Marie Jeanne) - <span class="bleu">DANIOU Marie Thérèse</span>, AD59 2E26-229, <strong>602003/23</strong><br/>
+23/04/1738 : <span class="bleu">BRACQ Joseph</span> (Ligny-en-Cambrésis) - <span class="bleu">DESPIERRES Marie Catherine</span>, AD59 2E26-241, <strong>602003/24</strong><br/>
+25/07/1689 : <span class="bleu">BRICOU Jean</span> (Bévillers) - <span class="bleu">MICHEL Marye Magdeleine</span>, AD59 2E26-14, <strong>602003/25</strong><br/>
+09/06/1711 : <span class="bleu">BRICOULT Adrien</span> (Wambaix) - <span class="bleu">MAISON Marie</span>, AD59 2E26-148, <strong>602003/26</strong><br/>
+22/11/1715 : <span class="bleu">BRICOULT Adrien</span> (Fontaine-au-Pire) - <span class="bleu">FRANCOIS Marie Magdeleine</span>, AD59 2E26-230, <strong>602003/27</strong><br/>
+23/07/1717 : <span class="bleu">BRICOULT Charles</span> (Caudry (Borneville)) - <span class="bleu">SANDRA Anne Jeanne</span>, AD59 2E26-230, <strong>602003/28</strong><br/>
+05/01/1678 : <span class="bleu">BRICOULT François</span> (Wambaix, vf LEFEBVRE Anne) - <span class="bleu">de LA COURT Marie</span>, <strong>602003/29</strong><br/>
+05/07/1696 : <span class="bleu">BRICOULT Jacques</span> (Bévillers) - <span class="bleu">DOIZE Laurence</span>, AD59 2E26-541, <strong>602003/30</strong><br/>
+21/05/1788 : <span class="bleu">BRICOUT Chrysostome Joseph</span> (Saint-Hilaire-lez-Cambrai) - <span class="bleu">SORIAUX Alexandrine</span>, AD59 2E26-143, <strong>602003/31</strong><br/>
+27/07/1699 : <span class="bleu">BRICOUT Joseph</span> (Caudry) - <span class="bleu">LEFEBURE Marie Jeanne</span>, AD59 2E26-152, <strong>602003/32</strong><br/>
+08/05/1761 : <span class="bleu">BRICOUT Nicolas</span> (Saint-Hilaire-lez-Cambrai) - <span class="bleu">LEDIEU Marie Thérèse</span>, AD59 2E26-127, <strong>602003/33</strong><br/>
+02/02/1742 : <span class="bleu">BRICOUT Philippe</span> (Cauroir) - <span class="bleu">SOURMAY Jeanne Marie</span>, AD59 2E26-46, <strong>602003/34</strong><br/>
+05/03/1690 : <span class="bleu">BRIDEL Ferdinand</span> (Flesquières) - <span class="bleu">de SAIN Anne</span>, AD59 2E26-308, <strong>602003/35</strong><br/>
+09/07/1752 : <span class="bleu">BROYON Eloi</span> (Villers-Outréaux) - <span class="bleu">THIERY Marie Thérèse</span>, AD59 2E26-251, <strong>602003/36</strong><br/>
+11/02/1706 : <span class="bleu">BRUIELLE Antoine</span> (Viesly) - <span class="bleu">DROUBAY Marie Reine</span>, AD59 2E26-401, <strong>602003/37</strong><br/>
+26/11/1723 : <span class="bleu">BRULANT Jean</span> (Saint-Hilaire-lez-Cambrai) - <span class="bleu">MILEZ Marie Anne</span>, AD59 2E26-174, <strong>602003/38</strong><br/>
+28/05/1761 : <span class="bleu">BRULANT Nicolas</span> (Saint-Hilaire-lez-Cambrai) - <span class="bleu">MORIAUX Marie Agnès</span>, AD59 2E26-127, <strong>602003/39</strong><br/>
+19/07/1688 : <span class="bleu">BRUNEAU Jean</span> (Cambrai) - <span class="bleu">BRICOULT Françoise</span>, AD59 2E26-26, <strong>602003/40</strong><br/>
+25/04/1699 : <span class="bleu">BRUYELLE Jean</span> (Estrun, vf CACHEUX Marguerite) - <span class="bleu">CACHEUX Catherine</span>, AD59 2E26-208, <strong>602003/41</strong><br/>
+16/11/1699 : <span class="bleu">BRUYERE Louis</span> (Viesly) - <span class="bleu">MERCHIER Magdeleine</span>, AD59 2E26-208, <strong>602003/42</strong><br/>
+05/06/1688 : <span class="bleu">BUIRETTE Antoine</span> (Cambrai) - <span class="bleu">MOREAU Marie</span>, AD59 2E26-145, <strong>602003/43</strong><br/>
+02/05/1746 : <span class="bleu">BUIRETTE Jean François</span> (Cagnoncles, vf secondes noces CAPPELIEZ Jeanne) - <span class="bleu">BUIRETTE Marie Josèphe</span>, AD59 2E26-82, <strong>602003/44</strong><br/>
+19/06/1713 : <span class="bleu">BUISSET Pierre Paul</span> (Auberchicourt, vf LECLERCQ Marie jeanne) - <span class="bleu">FONTAINE Marie Brigitte</span>, AD59 2E26-409, <strong>602003/45</strong><br/>
+23/04/1691 : <span class="bleu">BURILLON Jacques</span> (Troisvilles) - <span class="bleu">GABET Marguerite</span>, AD59 2E26-138, <strong>602003/47</strong><br/>
+21/06/1680 : <span class="bleu">BURLION Charles</span> (Maretz) - <span class="bleu">LEFEBVRE Marie Jeanne</span>, AD59 2E26-96, <strong>602003/48</strong><br/>
+21/04/1689 : <span class="bleu">BURLION Joseph Georges</span> (Maretz) - <span class="bleu">LEGROS Marie Anne</span>, échange, AD59 2E26-17, <strong>602003/49</strong><br/>
+16/11/1705 : <span class="bleu">BURLLION Jean</span> (Maretz) - <span class="bleu">DUPLUVINAGE Marie Anne</span>, AD59 2E26-227, <strong>602003/50</strong><br/>
+02/05/1713 : <span class="bleu">BURY Claude</span> (Eswars) - <span class="bleu">TRANCHANT Marguerite</span>, AD59 2E26-350, <strong>602003/51</strong><br/>
+29/11/1679 : <span class="bleu">BURY Jean Baptiste</span> (Cagnoncles) - <span class="bleu">MASSACRE Marie Magdeleine</span>, AD59 2E26-15, <strong>602003/52</strong><br/>
+10/11/1713 : <span class="bleu">BUSTIN Mathieu</span> (Wasnes-au-Bac) - <span class="bleu">HENNE Marie Marguerite</span>, AD59 2E26-409, <strong>602003/53</strong><br/>
+10/02/1714 : <span class="bleu">BUZIN Antoine</span> (Saint-Vaast-en-Cambrésis) - <span class="bleu">DEHAINE Guillemette</span>, AD59 2E26-37, <strong>602003/54</strong><br/>
+17/01/1704 : <span class="bleu">BUZIN Philippe</span> (Saint-Vaast-en-Cambrésis) - <span class="bleu">PLOUCHART Jeanne</span>, AD59 2E26-24, <strong>602003/55</strong></p>
+<p>10/10/1697 : <span class="bleu">CACHEUX François</span> (Avesnes-les-Aubert) - <span class="bleu">CANONNE Agnès</span>, AD59 2E26-147, <strong>602004/1</strong><br/>
+02/07/1722 : <span class="bleu">CACHEUX Jean</span> (Saint-Aubert) - <span class="bleu">MAISON Monique</span>, AD59 2E26-359, <strong>602004/2</strong><br/>
+21/07/1723 : <span class="bleu">CACHEUX Jean Baptiste</span> (Saint-Aubert) - <span class="bleu">PAMART Marie Angélique</span>, AD59 2E26-219, <strong>602004/5</strong><br/>
+12/02/1767 : <span class="bleu">CACHEUX Jean Baptiste</span> (Avesnes-les-Aubert) - <span class="bleu">GERARD Angélique</span>, AD59 2E26-189, <strong>602004/3</strong><br/>
+13/05/1730 : <span class="bleu">CACHEUX Jean Charles</span> (Caudry) - <span class="bleu">de LESOTTIERE Marie Magdeleine</span>, AD59 2E26-39, <strong>602004/4</strong><br/>
+26/11/1712 : <span class="bleu">CACHEUX Louis</span> (Saint-Aubert) - <span class="bleu">DELSARTE Florence</span>, AD59 2E26-212, <strong>602004/6</strong><br/>
+27/07/1713 : <span class="bleu">CACHEUX Simon</span> (Saint-Aubert) - <span class="bleu">BERTIN Antoinette</span>, AD59 2E26-409, <strong>602004/7</strong><br/>
+17/11/1736 : <span class="bleu">CAILLIARD Pierre Joseph</span> (Saint-Aubert) - <span class="bleu">DUWEZ Marie Anne Josèphe</span>, AD59 2E26-43, <strong>602004/8</strong><br/>
+07/05/1691 : <span class="bleu">CAILLIAU Etienne</span> (Naves) - <span class="bleu">LEFEBVRE Marie</span>, AD59 2E26-9, <strong>602004/9</strong><br/>
+03/11/1713 : <span class="bleu">CAILLIAU Hector</span> (Avesnes-les-Aubert) - <span class="bleu">GERNEZ Marguerite</span>, AD59 2E26-173, <strong>602004/10</strong><br/>
+10/11/1728 : <span class="bleu">CAILLOT Thomas</span> (Naves) - <span class="bleu">BODA Marie Sainte</span>, AD59 2E26-38, <strong>602004/11</strong><br/>
+24/09/1689 : <span class="bleu">CALLEAU Gilles</span> (Avesnes-les-Aubert) - <span class="bleu">DUBOIS Aliénor</span>, AD59 2E26-23, <strong>602004/12</strong><br/>
+23/08/1684 : <span class="bleu">CAMBAY Claude</span> (Awoingt) - <span class="bleu">VAILLANT Marie Barbe</span>, <strong>602004/13</strong><br/>
+10/11/1877 : <span class="bleu">CAMBAY Philémon</span> (Awoingt) - <span class="bleu">LAUDE Aglaé Eléonore</span>, <strong>602004/14a</strong><br/>
+30/06/1893 : <span class="bleu">CAMBAY Philémon</span> (Awoingt, vf LAUDE Eléonore) - <span class="bleu">BAILLET Marie</span>, <strong>602004/14</strong><br/>
+04/08/1791 : <span class="bleu">CANONNE André</span> (Saint-Aubert) - <span class="bleu">CANONNE Robertine Josèphe</span>, AD59 2E26-300, <strong>602004/15</strong><br/>
+03/08/1717 : <span class="bleu">CANONNE Antoine</span> (Viesly) - <span class="bleu">BEZIN Marie Anne</span>, AD59 2E26-230, <strong>602004/16</strong><br/>
+01/07/1722 : <span class="bleu">CANONNE Blaise</span> (Saint-Aubert) - <span class="bleu">TOFFLIN Marie Angélique</span>, AD59 2E26-232, <strong>602004/17</strong><br/>
+29/05/1704 : <span class="bleu">CANONNE Bon</span> (Avesnes-les-Aubert) - <span class="bleu">DEPREUX Marie Marguerite</span>, AD59 2E26-210, <strong>602004/18</strong><br/>
+18/11/1690 : <span class="bleu">CANONNE Jean</span> (Estrun) - <span class="bleu">MEREAU Laurence</span>, AD59 2E26-16, <strong>602004/20</strong><br/>
+01/07/1722 : <span class="bleu">CANONNE Jean</span> (Saint-Aubert) - <span class="bleu">TOFFLIN Catherine</span>, AD59 2E26-232, <strong>602004/19</strong><br/>
+01/07/1715 : <span class="bleu">CANONNE Jean François</span> (Estrun) - <span class="bleu">BOURIEZ Marie Thérèse</span>, AD59 2E26-353, <strong>602004/21</strong><br/>
+09/01/1745 : <span class="bleu">CANONNE Joseph</span> (Saint-Aubert) - <span class="bleu">DRESNES Marie Michelle</span>, Officialité 2279, <strong>602004/22</strong><br/>
+07/09/1699 : <span class="bleu">CANONNE Séverin</span> (Esnes) - <span class="bleu">GRANSART Marie Barbe</span>, AD59 2E26-395, <strong>602004/23</strong><br/>
+17/02/1678 : <span class="bleu">CANONNE Titus</span> (Avesnes-les-Aubert) - <span class="bleu">SOIHIER Michelle</span>, AD59 2E26-23, <strong>602004/24</strong><br/>
+18/06/1622 : <span class="bleu">CANOSNE Pierre</span> (Ligny-en-Cambrésis) - <span class="bleu">LENGRAND Jeanne</span>, Collection CAFFIAUX 8535, <strong>602004/25</strong><br/>
+13/05/1718 : <span class="bleu">CAPELIER Nicolas</span> (Naves, vf FOSSEZ Marie Anne) - <span class="bleu">TIESSON Marie Jeanne</span>, AD59 2E26-218, <strong>602004/26</strong><br/>
+01/06/1677 : <span class="bleu">CAPOY Josse</span> (Cambrai) - <span class="bleu">PIPPART Marguerite</span>, AD59 2E26-333/398, <strong>602004/27</strong><br/>
+01/07/1678 : <span class="bleu">CAPRON Noël</span> (Séranvillers, vf ? Adrienne Ursule) - <span class="bleu">MORY Jeanne</span>, AD59 2E26-234, <strong>602004/28</strong><br/>
+04/05/1624 : <span class="bleu">CAPS Pierre</span> (Bruges) - <span class="bleu">CARLIER Elisabeth</span>, Collection B.N.F. 632427 pages 271 à 276, <strong>602004/29</strong><br/>
+14/11/1683 : <span class="bleu">CARDON Antoine</span> (Troisvilles) - <span class="bleu">OBLIN Jeanne</span>, AD59 2E26-20/406, <strong>602005/1</strong><br/>
+24/11/1687 : <span class="bleu">CARDON Jean Baptiste</span> (Cattenières) - <span class="bleu">FARRE Marie Magdeleine</span>, AD59 2E26-178/408, <strong>602005/2</strong><br/>
+02/02/1733 : <span class="bleu">CARDON Liévin</span> (Troisvilles) - <span class="bleu">DON Marie Catherine</span>, AD59 2E26-237, <strong>602005/3</strong><br/>
+12/07/1678 : <span class="bleu">CARDON Melchior</span> (Cattenières), testament, AD59 2E26-178, <strong>602005/4</strong><br/>
+31/05/1689 : <span class="bleu">CARDON Philippe</span> (Bertry) - <span class="bleu">MAILLY Marie Elisabeth</span>, AD59 2E26-25, <strong>602005/5</strong><br/>
+01/05/1648 : <span class="bleu">CARE Arnould</span> (Rumilly-en-Cambrésis) - <span class="bleu">LANSELLE Péronne</span>, E2465-article 55, <strong>602005/6</strong><br/>
+11/02/1652 : <span class="bleu">CARLIER Amand</span> (Fontaine-au-Pire) - <span class="bleu">VITOU Catherine</span>, AD59 2E26-178, <strong>602005/7</strong><br/>
+24/12/1736 : <span class="bleu">CARONDELET Maximilien</span> (Cambrai) - <span class="bleu">d'AIGNEVILLE de MILLANCOURT Marie Josèphe</span>, Collection DELLOYE L36-F162, <strong>602005/8</strong><br/>
+23/06/1677 : <span class="bleu">CARPENTIER Géry</span> (Cambrai (Faubourg)) - <span class="bleu">BRUNEAU Marie</span>, AD59 2E26-138, <strong>602005/9</strong><br/>
+08/07/1650 : <span class="bleu">CARPENTIER Jean François</span> (Cambrai (Faubourg)) - <span class="bleu">ANGERS Françoise</span>, AD59 2E26-137, <strong>602005/10</strong><br/>
+14/07/1699 : <span class="bleu">CARPENTIER Jean François</span> (Cambrai) - <span class="bleu">GRENET Marie Elisabeth</span>, AD59 2E26-208/434, <strong>602005/11</strong><br/>
+23/06/1746 : <span class="bleu">CARRAIN Nicolas</span> (Villers-en-Cauchies) - <span class="bleu">de LAFOLLIE Marie Pâques</span>, AD59 2E26-51, <strong>602005/12</strong><br/>
+26/09/1721 : <span class="bleu">CARRE Dominique</span> (Awoingt) - <span class="bleu">FLAMEN Jeanne marguerite</span>, AD59 2E26-356, <strong>602005/13</strong><br/>
+01/07/1691 : <span class="bleu">CARRE Nicolas</span> (Mœuvres, vf LABALETTE Marie) - <span class="bleu">de SAINS Barbe</span>, AD59 2E26-12, <strong>602005/14</strong><br/>
+03/04/1701 : <span class="bleu">CARREZ Pierre</span> (Saint-Hilaire-lez-Cambrai) - <span class="bleu">BRULANT Anne</span>, AD59 2E26-424, <strong>602005/15</strong><br/>
+20/05/1719 : <span class="bleu">CARREZ Simon</span> (Saint-Hilaire-lez-Cambrai) - <span class="bleu">RUFFIN Anne Bernardine</span>, AD59 2E26-37, <strong>602005/16</strong><br/>
+15/02/1706 : <span class="bleu">CARTIGNY Jacques</span> (Avesnes-le-Sec) - <span class="bleu">MOREAU Jeanne</span>, AD59 7G-819, <strong>602005/17</strong><br/>
+08/02/1708 : <span class="bleu">CARTIGNY Jacques</span> (Avesnes-le-Sec) - <span class="bleu">GOUBET Anne</span>, AD59 7G-819, <strong>602005/18</strong><br/>
+04/09/1706 : <span class="bleu">CARTIGNY Jean</span> (Avesnes-le-Sec) - <span class="bleu">DOCY Barbe</span>, donation, AD59 7G-819, <strong>602005/19</strong><br/>
+05/01/1703 : <span class="bleu">CARTIGNY Louis</span> (Avesnes-le-Sec) - <span class="bleu">MERESSE Escache</span>, AD62 J1301-15, <strong>602005/20</strong><br/>
+30/01/1674 : <span class="bleu">CASTELLAIN Jean</span> (Fontaine-au-Pire) - <span class="bleu">CAUCHY Marie Catherine</span>, AD59 2E26-178, <strong>602005/21</strong><br/>
+29/10/1708 : <span class="bleu">CASTELLAIN Jean</span> (Fontaine-au-Pire) - <span class="bleu">DENOYELLE Jean</span>, donation, AD59 3G-840, <strong>602005/22</strong><br/>
+26/10/1733 : <span class="bleu">CATTIAUX François</span> (Cagnoncles, vf TISON Marie) - <span class="bleu">SORLIN Marie</span>, AD59 2E26-41, <strong>602005/23</strong><br/>
+09/08/1692 : <span class="bleu">CAUCHY Adrien</span> (Fontaine-au-Pire) - <span class="bleu">BRICOUT Marie Jeanne</span>, AD59 2E26-9, <strong>602005/24</strong><br/>
+03/06/1722 : <span class="bleu">CAULIER Joseph</span> (Saint-Aubert) - <span class="bleu">CANONNE Marie Jeanne</span>, AD59 2E26-37, <strong>602005/25</strong><br/>
+03/02/1674 : <span class="bleu">CAUVET Christophe</span> (Troisvilles) - <span class="bleu">ROUSSEAU Jeanne</span>, AD59 2E26-25, <strong>602005/26</strong><br/>
+29/12/1677 : <span class="bleu">CAUVET Samson</span> (Troisvilles) - <span class="bleu">WATTREMET Marguerite</span>, AD59 2E26-25, <strong>602005/27</strong><br/>
+29/12/1704 : <span class="bleu">CAUWET Jacques</span> (Troisvilles) - <span class="bleu">COUPPET Marie Catherine</span>, AD59 2E26-227, <strong>602005/28</strong><br/>
+26/11/1692 : <span class="bleu">CHARLET Jean</span> (Masnières) - <span class="bleu">FAREZ Anne Jeanne</span>, AD59 2E26-147, <strong>602005/29</strong><br/>
+08/01/1726 : <span class="bleu">CHARLET Jean Jacques</span> (Cambrai (Saint-Vaast)) - <span class="bleu">LANCELLE Marie Josèphe</span>, dispense au 2e degré de consanguinité, <strong>602005/30</strong><br/>
+12/04/1683 : <span class="bleu">CHARLET Robert</span> (Cambrai) - <span class="bleu">BOISTEAU Marie Anne</span>, AD59 2E26-139, <strong>602005/31</strong><br/>
+08/10/1670 : <span class="bleu">CHARLEZ Jean</span> (Cambrai) - <span class="bleu">TRIBOU Marie</span>, AD59 2E26-29, <strong>602005/32</strong><br/>
+30/04/1631 : <span class="bleu">CLAIS Jean</span> (Esnes) - <span class="bleu">LAMORY Marie</span>, AD59 2E26-536, <strong>602005/33</strong><br/>
+17/09/1690 : <span class="bleu">CLAIS Jean Baptiste</span> (Béthencourt) - <span class="bleu">CLAIS Marie Jeanne</span>, AD59 2E26-26, <strong>602005/34</strong><br/>
+15/01/1715 : <span class="bleu">CLASSE Charles</span> (Grand-Fresnoy) - <span class="bleu">MACAIGNE Antoinette</span>, AD59 273EE10, <strong>602005/35</strong><br/>
+13/10/1674 : <span class="bleu">CLAUWEZ François</span> (Bohain) - <span class="bleu">MORCRETTE Marie Magdeleine</span>, AD59 2E26-26, <strong>602005/36</strong><br/>
+29/09/1683 : <span class="bleu">CLAUWEZ Jacques</span> (Saint-Vaast-en-Cambrésis) - <span class="bleu">MARQUAY Marie</span>, AD59 2E26-22/536, <strong>602005/37</strong><br/>
+13/02/1688 : <span class="bleu">CORDELOIS Philippe</span> (Cambrai) - <span class="bleu">MAIRESSE Anne</span>, AD59 2E26-11, <strong>602005/38</strong><br/>
+08/07/1713 : <span class="bleu">CORDONNIER Claude</span> (Avesnes-les-Aubert) - <span class="bleu">DEGARDIN Marie</span>, AD59 2E26-429, <strong>602005/39</strong><br/>
+28/05/1683 : <span class="bleu">CORDONNIER Hector</span> (Avesnes-les-Aubert) - <span class="bleu">DEFFOSSEZ Marie Françoise</span>, AD59 2E26-23/577, <strong>602005/40</strong><br/>
+05/09/1722 : <span class="bleu">COTTE Antoine</span> (Maing) - <span class="bleu">TACQUE Marguerite</span>, AD62 J707-8, <strong>602005/41</strong><br/>
+30/10/1704 : <span class="bleu">COUPE Antoine François</span> (Ribécourt-la-Tour) - <span class="bleu">DHERBECOURT Marguerite</span>, AD59 2E26-400, <strong>602005/42</strong><br/>
+31/07/1690 : <span class="bleu">COUPE Jean François</span> (Escaudœuvres) - <span class="bleu">SALESME Mathieu</span>, bail, <strong>602005/43</strong><br/>
+30/04/1661 : <span class="bleu">COURTIN Gilles</span> (Cambrai (Porte Neuve)) - <span class="bleu">de LE HACHE Marie</span>, AD59 2E26-29, <strong>602005/44</strong><br/>
+28/09/1825 : <span class="bleu">COUSIN Léopold Joseph</span> (Anzin) - <span class="bleu">DUMONT Jeannette</span>, <strong>602005/45</strong><br/>
+02/11/1735 : <span class="bleu">COUVEZ Charles Louis</span> (Iwuy) - <span class="bleu">PLACART Marie Françoise</span>, AD59 2E26-74, <strong>602005/46</strong><br/>
+22/09/1780 : <span class="bleu">COUVEZ Jacques Philippe</span> (Iwuy, vf MAIRESSE Marie Françoise) - <span class="bleu">LEGRAND Jeannette</span>, AD59 2E26-116, <strong>602005/47</strong><br/>
+26/01/1678 : <span class="bleu">COUVEZ Jean Valentin</span> (Avesnes-les-Aubert) - <span class="bleu">VILLAIN Marguerite</span>, AD59 2E26-23, <strong>602005/48</strong><br/>
+04/08/1747 : <span class="bleu">COUVEZ Valentin</span> (Iwuy) - <span class="bleu">FONTAINE Marie Dominique</span>, AD59 2E26-53, <strong>602005/49</strong><br/>
+04/02/1687 : <span class="bleu">CRAMETTE Simon</span> (Mœuvres, vf LEFEVRE Catherine) - <span class="bleu">de SAINS Barbe</span>, AD59 2E26-12, <strong>602005/50</strong><br/>
+07/02/1678 : <span class="bleu">CRESPIN Adrien</span> (Rumilly-en-Cambrésis) - <span class="bleu">JORIS Marie Jeanne</span>, AD59 2E26-294, <strong>602005/51</strong><br/>
+24/01/1648 : <span class="bleu">CRESPIN Jean</span> (Saint-Martin-lès-Bermerain) - <span class="bleu">DEPREZ Jeanne</span>, AD62 J1366-518, <strong>602005/52</strong><br/>
+14/08/1713 : <span class="bleu">CRESPIN Nicolas</span> (Solesmes) - <span class="bleu">BERA Anne Marguerite</span>, AD62 J1366-46, <strong>602005/53</strong><br/>
+02/11/1717 : <span class="bleu">CRINCHON Jean</span> (Busigny (Malmaison)) - <span class="bleu">CRINON Marie Madeleine</span>, AD59 2E26-230, <strong>602005/54</strong><br/>
+21/10/1699 : <span class="bleu">CRINCHON Noël</span> (Busigny) - <span class="bleu">CAUDRON Anne Catherine</span>, AD59 2E26-142, <strong>602005/56</strong><br/>
+12/04/1713 : <span class="bleu">CRINCHON Noël</span> (Cambrai, vf CAUDRON Anne Catherine) - <span class="bleu">COTELLE Jeanne Bonne</span>, AD59 2E26-198, <strong>602005/55</strong><br/>
+15/11/1702 : <span class="bleu">CRINON Antoine</span> (Malincourt) - <span class="bleu">CRINON Michèle</span>, partage de terres, AD59 2E26-138, <strong>602005/57</strong><br/>
+31/05/1860 : <span class="bleu">CRINON François</span> (Inchy), succession, <strong>602005/58</strong><br/>
+27/11/1752 : <span class="bleu">CRINON François Joseph</span> (Apremont) - <span class="bleu">DELEUCQ Marie Marguerite</span>, AD59 2E26-151, <strong>602005/59</strong><br/>
+02/01/1688 : <span class="bleu">CRINON Jacques</span> (Busigny) - <span class="bleu">CRINON Antoine</span>, partage de terres, AD59 2E26-17, <strong>602005/60</strong><br/>
+28/02/1689 : <span class="bleu">CRINON Jacques</span> (Maretz) - <span class="bleu">DUSAUSOIR Elisabeth</span>, AD59 2E26-17, <strong>602005/61</strong><br/>
+28/03/1691 : <span class="bleu">CRINON Michel</span> (Avelu), bail, AD59 2E26-32, <strong>602005/63</strong><br/>
+12/11/1704 : <span class="bleu">CRINON Michel</span> (Maretz) - <span class="bleu">TAISNE Marie Elisabeth</span>, AD59 2E26-227, <strong>602005/62</strong><br/>
+07/06/1686 : <span class="bleu">CRINON Philippe</span> (Maretz) - <span class="bleu">LASSELIN Mathieu</span>, bail, AD59 2E26-32, <strong>602005/64</strong><br/>
+06/11/1688 : <span class="bleu">CROISILLE Laurent</span> (Baralle) - <span class="bleu">DESAINCTS Marie</span>, AD59 2E26-403, <strong>602005/65</strong><br/>
+02/11/1740 : <span class="bleu">CUISETTE Armand François</span> (Wambaix) - <span class="bleu">LEDUCQ Caroline Euphrosine</span>, AD59 2E26-411, <strong>602005/66</strong><br/>
+06/10/1704 : <span class="bleu">CUISETTE Jean François</span> (Wasnes-au-Bac, vf CAMBAY Anne et de LANTIEZ Marie) - <span class="bleu">CHAVATTE Marie Catherine</span>, AD59 2E26-352, <strong>602005/67</strong></p>
+<p>08/11/1679 : <span class="bleu">DACQUET Noël</span> (Troisvilles) - <span class="bleu">CARON Catherine</span>, AD59 2E26-25, <strong>602006/1</strong><br/>
+27/01/1703 : <span class="bleu">d'AIGNEVILLE Charles</span> (Cambrai) - <span class="bleu">de DREUX Marie Josèphe</span>, Collection DELLOYE L86-F165, <strong>602001/2</strong><br/>
+03/07/1717 : <span class="bleu">DAILLENCOURT Etienne</span> (Quiévy) - <span class="bleu">COYER Marie Elisabeth</span>, AD59 2E26-37, <strong>602006/2</strong><br/>
+23/11/1688 : <span class="bleu">DAILLIEZ Guillain</span> (Noyelles-sur-Escaut) - <span class="bleu">WASSON Marie Magdeleine</span>, AD59 2E26-32, <strong>602006/3</strong><br/>
+12/06/1706 : <span class="bleu">DAISE Nicolas</span> (Cambrai (Porte Neuve), vf SCAUDAIN Françoise) - <span class="bleu">CATHELAIN Marie Josèphe</span>, AD59 2E26-408, <strong>602006/4</strong><br/>
+02/11/1699 : <span class="bleu">DAISSE Jacques</span> (Bévillers) - <span class="bleu">LESAINS Marie Claire</span>, AD59 2E26-19, <strong>602006/5</strong><br/>
+24/11/1699 : <span class="bleu">DAIX Firmin</span> (Cattenières) - <span class="bleu">DEFOSSET Jeanne</span>, bail, AD59 2E26-152, <strong>602006/6</strong><br/>
+10/02/1719 : <span class="bleu">DAIX Jean François</span> (Bévillers) - <span class="bleu">NISAR Marguerite Claire</span>, AD59 2E26-173, <strong>602006/8</strong><br/>
+09/06/1729 : <span class="bleu">DAIX Jean François</span> (Cattenières) - <span class="bleu">TASOUX Marie Anne</span>, AD59 2E26-441, <strong>602006/7</strong><br/>
+19/09/1733 : <span class="bleu">DAIX Jean Philippe</span> (Cattenières) - <span class="bleu">MAISON Catherine Josèphe</span>, AD59 2E26-372, <strong>602006/9</strong><br/>
+09/07/1679 : <span class="bleu">d'ALIANCOURT Bon</span> (Beauvois-en-Cambrésis, vf GRIFART Françoise) - <span class="bleu">BRICOUT Catherine</span>, AD59 2E26-9, <strong>602006/10</strong><br/>
+20/06/1678 : <span class="bleu">DAMBRINE Antoine</span> (Naves) - <span class="bleu">LOCQUET Marie Elisabeth</span>, AD59 2E26-9, <strong>602006/11</strong><br/>
+16/04/1974 : <span class="bleu">DAMBRINE Jacques Antoine</span> (Cagnoncles) - <span class="bleu">SOHIER Marguerite</span>, AD59 2E26-9, <strong>602006/12</strong><br/>
+30/04/1732 : <span class="bleu">DANGREMONT Gaspard</span> (Paillencourt) - <span class="bleu">GAME Marie Martine</span>, AD59 2E26-396/445, <strong>602006/13</strong><br/>
+07/01/1738 : <span class="bleu">DANJOU Antoine Joseph</span> (Audencourt) - <span class="bleu">DEFONTAINE Jeanne Marguerite</span>, AD59 2E26-379, <strong>602006/14</strong><br/>
+18/11/1728 : <span class="bleu">DANJOU Henry</span> (Naves) - <span class="bleu">TELLIER Marie Elisabeth</span>, <strong>602006/15</strong><br/>
+18/01/1719 : <span class="bleu">DANJOU Michel</span> (Troisvilles) - <span class="bleu">NOIRMAIN Marie Michelle</span>, AD59 2E26-231, <strong>602006/16</strong><br/>
+23/07/1704 : <span class="bleu">DANJOU Robert</span> (Audencourt) - <span class="bleu">LEDIEU Agnès</span>, AD59 2E26-227, <strong>602006/17</strong><br/>
+08/11/1689 : <span class="bleu">DANNEAU Jean François</span> (Iwuy) - <span class="bleu">COLLAUX Magdeleine</span>, AD59 2E26-8, <strong>602006/18</strong><br/>
+26/08/1724 : <span class="bleu">DARCOUR Robert</span> (Haynecourt) - <span class="bleu">LEFEBVRE Maxellende</span>, AD59 2E26-438, <strong>602006/19</strong><br/>
+17/09/1691 : <span class="bleu">DARMENTON Jean</span> (Clary), partage de terres, <strong>602006/20</strong><br/>
+20/01/1717 : <span class="bleu">DASCOTTE Jean Philippe</span> (Cattenières) - <span class="bleu">LESAGE Jeanne Françoise</span>, AD59 2E26-434, <strong>602006/21</strong><br/>
+10/09/1683 : <span class="bleu">DAVARENIS Pierre François</span> (Estrun) - <span class="bleu">BETTRANCOURT Marie Françoise</span>, AD59 2E26-19/678, <strong>602006/22</strong><br/>
+19/05/1714 : <span class="bleu">DAVION Nicolas</span> (Monchecourt) - <span class="bleu">DEVILLERS Marie Thérèse</span>, AD59 2E26-429, <strong>602006/23</strong><br/>
+30/01/1879 : <span class="bleu">de BELLEGARDE Marie Louis</span> (Bellegarde) - <span class="bleu">BOITTELLE Eugénie</span>, <strong>602002/15</strong><br/>
+28/10/1656 : <span class="bleu">de BETRANCOURT Louys</span> (Paillencourt) - <span class="bleu">DUMONT Antoinette</span>, AD59 2E26-97, <strong>602002/28</strong><br/>
+25/06/1677 : <span class="bleu">de BETRANCOURT Louys</span> (Paillencourt, vf BLAT Jacqueline) - <span class="bleu">RICHARD Barbe</span>, AD59 2E26-138, <strong>602002/27</strong><br/>
+07/12/1685 : <span class="bleu">de BONNEVILLE Jean François</span> (Beauvois-en-Cambrésis) - <span class="bleu">VERIN Anne</span>, AD59 2E26-32, <strong>602002/49</strong><br/>
+30/04/1723 : <span class="bleu">de BU Thomas</span> (Lesdain) - <span class="bleu">PARENT Marie Anne Josèphe</span>, <strong>602006/24</strong><br/>
+04/05/1699 : <span class="bleu">de BURIE Philippe</span> (Cagnoncles, vf LEFEBVRE Marie Jeanne) - <span class="bleu">LEDUC Catherine</span>, AD59 2E26-142, <strong>602003/46</strong><br/>
+28/01/1671 : <span class="bleu">de DOUAI Servais</span> (Quiévy) - <span class="bleu">DAUTEL Anne</span>, AD62 J1366-516, <strong>602006/25</strong><br/>
+21/05/1751 : <span class="bleu">de FONTAINE André</span> (Ribécourt-la-Tour) - <span class="bleu">PETIT Marie Josèphe</span>, Collection DELLOYE L186-F17, <strong>602009/21</strong><br/>
+30/06/1683 : <span class="bleu">de HENNIN Jacques</span> (Valenciennes) - <span class="bleu">BOURDON Marthe Alphonsine</span>, AD59 2E26-207/782, <strong>602011/18</strong><br/>
+09/02/1692 : <span class="bleu">de HOLLAIN Robert</span> (Escaudœuvres, vf COUPET Marie Magdeleine) - <span class="bleu">BETRANCOURT Marie Magdeleine</span>, AD59 2E26-208, <strong>602012/22</strong><br/>
+31/10/1652 : <span class="bleu">de HORDAIN George</span> (Wambaix) - <span class="bleu">CARLIER Marie</span>, AD59 2E26-137, <strong>602012/23</strong><br/>
+12/11/1699 : <span class="bleu">de HORNES Antoine</span> (Estrun) - <span class="bleu">CARON Marie</span>, AD59 2E26-208, <strong>602012/24</strong><br/>
+15/12/1677 : <span class="bleu">de HOVE Jean Chrétien</span> (Estrun) - <span class="bleu">de HENNIN Marie Anne</span>, AD59 2E26-158, <strong>602012/25</strong><br/>
+17/02/1689 : <span class="bleu">de LA COURT François</span> (Saint-Souplet) - <span class="bleu">DISRAEL Marie Catherine</span>, AD59 2E26-24, <strong>602006/26</strong><br/>
+27/04/1666 : <span class="bleu">de LA SAUTHIER Philippe</span> (Saint-Aubert) - <span class="bleu">HOURRIER Françoise</span>, AD59 2E26-24, <strong>602006/27</strong><br/>
+12/12/1690 : <span class="bleu">de LA TOUR Jacques</span> (Grandpont), bail, AD59 2E26-138, <strong>602006/28</strong><br/>
+22/12/1677 : <span class="bleu">de LA TOUR Jérôme</span> (Troisvilles) - <span class="bleu">FONTAINE Marie Jeanne</span>, AD59 2E26-837, <strong>602006/29</strong><br/>
+27/09/1654 : <span class="bleu">de LE LAVENDE Grégoire</span> (Escaudœuvres) - <span class="bleu">CHARLET Marie Marguerite</span>, AD59 2E26-137/896, <strong>602007/1</strong><br/>
+17/09/1688 : <span class="bleu">de LE WARDE Germain</span> (Estourmel) - <span class="bleu">de BANTIGNIES Thérèse</span>, AD59 2E26-178, <strong>602007/2</strong><br/>
+15/9//1688 : <span class="bleu">de LEBARRE Jean</span> (Élincourt) - <span class="bleu">MORTECRETTE Jeanne</span>, AD59 2E26-17, <strong>602006/30</strong><br/>
+10/09/1578 : <span class="bleu">de LEPORTE Jean</span> (Valenciennes) - <span class="bleu">DESVINGNES Catherine</span>, Collection CAFFIAUX 8661, <strong>602015/7</strong><br/>
+14/04/1678 : <span class="bleu">de LEVOLT Ambroise</span> (Cambrai) - <span class="bleu">BILIART Michelle</span>, AD59 2E26-139, <strong>602007/3</strong><br/>
+28/04/1723 : <span class="bleu">de MAILLY Philippe</span> (Wambaix) - <span class="bleu">VILLAIN Marie Jeanne</span>, AD59 2E26-359, <strong>602015/44</strong><br/>
+18/11/1715 : <span class="bleu">de MARCQ Pierre</span> (Quiévy, vf DAVOYNE Elisabeth) - <span class="bleu">DASCOTTE Jeanne</span>, AD59 2E26-410, <strong>602006/31</strong><br/>
+01/01/1563 : <span class="bleu">De MARTIGNY Charles</span> (Le Cateau-Cambrésis) - <span class="bleu">DESENFANTS Marguerite</span>, AD59 32427-pages 33 à 40, <strong>602016/1</strong><br/>
+12/08/1688 : <span class="bleu">de MONTAY Alexandre</span> (Beaumont-en-Cambrésis) - <span class="bleu">MOREAU Antoinette</span>, AD59 2E26-20, <strong>602006/32</strong><br/>
+28/01/1747 : <span class="bleu">de NOYELLE Druon</span> (Maurois) - <span class="bleu">GABET Marie Angélique</span>, <strong>602006/33</strong><br/>
+11/12/1690 : <span class="bleu">de NOYELLE Jean Marc</span> (Villers-en-Cauchies) - <span class="bleu">REGIBO Marie</span>, <strong>602006/34</strong><br/>
+23/06/1745 : <span class="bleu">de NOYELLES Jean Baptiste</span> (Bertry) - <span class="bleu">PRUVOST Marie Gabrielle</span>, <strong>602006/35</strong><br/>
+11/02/1747 : <span class="bleu">de NOYELLES Joseph</span> (Bertry) - <span class="bleu">HERBET Marie Anne Elisabeth</span>, <strong>602006/36</strong><br/>
+29/12/1713 : <span class="bleu">de ROUBAY Pierre</span> (Briastre, vf LEBLON Marie Claire) - <span class="bleu">BRICOUT Marie Anne</span>, AD59 2E26-198, <strong>602008/1</strong><br/>
+23/03/1676 : <span class="bleu">de SAINT AUBERT Jean François</span> (Cambrai) - <span class="bleu">DELATTRE Marie Magdeleine</span>, AD59 2E26-158, <strong>602006/37</strong><br/>
+28/06/1719 : <span class="bleu">de SAINT-AUBERT Pierre</span> (Boussières-en-Cambrésis, vf CATTELAIN Laurence) - <span class="bleu">LANSELIN Marie Catherine</span>, AD59 2E26-218, <strong>602008/2</strong><br/>
+10/04/1683 : <span class="bleu">DECAUDAIN Antoine</span> (Ligny-en-Cambrésis) - <span class="bleu">ALLART Marie Anne</span>, AD59 2E26-96, <strong>602006/38</strong><br/>
+31/01/1722 : <span class="bleu">DECAUDIN Charles</span> (Cambrai (Saint-Sépulcre)) - <span class="bleu">DELCROIX Marie Anne</span>, AD59 2E26-358, <strong>602006/39</strong><br/>
+07/10/1677 : <span class="bleu">DECHY Jaspar</span> (Walincourt) - <span class="bleu">POULETTE Françoise</span>, AD59 2E26-176, <strong>602006/40</strong><br/>
+27/05/1689 : <span class="bleu">DEFFOSSEZ Martin</span> (Avesnes-les-Aubert) - <span class="bleu">GERARD Jacqueline</span>, AD59 2E26-23, <strong>602006/41</strong><br/>
+17/11/1718 : <span class="bleu">DEFONTAINE Joseph Hyacinthe</span> (Ribécourt-la-Tour) - <span class="bleu">LEMPEREUR Marie Anne</span>, AD59 2E26-356, <strong>602006/42</strong><br/>
+22/09/1691 : <span class="bleu">DEFOSSEZ Edouard</span> - <span class="bleu">HERBIN Marie</span>, testament, AD59 2E26-23, <strong>602006/43</strong><br/>
+30/01/1681 : <span class="bleu">DEFREMONT Charles</span> (Bohain) - <span class="bleu">DESMOULINS Laurent</span>, acte de vente, AD59 2E26-139, <strong>602006/44</strong><br/>
+03/09/1733 : <span class="bleu">DEFRUIT Alexis</span> (Bertry, vf SANNIEZ Marie Thérèse) - <span class="bleu">OBLIN Anne Marie</span>, AD59 2E26-238, <strong>602006/45</strong><br/>
+02/02/1677 : <span class="bleu">DEFRUIT Jean</span> (Caudry) - <span class="bleu">CLAUWET Marguerite</span>, AD59 2E26-2, <strong>602006/46</strong><br/>
+06/04/1718 : <span class="bleu">DEGREMONT François</span> (Élincourt), partage de terres, <strong>602006/47</strong><br/>
+24/02/1691 : <span class="bleu">DEHOLLANDE Louis</span> (Beauvois-en-Cambrésis) - <span class="bleu">BANTIGNY Jeanne</span>, <strong>602006/48</strong><br/>
+04/11/1701 : <span class="bleu">DELACOURT Jean</span> (Ligny-en-Cambrésis) - <span class="bleu">DEPIERRE Marie</span>, AD59 2E26-153/424, <strong>602006/50</strong><br/>
+27/06/1733 : <span class="bleu">DELACOURT Jean</span> (Fontaine-au-Pire) - <span class="bleu">GUILLES Marie Jeanne Thérèse</span>, AD59 2E26-73, <strong>602006/49</strong><br/>
+18/11/1715 : <span class="bleu">DELACOURT Nicolas</span> (Montigny-en-Cambrésis) - <span class="bleu">DESPIERRE Marie Magdeleine</span>, AD59 2E26-230, <strong>602006/51</strong><br/>
+04/11/1788 : <span class="bleu">DELACOURT Pierre</span> (Ligny-en-Cambrésis) - <span class="bleu">THORION Catherine Josèphe</span>, héritage, AD59 3G, <strong>602006/52</strong><br/>
+01/09/1690 : <span class="bleu">DELACOURT Sébastien</span> (Ligny-en-Cambrésis, vf BRICOUT Anne) - <span class="bleu">GALLIEZ Sacrée</span>, AD59 2E26-96, <strong>602006/53</strong><br/>
+26/11/1745 : <span class="bleu">DELAHAYE Jean Philippe</span> (Bertry, vf ROUSSEAUX Marie Catherine) - <span class="bleu">DELSOTHIERE Marie Elisabeth</span>, AD59 2E26-245, <strong>602006/54</strong><br/>
+03/02/1719 : <span class="bleu">DELAINE Simon</span> (Ramillies) - <span class="bleu">DUPONT Jeanne</span>, AD59 2E26-173, <strong>602006/55</strong><br/>
+20/11/1704 : <span class="bleu">DELAIRE Jean</span> (Grandpont) - <span class="bleu">BARDOU Jeanne</span>, AD59 2E26-155, <strong>602006/56</strong><br/>
+22/02/1661 : <span class="bleu">DELATTRE Charles</span> (Cambrai) - <span class="bleu">BUIRETTE Marthe</span>, AD59 2E26-26, <strong>602006/57</strong><br/>
+31/10/1732 : <span class="bleu">DELATTRE Jean</span> (Avesnes-les-Aubert) - <span class="bleu">DEFOSSEZ Laurence</span>, AD59 2E26-40, <strong>602006/58</strong><br/>
+04/11/1715 : <span class="bleu">DELBAR Jacob</span> (Walincourt) - <span class="bleu">MAILLIET Marie Marguerite</span>, AD59 2E26-230, <strong>602007/4</strong><br/>
+20/10/1704 : <span class="bleu">DELBART Jean</span> (Montigny-en-Cambrésis) - <span class="bleu">DUWEZ Marie Anne</span>, AD59 2E26-227, <strong>602007/5</strong><br/>
+15/11/1735 : <span class="bleu">DELBART Jean</span> (Walincourt) - <span class="bleu">MARTIN Marie Angélique</span>, AD59 2E26-239, <strong>602007/6</strong><br/>
+18/01/1690 : <span class="bleu">DELCROIX Adrien</span> (Cambrai (Saint-Georges)) - <span class="bleu">DEHORNE Marie Catherine</span>, AD59 2E26-26, <strong>602007/7</strong><br/>
+22/06/1737 : <span class="bleu">DELCROIX Pierre François</span> (Awoingt, vf LEFEBVRE Marie Pâque) - <span class="bleu">LEMAIRE Marie Jeanne</span>, AD59 2E26-377, <strong>602007/8</strong><br/>
+30/06/1719 : <span class="bleu">DELEBAR Antoine</span> (Walincourt) - <span class="bleu">ROUSSIEZ Jeanne Marguerite</span>, AD59 2E26-231, <strong>602007/9</strong><br/>
+30/06/1719 : <span class="bleu">DELEBAR Jean Charles</span> (Walincourt) - <span class="bleu">BERTIN Marie Michelle</span>, AD59 2E26-231, <strong>602007/10</strong><br/>
+16/08/1686 : <span class="bleu">DELECROIX Adrien</span> (Cambrai (Porte Neuve)) - <span class="bleu">BILBAUT Agnès</span>, AD59 2E26-145, <strong>602007/6B</strong><br/>
+26/06/1650 : <span class="bleu">DELECROIX Jacques</span> (Escaudœuvres) - <span class="bleu">LESAGE Jeanne</span>, AD59 2E26-877, <strong>602007/11</strong><br/>
+28/01/1738 : <span class="bleu">DELEHAYE Dominique</span> (Bertry) - <span class="bleu">MAIRESSE Marie Françoise</span>, AD59 2E26-240, <strong>602007/12</strong><br/>
+02/04/1692 : <span class="bleu">DELEHAYE François</span> (Bertry) - <span class="bleu">GAVE Marie Philippe</span>, AD59 2E26-17, <strong>602007/13</strong><br/>
+30/01/1690 : <span class="bleu">DELEHAYE Jacques</span> (Bertry) - <span class="bleu">SAGNIEZ Catherine</span>, AD59 2E26-25/893, <strong>602007/14</strong><br/>
+26/10/1717 : <span class="bleu">DELEHAYE Jean Baptiste</span> (Bertry) - <span class="bleu">GODREAU Marie</span>, AD59 2E26-230, <strong>602007/15</strong><br/>
+03/03/1678 : <span class="bleu">DELEHAYE Noël</span> (Bertry) - <span class="bleu">THUILLEZ Jeanne</span>, partage de terres, AD59 2E26-25, <strong>602007/16</strong><br/>
+20/06/1686 : <span class="bleu">DELEHAYE Philippe</span> (Bertry) - <span class="bleu">VALET Marie Magdeleine</span>, AD59 2E26-140/892, <strong>602007/17</strong><br/>
+12/06/1677 : <span class="bleu">DELEHAYE Pierre</span> (Bertry) - <span class="bleu">LANGLET Pâquette</span>, AD59 2E26-25, <strong>602007/18</strong><br/>
+13/01/1731 : <span class="bleu">DELFOLIE Jean Philipe</span> (Cagnoncles) - <span class="bleu">BRICOUT Marie Josèphe</span>, AD59 2E26-220, <strong>602007/19</strong><br/>
+26/11/1713 : <span class="bleu">DELFONTAINE Jean</span> (Caudry (Borneville)) - <span class="bleu">RICHEZ Marie Maxellende</span>, AD59 2E26-229, <strong>602007/20</strong><br/>
+25/09/1677 : <span class="bleu">DELIEGE Adrien</span> (Cambrai) - <span class="bleu">BOUCHAULT Marie Barbe</span>, AD59 2E26-332, <strong>602007/21</strong><br/>
+07/04/1669 : <span class="bleu">DELIMAL Adrien</span> (Fontaine-au-Pire) - <span class="bleu">PEUGNIER Catherine</span>, AD59 2E26-178, <strong>602007/22</strong><br/>
+27/12/1712 : <span class="bleu">DELIMAL Antoine</span> (Fontaine-au-Pire, vf BRICOULT Marie Jeanne) - <span class="bleu">CARLIER Jeanne Thérèse</span>, AD59 2E26-228, <strong>602007/23</strong><br/>
+26/04/1686 : <span class="bleu">DELIMAL Jean</span> (Fontaine-au-Pire) - <span class="bleu">SEGARD Marie</span>, AD59 2E26-178, <strong>602007/24</strong><br/>
+14/11/1705 : <span class="bleu">DELIMAL Jean Baptiste</span> (Paillencourt) - <span class="bleu">FOVEAU Marie Jeanne</span>, AD59 2E26-401, <strong>602007/25</strong><br/>
+20/10/1705 : <span class="bleu">DELIMAL Michel</span> (Paillencourt) - <span class="bleu">CHEVALIER Marie Anne</span>, AD59 2E26-197, <strong>602007/26</strong><br/>
+06/05/1641 : <span class="bleu">DELIMAL Pierre</span> (Béthencourt) - <span class="bleu">MASSACRE Antoinette</span>, AD59 2E26-23, <strong>602007/27</strong><br/>
+19/12/1712 : <span class="bleu">DELOFFRE Philippe</span> (Troisvilles) - <span class="bleu">BEUVOIS Catherine</span>, AD62 J1366-AD62 J1-45 bis, <strong>602007/28</strong><br/>
+23/04/1646 : <span class="bleu">DELOGE Melchior</span> (Saint-Vaast-en-Cambrésis) - <span class="bleu">de VOCELLE Marie</span>, AD59 2E26-24, <strong>602007/29</strong><br/>
+30/07/1701 : <span class="bleu">DELSART Philippe</span> (Neuvilly) - <span class="bleu">CLAIS Michelle</span>, AD59 2E26-153, <strong>602007/30</strong><br/>
+09/02/1706 : <span class="bleu">DELSOTTIERE Jean Philippe</span> (Caudry) - <span class="bleu">BRICOULT Marie Jeanne</span>, AD59 2E26-227, <strong>602007/31</strong><br/>
+04/01/1688 : <span class="bleu">DEMARCQ Pierre</span> (Prémont) - <span class="bleu">MERESSE Jeanne</span>, AD59 2E26-18, <strong>602008/3</strong><br/>
+03/07/1688 : <span class="bleu">DEMOULIN Jacques</span> (Villers-en-Cauchies) - <span class="bleu">FONTAINE Antoinette</span>, AD62 J1301-1, <strong>602008/4</strong><br/>
+09/08/1705 : <span class="bleu">DEMULIEZ Isaac</span> (Walincourt) - <span class="bleu">SOILLEUX Marie Jeanne</span>, AD59 2E26-227, <strong>602008/5</strong><br/>
+15/07/1717 : <span class="bleu">DENIMAL Jean</span> (Paillencourt) - <span class="bleu">LECLERCQ Marie Barbe</span>, AD59 2E26-410, <strong>602008/6</strong><br/>
+26/10/1691 : <span class="bleu">DENIS Hubert</span> (Cambrai, vf BRUNEAU Jeanne) - <span class="bleu">DEHON Marie Marguerite</span>, AD59 2E26-19, <strong>602008/7</strong><br/>
+25/01/1755 : <span class="bleu">DENIS Pierre</span> (Fontaine-au-Pire) - <span class="bleu">MAIRESSE Marie Jeanne</span>, AD59 2E26-253, <strong>602008/8</strong><br/>
+06/11/1690 : <span class="bleu">DENISE Jean</span> (Rumilly-en-Cambrésis) - <span class="bleu">MOLLET Marie Anne</span>, AD59 2E26-294, <strong>602008/9</strong><br/>
+17/03/1678 : <span class="bleu">DENOYELLE Jean</span> (Bertry), partages, AD59 2E26-20, <strong>602008/11</strong><br/>
+06/10/1692 : <span class="bleu">DENOYELLE Jean</span> (Bertry) - <span class="bleu">VERIN Marie</span>, AD59 2E26-195, <strong>602008/14</strong><br/>
+08/02/1704 : <span class="bleu">DENOYELLE Jean</span> (Saint-Aubert), testament, AD59 2E26-22, <strong>602008/10</strong><br/>
+05/05/1731 : <span class="bleu">DENOYELLE Jean</span> (Fontaine-au-Pire) - <span class="bleu">VERIN Marie</span>, donation, AD59 3G-842, <strong>602008/12</strong><br/>
+04/04/1732 : <span class="bleu">DENOYELLE Jean</span> (Fontaine-au-Pire) - <span class="bleu">VERIN Marie</span>, donation, AD59 3G-842, <strong>602008/13</strong><br/>
+04/05/1754 : <span class="bleu">DENOYELLE Jean Philippe</span> (Bertry) - <span class="bleu">MORONVAL Marie Josèphe</span>, AD59 2E26-753, <strong>602008/15</strong><br/>
+10/02/1730 : <span class="bleu">DENOYELLE Martin</span> (Fontaine-au-Pire) - <span class="bleu">DEUDON Antoinette</span>, AD59 2E26-364, <strong>602008/16</strong><br/>
+12/06/1691 : <span class="bleu">DERCHIN Martine</span> (Saint-Hilaire-lez-Cambrai), testament, AD59 2E26-24, <strong>602008/17</strong><br/>
+23/01/1677 : <span class="bleu">DERIEUX Toussaint</span> (Troisvilles) - <span class="bleu">COLPART Marguerite</span>, AD59 2E26-20, <strong>602008/18</strong><br/>
+14/10/1737 : <span class="bleu">DERLICQ François</span> (Avesnes-les-Aubert, vf LEGRAND Marie) - <span class="bleu">LEBECQ Marie Jeanne</span>, AD59 2E26-43, <strong>602008/19</strong><br/>
+05/01/1704 : <span class="bleu">DEROCQ Jean</span> (Wambaix) - <span class="bleu">VAILLANT Marie</span>, AD59 2E26-154, <strong>602008/20</strong><br/>
+22/04/1724 : <span class="bleu">DESAINT Paul</span> (Naves) - <span class="bleu">FAUCQUET Marie Elisabeth</span>, AD59 2E26-174, <strong>602008/21</strong><br/>
+21/06/1660 : <span class="bleu">DESCAUDAIN Anastase</span> (Quiévy) - <span class="bleu">BOISTEAU Micelle</span>, AD59 2E26-24, <strong>602008/22</strong><br/>
+15/02/1677 : <span class="bleu">DESCAUDAIN Antoine</span> (Bertry) - <span class="bleu">MONCHEAUX Barbe</span>, AD59 2E26-20, <strong>602008/23</strong><br/>
+18/12/1711 : <span class="bleu">DESMOULIN Nicolas</span>, embref, AD59 7G-819, <strong>602008/24</strong><br/>
+16/05/1644 : <span class="bleu">DESSE André</span> (Cambrai) - <span class="bleu">d'HORNE Jacqueline</span>, AD59 2E26-137, <strong>602008/25</strong><br/>
+09/02/1665 : <span class="bleu">DESSE Germain</span> (Cattenières) - <span class="bleu">OBLIN Magdeleine</span>, AD59 2E26-178, <strong>602008/26</strong><br/>
+17/06/1690 : <span class="bleu">DESSE Grégoire</span> (Cattenières) - <span class="bleu">GUILLAUME Marie Anne</span>, AD59 2E26-178, <strong>602008/27</strong><br/>
+28/11/1697 : <span class="bleu">DESSENNE Charles</span> (Villers-Outréaux) - <span class="bleu">GRAU Françoise</span>, AD59 2E26-195, <strong>602008/28</strong><br/>
+26/10/1752 : <span class="bleu">DESSENNE Louis</span> (Villers-Outréaux) - <span class="bleu">DESSAINT Reine</span>, AD59 2E26-251, <strong>602008/29</strong><br/>
+14/10/1752 : <span class="bleu">DESSENNE Pierre Joseph</span> (Villers-Outréaux) - <span class="bleu">TAVERNIER Gabrielle</span>, AD59 2E26-251, <strong>602008/30</strong><br/>
+25/09/1713 : <span class="bleu">DESTOCQUE Jean Baptiste</span> (Prémont) - <span class="bleu">DOBY Marie Antoinette</span>, AD59 2E26-350/429, <strong>602008/31</strong><br/>
+14/01/1730 : <span class="bleu">DEWEZ Jacques</span> (Walincourt) - <span class="bleu">PAILLER Marie Magdeleine</span>, AD59 2E26-364, <strong>602008/32</strong><br/>
+22/01/1733 : <span class="bleu">DEWEZ Jean Jacques</span> (Walincourt) - <span class="bleu">GORLIER Marie Michelle</span>, AD59 2E26-237, <strong>602008/33</strong><br/>
+27/10/1717 : <span class="bleu">DHORDAIN Eloy</span> (Bantigny) - <span class="bleu">GERME Marie Louise</span>, AD59 2E26-355, <strong>602008/34</strong><br/>
+21/09/1683 : <span class="bleu">DIDOT Antoine</span> (Rumilly-en-Cambrésis, vf NAZEZ Marie) - <span class="bleu">CARPANTIER Anne Marie</span>, AD59 2E26-346, <strong>602008/35</strong><br/>
+19/07/1699 : <span class="bleu">DIENNE Michel</span> (Clary) - <span class="bleu">COPIN Marie</span>, AD59 2E26-152, <strong>602008/36</strong><br/>
+02/11/1678 : <span class="bleu">DIZELAIRE Philippe</span> (Naves) - <span class="bleu">LEMAIRE marie Catherine</span>, AD59 2E26-9, <strong>602008/37</strong><br/>
+19/01/1724 : <span class="bleu">DOBY Nicolas Jacques</span> (Fontaine-au-Pire) - <span class="bleu">VERRIN Marie Magdeleine</span>, AD59 2E26-360, <strong>602008/38</strong><br/>
+26/06/1688 : <span class="bleu">DOIEN Adrien</span> (Cambrai (Faubourg Porte Neuve)) - <span class="bleu">de LE HACHE Barbe</span>, AD59 2E26-145, <strong>602008/39</strong><br/>
+18/03/1687 : <span class="bleu">DOISY Michel</span> (Crèvecœur-sur-l'Escaut) - <span class="bleu">NAZEZ Marie</span>, AD59 2E26-346, <strong>602008/40</strong><br/>
+09/04/1678 : <span class="bleu">DOLLET Antoine</span> (Walincourt) - <span class="bleu">HUTIN Catherine</span>, partage de terres, <strong>602008/41</strong><br/>
+27/11/1652 : <span class="bleu">DOLLEZ Robert</span> (Gouzeaucourt, vf N.) - <span class="bleu">de FONTAINE Prudence</span>, AD59 2E26-15, <strong>602008/42</strong><br/>
+01/02/1747 : <span class="bleu">DOREMUS Joachim</span> (Ramillies) - <span class="bleu">LEMAY Marie Caroline</span>, <strong>602008/43</strong><br/>
+31/01/1720 : <span class="bleu">DOUAY Nicolas</span> (Thun-l'Évêque) - <span class="bleu">PAUL Marie</span>, AD59 2E26-173, <strong>602008/44</strong><br/>
+13/06/1684 : <span class="bleu">DOUCHET Jacques</span> (Fontaine-au-Pire) - <span class="bleu">FAREZ Marie Catherine</span>, AD59 2E26-178, <strong>602008/45</strong><br/>
+15/07/1690 : <span class="bleu">DOUILLEZ Pierre</span> (Ramillies, vf ANCHIN Marie) - <span class="bleu">COURTILLEUX Marie Barbe</span>, AD59 2E26-28, <strong>602008/46</strong><br/>
+17/10/1691 : <span class="bleu">DOUREE Jean François</span> (Le Cateau-Cambrésis) - <span class="bleu">DELIMAL Marie Catherine</span>, partage de terres, AD59 2E26-138, <strong>602008/47</strong><br/>
+26/06/1743 : <span class="bleu">DOYEN Jean Claude</span> (Cagnoncles) - <span class="bleu">DELFOLIE Jeanne Marguerite</span>, AD59 2E26-79, <strong>602008/48</strong><br/>
+02/05/1743 : <span class="bleu">DOYEN Pierre Philippe</span> (Iwuy) - <span class="bleu">DIEULOT Jeanne Claire</span>, AD59 2E26-47, <strong>602008/49</strong><br/>
+07/05/1691 : <span class="bleu">DRACE Nicolas</span> (Crèvecœur-sur-l'Escaut (Montécouvez)) - <span class="bleu">MORCRETTE Michelle</span>, AD59 2E26-96, <strong>602008/50</strong><br/>
+20/04/1702 : <span class="bleu">DRAPPIER Charles</span> (Séranvillers) - <span class="bleu">SAR Jeanne Catherine</span>, AD59 2E26-424, <strong>602008/51</strong><br/>
+07/12/1688 : <span class="bleu">DRAPPIER Grégoire</span> (Séranvillers) - <span class="bleu">PATOU Marie Madeleine</span>, AD59 2E26-16, <strong>602008/52</strong><br/>
+29/10/1701 : <span class="bleu">DRAPPIER Grégoire</span> (Séranvillers, vf PATOU Marie Magdeleine et de GOTTIER Marguerite) - <span class="bleu">VITOU Marie Anne</span>, AD59 2E26-153/424, <strong>602008/53</strong><br/>
+27/04/1724 : <span class="bleu">DRAPPIER Philippe Joseph</span> (Cauroir) - <span class="bleu">HUTIN Marie Anne</span>, AD59 2E26-174, <strong>602008/54</strong><br/>
+03/06/1688 : <span class="bleu">DREUVILLE Jean Philippe</span> (Cambrai) - <span class="bleu">COURTIN Marie Catherine</span>, AD59 2E26-28, <strong>602008/55</strong><br/>
+25/06/1685 : <span class="bleu">DREUX Simon</span> (Cambrai) - <span class="bleu">de PRONVILLE Françoise Albertine</span>, Collection DELLOYE L86-F167, <strong>602008/56</strong><br/>
+28/12/1687 : <span class="bleu">DRON Simon</span> (Saint-Hilaire-lez-Cambrai) - <span class="bleu">LECLERCQ Anne</span>, AD59 2E26-14, <strong>602008/57</strong><br/>
+21/11/1718 : <span class="bleu">DRUBAY Jacques</span> (Viesly) - <span class="bleu">BRUYELLE Marie Jeanne</span>, AD59 2E26-231, <strong>602008/58</strong><br/>
+21/03/1677 : <span class="bleu">d'UFFLINGEN Jean Henry</span> (Coblenzz ?) - <span class="bleu">FOULON Marie Eléonore</span>, AD59 2E26-194/1233<br/>
+16/06/1691 : <span class="bleu">DUJONQUOY Jean</span> (Wambaix) - <span class="bleu">de NOYELLES Marie Catherine</span>, AD59 2E26-146, <strong>602009/1</strong><br/>
+10/01/1654 : <span class="bleu">DUMONT Pierre</span> (Paillencourt) - <span class="bleu">GOSSELET Jeanne</span>, AD59 2E26-137, <strong>602009/4</strong><br/>
+16/05/1722 : <span class="bleu">DUPLUVINAGE Jacques</span> (Maretz, vf FOREST Anne Françoise) - <span class="bleu">MORCRETTE Marie Marthe</span>, AD59 2E26-232, <strong>602009/5</strong><br/>
+17/11/1731 : <span class="bleu">DUPON Jean Louis</span> (Ramillies) - <span class="bleu">GRENER Gillette</span>, AD59 2E26-268, <strong>602009/6</strong><br/>
+18/11/1706 : <span class="bleu">DUPONT Arthus</span> (Ramillies) - <span class="bleu">LESNE Marie Catherine</span>, AD59 2E26-357/401/436, <strong>602009/7</strong><br/>
+12/04/1654 : <span class="bleu">DUPONT Martin</span> (Escaudœuvres) - <span class="bleu">DEUDON Jeanne Catherine</span>, AD59 2E26-137, <strong>602009/2</strong><br/>
+11/02/1764 : <span class="bleu">DUPUIS Charles</span> (Rieux-en-Cambrésis) - <span class="bleu">LELEU Marie Guislaine</span>, AD59 2E26-186, <strong>602009/8</strong><br/>
+19/02/1677 : <span class="bleu">DUPUIS François</span> (Naves) - <span class="bleu">BARBIER Marie Anne</span>, AD59 2E26-9, <strong>602009/3</strong><br/>
+01/09/1701 : <span class="bleu">DUPUIS Jean François</span> (Cambrai) - <span class="bleu">SART Marie Joseph</span>, AD59 2E26-150, <strong>602009/9</strong><br/>
+03/11/1704 : <span class="bleu">DUPUIS Paul</span> (Naves) - <span class="bleu">VITOUX Marie Magdeleine</span>, AD59 2E26-400, <strong>602009/10</strong><br/>
+26/05/1730 : <span class="bleu">DURCHON Henri</span> (Rieux-en-Cambrésis) - <span class="bleu">MOREAUX Laurence</span>, AD59 2E26-40, <strong>602009/11</strong><br/>
+09/02/1713 : <span class="bleu">DUWEZ Joseph</span> (Saint-Aubert) - <span class="bleu">BARBET Anne</span>, AD59 2E26-409, <strong>602009/12</strong></p>
+<p>21/02/1699 : <span class="bleu">FARE Ignace Laurent</span> (Haucourt-en-Cambrésis (L'Aventure)) - <span class="bleu">LEMPREUX Claire</span>, AD59 2E26-208, <strong>602009/13</strong><br/>
+21/02/1662 : <span class="bleu">FARRE Jaspar</span> (Haucourt-en-Cambrésis (L'Aventure)) - <span class="bleu">CARLIER Anne</span>, AD59 2E26-178, <strong>602009/14</strong><br/>
+07/10/1758 : <span class="bleu">FAUCQUET Jean Baptiste</span> (Naves) - <span class="bleu">BENS Jeanne</span>, AD59 2E26-97, <strong>602009/15</strong><br/>
+05/02/1724 : <span class="bleu">FAUVE Simon</span> (Naves) - <span class="bleu">WILMEAU Marie Jacqueline</span>, AD59 2E26-37, <strong>602009/16</strong><br/>
+20/12/1643 : <span class="bleu">FAUVEAU Bartholomé</span> (Escaudœuvres) - <span class="bleu">CLAIS Marguerite</span>, AD59 2E26-137, <strong>602009/17</strong><br/>
+11/01/1719 : <span class="bleu">FELIX Jean François</span> (Cattenières) - <span class="bleu">FICHEUX Marie</span>, AD59 2E26-356, <strong>602009/18</strong><br/>
+11/01/1681 : <span class="bleu">FIEVET Georges</span> (Paillencourt) - <span class="bleu">MEURANT Catherine</span>, AD59 2E26-25, <strong>602009/20</strong><br/>
+21/11/1716 : <span class="bleu">FIEVET Georges</span> (Paillencourt, vf MEURIN Catherine) - <span class="bleu">DAILLET Marie Jeanne</span>, AD59 2E26-654, <strong>602009/19</strong><br/>
+17/05/1690 : <span class="bleu">FOUQUET Etienne</span> (Naves) - <span class="bleu">VITOUX Thérèse</span>, AD59 2E26-7, <strong>602009/22</strong><br/>
+20/07/1642 : <span class="bleu">FOUQUET Martin</span> (Naves) - <span class="bleu">LE MAIRE Jeanne</span>, AD59 2E26-22, <strong>602009/23</strong><br/>
+22/06/1665 : <span class="bleu">FRANCOIS Isaac</span> (Fontaine-au-Pire), permis de construire, AD59 2E26-178, <strong>602009/24</strong><br/>
+13/01/1674 : <span class="bleu">FRANCOIS Jean</span> (Cambrai (Porte Neuve)) - <span class="bleu">DESCAUDIN Catherine</span>, AD59 2E26-194, <strong>602009/25</strong><br/>
+13/11/1748 : <span class="bleu">FREMICOURT Luc Joseph</span> (Cambrai) - <span class="bleu">FLINIAU Angélique</span>, Collection DELLOYE L186-F37, <strong>602009/26</strong></p>
+<p>13/01/1746 : <span class="bleu">GABET Jean François</span> (Avesnes-les-Aubert) - <span class="bleu">MERIAUX Véronique</span>, AD59 2E26-100, <strong>602010/5</strong><br/>
+26/01/1692 : <span class="bleu">GABET Jérôme</span> (Troisvilles) - <span class="bleu">BASQUIN Martine</span>, AD59 2E26-20, <strong>602010/6</strong><br/>
+17/08/1783 : <span class="bleu">GABET Théodore</span> (Ligny-en-Cambrésis), tutelle, <strong>602010/7</strong><br/>
+15/11/1683 : <span class="bleu">GAILLARD Henri</span> (Esnes) - <span class="bleu">HACHE Marie</span>, AD59 2E26-176, <strong>602010/8</strong><br/>
+30/04/1689 : <span class="bleu">GAILLARD Pierre</span> (Esnes) - <span class="bleu">MASCHELLART Marie</span>, AD59 2E26-176, <strong>602010/9</strong><br/>
+05/11/1706 : <span class="bleu">GAILLET André</span> (Walincourt) - <span class="bleu">HAPPE Marie Magdeleine</span>, AD59 2E26-227, <strong>602010/10</strong><br/>
+06/07/1726 : <span class="bleu">GAILLEZ Jean Baptiste</span> (Ligny-en-Cambrésis) - <span class="bleu">RICHET Marie</span>, AD59 2E26-733, <strong>602010/11</strong><br/>
+24/10/1678 : <span class="bleu">GAILLIEGUE Jean</span> (Selvigny) - <span class="bleu">FOUCQUEZ Madeleine</span>, AD59 2E26-176, <strong>602010/12</strong><br/>
+24/01/1678 : <span class="bleu">GAILLIEGUE Philippe</span> (Walincourt) - <span class="bleu">TRUFFEZ Marie</span>, AD59 2E26-176, <strong>602010/13</strong><br/>
+04/11/1713 : <span class="bleu">GALIEGUE Thomas</span> (Walincourt) - <span class="bleu">MARTIN Jeanne</span>, AD59 2E26-229, <strong>602010/15</strong><br/>
+22/08/1717 : <span class="bleu">GALIEGUE Thomas</span> (Walincourt, vf MARTIN Jeanne) - <span class="bleu">ROUSSIEZ Catherine</span>, AD59 2E26-230, <strong>602010/16</strong><br/>
+04/07/1678 : <span class="bleu">GALLET Antoine</span> (Estrun) - <span class="bleu">BODA Jeanne</span>, AD59 2E26-158, <strong>602010/17</strong><br/>
+22/06/1691 : <span class="bleu">GALLIER Pierre</span> (Walincourt, vf BEGUIN Marie Jeanne) - <span class="bleu">FRANCQUART Jeanne</span>, AD59 2E26-96, <strong>602010/18</strong><br/>
+11/08/1712 : <span class="bleu">GAMEZ Jean Philippe</span> (Thun-l'Évêque) - <span class="bleu">DHERBECOURT Marie Catherine</span>, AD59 2E26-409, <strong>602010/19</strong><br/>
+23/10/1690 : <span class="bleu">GAUTIER Antoine</span> (Masnières, vf BAZIN Marguerite) - <span class="bleu">VILETTE Jeanne</span>, AD59 2E26-403, <strong>602010/20</strong><br/>
+27/09/1704 : <span class="bleu">GAUTIER Pierre</span> (Cantaing-sur-Escaut) - <span class="bleu">PERTREAUX Jeanne Catherine</span>, AD59 2E26-155, <strong>602010/21</strong><br/>
+07/02/1733 : <span class="bleu">GAUTIER Pierre François</span> (Cantaing-sur-Escaut) - <span class="bleu">DENIS Antoinette</span>, AD59 2E26-41, <strong>602010/23</strong><br/>
+03/03/1734 : <span class="bleu">GAUTIER Pierre François</span> (Cantaing-sur-Escaut) - <span class="bleu">THERY Marie Elisabeth</span>, AD62 J1429-2, <strong>602010/22</strong><br/>
+29/11/1742 : <span class="bleu">GAVE Jean Jacques</span> (Bertry) - <span class="bleu">LECLERCQ Marie Thérèse</span>, <strong>602010/14</strong><br/>
+10/11/1713 : <span class="bleu">GERA Estienne</span> (Avesnes-les-Aubert) - <span class="bleu">ROBACHE Marie Françoise</span>, AD59 2E26-213, <strong>602010/24</strong><br/>
+18/04/1689 : <span class="bleu">GERARD Jean</span> (Avesnes-les-Aubert) - <span class="bleu">HERBIN Simone</span>, AD59 2E26-23, <strong>602010/25</strong><br/>
+15/03/1742 : <span class="bleu">GERARD Jean Nicolas</span> (Avesnes-les-Aubert) - <span class="bleu">GABET Anne Jeanne</span>, AD59 2E26-46, <strong>602010/26</strong><br/>
+08/11/1701 : <span class="bleu">GERME Jean Géry</span> (Hem-Lenglet) - <span class="bleu">BURY Jeanne</span>, AD59 2E26-209, <strong>602010/27</strong><br/>
+20/05/1688 : <span class="bleu">GERME Martin</span> (Bantigny) - <span class="bleu">DOVILLIERS Françoise</span>, AD59 2E26-28, <strong>602010/28</strong><br/>
+01/11/1706 : <span class="bleu">GERME Vaast</span> (Bantigny) - <span class="bleu">GRAVELLE Anne Elisabeth</span>, AD59 2E26-197, <strong>602010/29</strong><br/>
+10/07/1676 : <span class="bleu">GERNE Simon</span> (Avesnes-les-Aubert) - <span class="bleu">HERBIN Marye</span>, AD59 2E26-23, <strong>602010/30</strong><br/>
+09/08/1692 : <span class="bleu">GERNEZ Etienne</span> (Avesnes-les-Aubert) - <span class="bleu">ROBACHE Marie</span>, AD59 2E26-23, <strong>602010/31</strong><br/>
+31/01/1699 : <span class="bleu">GILLE André</span> (Selvigny) - <span class="bleu">VAILLANT Catherine</span>, AD59 2E26-196, <strong>602010/34</strong><br/>
+05/11/1706 : <span class="bleu">GILLIARD Antoine</span> (Walincourt) - <span class="bleu">CLARY Marguerite</span>, AD59 2E26-227, <strong>602010/32</strong><br/>
+01/02/1706 : <span class="bleu">GILLIARD Jean</span> (Walincourt) - <span class="bleu">PLOMION Catherine</span>, AD59 2E26-227, <strong>602010/33</strong><br/>
+02/02/1692 : <span class="bleu">GIVRY Jean Baptiste</span> (Prémont) - <span class="bleu">DOUCET Jeanne</span>, AD59 2E26-25, <strong>602010/35</strong><br/>
+23/06/1713 : <span class="bleu">GLAYE Jean</span> (Avesnes-les-Aubert) - <span class="bleu">LEGRAND Paquette</span>, AD59 2E26-213, <strong>602010/36</strong><br/>
+06/12/1876 : <span class="bleu">GLET Henri</span> (Haspres) - <span class="bleu">SELLIEZ Julie</span>, <strong>602010/37</strong><br/>
+26/12/1691 : <span class="bleu">GLORIEUX Nicolas</span> (Cambrai) - <span class="bleu">DARTU Jeanne Françoise</span>, AD59 2E26-141, <strong>602010/38</strong><br/>
+28/11/1890 : <span class="bleu">GODARD Jules</span> (Montigny-en-Cambrésis) - <span class="bleu">HARDISSON Marie Louise</span>, litige de dettes, <strong>602010/39</strong><br/>
+03/05/1691 : <span class="bleu">GODART Philippe</span> (Montigny-en-Cambrésis, vf LAMOURET Marie) - <span class="bleu">CRINON Jacqueline</span>, AD59 2E26-96, <strong>602010/40</strong><br/>
+01/08/1714 : <span class="bleu">GODECAULT Adrien</span> (Serain) - <span class="bleu">TAISNE Marie Suzanne</span>, AD59 2E26-229, <strong>602010/41</strong><br/>
+26/06/1688 : <span class="bleu">GODREAU Antoine</span> (Saint-Souplet) - <span class="bleu">COPRO Quinte</span>, AD59 2E26-24/138, <strong>602010/42</strong><br/>
+28/11/1692 : <span class="bleu">GODREAU Antoine</span> (Saint-Souplet) - <span class="bleu">PRUVOST Thérèse</span>, AD59 2E26-24/138, <strong>602010/43</strong><br/>
+26/12/1690 : <span class="bleu">GODREAU Pierre</span> (Saint-Souplet) - <span class="bleu">LE BON Marguerite</span>, AD59 2E26-138, <strong>602010/44</strong><br/>
+18/10/1691 : <span class="bleu">GOLO Antoine</span> (Maing) - <span class="bleu">BLONDAU Marie Barbe</span>, AD62 J678-8, <strong>602010/46</strong><br/>
+27/05/1690 : <span class="bleu">GONTHIER Jérôme</span> (Walincourt) - <span class="bleu">MANNESSIE Jeanne</span>, AD59 2E26-176, <strong>602010/47</strong><br/>
+19/07/1703 : <span class="bleu">GORGUET André</span> (Gouzeaucourt) - <span class="bleu">de VILLIERS Barbe</span>, AD62 J1429-1/2, <strong>602010/48</strong><br/>
+25/07/1712 : <span class="bleu">GORLIEZ Pierre</span> (Walincourt, vf GUILLE Catherine) - <span class="bleu">SOILLEUX Marie Jeanne</span>, AD59 2E26-228, <strong>602010/49</strong><br/>
+16/05/1699 : <span class="bleu">GOSSELET Philippe</span> (Masnières, vf CRESPIN Marie Anne) - <span class="bleu">CHARLET Catherine</span>, AD59 2E26-142, <strong>602010/50</strong><br/>
+31/01/1744 : <span class="bleu">GOSSET Nicolas</span> (Beaurevoir) - <span class="bleu">DANIAU Marie Elisabeth</span>, AD59 2E26-48, <strong>602010/51</strong><br/>
+23/06/1673 : <span class="bleu">GOUBET François</span> (Séranvillers) - <span class="bleu">MASSON Marianne</span>, AD59 2E26-138, <strong>602010/53</strong><br/>
+23/06/1673 : <span class="bleu">GOUBET François</span> (Séranvillers), bail, <strong>602010/52</strong><br/>
+02/12/1721 : <span class="bleu">GOUBET Michel</span> (Flesquières) - <span class="bleu">de FONTAINE Marie Barbe</span>, AD59 2E26-358, <strong>602010/54</strong><br/>
+10/05/1691 : <span class="bleu">GRANSARD Michel</span> (Clary) - <span class="bleu">MILLOT Antoinette</span>, AD59 2E26-96, <strong>602010/55</strong><br/>
+02/11/1688 : <span class="bleu">GRANSART Antoine</span> (Esnes) - <span class="bleu">DESMAZIAUX Jeanne</span>, <strong>602010/56</strong><br/>
+30/06/1688 : <span class="bleu">GRAS Jacques</span> (Saint-Souplet) - <span class="bleu">GODREAU Jacqueline</span>, testament, AD59 2E26-138, 602010/45<br/>
+16/04/1735 : <span class="bleu">GRATTEPANCHE Robert</span> (Ramillies, vf LELOIRE Marguerite) - <span class="bleu">PAMART Françoise</span>, AD59 2E26-373, <strong>602010/57</strong><br/>
+13/09/1737 : <span class="bleu">GRENET Antoine</span> (Thun-l'Évêque, vf HOEZ Marie Madeleine) - <span class="bleu">TACHON Marie Michelle</span>, AD59 2E26-378, <strong>602010/58</strong><br/>
+08/02/1720 : <span class="bleu">GRESILLION Léonard</span> (Eswars) - <span class="bleu">DUPONT Marie Catherine</span>, AD59 2E26-174/219, <strong>602010/59</strong><br/>
+23/01/1717 : <span class="bleu">GRESILLON Jean François</span> (Cambrai) - <span class="bleu">DREVILLE Antoinette</span>, AD59 2E26-434, <strong>602010/60</strong><br/>
+31/12/1689 : <span class="bleu">GRESILLON Michel</span> (Neuville-Saint-Rémy) - <span class="bleu">WASSEUR Marie Josèphe</span>, AD59 2E26-207, <strong>602010/61</strong><br/>
+14/01/1705 : <span class="bleu">GRIER Philippe</span> (Fontaine-au-Pire) - <span class="bleu">VERIN Marie Catherine</span>, donation, AD59 3G-840, <strong>602010/63</strong><br/>
+16/11/1720 : <span class="bleu">GRIER Philippe</span> (Viesly) - <span class="bleu">CANONNE Marie Antoinette</span>, AD59 2E26-231, <strong>602010/62</strong><br/>
+19/01/1741 : <span class="bleu">GRIER Philippe</span> (Fontaine-au-Pire), succession, AD59 3G-842, <strong>602010/64</strong><br/>
+02/02/1641 : <span class="bleu">GRIFFART Jean</span> (Beauvois-en-Cambrésis), donation, AD59 2E26-23, <strong>602010/65</strong><br/>
+27/10/1730 : <span class="bleu">GRIFFART Jean Baptiste</span> (Cagnoncles) - <span class="bleu">LEMAIRE Catherine Sophie</span>, AD59 2E26-366, <strong>602010/66</strong><br/>
+11/11/1758 : <span class="bleu">GUIDEZ Jean Baptiste</span> (Avesnes-les-Aubert) - <span class="bleu">GERARD Marie Josèphe</span>, AD59 2E26-180, <strong>602010/67</strong><br/>
+01/02/1709 : <span class="bleu">GUIENNE Jean</span> (Avesnes-les-Aubert, vf SOYEZ Marguerite) - <span class="bleu">SANTER Jeanne</span>, AD59 2E26-211, <strong>602010/68</strong><br/>
+21/01/1745 : <span class="bleu">GUIENNE Jean Nicolas</span> (Avesnes-les-Aubert) - <span class="bleu">PLACE Anne Marie</span>, AD59 2E26-49, <strong>602010/69</strong><br/>
+29/06/1683 : <span class="bleu">GUILLE Jacques</span> (Walincourt) - <span class="bleu">CORNILLE SART Marguerite</span>, AD59 2E26-176, <strong>602010/70</strong><br/>
+25/10/1701 : <span class="bleu">GUILLEBAUT Jacques</span> (Cattenières) - <span class="bleu">WASSON Marie Elisabeth</span>, AD59 2E26-209, <strong>602010/71</strong><br/>
+22/04/1713 : <span class="bleu">GUSTIN Pierre</span> (Rieux-en-Cambrésis) - <span class="bleu">BEAUVOIS Marie Jeanne</span>, AD59 2E26-213, <strong>602010/72</strong></p>
+<p>19/05/1691 : <span class="bleu">HABRAHAM Jean François</span> (Escaudœuvres) - <span class="bleu">SOREAU Françoise</span>, AD59 2E26-8, <strong>602011/1</strong><br/>
+14/08/1641 : <span class="bleu">HAIGNART Martin</span> (Fontaine-au-Pire) - <span class="bleu">FRANCOIS Catherine</span>, testament, AD59 2E26-23, <strong>602011/2</strong><br/>
+13/12/1721 : <span class="bleu">HAPPE Henry</span> (Walincourt) - <span class="bleu">RAMETTE Marguerite Josèphe</span>, AD59 2E26-358, <strong>602011/3</strong><br/>
+08/07/1690 : <span class="bleu">HAPPE Nicolas</span> (Walincourt) - <span class="bleu">de BOURCQ Marie</span>, AD59 2E26-178, <strong>602011/4</strong><br/>
+20/01/1617 : <span class="bleu">HARDUIN Pierre</span> (Cambrai) - <span class="bleu">DESMOLINS Jeanne</span>, Collection B.N.F. 32427-pages 219 à 221, <strong>602011/5</strong><br/>
+01/07/1689 : <span class="bleu">HARNETEAUX François</span> (Masnières) - <span class="bleu">CHARLET Marie</span>, AD59 2E26-403, <strong>602011/6</strong><br/>
+08/01/1720 : <span class="bleu">HAUDEGON Jean</span> (Saint-Aubert) - <span class="bleu">MARQUAIL Marie Josèphe</span>, AD59 2E26-219, <strong>602011/7</strong><br/>
+20/11/1753 : <span class="bleu">HEGO André</span> (Avesnes-les-Aubert) - <span class="bleu">GOFFART Marie Catherine</span>, AD59 2E26-103, <strong>602011/8</strong><br/>
+20/01/1699 : <span class="bleu">HEGO Jeanne</span> (Cambrai (Saint-Géry), vve GOUBET Martin) - <span class="bleu">GOUBET Anne</span>, donation à sa fille, AD59 7G-677, <strong>602011/9</strong><br/>
+28/07/1753 : <span class="bleu">HEGO Martin</span> (Ligny-en-Cambrésis) - <span class="bleu">TAISNE Marie Reine</span>, AD59 2E26-252, <strong>602011/10</strong><br/>
+22/08/1726 : <span class="bleu">HEGO Maximilien</span> (Cattenières) - <span class="bleu">SEGARD Marie Elisabeth</span>, AD59 2E26-254, <strong>602011/11</strong><br/>
+12/10/1715 : <span class="bleu">HEGO Philippe</span> (Avesnes-les-Aubert) - <span class="bleu">GERARD Jeanne</span>, AD59 2E26-214, <strong>602011/12</strong><br/>
+26/12/1678 : <span class="bleu">HEGO Simon</span> (Saint-Vaast-en-Cambrésis) - <span class="bleu">GONDRY Jeanne</span>, AD59 2E26-23, <strong>602011/13</strong><br/>
+06/02/1677 : <span class="bleu">HELOIRE Adam</span> (Troisvilles) - <span class="bleu">DRUE Marie</span>, AD59 2E26-25, <strong>602011/14</strong><br/>
+18/04/1735 : <span class="bleu">HENINOT Jean Baptiste</span> (Ligny-en-Cambrésis) - <span class="bleu">BANTIGNY Marie Josèphe</span>, AD59 2E26-239, <strong>602011/15</strong><br/>
+26/11/1674 : <span class="bleu">HENINOTZ Antoine</span> (Ligny-en-Cambrésis) - <span class="bleu">BRICOULT Julienne</span>, AD59 2E26-178, <strong>602011/16</strong><br/>
+02/11/1709 : <span class="bleu">HENNEBIQUE Guillaume</span> (Épinoy) - <span class="bleu">JOURNAUX Marguerite</span>, AD59 2E26-197, <strong>602011/17</strong><br/>
+14/02/1689 : <span class="bleu">HENNIN Jean</span> (Saint-Souplet) - <span class="bleu">LADERIERE Jeanne</span>, AD59 2E26-138, <strong>602011/19</strong><br/>
+13/06/1746 : <span class="bleu">HENNINO Jean Léonard</span> (Bertry) - <span class="bleu">TAISNE Françoise</span>, AD59 2E26-246, <strong>602011/20</strong><br/>
+10/05/1745 : <span class="bleu">HENNINOT Jean Baptiste</span> (Bertry) - <span class="bleu">DENIMAL Marie Josèphe</span>, AD59 2E26-245, <strong>602011/21</strong><br/>
+27/10/1713 : <span class="bleu">HERBET Jacques</span> (Bertry) - <span class="bleu">PRUVOST Marianne Josèphe</span>, AD59 2E26-229, <strong>602012/1</strong><br/>
+27/05/1735 : <span class="bleu">HERBIN Claude</span> (Avesnes-les-Aubert, vf GERARD Antoinette) - <span class="bleu">LEGRAND Jeanne Marguerite</span>, AD59 2E26-74, <strong>602012/3</strong><br/>
+06/11/1745 : <span class="bleu">HERBIN Claude</span> (Avesnes-les-Aubert) - <span class="bleu">GERARD Marie</span>, AD59 2E26-100, <strong>602012/2</strong><br/>
+11/04/1722 : <span class="bleu">HERBIN Géry</span> (Avesnes-les-Aubert) - <span class="bleu">MARCAILLE Marie Elisabeth</span>, AD59 2E26-174, <strong>602012/4</strong><br/>
+30/01/1716 : <span class="bleu">HERBIN Hector</span> (Avesnes-les-Aubert) - <span class="bleu">ROBACHE Marie Hélène</span>, AD59 2E26-215, <strong>602012/5</strong><br/>
+09/02/1746 : <span class="bleu">HERBIN Henri</span> (Bertry, vf MORIAU Jeanne) - <span class="bleu">MARLIER Marie Anne Josèphe</span>, AD59 2E26-51, <strong>602012/6</strong><br/>
+20/09/1678 : <span class="bleu">HERBIN Jean</span> (Avesnes-les-Aubert) - <span class="bleu">SAUDEMON Marie</span>, AD59 2E26-31, <strong>602012/7</strong><br/>
+22/10/1688 : <span class="bleu">HERBIN Maximilien</span> (Avesnes-les-Aubert, vf LEBEGUE Marie) - <span class="bleu">de LATTRE Marie Michelle</span>, AD59 2E26-23, <strong>602012/8</strong><br/>
+03/07/1683 : <span class="bleu">HERBIN Michel</span> (Avesnes-les-Aubert) - <span class="bleu">GUIENNE Anne</span>, AD59 2E26-23, <strong>602012/9</strong><br/>
+11/01/1746 : <span class="bleu">HERBIN Toussaint</span> (Avesnes-les-Aubert) - <span class="bleu">HERBIN Anne Marie</span>, AD59 2E26-100, <strong>602012/10</strong><br/>
+23/01/1704 : <span class="bleu">HERLAM Philippe</span> (Saint-Hilaire-lez-Cambrai) - <span class="bleu">MORIAU Marie Catherine</span>, AD59 2E26-536, <strong>602012/11</strong><br/>
+03/11/1690 : <span class="bleu">HERLIN Eloi</span> (Ramillies) - <span class="bleu">PECCOURT Marie</span>, testament, AD59 2E26-28, <strong>602012/12</strong><br/>
+04/10/1715 : <span class="bleu">HERLIN Jean</span> (Ramillies) - <span class="bleu">CHARLER Marie Jeanne</span>, AD59 2E26-173, <strong>602012/13</strong><br/>
+20/01/1691 : <span class="bleu">HERLIN Pierre</span> (Ramillies) - <span class="bleu">BOULLOGNE Noëlle</span>, AD59 2E26-28, <strong>602012/14</strong><br/>
+17/05/1735 : <span class="bleu">HERLIN Pierre Paul</span> (Ramillies) - <span class="bleu">LEGROS Marie Anne</span>, AD59 2E26-373, <strong>602012/15</strong><br/>
+15/02/1677 : <span class="bleu">HETUIN Jean</span> (Villers-en-Cauchies) - <span class="bleu">CATTEAU Noëlle</span>, AD59 2E26-24, <strong>602012/16</strong><br/>
+28/10/1677 : <span class="bleu">HIDEUX Charles</span> (Esnes) - <span class="bleu">PLUVINAGE Michelle</span>, AD59 2E26-194, <strong>602012/17</strong><br/>
+23/02/1686 : <span class="bleu">HIDEUX Charles</span> (Esnes, vf PLUVINAGE Michelle) - <span class="bleu">de BOURCQ Catherine</span>, AD59 2E26-178, <strong>602012/18</strong><br/>
+01/02/1697 : <span class="bleu">HIDEUX Nicolas</span> (Esnes) - <span class="bleu">MASSELART Jeanne</span>, AD59 2E26-195, <strong>602012/19</strong><br/>
+10/11/1680 : <span class="bleu">HOCQUET Jean Jacques</span> (Neuville-Saint-Rémy) - <span class="bleu">FAUVEROEULLE Françoise</span>, AD59 2E26-25, <strong>602012/20</strong><br/>
+18/02/1713 : <span class="bleu">HOCQUET Jérôme</span> (Neuville-Saint-Rémy) - <span class="bleu">SEGARD Marie Josèphe</span>, AD59 2E26-213, <strong>602012/21</strong><br/>
+27/10/1735 : <span class="bleu">HUART Charles Jérôme</span> (Villers-en-Cauchies) - <span class="bleu">COLPART Jeanne Catherine</span>, AD62 J1301-89, <strong>602012/26</strong><br/>
+28/01/1748 : <span class="bleu">HUE Jean baptiste</span> (Clary) - <span class="bleu">DEHEZ Marie Anne Josèphe</span>, <strong>602012/27</strong><br/>
+12/02/1689 : <span class="bleu">HUTTIN Pierre</span> (Bertry) - <span class="bleu">LEGARDEZ Marie Marthe</span>, AD59 2E26-25, <strong>602012/28</strong><br/>
+12/12/1683 : <span class="bleu">HUTTIN Silvestre</span> (Bertry) - <span class="bleu">SAGNIEZ Marguerite</span>, AD59 2E26-25, <strong>602012/29</strong></p>
+<p>29/12/1691 : <span class="bleu">ILLOIR Augustin</span> (Blécourt) - <span class="bleu">DEWALLY Marie Anne</span>, AD59 2E26-20</p>
+<p>17/10/1739 : <span class="bleu">JACQMAR Nicolas</span> (Villers-en Cauchies, vf JACQMAR Marie Agnès) - <span class="bleu">LANGLET Anne Catherine</span>, AD59 2E26-241, <strong>602012/30</strong><br/>
+30/07/1677 : <span class="bleu">JACQMIN Jean</span> (Quiévy) - <span class="bleu">HENNINOT Marguerite</span>, AD59 2E26-178, <strong>602012/31</strong><br/>
+16/01/1690 : <span class="bleu">JACQUEMART Eloy</span> (Avesnes-les-Aubert) - <span class="bleu">DERCHIN Agnès</span>, AD59 2E26-23, <strong>602012/32</strong><br/>
+19/04/1723 : <span class="bleu">JACQUEMART Michel</span> (Saint-Aubert) - <span class="bleu">CATTELAIN Marie Brigitte</span>, AD59 2E26-219, <strong>602012/33</strong><br/>
+12/02/1689 : <span class="bleu">JEAN Nicolas</span> (Eswars) - <span class="bleu">CARLIER Françoise</span>, AD59 2E26-28, <strong>602012/34</strong><br/>
+28/01/1743 : <span class="bleu">JOCAILLE Jacques</span> (Saint-Hilaire-lez-Cambrai) - <span class="bleu">BANTIGNY Marie Jeanne</span>, AD62 J1366-75, <strong>602012/35</strong><br/>
+10/06/1730 : <span class="bleu">JOURNIAU Jean Baptiste</span> (Esnes) - <span class="bleu">RUBIN Angélique</span>, AD59 2E26-39, <strong>602012/36</strong></p>
+<p>03/08/1721 : <span class="bleu">LA GRUE François</span> (Busigny, vf COLPIN Jeanne) - <span class="bleu">DRUON Marie Barbe</span>, AD59 2E26-232, <strong>602012/37</strong><br/>
+08/04/1738 : <span class="bleu">LABALETTE Sébastien</span> (Mœuvres) - <span class="bleu">de LAHAYE Elisabeth</span>, AD62 J1429-32, <strong>602012/38</strong><br/>
+03/06/1654 : <span class="bleu">LABBE Claude</span> (Ligny-en-Cambrésis) - <span class="bleu">FARE Anne</span>, AD59 2E26-29, <strong>602012/39</strong><br/>
+04/07/1677 : <span class="bleu">LABBE François</span> (Montigny-en-Cambrésis) - <span class="bleu">LEFEBVRE Antoinette</span>, AD59 2E26-95, <strong>602012/40</strong><br/>
+23/01/1763 : <span class="bleu">LABBE Pierre Michel</span> (Crèvecœur-sur-l'Escaut) - <span class="bleu">LERICHE Jeanne Louise</span>, AD59 2E26-185, <strong>602012/41</strong><br/>
+21/10/1713 : <span class="bleu">LACOURT Joseph</span> (Béthencourt) - <span class="bleu">PILLIAUT Marie Anne</span>, AD59 2E26-217, <strong>602012/42</strong><br/>
+05/07/1743 : <span class="bleu">LADRIERE Jean Joseph</span> (Cantaing-sur-Escaut) - <span class="bleu">DEFONTAINE Catherine Jeanne</span>, Collection DELLOYE L86-16, <strong>602012/43</strong><br/>
+09/06/1691 : <span class="bleu">LAGOUGE Jean François</span> (Thun-Saint-Martin) - <span class="bleu">BENICOURT Marie Thérèse</span>, AD59 2E26-7, <strong>602012/44</strong><br/>
+20/04/1668 : <span class="bleu">LAISNE Antoine</span> (Ramillies) - <span class="bleu">BALICQUE Marie</span>, AD59 2E26-25, <strong>602013/1</strong><br/>
+06/04/1690 : <span class="bleu">LALAIN Christophe</span> (Crèvecœur-sur-l'Escaut, vf LEFEBVRE Barbe) - <span class="bleu">LESAGE Marie</span>, AD59 2E26-11, <strong>602013/2</strong><br/>
+10/01/1736 : <span class="bleu">LALIN Pierre Antoine</span> (Marcoing) - <span class="bleu">HEGO Jeanne Thérèse</span>, AD59 2E26-448/74, <strong>602012/45</strong><br/>
+19/10/1704 : <span class="bleu">LAMAND Jean</span> (Rieux-en-Cambrésis) - <span class="bleu">LASNE Anne</span>, AD59 2E26-400, <strong>602013/3</strong><br/>
+02/11/1737 : <span class="bleu">LAMAND Jean Claude</span> (Rieux-en-Cambrésis) - <span class="bleu">CATTEAU Marie Michelle</span>, AD59 2E26-98, <strong>602013/4</strong><br/>
+17/11/1704 : <span class="bleu">LAMAND Jean François</span> (Cambrai) - <span class="bleu">MAILLIÉ Marie Josèphe</span>, AD59 2E26-400, <strong>602013/5</strong><br/>
+03/02/1678 : <span class="bleu">LAMAND Pierre</span> (Villers-en-Cauchies) - <span class="bleu">LESNES Anne Catherine</span>, AD59 2E26-22, <strong>602013/6</strong><br/>
+14/02/1675 : <span class="bleu">LAMBERT Bernard</span> (Bantouzelle) - <span class="bleu">DAIRMONT Marie</span>, AD59 2E26-31/1794, <strong>602013/8</strong><br/>
+10/12/1676 : <span class="bleu">LAMBERT Bernard</span> (Bantouzelle, vf DAIRMONT Marie) - <span class="bleu">LACHERET Marie</span>, AD59 2E26-31, <strong>602013/7</strong><br/>
+07/10/1688 : <span class="bleu">LAMENDIN Jacques</span> (Walincourt, vf HARDY Louise) - <span class="bleu">LAMOURET Marie</span>, AD59 2E26-96, <strong>602013/9</strong><br/>
+25/04/1665 : <span class="bleu">LANGLETZ Philippe</span> (Ligny-en-Cambrésis) - <span class="bleu">HENNAUTEZ Marie</span>, AD59 2E26-178, <strong>602013/10</strong><br/>
+06/06/1689 : <span class="bleu">LANSEL Jean</span> (Saint-Souplet) - <span class="bleu">GODREAU Anne</span>, AD59 2E26-138, <strong>602013/11</strong><br/>
+06/06/1689 : <span class="bleu">LANSEL Jean</span> (Saint-Souplet) - <span class="bleu">GODREAU Anne</span>, AD59 2E26-24, <strong>602012/46</strong><br/>
+20/01/1676 : <span class="bleu">LANSSEAU Michel</span> (Quiévy) - <span class="bleu">LORREAU Marie</span>, AD59 2E26-24, <strong>602013/12</strong><br/>
+19/09/1722 : <span class="bleu">LANVIN Adrien</span> (Cantaing-sur-Escaut) - <span class="bleu">POUILLAUDE Anne Marie</span>, AD59 2E26-587, <strong>602013/13</strong><br/>
+19/02/1724 : <span class="bleu">LANVIN Jean Martin</span> (Cambrai) - <span class="bleu">FONTAINE Anne Barbe</span>, AD59 2E26-360-438, <strong>602012/47</strong><br/>
+28/10/1772 : <span class="bleu">LARGILLIER Philibert</span> (Avesnes-les-Aubert) - <span class="bleu">MONIEZ Catherine</span>, AD59 2E26-193, <strong>602013/14</strong><br/>
+09/10/1730 : <span class="bleu">LARGILLIERE Nicolas François</span> (Cattenières, vf HUTAIN Marie Thérèse) - <span class="bleu">BANSE Jeanne Adrienne</span>, AD59 2E26-306, <strong>602013/15</strong><br/>
+22/02/1724 : <span class="bleu">LASNE (LESNE) Valentin</span> (Abancourt) - <span class="bleu">COLLAU Jeanne Françoise</span>, AD59 2E26-432<br/>
+23/10/1689 : <span class="bleu">LASNE Bonaventure</span> (Féchain) - <span class="bleu">FOVEAU Marguerite</span>, AD59 2E26-20, <strong>602013/16</strong><br/>
+22/11/1735 : <span class="bleu">LASSELAIN Thomas</span> (Cattenières) - <span class="bleu">LE PRETE Marie Jeanne</span>, AD59 2E26-74, <strong>602012/48</strong><br/>
+05/05/1724 : <span class="bleu">LASSELIN François</span> (Cattenières) - <span class="bleu">FORRIERE Marie Jeanne</span>, AD59 2E26-37, <strong>602013/17</strong><br/>
+25/10/1718 : <span class="bleu">LASSELIN Gaspard</span> (Cattenières) - <span class="bleu">FORRIERE Anne Jeanne</span>, AD59 2E26-215, <strong>602013/18</strong><br/>
+14/08/1730 : <span class="bleu">LASSELIN Hubert</span> (Cattenières, vf GRIFFART Adrienne) - <span class="bleu">PRESTRE Marie Anne</span>, AD59 2E26-365, <strong>602013/19</strong><br/>
+11/07/1701 : <span class="bleu">LASSELIN Jean</span> (Carnières, vf SORLIN Marie) - <span class="bleu">SEGARD Elisabeth</span>, AD59 2E26-150, <strong>602013/20</strong><br/>
+06/04/1771 : <span class="bleu">LASSELIN Jean Baptiste</span> (Avesnes-les-Aubert) - <span class="bleu">GLAY Jeanne</span>, AD59 2E26-192, <strong>602013/21</strong><br/>
+27/07/1753 : <span class="bleu">LASSELIN Jean François</span> (Beauvois-en-Cambrésis) - <span class="bleu">BALEMBOIS Marie Angélique</span>, AD59 2E26-252, <strong>602013/22</strong><br/>
+05/11/1690 : <span class="bleu">LASSELIN Michel</span> (Bévillers) - <span class="bleu">MAIRESSE Marie Marguerite</span>, AD59 2E26-178, <strong>602013/23</strong><br/>
+24/11/1712 : <span class="bleu">LASSELIN Pierre</span> (Cauroir) - <span class="bleu">VISSE Anne</span>, AD59 2E26-409, <strong>602013/24</strong><br/>
+14/10/1730 : <span class="bleu">LATARGE Nicolas</span> (Hordain, vf WILMO Marie Reine) - <span class="bleu">VAILLANT Marie Madeleine</span>, AD59 2E26-39, <strong>602012/49</strong><br/>
+03/01/1643 : <span class="bleu">LAUDE André</span> (Cambrai) - <span class="bleu">DUPUIS Marie</span>, AD59 32427-pages 569 à 572, <strong>602013/25</strong><br/>
+22/04/1747 : <span class="bleu">LAURENCIN Charles Joseph</span> (Thun-Saint-Martin) - <span class="bleu">BRABANT Marie Josèphe</span>, AD59 2E26-392, <strong>602013/26</strong><br/>
+24/11/1690 : <span class="bleu">LAVALLET Innocent</span> (Masnières, vf DOYEN madeleine) - <span class="bleu">DORIGNIES Marie</span>, AD59 2E26-403, <strong>602013/27</strong><br/>
+01/02/1689 : <span class="bleu">LAVALLEZ Pierre</span> (Masnières) - <span class="bleu">CHARLET Catherine</span>, AD59 2E26-403, <strong>602013/28</strong><br/>
+09/05/1736 : <span class="bleu">LAVALOIR Nicolas</span> (Iwuy) - <span class="bleu">DIEULOT Jeanne Claire</span>, AD59 2E26-175, <strong>602013/29</strong><br/>
+28/12/1613 : <span class="bleu">LE CARLIER Louis</span> (Cambrai) - <span class="bleu">BALICQUE Catherine</span>, AD59 32428-pages 207 à 216, <strong>602013/30</strong><br/>
+22/06/1690 : <span class="bleu">LE CLERC Ambroise</span> (Troisvilles) - <span class="bleu">VALLE Marie Catherine</span>, partage de terres, <strong>602012/50</strong><br/>
+01/08/1673 : <span class="bleu">LE CLERC Pierre</span> (Cambrai) - <span class="bleu">BAILLEUX Elisabeth</span>, AD59 2E26-138, <strong>602013/31</strong><br/>
+22/06/1690 : <span class="bleu">LE CLERCQ Ambroise</span> (Troisvilles) - <span class="bleu">VALLÉE Marie Catherine</span>, AD59 2E26-138, <strong>602013/32</strong><br/>
+26/05/1692 : <span class="bleu">LE CLERCQ Estienne</span> (Caudry) - <span class="bleu">MILLOT Catherine</span>, AD59 2E26-20, <strong>602013/33</strong><br/>
+15/04/1688 : <span class="bleu">LE CLERCQ François</span> (Bapaume) - <span class="bleu">MOREAU Marie Josèphe</span>, AD59 2E26-145, <strong>602013/34</strong><br/>
+11/11/1690 : <span class="bleu">LE CLERCQ Grégoire</span> (Troisvilles) - <span class="bleu">TAISNE Marie</span>, AD59 2E26-20, <strong>602013/35</strong><br/>
+22/11/1650 : <span class="bleu">LE CLERCQ Guillaume</span> (Caudry) - <span class="bleu">TACQUET Antoinette</span>, AD59 2E26-23, <strong>602013/36</strong><br/>
+28/01/1692 : <span class="bleu">LE COCQ André Joseph</span> (Cambrai) - <span class="bleu">MACQFLAN Anne Françoise Thérèse</span>, AD59 2E26-27, <strong>602013/37</strong><br/>
+04/10/1616 : <span class="bleu">LE FEBVRE Antoine</span> - <span class="bleu">GAINEPAIN Antoinette</span>, 32429-pages 219 et 22, <strong>602014/1</strong><br/>
+12/07/1610 : <span class="bleu">LE FEBVRE Charles</span> (Forenville) - <span class="bleu">TACQUET Jeanne</span>, Officialité 6974, <strong>602014/2</strong><br/>
+09/05/1609 : <span class="bleu">LE FEBVRE Pierre</span> (Forenville) - <span class="bleu">LASNE François</span>, Officialité 6974, <strong>602014/3</strong><br/>
+24/09/1688 : <span class="bleu">LE FEBVRE Robert</span> (Maretz) - <span class="bleu">BOUILLIAUX Marie</span>, AD59 2E26-17, <strong>602014/4</strong><br/>
+27/11/1713 : <span class="bleu">LE FEBVRE Thimothé</span> (Bertry) - <span class="bleu">de LHAYE Marguerite</span>, AD59 2E26-229, <strong>602014/5</strong><br/>
+08/11/1642 : <span class="bleu">LE LOIR Guillaume</span> (Marcoing) - <span class="bleu">LACART Marie</span>, <strong>602014/6</strong><br/>
+18/04/1697 : <span class="bleu">LE NOTTE Michel Louis</span> (Quiévy) - <span class="bleu">VERIN Marie Jeanne</span>, AD59 2E26-142, <strong>602014/7</strong><br/>
+07/06/1642 : <span class="bleu">LE RICHE Philippe</span> (Rumilly-en-Cambrésis) - <span class="bleu">PRUVOST Marie</span>, AD59 2E26-137, <strong>602015/1</strong><br/>
+29/04/1692 : <span class="bleu">LE ROY Antoine</span> (Banteux) - <span class="bleu">BONIFACE Marye Anne</span>, AD59 2E26-176, <strong>602015/2</strong><br/>
+22/11/1706 : <span class="bleu">LE ROY Martin</span> (Quiévy, vf ABRAHAM Marie Catherine) - <span class="bleu">RICHEZ Jeanne</span>, AD59 2E26-401, <strong>602015/3</strong><br/>
+10/10/1712 : <span class="bleu">LE ROY Robert</span> (Boussières-en-Cambrésis) - <span class="bleu">DEPREUX Marie Agnès</span>, AD59 2E26-212, <strong>602015/4</strong><br/>
+20/11/1629 : <span class="bleu">LE SAIGE Nicaise</span> (Fontaine-au-Pire, vf BRICOUT Jeanne) - <span class="bleu">VILAIN Brigitte</span>, AD59 2E26-023, <strong>602015/5</strong><br/>
+07/04/1701 : <span class="bleu">LE SAIGE Pasquet</span> (Fontaine-au-Pire) - <span class="bleu">LE SAIGE Thérèse</span>, AD59 2E26-423, <strong>602015/6</strong><br/>
+03/06/1724 : <span class="bleu">LEBON Jean Baptiste</span> (Saint-Aubert) - <span class="bleu">BRACHELET Marie Philippe</span>, AD59 2E26-719, <strong>602013/38</strong><br/>
+17/02/1719 : <span class="bleu">LEBOURQUE Pierre Joseph</span> (Esnes) - <span class="bleu">TULIÉ Jeanne</span>, AD59 2E26-356, <strong>602013/39</strong><br/>
+05/01/1709 : <span class="bleu">LEBRUN Sébastien</span> (Rieux-en-Cambrésis) - <span class="bleu">LAMAND Anne</span>, AD59 2E26-711, <strong>602013/40</strong><br/>
+21/01/1717 : <span class="bleu">LECERF Bernard Joseph</span> (Maing) - <span class="bleu">CACHEUX marie Josèphe</span>, AD59 2E26-217, <strong>602013/41</strong><br/>
+28/01/1675 : <span class="bleu">LEDEN Amand</span> (Cattenières) - <span class="bleu">SEGARD Marie</span>, AD59 2E26-178, <strong>602014/8</strong><br/>
+11/02/1724 : <span class="bleu">LEDIEU Philippe</span> (Caudry (Borneville)) - <span class="bleu">CARON Marie Thérèse</span>, AD59 2E26-233, <strong>602014/9</strong><br/>
+20/04/1688 : <span class="bleu">LEDUC Jean</span> (Prémont) - <span class="bleu">DOLOY Antoinette</span>, AD59 2E26-18, <strong>602014/10</strong><br/>
+16/05/1692 : <span class="bleu">LEDUC Jean Nicolas</span> (Cagnoncles) - <span class="bleu">TISON Marie Jeanne</span>, AD59 2E26-7, <strong>602014/11</strong><br/>
+26/04/1706 : <span class="bleu">LEDUC Michel</span> (Saint-Aubert) - <span class="bleu">TACQUET Marie</span>, AD59 2E26-156, <strong>602014/12</strong><br/>
+03/01/1684 : <span class="bleu">LEDUC Nicolas</span> (Beauvois-en-Cambrésis), héritage, AD59 2E26-9, <strong>602014/13</strong><br/>
+29/01/1677 : <span class="bleu">LEDUCQ François</span> (Cattenières, vf HUTIN Magdeleine) - <span class="bleu">ROUSSEAU Marie</span>, AD59 2E26-138, <strong>602014/14</strong><br/>
+13/04/1724 : <span class="bleu">LEDUCQ Jean Baptiste</span> (Ligny-en-Cambrésis) - <span class="bleu">PRUVOST Marie Magdeleine</span>, AD59 2E26-233, <strong>602014/15</strong><br/>
+27/04/1668 : <span class="bleu">LEDUCQ Jean François</span> (Naves) - <span class="bleu">SOHIER Marie</span>, AD59 2E26-22, <strong>602014/16</strong><br/>
+12/02/1724 : <span class="bleu">LEDUCQ Jean Martin</span> (Cagnoncles) - <span class="bleu">MAIRESSE Véronique</span>, AD59 2E26-360/438, <strong>602014/17</strong><br/>
+08/04/1673 : <span class="bleu">LEDUCQ Marguerite</span> (Fontaine-au-Pire), partage de terres, AD59 2E26-138, <strong>602014/18</strong><br/>
+02/02/1656 : <span class="bleu">LEDUCQ Nicolas</span> (Beauvois-en-Cambrésis) - <span class="bleu">DELIMAL Marie</span>, AD59 2E26-178, <strong>602014/19</strong><br/>
+26/10/1690 : <span class="bleu">LEDUCQ Philippe</span> (Beauvois-en-Cambrésis) - <span class="bleu">BASTIEN Thérèse</span>, AD59 2E26-9, <strong>602014/21</strong><br/>
+27/01/1698 : <span class="bleu">LEDUCQ Philippe</span> (Fontaine-au-Pire) - <span class="bleu">BOURGEOIS Jeanne</span>, achat de terres, AD59 3G-840, <strong>602014/20</strong><br/>
+05/02/1724 : <span class="bleu">LEDUCQ Philippe</span> (Cattenières, vf CRINON Anne Ursule), partage de terres, <strong>602012/5</strong><br/>
+19/02/1724 : <span class="bleu">LEDUCQ Philippe</span> (Cattenières, vf CRINON Anne Ursule) - <span class="bleu">SEGARD Marie Françoise</span>, AD59 2E26-360/438, <strong>602014/22</strong><br/>
+20/12/1752 : <span class="bleu">LEDUCQ Pierre</span> (Apremont) - <span class="bleu">CRINON Anne Marie</span>, partage de terres, AD59 2E26-251, <strong>602014/23</strong><br/>
+29/06/1657 : <span class="bleu">LEFEBVRE Andrieu</span> (Cagnoncles) - <span class="bleu">LEDUC Catherine</span>, AD59 2E26-22, <strong>602014/24</strong><br/>
+23/02/1647 : <span class="bleu">LEFEBVRE Antoine</span> (Escaudœuvres) - <span class="bleu">DOBY Royne</span>, AD59 2E26-137, <strong>602014/26</strong><br/>
+09/02/1657 : <span class="bleu">LEFEBVRE Antoine</span> (Cagnoncles) - <span class="bleu">COURTILLEUX Marie</span>, AD59 2E26-22, <strong>602014/27</strong><br/>
+20/10/1692 : <span class="bleu">LEFEBVRE Antoine</span> (Abancourt) - <span class="bleu">DENIMALE Catherine</span>, AD59 2E26-195, <strong>602014/25</strong><br/>
+10/11/1689 : <span class="bleu">LEFEBVRE Charles</span> (Séranvillers) - <span class="bleu">WASSON Marie Jeanne</span>, AD59 2E26-17, <strong>602014/28</strong><br/>
+29/09/1706 : <span class="bleu">LEFEBVRE François</span> (Dehéries) - <span class="bleu">MARLIER Anne</span>, AD59 2E26-227, <strong>602014/29</strong><br/>
+26/11/1736 : <span class="bleu">LEFEBVRE François Joseph</span> (Saint-Aubert) - <span class="bleu">BARBEZ Catherine Cécile</span>, AD59 2E26-23, <strong>602014/30</strong><br/>
+29/11/1736 : <span class="bleu">LEFEBVRE François Joseph</span> (Saint-Aubert) - <span class="bleu">BECCART Anne Thérèse</span>, AD59 2E26-43, <strong>602014/31</strong><br/>
+15/01/1724 : <span class="bleu">LEFEBVRE Guislain</span> (Séranvillers, vf MAISON Marie Josèphe) - <span class="bleu">WASSON Catherine</span>, AD59 2E26-360/438, <strong>602012/52</strong><br/>
+24/06/1683 : <span class="bleu">LEFEBVRE Hubert</span> (Haucourt-en-Cambrésis, vf HELOIRE Jeanne) - <span class="bleu">HOLLANDE Jeanne</span>, AD59 2E26-9, <strong>602014/32</strong><br/>
+25/01/1727 : <span class="bleu">LEFEBVRE Jacques</span> (Cagnoncles) - <span class="bleu">d'HORDAIN Marie Catherine</span>, AD59 2E26-362/439, <strong>602014/33</strong><br/>
+15/01/1691 : <span class="bleu">LEFEBVRE Jean</span> (Maretz) - <span class="bleu">DESGARDIN Agnès</span>, AD59 2E26-17, <strong>602014/34</strong><br/>
+13/04/1690 : <span class="bleu">LEFEBVRE Jean Charles</span> (Séranvillers) - <span class="bleu">ALLART Marie Anne</span>, AD59 2E26-8, <strong>602014/35</strong><br/>
+26/07/1691 : <span class="bleu">LEFEBVRE Jean François</span> (Caudry (Le Coquelet)) - <span class="bleu">DUPONT Anne Marguerite</span>, AD59 2E26-96, <strong>602014/36</strong><br/>
+31/10/1712 : <span class="bleu">LEFEBVRE Jean Martin</span> (Abancourt) - <span class="bleu">TRANCHANT Marie Josèphe</span>, AD59 2E26-349, <strong>602014/37</strong><br/>
+01/02/1727 : <span class="bleu">LEFEBVRE Joseph</span> (Cagnoncles) - <span class="bleu">de LAFOLIE Marie Catherine</span>, AD59 2E26-439, <strong>602014/38</strong><br/>
+05/05/1724 : <span class="bleu">LEFEBVRE Louis</span> (Béthencourt) - <span class="bleu">PRUVOST Anne Catherine</span>, AD59 2E26-233, <strong>602014/39</strong><br/>
+07/05/1678 : <span class="bleu">LEFEBVRE Nicolas</span> (Esnes) - <span class="bleu">VILAIN Catherine</span>, AD59 2E26-194, <strong>602014/40</strong><br/>
+17/02/1653 : <span class="bleu">LEFEBVRE Pierre</span> (Caudry (Le Coquelet)) - <span class="bleu">RONSSE Anne</span>, AD59 2E26-178, <strong>602014/41</strong><br/>
+03/01/1733 : <span class="bleu">LEFEBVRE Pierre François</span> (Cagnoncles) - <span class="bleu">MONIEZ Jeanne Marguerite</span>, AD59 2E26-445, <strong>602014/42</strong><br/>
+12/12/1689 : <span class="bleu">LEFEBVRE Robert</span> (Caudry) - <span class="bleu">LEFEBVRE Marie Marthe</span>, AD59 2E26-96, <strong>602014/43</strong><br/>
+03/07/1723 : <span class="bleu">LEFEBVRE Thomas</span> (Esnes) - <span class="bleu">LATOUR Marie</span>, AD59 2E26-359, <strong>602014/44</strong><br/>
+09/06/1725 : <span class="bleu">LEFEBVRE Thomas</span> (Esnes, vf LATOUR Marie) - <span class="bleu">GRANSART Marie Jeanne</span>, AD59 2E26-361, <strong>602014/45</strong><br/>
+19/09/1667 : <span class="bleu">LEGAIN Jacques</span> (Tilly (Belgique)) - <span class="bleu">GOSSART Jeanne</span>, AD59 32429-pages 160 à 163, <strong>602014/46</strong><br/>
+09/01/1689 : <span class="bleu">LEGOEULLE Cornil</span> (Saint-Vaast-en-Cambrésis) - <span class="bleu">BOUILLON Jeanne</span>, AD59 2E26-24, <strong>602014/47</strong><br/>
+23/02/1677 : <span class="bleu">LEGOEULLE Henry</span> (Saint-Vaast-en-Cambrésis) - <span class="bleu">THOBOIS Elisabeth Catherine</span>, AD59 2E26-23, <strong>602014/48</strong><br/>
+26/07/1677 : <span class="bleu">LEGRAND Andrieu</span> (Avesnes-les-Aubert) - <span class="bleu">BURY Marie</span>, AD59 2E26-23, <strong>602014/49</strong><br/>
+16/09/1762 : <span class="bleu">LEGRAND Charles Philippe</span> (Avesnes-les-Aubert) - <span class="bleu">DELATTRE Marie Angélique</span>, AD59 2E26-128, <strong>602014/50</strong><br/>
+26/02/1724 : <span class="bleu">LEGRAND Denis</span> (Cattenières) - <span class="bleu">BUGNICOURT Marie Michelle</span>, AD59 2E26-360, <strong>602012/53</strong><br/>
+20/09/1713 : <span class="bleu">LEGRAND Laurent</span> (Selvigny) - <span class="bleu">DELERE Jeanne Marie</span>, AD59 2E26-213, <strong>602014/51</strong><br/>
+24/10/1750 : <span class="bleu">LEGRAND Martin</span> (Avesnes-les-Aubert) - <span class="bleu">GERARD Jeanne</span>, AD59 2E26-86, <strong>602014/52</strong><br/>
+22/05/1683 : <span class="bleu">LEGRAND Pacquet</span> (Doignies) - <span class="bleu">MACQFLAN Marie Magdeleine</span>, AD59 2E26-172, <strong>602014/53</strong><br/>
+27/05/1699 : <span class="bleu">LEGROS Adrien</span> (Ramillies) - <span class="bleu">MAGNIEZ Marie</span>, AD59 2E26-208, <strong>602014/54</strong><br/>
+16/02/1677 : <span class="bleu">LEMAIRE Eloy</span> (Bévillers) - <span class="bleu">MICHEL Anne</span>, AD59 2E26-178, <strong>602014/55</strong><br/>
+10/11/1718 : <span class="bleu">LEMAIRE Gaspard</span> (Naves) - <span class="bleu">MEREAU Marie Françoise</span>, AD59 2E26-173, <strong>602014/56</strong><br/>
+08/04/1692 : <span class="bleu">LEMAIRE Jacques François</span> (Cambrai) - <span class="bleu">MAIRESSE Marie Anne</span>, AD59 2E26-19, <strong>602014/57</strong><br/>
+15/09/1642 : <span class="bleu">LEMAIRE Jean</span> (Fontaine-au-Pire) - <span class="bleu">VITOU Jeanne</span>, AD59 2E26-23, <strong>602014/58</strong><br/>
+13/05/1711 : <span class="bleu">LEMAIRE Jean</span> (Bantigny) - <span class="bleu">VAILLANT Marie Magdeleine</span>, AD59 2E26-348, <strong>602014/59</strong><br/>
+07/11/1739 : <span class="bleu">LEMAIRE Jean Baptiste</span> (Cagnoncles) - <span class="bleu">BEGHIN Louise</span>, AD59 2E26-382, <strong>602014/60</strong><br/>
+12/11/1705 : <span class="bleu">LEMAIRE Jean Michel</span> (Bévillers) - <span class="bleu">ROUSÉ Marie Anne</span>, AD59 2E26-155, <strong>602014/61</strong><br/>
+25/10/1714 : <span class="bleu">LEMAIRE Michel Louis</span> (Quiévy) - <span class="bleu">COIEZ Marie Anne</span>, AD59 2E26-214, <strong>602014/62</strong><br/>
+29/01/1707 : <span class="bleu">LEMAIRE Philippe</span> (Bévillers) - <span class="bleu">WATTEAU Marie Adrienne</span>, AD59 2E26-197, <strong>602012/54</strong><br/>
+27/02/1658 : <span class="bleu">LEMERRE Michel</span> (Beauvois-en-Cambrésis, vf NOIRMIN Barbe) - <span class="bleu">MICHEL Mary</span>, AD59 2E26-178, <strong>602014/64</strong><br/>
+24/05/1687 : <span class="bleu">LEMERRE Nicaise</span> (Fontaine-au-Pire) - <span class="bleu">de PIERRE Marie Jeanne</span>, AD59 2E26-178, <strong>602014/65</strong><br/>
+30/04/1733 : <span class="bleu">LEMOINE Jean Baptiste</span> (Cagnoncles) - <span class="bleu">LEFEBVRE Marie Josèphe</span>, AD59 2E26-145, <strong>602014/66</strong><br/>
+24/01/1699 : <span class="bleu">LEMOISNE Philippe</span> (Carnières) - <span class="bleu">de SAINT AUBERT Marie Josèphe</span>, AD59 2E26-208, <strong>602014/67</strong><br/>
+10/07/1704 : <span class="bleu">LEMPEREUR Estienne</span> (Inchy) - <span class="bleu">PELIN Catherine</span>, AD59 2E26-143, <strong>602014/68</strong><br/>
+23/06/1706 : <span class="bleu">LEMPEREUR Louis</span> (Viesly) - <span class="bleu">FRANCOIS Marie Michelle</span>, AD59 2E26-211, <strong>602014/69</strong><br/>
+01/04/1679 : <span class="bleu">LENGLET François</span> (Inchy) - <span class="bleu">RICHEZ Marguerite</span>, AD59 2E26-20, <strong>602014/70</strong><br/>
+23/11/1690 : <span class="bleu">LENGLET Joseph</span> (Montigny-en-Cambrésis) - <span class="bleu">HENNINO Marie</span>, AD59 2E26-20/138, <strong>602014/71</strong><br/>
+03/01/1668 : <span class="bleu">LENGLET Natas</span> (Paillencourt) - <span class="bleu">de BETRANCOURT Anne</span>, AD59 2E26-25, <strong>602014/72</strong><br/>
+07/04/1677 : <span class="bleu">LENGLET Philippe</span> (Inchy) - <span class="bleu">CAUCHY Jeanne</span>, AD59 2E26-20, <strong>602014/73</strong><br/>
+18/07/1692 : <span class="bleu">LENGRAND Jean</span> (Saint-Hilaire-lez-Cambrai) - <span class="bleu">COURTECUISSE Reine</span>, AD59 2E26-9, <strong>602014/74</strong><br/>
+26/01/1725 : <span class="bleu">LENGRAND Jean Philippe</span> (Quiévy (Herpignies)) - <span class="bleu">BASTIEN Anne Reine</span>, AD59 2E26-233, <strong>602014/75</strong><br/>
+26/06/1711 : <span class="bleu">LENGRAND Thomas</span> (Quiévy) - <span class="bleu">DAVOISNE Marie Josèphe</span>, AD59 2E26-409, <strong>602014/78</strong><br/>
+04/04/1718 : <span class="bleu">LENGRAND Thomas</span> (Quiévy) - <span class="bleu">BOITEAU Françoise</span>, AD59 2E26-215, <strong>602014/76</strong><br/>
+31/01/1739 : <span class="bleu">LENGRAND Thomas</span> (Saint-Hilaire-lez-Cambrai) - <span class="bleu">DELEPORTE Marie Elisabeth</span>, AD59 2E26-45, <strong>602014/77</strong><br/>
+31/03/1691 : <span class="bleu">LENOIRE Jean Philippe</span> (Mœuvres) - <span class="bleu">CARPENTIER Isabelle</span>, AD59 2E26-12, <strong>602014/79</strong><br/>
+01/02/1732 : <span class="bleu">LEPRESTE Antoine</span> (Ligny-en-Cambrésis) - <span class="bleu">TOFFLIN Catherine</span>, vente, AD59 3G842, <strong>602015/8</strong><br/>
+13/06/1713 : <span class="bleu">LEPRETRE Auguste</span> (Bévillers) - <span class="bleu">THIEULIEZ Marie Jeanne</span>, AD59 2E26-350, <strong>602015/9</strong><br/>
+08/08/1768 : <span class="bleu">LERICHE Géry</span> (Crèvecœur-sur-l'Escaut) - <span class="bleu">LABBEZ Jeanne Claire</span>, AD59 2E26-65, <strong>602014/80</strong><br/>
+25/04/1699 : <span class="bleu">LERICHE Philippe</span> (Rumilly-en-Cambrésis) - <span class="bleu">BEAUVOIS Adrienne</span>, AD59 2E26-152, <strong>602015/10</strong><br/>
+20/06/1701 : <span class="bleu">LESAGE Pierre Michel</span> (Graincourt) - <span class="bleu">de SAINT AUBERT Marie Françoise</span>, AD59 2E26-196, <strong>602015/11</strong><br/>
+20/10/1660 : <span class="bleu">LESAIGE Eloy</span> (Fontaine-au-Pire) - <span class="bleu">PENNIER Madeleine</span>, AD59 2E26-178, <strong>602015/12</strong><br/>
+02/04/1663 : <span class="bleu">LESAIGE Olivier</span> (Fontaine-au-Pire) - <span class="bleu">LEDUCQ Catherine</span>, AD59 2E26-178, <strong>602015/14</strong><br/>
+13/10/1691 : <span class="bleu">LESAIGE Olivier</span> (Fontaine-au-Pire) - <span class="bleu">ALVIN Marye Jeanne</span>, AD59 2E26-9, <strong>602015/13</strong><br/>
+16/05/1722 : <span class="bleu">LESNE Nicolas</span> (Esnes) - <span class="bleu">GALLEZ Reine</span>, AD59 2E26-219, <strong>602015/15</strong><br/>
+22/02/1724 : <span class="bleu">LESNES Valentin</span> (Abancourt) - <span class="bleu">COLLAU Jeanne Françoise</span>, AD59 2E26-432, <strong>602012/55</strong><br/>
+29/10/1706 : <span class="bleu">LESTIENNE Dominique</span> (Viesly) - <span class="bleu">MOREAU Michelle</span>, AD59 2E26-156, <strong>602015/16</strong><br/>
+29/10/1669 : <span class="bleu">LESVEQUE Nicolas</span> (Ligny-en-Cambrésis) - <span class="bleu">GRENET Reine</span>, AD59 2E26-010, <strong>602015/17</strong><br/>
+16/01/1720 : <span class="bleu">LHOMME Pierre François</span> (Estrun) - <span class="bleu">BODA Marie Jeanne</span>, AD59 2E26-358/436, <strong>602015/18</strong><br/>
+18/09/1686 : <span class="bleu">LIEVOU Joachim</span> (Cambrai) - <span class="bleu">MOREAU Marie Anne</span>, AD59 2E26-145, <strong>602015/19</strong><br/>
+21/06/1692 : <span class="bleu">LIEVRA Florent</span> - <span class="bleu">LOCTEMBERG Françoise Thérèse</span>, Collection DELLOYE L186-F217, <strong>602015/20</strong><br/>
+30/04/1656 : <span class="bleu">LOCQUET Thomas</span> (Cantaing-sur-Escaut) - <span class="bleu">MILLY Martine</span>, AD59 2E26-15, <strong>602015/21</strong><br/>
+15/01/1689 : <span class="bleu">LORIAU Jean</span> (Saint-Hilaire-lez-Cambrai) - <span class="bleu">LE DIEU Jeanne</span>, AD59 2E26-14, <strong>602015/22</strong><br/>
+14/06/1692 : <span class="bleu">LORIAU Quentin</span> (Saint-Hilaire-lez-Cambrai) - <span class="bleu">MARGERIN Marie</span>, AD59 2E26-14, <strong>602015/23</strong><br/>
+17/07/1753 : <span class="bleu">LORRIAUX Nicolas</span> (Saint-Hilaire-lez-Cambrai, vf MAIRESSE Elisabeth) - <span class="bleu">LEDIEU Catherine</span>, AD59 2E26-103, <strong>602015/24</strong><br/>
+24/01/1690 : <span class="bleu">LOUVET Aubert</span> (Bertry) - <span class="bleu">LEFEBVRE Mary</span>, AD59 2E26-25, <strong>602015/25</strong><br/>
+10/02/1746 : <span class="bleu">LOUVET Damas</span> (Bertry) - <span class="bleu">GANE Marie Jeanne</span>, <strong>602015/26</strong><br/>
+31/03/1711 : <span class="bleu">LOUVET Druon</span> (Bertry) - <span class="bleu">PRUVOST Marie Barbe</span>, AD59 2E26-228, <strong>602015/27</strong><br/>
+28/10/1718 : <span class="bleu">LOUVET Jean Clément</span> (Bertry) - <span class="bleu">PRUVOST Anne Josèphe</span>, AD59 2E26-231, <strong>602015/28</strong><br/>
+03/05/1754 : <span class="bleu">LOUVET Jean Noël</span> (Bertry) - <span class="bleu">DELEHAYE Marie Anne Joseph</span>, AD59 2E26-253, <strong>602015/29</strong><br/>
+29/08/1737 : <span class="bleu">LOUVET Joseph Ferdinand</span> (Bertry) - <span class="bleu">MAILLY Marie Thérèse</span>, AD59 2E26-240, <strong>602015/30</strong><br/>
+23/02/1688 : <span class="bleu">LOUVET Simon</span> (Bertry ?) - <span class="bleu">ROUSSEAU Jeanne</span>, AD59 2E26-17, <strong>602015/31</strong><br/>
+22/06/1627 : <span class="bleu">LUCAS Chrétien</span> - <span class="bleu">LE CARLIER Elisabeth</span>, AD59 32427-pages 342 à 347, <strong>602015/32</strong><br/>
+20/11/1699 : <span class="bleu">LUCQUET Jean</span> (Maretz) - <span class="bleu">MALEZIEU Marie Anne</span>, AD59 2E26-533, <strong>602015/33</strong><br/>
+04/03/1713 : <span class="bleu">LUCQUET Jean</span> (Maretz) - <span class="bleu">DRUON Marie Elisabeth</span>, AD59 2E26-229</p>
+<p>05/06/1711 : <span class="bleu">MACHU Jacques</span> (Boussières-en-Cambrésis, vf MAIRESSE Michelle) - <span class="bleu">LECARDE Paquette</span>, AD59 2E26-409, <strong>602015/34</strong><br/>
+24/06/1687 : <span class="bleu">MACHU Nicolas</span> (Bévillers) - <span class="bleu">BRICOULT Suzanne</span>, AD59 2E26-178, <strong>602015/35</strong><br/>
+06/07/1667 : <span class="bleu">MACHU Philippe</span> (Bévillers) - <span class="bleu">LESAIGE Marie Barbe</span>, AD59 2E26-178, <strong>602015/36</strong><br/>
+29/03/1692 : <span class="bleu">MACHUT Jacques</span> (Quiévy, vf LANSEAU Marie Catherine) - <span class="bleu">PREUX Marie Louise</span>, AD59 2E26-14, <strong>602015/37</strong><br/>
+20/01/1691 : <span class="bleu">MAFILLE Ghislain</span> (Cambrai) - <span class="bleu">CRANLEUX Catherine</span>, AD59 2E26-141, <strong>602015/38</strong><br/>
+26/04/1690 : <span class="bleu">MAFILLE Guillaume</span> (Crèvecœur-sur-l'Escaut) - <span class="bleu">de HOVE Gilette</span>, AD59 2E26-22, <strong>602015/39</strong><br/>
+26/04/1687 : <span class="bleu">MAFILLE Jean</span> (Rumilly-en-Cambrésis) - <span class="bleu">LE ROUGE Marie</span>, AD59 2E26-346, <strong>602015/40</strong><br/>
+20/07/1697 : <span class="bleu">MAFILLE Léonard</span> (Rumilly-en-Cambrésis, vf LEGROS Marie Jeanne) - <span class="bleu">DEMIZE Françoise</span>, AD59 2E26-195/22/33, <strong>602015/41</strong><br/>
+30/08/1683 : <span class="bleu">MAILLIOT Jean Baptiste</span> (Masnières) - <span class="bleu">HARDUIN Elisabeth</span>, AD59 2E26-403, <strong>602015/42</strong><br/>
+17/05/1732 : <span class="bleu">MAILLOT Jean</span> (Naves) - <span class="bleu">LEMAIRE Martine</span>, AD59 2E26-445, <strong>602015/43</strong><br/>
+08/06/1737 : <span class="bleu">MAILLY Antoine François</span> (Bertry) - <span class="bleu">CRINON Marie Anne</span>, AD59 2E26-240, <strong>602015/45</strong><br/>
+25/07/1689 : <span class="bleu">MAILLY François</span> (Élincourt) - <span class="bleu">FLAVIGNY Marie</span>, AD59 2E26-96, <strong>602015/46</strong><br/>
+17/01/1699 : <span class="bleu">MAILLY Jean</span> (Bertry) - <span class="bleu">COTTEAU Marie Anne</span>, AD59 2E26-148, <strong>602015/47</strong><br/>
+27/07/1642 : <span class="bleu">MAINNECART Antoine</span> (vf ROBACHE) - <span class="bleu">MOREAU Marie</span>, AD59 2E26-23<br/>
+16/04/1731 : <span class="bleu">MAIRESSE Etienne</span> (Boussières-en-Cambrésis, vf THIEULET Antoinette) - <span class="bleu">CATTELAIN Marie Magdeleine</span>, AD59 2E26-363, <strong>602015/48</strong><br/>
+17/01/1742 : <span class="bleu">MAIRESSE François joseph</span> (Saint-Hilaire-lez-Cambrai) - <span class="bleu">ROBACHE Marie Madeleine</span>, AD59 2E26-46, <strong>602015/49</strong><br/>
+29/12/1699 : <span class="bleu">MAIRESSE Gaspard</span> (Saint-Hilaire-lez-Cambrai) - <span class="bleu">GLAYE Jeanne</span>, AD59 2E26-152, <strong>602015/51</strong><br/>
+29/10/1705 : <span class="bleu">MAIRESSE Gaspard</span> (Saint-Hilaire-lez-Cambrai, vf LEGLAYE Jeanne) - <span class="bleu">MAIRESSE Catherine</span>, AD59 2E26-424, <strong>602015/50</strong><br/>
+25/06/1691 : <span class="bleu">MAIRESSE George</span> (Bévillers) - <span class="bleu">BOUCHER Marie Françoise</span>, AD59 2E26-191, <strong>602015/52</strong><br/>
+02/01/1708 : <span class="bleu">MAIRESSE Jacques</span> (Saint-Hilaire-lez-Cambrai, vf REBBA Michelle) - <span class="bleu">DEFAUX Marie Catherine</span>, AD62 J1301-22, <strong>602015/53</strong><br/>
+29/09/1642 : <span class="bleu">MAIRESSE Jaspar</span> (Troisvilles) - <span class="bleu">de VAU Anne</span>, AD59 2E26-23, <strong>602015/54</strong><br/>
+09/02/1700 : <span class="bleu">MAIRESSE Martin</span> (Saint-Aubert) - <span class="bleu">GERNEZ Anne</span>, partage de terres, <strong>602015/55</strong><br/>
+02/01/1719 : <span class="bleu">MAIRESSE Simon</span> (Saint-Hilaire-lez-Cambrai) - <span class="bleu">MAIRESSE Marie Magdeleine</span>, AD59 2E26-173, <strong>602015/56</strong><br/>
+22/02/1689 : <span class="bleu">MAISON Abraham</span> (Wambaix) - <span class="bleu">BRICOUT Jeanne</span>, AD59 2E26-29, <strong>602015/57</strong><br/>
+02/01/1677 : <span class="bleu">MAISON François</span> (Saint-Aubert) - <span class="bleu">MASCAU Jeanne</span>, AD59 2E26-22, <strong>602015/58</strong><br/>
+09/11/1669 : <span class="bleu">MAISON Jean</span> (Cauroir) - <span class="bleu">BRICOUT Marie</span>, AD59 2E26-22, <strong>602015/59</strong><br/>
+00/00/1678 : <span class="bleu">MANNESIEZ André</span> (Selvigny) - <span class="bleu">GUILLE Marie</span>, AD59 2E26-176, <strong>602015/60</strong><br/>
+17/01/1739 : <span class="bleu">MARCAILLE Jacques Henri</span> (Saint-Aubert) - <span class="bleu">CACHEUX Marie Jeanne</span>, AD59 2E26-45, <strong>602015/61</strong><br/>
+19/05/1736 : <span class="bleu">MARCAILLE Jean</span> (Saint-Aubert) - <span class="bleu">LEBECQ Marie Catherine</span>, AD59 2E26-43, <strong>602015/62</strong><br/>
+30/07/1753 : <span class="bleu">MARCHAND Charles</span> (Villers-Outréaux) - <span class="bleu">DESSENNE Anne</span>, AD59 2E26-252, <strong>602015/63</strong><br/>
+26/06/1717 : <span class="bleu">MARESCAILLE Jean Baptiste</span> (Saint-Aubert) - <span class="bleu">MAIZON Antoinette</span>, AD59 2E26-354/434, <strong>602015/64</strong><br/>
+12/11/1707 : <span class="bleu">MARETZ Antoine</span> (Maing) - <span class="bleu">BARBET Marie</span>, AD62 J678-21, <strong>602015/65</strong><br/>
+31/10/1712 : <span class="bleu">MARGERIN Pierre</span> (Saint-Hilaire-lez-Cambrai) - <span class="bleu">CARREZ Marie</span>, AD59 2E26-409, <strong>602015/66</strong><br/>
+09/12/1677 : <span class="bleu">MARLIER François</span> (Bertry) - <span class="bleu">HUTTIN Jeanne</span>, AD59 2E26-25, <strong>602015/67</strong><br/>
+29/12/1690 : <span class="bleu">MARLIERE Adrien</span> (Thun-Saint-Martin) - <span class="bleu">LEQUIEN Jeanne</span>, AD59 2E26-17, <strong>602015/68</strong><br/>
+29/04/1724 : <span class="bleu">MARLIERE Jacques</span> (Iwuy) - <span class="bleu">LECERCQ Jeanne Hélène</span>, AD59 2E26-219, <strong>602015/69</strong><br/>
+09/05/1749 : <span class="bleu">MARLIERE Thomas</span> (Bertry, vf LEFEBVRE Marie Anne et de DELHAYE Marie Michelle) - <span class="bleu">MARLIERE Marie Marguerite</span>, <strong>602015/70</strong><br/>
+04/06/1677 : <span class="bleu">MARONNIEZ Robert</span> (Troisvilles) - <span class="bleu">VALLEZ Antoinette</span>, AD59 2E26-20, <strong>602015/71</strong><br/>
+07/11/1691 : <span class="bleu">MARTIN Augustin</span> (Walincourt) - <span class="bleu">DELEBARRE Marguerite</span>, AD59 2E26-18, <strong>602016/2</strong><br/>
+05/11/1677 : <span class="bleu">MARTIN Ferdinand</span> (Troisvilles) - <span class="bleu">OBLIN Jeanne</span>, AD59 2E26-20, <strong>602016/3</strong><br/>
+17/10/1682 : <span class="bleu">MARTIN Guillaume</span> (Walincourt), succession, <strong>602016/4</strong><br/>
+08/05/1687 : <span class="bleu">MARTIN Jacques</span> (Walincourt) - <span class="bleu">TOFLIN Jeanne</span>, AD59 2E26-178, <strong>602016/6</strong><br/>
+01/11/1704 : <span class="bleu">MARTIN Jacques</span> (Walincourt) - <span class="bleu">LAMENDIN Marie Jeanne</span>, AD59 2E26-227, <strong>602016/5</strong><br/>
+21/11/1713 : <span class="bleu">MARTIN Jacques</span> (Walincourt) - <span class="bleu">PARENT Anne Thérèse</span>, AD59 2E26-229, <strong>602016/7</strong><br/>
+01/02/1731 : <span class="bleu">MARTIN Jean Baptiste</span> (Walincourt) - <span class="bleu">MARTIN Anne Catherine</span>, AD59 2E26-236, <strong>602016/8</strong><br/>
+24/10/1678 : <span class="bleu">MARTIN Philippe</span> (Walincourt), partage de terres, <strong>602016/9</strong><br/>
+08/02/1706 : <span class="bleu">MARTIN Pierre</span> (Walincourt) - <span class="bleu">PROYE Catherine</span>, AD59 2E26-227, <strong>602016/10</strong><br/>
+24/01/1701 : <span class="bleu">MARTIN Place</span> (Villers-en-Cauchies) - <span class="bleu">RAMETTE Catherine</span>, dispense de consanguinité, AD59 5G453-pages 352 à 354, <strong>602016/11</strong><br/>
+13/12/1684 : <span class="bleu">MARTIN Sébastien</span> (Walincourt), partage de terres, <strong>602016/12</strong><br/>
+14/01/1677 : <span class="bleu">MASCAU Balthazar</span> (Saint-Aubert) - <span class="bleu">DANJOU Antoinette</span>, AD59 2E26-22, <strong>602016/13</strong><br/>
+27/04/1709 : <span class="bleu">MASCAU Jean Henri</span> (Saint-Aubert) - <span class="bleu">BECART Marie Marthe</span>, AD59 2E26-144, <strong>602016/14</strong><br/>
+09/01/1713 : <span class="bleu">MASCAU Thomas</span> (Saint-Aubert) - <span class="bleu">DUWEZ Marie</span>, AD59 2E26-409, <strong>602016/15</strong><br/>
+15/10/1713 : <span class="bleu">MASCAULT Charles</span> (Saint-Aubert) - <span class="bleu">LACHERON Marie Jeanne</span>, AD59 2E26-229, <strong>602016/16</strong><br/>
+30/04/1681 : <span class="bleu">MASCRET Jacques Antoine</span> (Troisvilles) - <span class="bleu">OBLIN Antoinette</span>, AD59 2E26-25, <strong>602016/17</strong><br/>
+13/01/1755 : <span class="bleu">MASCRET Pierre Joseph</span> (Clary) - <span class="bleu">GUISNET Marie Catherine</span>, AD59 2E26-253, <strong>602016/18</strong><br/>
+09/10/1684 : <span class="bleu">MASCRET Robert</span> (Troisvilles) - <span class="bleu">OBLIN Marie</span>, testament, <strong>602016/20</strong><br/>
+31/01/1691 : <span class="bleu">MASCRET Robert</span> (Troisvilles) - <span class="bleu">CAUCHY Catherine</span>, donation à sa petite-fille, <strong>602016/19</strong><br/>
+21/01/1639 : <span class="bleu">MASSEZ Jérôme</span> (Clary) - <span class="bleu">de BAYE Barbe</span>, AD59 32427-pages 437 à 440, <strong>602016/21</strong><br/>
+07/05/1754 : <span class="bleu">MATHIEU Antoine</span> (Prémont) - <span class="bleu">CRINON Marie Jeanne</span>, AD59 2E26-253, <strong>602016/22</strong><br/>
+19/01/1688 : <span class="bleu">MEGUEULLE Jean</span> (Cambrai) - <span class="bleu">MOUREAU Anne Christine</span>, AD59 2E26-346, <strong>602016/23</strong><br/>
+27/07/1642 : <span class="bleu">MENNECART Antoine</span> (Fontaine-au-Pire) - <span class="bleu">MOREAU Marie</span>, AD59 2E26-23, <strong>602015/72</strong><br/>
+01/01/1650 : <span class="bleu">MEREAU François</span> (Naves) - <span class="bleu">LENNE Marie</span>, AD62 J549-6, <strong>602016/24</strong><br/>
+31/05/1641 : <span class="bleu">MEREAU Jean</span>, donation, <strong>602016/26</strong><br/>
+07/03/1681 : <span class="bleu">MEREAU Jean</span> (Saulzoir) - <span class="bleu">LE HUE Marguerite</span>, AD59 2E26-25, <strong>602016/25</strong><br/>
+02/05/1724 : <span class="bleu">MEREAU Jean Philippe</span> (Iwuy) - <span class="bleu">MAIRESSE Marie Jeanne</span>, AD59 2E26-219, <strong>602016/27</strong><br/>
+24/01/1743 : <span class="bleu">MEREAU Martin</span> (Rieux-en-Cambrésis) - <span class="bleu">HOURIEZ Marie Marguerite</span>, AD59 2E26-385, <strong>602016/28</strong><br/>
+17/01/1727 : <span class="bleu">MEREAU Nicolas</span> - <span class="bleu">MEREAU Noël</span>, donation à son fils, AD59 3G-994, <strong>602016/29</strong><br/>
+20/09/1750 : <span class="bleu">MERIAUX Jean Philippe</span> (Naves) - <span class="bleu">DESSAINT Marie Barbe</span>, AD59 2E26-55, <strong>602016/31</strong><br/>
+23/01/1751 : <span class="bleu">MERIAUX Jean Philippe</span> (Naves) - <span class="bleu">CATTIAU Marie Angélique</span>, AD59 2E26-48, <strong>602016/30</strong><br/>
+17/11/1728 : <span class="bleu">MERIAUX Michel</span> (Naves) - <span class="bleu">HEGO Noëlle</span>, AD59 2E26-363, <strong>602016/32</strong><br/>
+05/01/1674 : <span class="bleu">MERLIN Charles</span> (Cambrai) - <span class="bleu">DECAUDIN Marie</span>, AD59 2E26-138, <strong>602016/33</strong><br/>
+12/01/1678 : <span class="bleu">MICHAU Claude</span> (Cambrai) - <span class="bleu">MAFILLE Marie Anne</span>, AD59 2E26-177, <strong>602016/34</strong><br/>
+02/02/1689 : <span class="bleu">MILLET Jacques</span> (Saint-Souplet) - <span class="bleu">BAILLON Marie</span>, AD59 2E26-138, <strong>602016/35</strong><br/>
+25/03/1686 : <span class="bleu">MILLET Jean</span>, testament, AD59 2E26-24, <strong>602016/36</strong><br/>
+27/01/1691 : <span class="bleu">MILLIOT Jean</span> (Ramillies) - <span class="bleu">TIESSON Marie Jeanne</span>, AD59 2E26-28, <strong>602016/37</strong><br/>
+17/05/1732 : <span class="bleu">MILLO Jean Marc</span> (Ramillies) - <span class="bleu">HERLAIN Jeanne Marguerite</span>, AD59 2E26-369/445, <strong>602016/38</strong><br/>
+29/11/1713 : <span class="bleu">MILLOT Claude</span> (Maretz) - <span class="bleu">LUCQUET Marie Françoise</span>, AD59 2E26-229, <strong>602016/39</strong><br/>
+26/06/1683 : <span class="bleu">MILLOT Toussaint</span> (Clary), partage de terres, <strong>602016/40</strong><br/>
+09/11/1691 : <span class="bleu">MIROU Claude</span> (Cauroir) - <span class="bleu">MAZON Marie Jeanne</span>, AD59 2E26-31, <strong>602016/41</strong><br/>
+26/06/1736 : <span class="bleu">MOLLET André</span> (Awoingt) - <span class="bleu">LANGLET Marie Jeanne Thérèse</span>, AD59 2E26-43, <strong>602016/42</strong><br/>
+27/09/1721 : <span class="bleu">MOLLET Jacques Philippe</span> (Cambrai) - <span class="bleu">DUEES Jeanne</span>, AD59 2E26-358, <strong>602016/43</strong><br/>
+20/03/1693 : <span class="bleu">MONALDI François</span> (Cambrai) - <span class="bleu">COUVARUVIAS Marie Caroline Josèphe Thérèse</span>, Collection DELLOYE L186-F166, <strong>602016/44</strong><br/>
+15/10/1712 : <span class="bleu">MONIER Joseph</span> (Avesnes-les-Aubert) - <span class="bleu">DUBOIS Marie Jeanne</span>, AD59 2E26-409, <strong>602016/45</strong><br/>
+26/01/1732 : <span class="bleu">MONIEZ Marcy ?</span> - <span class="bleu">LEMAIRE Marie Jeanne</span>, AD59 2E26-445<br/>
+15/09/1743 : <span class="bleu">MONTIGNIES Jacques Joseph</span> (Rieux-en-Cambrésis) - <span class="bleu">DURCHON Anne Joseph</span>, AD62 J1301-115, <strong>602016/46</strong><br/>
+10/12/1680 : <span class="bleu">MONTIGNY Charles</span> (Cambrai) - <span class="bleu">MOREAU Anne</span>, AD59 2E26-139, <strong>602016/47</strong><br/>
+19/11/1683 : <span class="bleu">MONTIGNY Jean</span> (Cambrai) - <span class="bleu">DUJONCQUOY Brigitte</span>, AD59 2E26-139, <strong>602016/49</strong><br/>
+08/08/1687 : <span class="bleu">MONTIGNY Jean</span> (Cambrai) - <span class="bleu">CLARO Marie Jeanne</span>, testament, AD59 2E26-25, <strong>602016/48</strong><br/>
+26/10/1714 : <span class="bleu">MORCHAIN Jean</span> (Esnes) - <span class="bleu">GAILLIART Marie Jeanne</span>, AD59 2E26-198, <strong>602016/50</strong><br/>
+03/01/1722 : <span class="bleu">MORCRETTE Michel</span> (Serain) - <span class="bleu">BOULLEAU Anne</span>, AD59 2E26-232, <strong>602016/51</strong><br/>
+08/08/1713 : <span class="bleu">MOREAU Alexandre</span> (Saint-Hilaire-lez-Cambrai) - <span class="bleu">HERLEM Florence</span>, AD59 2E26-173, <strong>602016/52</strong><br/>
+10/02/1678 : <span class="bleu">MOREAU Antoine</span> - <span class="bleu">BRUYERE Jean François</span>, AD59 2E26-145, <strong>602016/54</strong><br/>
+07/07/1679 : <span class="bleu">MOREAU Antoine</span> (Cambrai) - <span class="bleu">DESNELLES Jean</span>, vente, AD59 2E26-145, <strong>602016/53</strong><br/>
+11/12/1681 : <span class="bleu">MOREAU Antoine</span> (Cambrai) - <span class="bleu">MOREAU Marie</span>, donation, AD59 2E26-139, <strong>602016/55</strong><br/>
+20/05/1717 : <span class="bleu">MOREAU Antoine</span> (Cambrai) - <span class="bleu">MONTIGNY Jeanne Catherine</span>, AD62 J1429-1/21, <strong>602016/56</strong><br/>
+01/06/1677 : <span class="bleu">MOREAU Eloi</span> (Quiévy, vf LELLER Marguerite) - <span class="bleu">MONTAY Michelle</span>, AD59 2E26-20, <strong>602016/57</strong><br/>
+31/01/1692 : <span class="bleu">MOREAU François</span> (Masnières, vf BOUTTEMY Marie Joseph) - <span class="bleu">CHARLET Marie Jeanne</span>, AD59 2E26-403, <strong>602016/58</strong><br/>
+11/04/1733 : <span class="bleu">MOREAU Gaspard</span> (Rieux-en-Cambrésis) - <span class="bleu">GARDE Marie Jeanne</span>, <strong>602016/59</strong><br/>
+14/07/1677 : <span class="bleu">MOREAU Géry</span> (Cambrai) - <span class="bleu">HUBLED Catherine</span>, AD59 2E26-332, <strong>602016/60</strong><br/>
+23/05/1683 : <span class="bleu">MOREAU Hilaire</span> (Saint-Hilaire-lez-Cambrai) - <span class="bleu">SORREAU Barbe</span>, AD59 2E26-24, <strong>602016/61</strong><br/>
+28/02/1724 : <span class="bleu">MOREAU Hubert</span> (Cambrai, vf MAZIAU Marianne) - <span class="bleu">MOREAU Marie Catherine</span>, donation, <strong>602016/62</strong><br/>
+06/07/1699 : <span class="bleu">MOREAU Jacques</span> (Cambrai) - <span class="bleu">FATOUX Marie Barbe</span>, AD59 2E26-147, <strong>602016/63</strong><br/>
+07/06/1704 : <span class="bleu">MOREAU Jacques</span> (Ramillies) - <span class="bleu">VALLET Marie Anne</span>, AD59 2E26-154, <strong>602016/65</strong><br/>
+28/03/1741 : <span class="bleu">MOREAU Jacques</span> (Fontaine-Notre-Dame) - <span class="bleu">FOVEAU Reine</span>, donation, AD59 2E26-550, <strong>602016/64</strong><br/>
+12/05/1653 : <span class="bleu">MOREAU Jean</span> (Cambrai) - <span class="bleu">PEZIN Marie</span>, <strong>602016/66</strong><br/>
+12/03/1674 : <span class="bleu">MOREAU Jean</span> (Cagnoncles) - <span class="bleu">THIESSON Nicolas Aubert</span>, partage de terres, AD59 2E26-22, <strong>602016/70</strong><br/>
+28/03/1674 : <span class="bleu">MOREAU Jean</span> (Ramillies) - <span class="bleu">GUELLET Françoise</span>, AD59 2E26-25, <strong>602016/69</strong><br/>
+20/11/1684 : <span class="bleu">MOREAU Jean</span> (Cambrai) - <span class="bleu">CLARO Huberte</span>, AD59 2E26-139, <strong>602016/68</strong><br/>
+19/04/1692 : <span class="bleu">MOREAU Jean</span> (Ramillies, vf GUELLET Françoise) - <span class="bleu">BERNARD Marie Jeanne</span>, AD59 2E26-28, <strong>602016/67</strong><br/>
+25/06/1668 : <span class="bleu">MOREAU Laurent</span> (Masnières) - <span class="bleu">LESAIGE Marthe</span>, AD59 2E26-29, <strong>602016/72</strong><br/>
+06/04/1691 : <span class="bleu">MOREAU Laurent</span> (Cambrai) - <span class="bleu">DUBOIS Marie</span>, AD59 2E26-25, <strong>602016/71</strong><br/>
+03/07/1657 : <span class="bleu">MOREAU Marie</span> (Cambrai), vente, AD59 2E26-26, <strong>602016/73</strong><br/>
+12/02/1678 : <span class="bleu">MOREAU Michel</span>, bail, AD59 2E26-25<br/>
+23/06/1689 : <span class="bleu">MOREAU Michel</span> (Masnières) - <span class="bleu">CARRE Marie Barbe</span>, AD59 2E26-403, <strong>602016/76</strong><br/>
+13/03/1725 : <span class="bleu">MOREAU Michel</span> (Beauvois-en-Cambrésis) - <span class="bleu">MOREAU Jacques</span>, accord, <strong>602016/74</strong><br/>
+11/03/1738 : <span class="bleu">MOREAU Michel</span> (Cambrai) - <span class="bleu">BARALLE Melchior</span>, AD59 2E26-40, <strong>602016/75</strong><br/>
+23/11/1673 : <span class="bleu">MOREAU Nicolas</span> (Saint-Aubert) - <span class="bleu">LECLERC Jeanne</span>, AD59 2E26-22, <strong>602016/77</strong><br/>
+06/11/1677 : <span class="bleu">MOREAU Nicolas le jeune</span> (Saint-Aubert, vf LECLERC Marie Jeanne) - <span class="bleu">MARQUAY Marie</span>, AD59 2E26-22, <strong>602016/78</strong><br/>
+18/06/1668 : <span class="bleu">MOREAU Quentin</span> (Masnières) - <span class="bleu">FICHEU Marie</span>, AD59 2E26-13, <strong>602016/79</strong><br/>
+01/02/1740 : <span class="bleu">MOREAU Toussaint</span> (Bourlon), testament, AD62 J1429-3, <strong>602016/80</strong><br/>
+17/01/1719 : <span class="bleu">MOREL Michel</span> (Séranvillers) - <span class="bleu">LEFEBVRE Marie Catherine</span>, AD59 2E26-356, <strong>602016/81</strong><br/>
+25/05/1746 : <span class="bleu">MORIAU André</span> (Bertry) - <span class="bleu">HUTIN Marie Anne Joseph</span>, <strong>602016/82</strong><br/>
+25/02/1677 : <span class="bleu">MORQUERETTE Antoine</span> (Maretz) - <span class="bleu">LE BLONDE Mary</span>, AD59 2E26-95, <strong>602016/83</strong><br/>
+20/07/1646 : <span class="bleu">MORTECRETTE François</span> (Cambrai) - <span class="bleu">GOUVE Jacqueline</span>, AD59 2E26-26, <strong>602016/84</strong><br/>
+31/01/1690 : <span class="bleu">MORTECRETTE Gilles</span> (Troisvilles) - <span class="bleu">CAUCHY Catherine</span>, AD59 2E26-20, <strong>602016/85</strong><br/>
+15/02/1656 : <span class="bleu">MORTECRETTE Jacques</span> (Marquion) - <span class="bleu">SELLER Jeanne</span>, AD59 2E26-97, <strong>602016/87</strong><br/>
+04/02/1688 : <span class="bleu">MORTECRETTE Jacques</span> (Maretz) - <span class="bleu">DRON Pasquette</span>, AD59 2E26-17, <strong>602016/86</strong><br/>
+07/04/1706 : <span class="bleu">MORTECRETTE Mathieu</span> (Maretz) - <span class="bleu">DELEMERE Marie Agnès</span>, AD59 2E26-227, <strong>602016/88</strong><br/>
+27/01/1718 : <span class="bleu">MUGUET Michel</span> (Escaudœuvres) - <span class="bleu">LEMAY Marie Bonne</span>, AD59 2E26-215, <strong>602016/89</strong></p>
+<p>22/04/1653 : <span class="bleu">NAZET Daniel</span> (Rumilly-en-Cambrésis, vf LERICHE Marie) - <span class="bleu">PRUVOST Marie</span>, AD59 2E26-137, <strong>602016/90</strong><br/>
+04/10/1692 : <span class="bleu">NOBLECOURT Jean</span> (Crèvecœur-sur-l'Escaut) - <span class="bleu">MAFILLE Marie Anne</span>, AD59 2E26-195, <strong>602016/91</strong><br/>
+14/10/1690 : <span class="bleu">NOIRMAIN Jean Claude</span> (Béthencourt) - <span class="bleu">GAILLOT Jeanne</span>, AD59 2E26-25, <strong>602016/92</strong><br/>
+08/04/1733 : <span class="bleu">NOIRMIN Nicolas</span> (Avesnes-les-Aubert) - <span class="bleu">CACHEUX Christine</span>, AD59 2E26-41, <strong>602016/93</strong><br/>
+10/05/1669 : <span class="bleu">NORMAND Jean</span> (Rumilly-en-Cambrésis) - <span class="bleu">LERICHE Anne</span>, AD59 2E26-23, <strong>602016/94</strong></p>
+<p>13/12/1680 : <span class="bleu">OBLIN Augustin</span> (Troisvilles) - <span class="bleu">CAUCHY Marguerite</span>, AD59 2E26-138, <strong>602016/95</strong><br/>
+17/10/1683 : <span class="bleu">OBLIN Géry</span> (Troisvilles) - <span class="bleu">CAUCHY Catherine</span>, AD59 2E26-20, <strong>602016/96</strong><br/>
+18/01/1685 : <span class="bleu">OBLIN Jean</span> (Troisvilles) - <span class="bleu">DELEHAYE Michelle</span>, partage de terres, AD59 2E26-27, <strong>602016/97</strong><br/>
+25/11/1690 : <span class="bleu">OBLIN Jean</span> (Troisvilles) - <span class="bleu">CAUWET Maxellende</span>, AD59 2E26-20, <strong>602016/98</strong><br/>
+31/01/1692 : <span class="bleu">OBLIN Philippe</span> (Troisvilles) - <span class="bleu">CAUCHIE Catherine</span>, AD59 2E26-17, <strong>602016/100</strong><br/>
+18/03/1702 : <span class="bleu">OBLIN Philippe</span> (Beauvois-en-Cambrésis) - <span class="bleu">LESAGE Madeleine</span>, AD59 2E26-424, <strong>602016/99</strong><br/>
+27/12/1686 : <span class="bleu">OUDART Philippe</span> (Cambrai) - <span class="bleu">GRENEZ Catherine Françoise</span>, AD59 2E26-332, <strong>602016/101</strong></p>
+<p>02/05/1692 : <span class="bleu">PAGNIEZ Martin</span> (Mœuvres, vf MONTIGNIE Antoinette) - <span class="bleu">d'ERCOURT Maxellende</span>, AD59 2E26-12<br/>
+20/06/1704 : <span class="bleu">PAMART Théodore</span> (vf DENCOIGNE Barbe) - <span class="bleu">LEMAIRE Catherine</span>, AD59 2E26-210<br/>
+03/02/1691 : <span class="bleu">PARENT Martin</span> (Maing) - <span class="bleu">de GUIRY Marie Marguerite</span>, J678 8 - Valenciennes<br/>
+08/01/1726 : <span class="bleu">PARENT Martin</span> (Maing) - <span class="bleu">DECAUX Sainte</span>, J549 45 - Valenciennes<br/>
+27/10/1691 : <span class="bleu">PARENT Pierre-Quentin</span> (Clary) - <span class="bleu">MILLOT Marguerite</span>, AD59 2E26-96<br/>
+02/02/1641 : <span class="bleu">PARINGAULT Christiane</span> (vve GIFFART Jean), testament<br/>
+28/05/1701 : <span class="bleu">PARIS Pierre</span> (Rieux-en-Cambrésis) - <span class="bleu">LAMAND Marie</span>, AD59 2E26-153-424<br/>
+12/01/1650 : <span class="bleu">PAUL Pasquier</span> (Clary) - <span class="bleu">JERARD Françoise</span>, AD59 2E26-178<br/>
+16/04/1722 : <span class="bleu">PAYEN Nicolas</span> (Cauroir, vf BODA Marie Magdeleine) - <span class="bleu">VITOU Marie</span>, AD59 2E26-358<br/>
+03/01/1688 : <span class="bleu">PELLET Jean François</span> (Blécourt) - <span class="bleu">BOUBAY Jeanne</span>, AD59 2E26-31<br/>
+08/02/1631 : <span class="bleu">PENIER Noël</span> (Fontaine-au-Pire) - <span class="bleu">DUSSART Marie</span>, AD59 2E26-536<br/>
+24/01/1755 : <span class="bleu">PERONNE Dominique</span> (Élincourt) - <span class="bleu">CRINON Magdeleine</span>, AD59 2E26-253<br/>
+27/01/1691 : <span class="bleu">PETIT Jean Pierre</span> (Ribécourt-la-Tour) - <span class="bleu">DEVAUX Barbe</span>, AD59 2E26-12<br/>
+02/05/1648 : <span class="bleu">PEZIN Claude</span> (Fontaine-au-Pire) - <span class="bleu">BITELEUX Marguerite</span>, AD59 2E26-178<br/>
+14/06/1654 : <span class="bleu">PEZIN Nicolas</span> (Cambrai) - <span class="bleu">TAISNE Michelle</span>, AD59 2E26-137<br/>
+03/11/1737 : <span class="bleu">PIERRAR Jean</span> (Bertry) - <span class="bleu">BROU Marie Antoinette</span>, AD59 2E26-240<br/>
+28/05/1713 : <span class="bleu">PIERRARD Jean</span> (Bertry) - <span class="bleu">PRUVOST Adrienne</span>, AD59 2E26-229<br/>
+10/06/1713 : <span class="bleu">PIETTE Philippe</span> (Saint-Aubert) - <span class="bleu">LESAGE Jeanne</span>, AD59 2E26-409<br/>
+03/02/1724 : <span class="bleu">PIGOU Jean Jacques</span> (Audencourt) - <span class="bleu">d'ANJOU Marie Anne</span>, AD59 2E26-233<br/>
+04/12/1643 : <span class="bleu">PILLOIS Marie</span> (Fontaine-au-Pire, épouse FAVRE), testament, AD59 2E26-23<br/>
+28/06/1674 : <span class="bleu">PINGRET Charles</span> (Cambrai, vf GUILLEBAUT Barbe) - <span class="bleu">MEGUEULLE Marie Josephe</span>, AD59 2E26-138<br/>
+14/06/1674 : <span class="bleu">PINGRET Philippe</span> (Cambrai) - <span class="bleu">LE FUZELIERS Marie Josephe</span>, AD59 2E26-138<br/>
+06/01/1656 : <span class="bleu">PION Laurent</span> (Rumilly-en-Cambrésis) - <span class="bleu">DAUTRICOURT Louise</span>, AD59 2E26-137<br/>
+24/09/1786 : <span class="bleu">PIPART Pierre</span> (Rumilly-en-Cambrésis, vf MUGUET Caroline) - <span class="bleu">MAFILLE Marguerite</span>, AD59 2E26-406<br/>
+17/03/1689 : <span class="bleu">PIPPART Michel</span> (Rumilly-en-Cambrésis) - <span class="bleu">CHARLET Marie Magdeleine</span>, AD59 2E26-403<br/>
+19/06/1713 : <span class="bleu">PITON Martin</span> (Wavrechain) - <span class="bleu">CAMBAY Marie</span>, AD59 2E26-350-426<br/>
+25/06/1746 : <span class="bleu">PLACE Jean Charles</span> (Avesnes-les-Aubert, vf LEGRAND Marie) - <span class="bleu">MENARD Jeanne Françoise</span><br/>
+30/12/1740 : <span class="bleu">PLACE Jean Marc</span> (Villers-en-Cauchies) - <span class="bleu">RAMETTE Adrienne Josephe</span><br/>
+24/01/1701 : <span class="bleu">PLACE Martin</span> (Villers-en-Cauchies) - <span class="bleu">RAMETTE Catherine</span>, AD59 5G-453 folios 352, 353, 354<br/>
+22/07/1666 : <span class="bleu">PLACHE Noël</span> (Villers-en-Cauchies) - <span class="bleu">FONTAINE Catherine</span><br/>
+01/07/1691 : <span class="bleu">PLATEAU Philippe</span> (Mœuvres) - <span class="bleu">COPPIN Marie Françoise</span>, AD59 2E26-12<br/>
+27/05/1699 : <span class="bleu">PLET George</span> (Cambrai) - <span class="bleu">VICOT Marie Thérèse</span>, AD59 2E26-148<br/>
+24/11/1691 : <span class="bleu">PLET Michel</span> (Blécourt) - <span class="bleu">LIESQUIN Marie Marguerite</span>, AD59 2E26-7<br/>
+20/04/1720 : <span class="bleu">PLET Nicolas</span> (Cambrai) - <span class="bleu">DESCAUDAIN Marie Josephe</span>, dispense consanguinité 3e degré<br/>
+15/02/1727 : <span class="bleu">PLUVINAGE François Joseph</span> (Cambrai) - <span class="bleu">RONDIAU Marie Claire</span>, AD59 2E26-439<br/>
+27/06/1692 : <span class="bleu">PLUVINAGE Joseph</span> (Cambrai) - <span class="bleu">CHARLET Antoinette</span>, AD59 2E26-151<br/>
+21/01/1736 : <span class="bleu">PLUVINAGE Pierre Joseph</span> (Cambrai (Saint-Georges)) - <span class="bleu">de SAINT-AUBERT Marie Josephe</span>, AD59 2E26-448 2M<br/>
+26/09/1718 : <span class="bleu">PLUVINAGE Toussaint</span> (Cambrai, vf FONTAINE Marianne) - <span class="bleu">DUWUEZ Jeanne</span>, AD59 2E26-55/43<br/>
+29/10/1691 : <span class="bleu">POCQUET Jean Pierre</span> (Demicourt) - <span class="bleu">D'HAILLIEZ Marie Barbe</span>, AD59 2E26-12<br/>
+21/10/1690 : <span class="bleu">PORETZ Jean Baptiste</span> (Caudry) - <span class="bleu">DELEFONTAINE Mary</span>, AD59 2E26-9<br/>
+10/05/1678 : <span class="bleu">POTAU Abraham</span> - <span class="bleu">JOLY Marie Magdeleine</span>, succession<br/>
+21/02/1724 : <span class="bleu">POTIER Nicolas</span> (Thun-l'Évêque) - <span class="bleu">DHERBECOURT Catherine</span>, AD59 2E26-219<br/>
+12/07/1610 : <span class="bleu">POTTIER Marguerite</span> - <span class="bleu">DELIMAL Michel</span><br/>
+07/10/1683 : <span class="bleu">POULLAIN Philippe</span> (Bertry) - <span class="bleu">LEFEBVRE Jeanne</span>, AD59 2E26-25<br/>
+28/04/1641 : <span class="bleu">POURPAIN Robert</span> (vf illisible) - <span class="bleu">BARBAU Michèle</span>, AD59 2E26-15<br/>
+17/10/1699 : <span class="bleu">POURPOINT Antoine François</span> (Boursies) - <span class="bleu">NORMAND Marie</span>, AD59 2E26-149<br/>
+07/09/1737 : <span class="bleu">POURPOINT Simon</span> (Cambrai (Saint-Georges), vf BAUDOUX Caroline) - <span class="bleu">DESINELLE Jeanne Thérèse</span>, AD59 2E26-43<br/>
+29/11/1741 : <span class="bleu">PRESTRE Antoine</span> (Ligny-en-Cambrésis, vf de TOFFIN Marie-Catherine), testament<br/>
+11/05/1715 : <span class="bleu">PREVOST Alexis</span> (Séranvillers) - <span class="bleu">TAQUET Marie Louise</span>, AD59 2E26-H31<br/>
+08/06/1683 : <span class="bleu">PROY Antoinette</span> (Walincourt) - <span class="bleu">OLIVIER Marguerite</span>, AD59 2E26-176<br/>
+11/02/1706 : <span class="bleu">PROYE Jacques</span> (Dehéries) - <span class="bleu">DELTOUR Marie Jeanne</span>, AD59 2E26-227<br/>
+08/01/1755 : <span class="bleu">PROYE Jacques</span> (Walincourt, vf de SOURMAIS Marie-Françoise), donation, AD59 2E26-253<br/>
+30/05/1677 : <span class="bleu">PRUVOST Jacques</span> (Béthencourt) - <span class="bleu">DESSE Marie Anne</span>, AD59 2E26-20<br/>
+09/11/1745 : <span class="bleu">PRUVOST Jean Baptiste</span> (Bertry) - <span class="bleu">TAISNE Marie Catherine</span><br/>
+07/04/1668 : <span class="bleu">PRUVOST Michel</span> (Rumilly-en-Cambrésis) - <span class="bleu">BERGOT Louise</span>, AD59 2E26-23<br/>
+20/02/1689 : <span class="bleu">PRUVOST Pasquet</span> (Cambrai) - <span class="bleu">MOITTY Anne</span>, AD59 2E26-9<br/>
+31/10/1754 : <span class="bleu">PRUVOST Thomas</span> (Clary) - <span class="bleu">MILLOT Marie Michelle</span>, AD59 2E26-253</p>
+<p>29/11/1704 : <span class="bleu">RAMETTE André</span> (Villers-en-Cauchies) - <span class="bleu">COUPE Marie Magdeleine</span>, AD59 2E26-400<br/>
+05/09/1705 : <span class="bleu">RAMETTE André</span> (Villers-en-Cauchies) - <span class="bleu">BOUTFEU Dorothée</span>, AD59 2E26-408<br/>
+30/06/1654 : <span class="bleu">RAMETTE Blaise</span> (Ligny-en-Cambrésis) - <span class="bleu">LABBE Jeanne</span>, AD59 2E26-29<br/>
+02/05/1752 : <span class="bleu">RAMETTE Jean Baptiste</span> (Ligny-en-Cambrésis) - <span class="bleu">TAISNE Marie Anne</span>, AD59 2E26-251<br/>
+15/05/1692 : <span class="bleu">RAMETTE Martin</span> (Ligny-en-Cambrésis) - <span class="bleu">LAMOURET Jeanne</span>, AD59 2E26-96<br/>
+19/12/1712 : <span class="bleu">RAMETTE Martin</span> - <span class="bleu">DEHOLLAIN Marie Josephe</span>, AD59 2E26-349<br/>
+15/05/1690 : <span class="bleu">RAMETTE Pierre</span> (Caullery) - <span class="bleu">DELACOURT Anne</span>, AD59 2E26-9<br/>
+27/10/1736 : <span class="bleu">RAMETTE Pierre</span> (Caudry, vf DELACOURT Anne) - <span class="bleu">GRAS Jeanne-Marie</span><br/>
+27/01/1697 : <span class="bleu">RAPPE Hubert</span> (Avesnes-le-Sec) - <span class="bleu">MOREAU Elisabeth</span>, AD59 2E26-22<br/>
+30/10/1686 : <span class="bleu">RASSE (de) François</span> (Crèvecœur-sur-l'Escaut) - <span class="bleu">MANECHER Marguerite</span>, AD59 2E26-332<br/>
+09/01/1726 : <span class="bleu">RENARD Pierre</span> (Auchies) - <span class="bleu">LUSTREMAN Marie Michelle</span>, dispense de consanguinité<br/>
+17/08/1689 : <span class="bleu">RIBAUCOURT Ghislain</span> (Neuville-Saint-Rémy) - <span class="bleu">GAILLARD Marie</span>, AD59 2E26-140<br/>
+16/11/1713 : <span class="bleu">RIBAUCOURT Laurent</span> (Cambrai) - <span class="bleu">BRUNEL Jeanne</span>, AD59 2E26-43<br/>
+18/05/1683 : <span class="bleu">RICHET Jacques</span> (Élincourt) - <span class="bleu">LOIRE Michelle</span>, AD59 2E26-536<br/>
+30/06/1819 : <span class="bleu">RICHEZ Louis</span> (Inchy, vf de LECLERCQ Marie-Marguerite), donation<br/>
+14/07/1747 : <span class="bleu">RICHEZ Nicolas</span> (Béthencourt) - <span class="bleu">CLAISSE Marie Barbe</span>, AD59 2E26-53<br/>
+05/01/1678 : <span class="bleu">RIEU (de) Jean</span> (Avesnes-les-Aubert) - <span class="bleu">ABRAHAM Marguerite</span>, AD59 2E26-23<br/>
+01/07/1724 : <span class="bleu">RIGAUT Antoine</span> (Maing) - <span class="bleu">DEBLEUMORTIER Marguerite</span>, J707/8<br/>
+04/02/1691 : <span class="bleu">RIGAUT Baudoin</span> (Douchy) - <span class="bleu">COTTE Anne-Marie</span>, J678/8 Valenciennes<br/>
+24/07/1714 : <span class="bleu">ROBACHE Pierre</span> (Avesnes-les-Aubert) - <span class="bleu">LEGRAND Marie Barbe</span>, AD59 2E26-214<br/>
+03/04/1690 : <span class="bleu">ROBASCE Antoine</span> (Avesnes-les-Aubert) - <span class="bleu">EGO Mary</span>, AD59 2E26-23<br/>
+29/10/1697 : <span class="bleu">ROBERT André</span> (Rumilly-en-Cambrésis) - <span class="bleu">IVAIN Anne</span>, AD59 2E26-147<br/>
+05/08/1730 : <span class="bleu">ROCQUEZ Médard</span> (Busigny) - <span class="bleu">DENOYELLE Marie Anne</span>, AD59 2E26-20<br/>
+05/08/1730 : <span class="bleu">ROCQUEZ Médard</span> (Busigny, vf DENOYELLE Marie Anne) - <span class="bleu">TAISNE Anne-Catherine</span><br/>
+26/07/1718 : <span class="bleu">ROGE Dominique</span> (Blécourt) - <span class="bleu">DEFOSSEZ Marie Jeanne</span>, AD59 2E26-410<br/>
+07/11/1716 : <span class="bleu">ROLAN Jean Jacques</span> (Séranvillers) - <span class="bleu">DELAFORGE Catherine</span>, AD59 2E26-354<br/>
+28/06/1687 : <span class="bleu">ROLAN Robert</span> (Estourmel) - <span class="bleu">SAUDEMON Marie Magdeleine</span>, AD59 2E26-178<br/>
+29/10/1735 : <span class="bleu">ROLAND Eloy</span> (Estourmel) - <span class="bleu">LE PRESTE Antoinette</span>, AD59 2E26-374<br/>
+12/02/1688 : <span class="bleu">RONDEAU Adrien Antoine</span> (Cambrai) - <span class="bleu">COURTIN Marie Elisabeth</span>, AD59 2E26-178<br/>
+28/06/1656 : <span class="bleu">RONDEAU Augustin</span> (Cambrai) - <span class="bleu">de HOLLAIN Jacqueline</span>, AD59 2E26-137<br/>
+16/10/1728 : <span class="bleu">RONDIAU Estienne</span> - <span class="bleu">NOYELLES Marie Catherine</span>, AD59 2E26-220<br/>
+13/03/1691 : <span class="bleu">ROSEAU Maximilien</span> (Rumilly-en-Cambrésis) - <span class="bleu">PION Magdeleine</span>, AD59 2E26-16<br/>
+03/08/1718 : <span class="bleu">ROSEL André</span> (Valenciennes) - <span class="bleu">MAIRESSE Marie Anne</span><br/>
+18/06/1665 : <span class="bleu">ROUSEL Grégoire</span> (Beauvois-en-Cambrésis) - <span class="bleu">VITOU Antoinette</span><br/>
+04/08/1675 : <span class="bleu">ROUSSEAU Jacques</span> (Bévillers) - <span class="bleu">VILLAIN Mary</span>, AD59 2E26-198<br/>
+15/11/1683 : <span class="bleu">ROUSSEAU Urbain</span> (Bertry) - <span class="bleu">DELEHAYE Catherine</span>, AD59 2E26-20<br/>
+24/04/1704 : <span class="bleu">ROUSSEZ Adrien</span> (Bévillers) - <span class="bleu">DESSE Marie Jeanne</span>, AD59 2E26-143<br/>
+02/01/1713 : <span class="bleu">ROUSSIEZ Jean Baptiste</span> (Bévillers) - <span class="bleu">VILLAIN Marie Thérèse</span>, AD59 2E26-198<br/>
+28/01/1730 : <span class="bleu">RUBIN Charles-Antoine</span> (Esnes) - <span class="bleu">GRANSART Thérèse</span>, AD59 2E26-39<br/>
+04/01/1738 : <span class="bleu">RUCHON Jean Jacques</span> (Bantigny) - <span class="bleu">MORMALLE Bonnemagne</span>, AD59 2E26-379<br/>
+02/04/1808 : <span class="bleu">RUCHON Pierre-François</span> (Bantigny) - <span class="bleu">BALIQUE Marie Martine</span>, J696 21<br/>
+06/01/1688 : <span class="bleu">RUDET Michel Flandin</span> (Hauteville (Savoie)) - <span class="bleu">QUARRE Anne</span>, AD59 2E26-11<br/>
+22/12/1697 : <span class="bleu">RUFFIN Michel</span> (Saint-Hilaire-lez-Cambrai) - <span class="bleu">LE SENT Marie Jeanne</span>, AD59 2E26-541</p>
+<p>31/12/1739 : <span class="bleu">SALEZ Jean Jacques</span> (Eswars) - <span class="bleu">TANCHON Marie Michèle</span>, AD59 2E26-98<br/>
+27/12/1690 : <span class="bleu">SANDRA Jean</span> (Maretz) - <span class="bleu">RUFFIN Marie</span>, AD59 2E26-32<br/>
+22/01/1720 : <span class="bleu">SANNIER Antoine</span> (Bertry) - <span class="bleu">de LE SOTTIERE Marie Elisabeth</span>, AD59 2E26-231<br/>
+24/12/1709 : <span class="bleu">SANTER Laurent</span> (Saint-Aubert, vf DESFOSSEZ Marie Anne) - <span class="bleu">CACHEUX Antoinette</span>, AD59 2E26-144<br/>
+16/01/1745 : <span class="bleu">SANTERRE Léonard</span> (Avesnes-les-Aubert) - <span class="bleu">LEBECQ Marie Anne</span>, AD59 2E26-100<br/>
+30/03/1640 : <span class="bleu">SART Antoine</span> (Beauvois-en-Cambrésis) - <span class="bleu">MOREAU Jeanne</span>, acte notarié, AD59 2E26-541<br/>
+05/02/1725 : <span class="bleu">SART Antoine</span> (Beauvois-en-Cambrésis) - <span class="bleu">GIVRY Marie Jeanne</span>, AD59 2E26-233<br/>
+02/05/1713 : <span class="bleu">SART François</span> (Cambrai) - <span class="bleu">DELATTRE Anne-Jacqueline</span>, AD59 2E26-13<br/>
+19/11/1699 : <span class="bleu">SART Jean</span> (Cambrai) - <span class="bleu">CANNEAU Françoise</span>, AD59 2E26-149<br/>
+06/05/1680 : <span class="bleu">SAVARY Jean François</span> (Cambrai) - <span class="bleu">DISLAIRE Catherine</span>, AD59 2E26-145<br/>
+24/11/1706 : <span class="bleu">SECACHE Georges et GUERY Catherine</span> - <span class="bleu">CAGNONCLE Antoine, SECACHE Marie Anne, CARTIGNY Louis, SECACHE Émérence</span>, partage, tabellion de Bouchain 1703-1708, série J 1301-20<br/>
+20/05/1713 : <span class="bleu">SEDANT Jean</span> (Cattenières) - <span class="bleu">LESAGE Marie Magdeleine</span>, AD59 2E26-350<br/>
+09/07/1729 : <span class="bleu">SEDENT Jean</span> (Cattenières, vf LESNE Marie Marguerite) - <span class="bleu">AUWEZ Jeanne-Marguerite</span>, AD59 2E26-364/441<br/>
+20/04/1719 : <span class="bleu">SEDENT Martin</span> (Cattenières) - <span class="bleu">GODAR Marie Magdeleine</span>, AD59 2E26-231<br/>
+30/10/1728 : <span class="bleu">SEGARD Martin</span> (Thun-l'Évêque) - <span class="bleu">MOLLET Anne Jeanne</span>, AD59 2E26-71<br/>
+28/05/1650 : <span class="bleu">SEGARD Pierre</span> (Cattenières) - <span class="bleu">FARREZ Jeanne</span>, AD59 2E26-23<br/>
+30/08/1728 : <span class="bleu">SEGART Jean</span> (Cattenières) - <span class="bleu">LASSELAIN Thérèse</span>, AD59 2E26-262/440<br/>
+09/05/1719 : <span class="bleu">SEMAILLE Jeanne</span> (Saint-Hilaire-lez-Cambrai), testament, AD59 2E26-24<br/>
+21/04/1733 : <span class="bleu">SENEZ Adrien</span> (Boussières-en-Cambrésis) - <span class="bleu">BRICOU Jeanne Marguerite</span><br/>
+12/11/1664 : <span class="bleu">SERLIN Michel</span> (Beauvois-en-Cambrésis, Bévillers) - <span class="bleu">VITOU Charles et OBLIN Mathias</span>, bail, AD59 2E26-178<br/>
+18/05/1738 : <span class="bleu">SERRIES Alexis</span> (Wervicq (Flandres)) - <span class="bleu">MORONVAL Marie Catherine</span>, AD59 2E26-241<br/>
+13/12/1691 : <span class="bleu">SEUVEZ Hiérosme</span> (Gonnelieu) - <span class="bleu">LEVESQUE Marguerite</span>, AD59 2E26-12<br/>
+17/10/1699 : <span class="bleu">SEVERIN Pierre</span> (Prémont) - <span class="bleu">MOREAU Antoinette</span>, AD59 2E26-208<br/>
+16/02/1719 : <span class="bleu">SIMON Marcel</span> (Noyelles-sous-Bellonne, vf REGNE Marie Françoise) - <span class="bleu">PARMENTIER Marie Madeleine</span>, AD59 2E26-356<br/>
+06/02/1692 : <span class="bleu">SOILLEU Pierre</span> (Walincourt) - <span class="bleu">GORLIER Catherine</span>, AD59 2E26-96<br/>
+21/01/1690 : <span class="bleu">SOLAU Antoine</span> (Marcoing) - <span class="bleu">MAFILLE Jeanne</span>, AD59 2E26-403<br/>
+20/09/1657 : <span class="bleu">SOLMON Paul</span> (Carnières) - <span class="bleu">CARDON Michelle</span>, AD59 2E26-23<br/>
+02/07/1655 : <span class="bleu">SOREAU Bastien</span> (Saint-Hilaire-lez-Cambrai) - <span class="bleu">MAIRESSE Françoise</span>, AD59 2E26-24<br/>
+03/02/1733 : <span class="bleu">SOREAU Charles</span> (Avesnes-les-Aubert) - <span class="bleu">DANEAU Marie Michelle</span>, AD59 2E26-41<br/>
+04/01/1684 : <span class="bleu">SORIAUX Marc</span> (Saint-Hilaire-lez-Cambrai), testament, AD59 2E26-24<br/>
+03/07/1723 : <span class="bleu">SORLIN Jean François</span> (Beauvois-en-Cambrésis) - <span class="bleu">TUROTTE Marie Marguerite</span>, AD59 2E26-232<br/>
+25/01/1755 : <span class="bleu">SORLIN Marie Thérèse</span> (Caudry), testament, AD59 2E26-253<br/>
+20/01/1691 : <span class="bleu">SORLIN Michel</span> (Beauvois-en-Cambrésis) - <span class="bleu">de SOURMAIRE Marie Magdeleine</span>, AD59 2E26-9<br/>
+08/06/1678 : <span class="bleu">SORREAU Michel</span> (Avesnes-les-Aubert) - <span class="bleu">BOURGEOIS Pierre</span>, partage, AD59 2E26-23<br/>
+08/02/1745 : <span class="bleu">SORRIAUX Pierre-Joseph</span> (Saint-Hilaire-lez-Cambrai) - <span class="bleu">CARREZ Marie Josèphe</span>, AD59 2E26-49<br/>
+02/07/1655 : <span class="bleu">SORRIAUX Sébastien</span> (Saint-Hilaire-lez-Cambrai) - <span class="bleu">MAIRESSE Françoise</span>, AD59 2E26-24<br/>
+24/07/1688 : <span class="bleu">SOTTIER Pierre</span> (Cagnoncles) - <span class="bleu">LEFEBVRE Marie Marguerite</span>, AD59 2E26-9<br/>
+11/09/1688 : <span class="bleu">SOURMAY Félix</span> (Wambaix) - <span class="bleu">MONNIEZ Françoise</span>, AD59 2E26-31<br/>
+09/07/1738 : <span class="bleu">SOYEZ Jean François</span> (Cagnoncles) - <span class="bleu">TELLIEZ Marie Elisabeth</span><br/>
+03/01/1668 : <span class="bleu">SOYEZ Philippe</span> (Cagnoncles) - <span class="bleu">PAMART Marie Magdeleine</span>, AD59 2E26-22<br/>
+07/01/1713 : <span class="bleu">SOYEZ Pierre</span> (Masnières, vf LEDUC Jeanne Françoise) - <span class="bleu">PREUX Françoise Thérèse</span></p>
+<p>29/01/1755 : <span class="bleu">TACQUET Leonard</span> (Ligny-en-Cambrésis) - <span class="bleu">TAISNE Marie Anne Joseph</span>, AD59 2E26-253<br/>
+21/04/1731 : <span class="bleu">TAILFER Rémy</span> (Eswars, vf BURY Marie Agnès) - <span class="bleu">SAUVAGE Marie Catherine</span>, AD59 2E26-40<br/>
+03/06/1713 : <span class="bleu">TAILLEFER Accar</span> (Eswars) - <span class="bleu">NAVET Antoinette</span>, AD59 2E26-173<br/>
+23/04/1716 : <span class="bleu">TAILLEFER Accar</span> (Eswars, vf NAVET Antoinette) - <span class="bleu">DENOIELLE Thérèse</span>, AD59 2E26-215<br/>
+28/01/1598 : <span class="bleu">TAISNE Andrieu</span> (Anneux) - <span class="bleu">FRANÇOIS Cornille</span>, BMC, AH 1 H 8<br/>
+11/06/1686 : <span class="bleu">TAISNE Antoine</span> (Anneux) - <span class="bleu">THÉRY Marie Michelle</span>, AD59 2E26-403<br/>
+09/11/1718 : <span class="bleu">TAISNE Jacques-Paul</span> (Bertry) - <span class="bleu">ROUSSIAU Marie Catherine</span>, AD59 2E26-231<br/>
+02/06/1738 : <span class="bleu">TAISNE Jacques-Philippe</span> (Bertry) - <span class="bleu">PRUVOST Constance</span>, AD59 2E26-241<br/>
+24/06/1683 : <span class="bleu">TAISNE Jean</span> (Bertry) - <span class="bleu">HAINNEL Thérèse</span>, AD59 2E26-20<br/>
+05/01/1755 : <span class="bleu">TAISNE Jean</span> (Bertry) - <span class="bleu">D'ANTEL Marie Catherine</span>, AD59 2E26-253<br/>
+08/02/1714 : <span class="bleu">TAISNE Jean Baptiste</span> (Bertry) - <span class="bleu">GAVE Marie Anne</span>, AD59 2E26-229<br/>
+07/09/1737 : <span class="bleu">TAISNE Jean Baptiste</span> (Montigny-en-Cambrésis) - <span class="bleu">TAISNE Marie Anne Joseph</span>, AD59 2E26-240<br/>
+05/06/1745 : <span class="bleu">TAISNE Jean Druon</span> (Bertry) - <span class="bleu">ROCQUET Marie Elisabeth</span>, AD59 2E26-245<br/>
+02/05/1752 : <span class="bleu">TAISNE Jean Léonard</span> (Ligny-en-Cambrésis) - <span class="bleu">BARDOU Marie Françoise</span>, AD59 2E26-251<br/>
+26/07/1752 : <span class="bleu">TAISNE Jean Michel</span> (Bertry) - <span class="bleu">PAVY Marie Thérèse</span>, AD59 2E26-251<br/>
+08/02/1738 : <span class="bleu">TAISNE Jean Philippe</span> (Bertry) - <span class="bleu">MAIRESSE Anne-Marguerite</span>, AD59 2E26-240<br/>
+02/07/1736 : <span class="bleu">TAISNE Jean Philippe Michel</span> (Ligny-en-Cambrésis) - <span class="bleu">GABET Anne-Marie</span>, AD59 2E26-239<br/>
+16/01/1747 : <span class="bleu">TAISNE Joseph</span> (Bertry) - <span class="bleu">MALINNE (MALAINE) Marie Magdeleine</span>, AD59 2E26-246<br/>
+25/08/1698 : <span class="bleu">TAISNE Martin</span> (Walincourt) - <span class="bleu">LIMAL Noëlle</span>, AD59 3G-840<br/>
+24/04/1724 : <span class="bleu">TAISNE Melchior</span> (Bertry) - <span class="bleu">LEFEBVRE Anne</span>, AD59 2E26-361<br/>
+30/09/1730 : <span class="bleu">TAISNE Philippe Nicolas</span> (Bertry) - <span class="bleu">MAIRESSE Marie Thérèse</span>, AD59 2E26-235<br/>
+15/02/1613 : <span class="bleu">TAISNE Pierre</span> (Anneux) - <span class="bleu">POUILLAUDE Marie</span>, BMC, AH 1 H 8<br/>
+24/10/1744 : <span class="bleu">TAISNE Pierre Antoine</span> (Bertry) - <span class="bleu">PRUVOST Marie Élisabeth</span>, AD59 2E26-244<br/>
+21/11/1738 : <span class="bleu">TAISNE Simon</span> (Bertry) - <span class="bleu">MARLIER Anne</span>, AD59 2E26-241<br/>
+13/09/1675 : <span class="bleu">TAISNE Timothé</span> (Bertry) - <span class="bleu">PRÉVOST Nicole</span>, AD59 2E26-95, Off. 5635<br/>
+12/02/1724 : <span class="bleu">TALFER Guillaume</span> (Eswars, vf RUFFIN Michelle) - <span class="bleu">HAUET Marie Catherine</span>, AD59 2E26-360<br/>
+18/10/1692 : <span class="bleu">TAQUET Pacquet</span> (Wambaix) - <span class="bleu">CAPRON Catherine</span>, AD59 2E26-141<br/>
+19/04/1732 : <span class="bleu">TAQUET Pierre-François</span> (Ligny-en-Cambrésis) - <span class="bleu">HENNINOT Marie Jeanne</span>, AD59 2E26-237<br/>
+24/11/1723 : <span class="bleu">TASSON Jean François</span> (Estrun) - <span class="bleu">BAUDA Albertine</span>, AD59 2E26-460<br/>
+26/07/1692 : <span class="bleu">TÉTART Nicolas</span> (Paillencourt) - <span class="bleu">BÉTRANCOURT Marie Antoinette</span>, AD59 2E26-208<br/>
+05/06/1691 : <span class="bleu">THELIER Jean Baptiste</span> (Ligny-en-Cambrésis, vf LECLER Christine) - <span class="bleu">HUCQUIER Marie Anne</span>, AD59 2E26-32<br/>
+02/05/1742 : <span class="bleu">THIEULET Jacques-Antoine</span> (Cagnoncles) - <span class="bleu">BRICOUT Marie Jeanne</span>, AD59 2E26-454<br/>
+21/07/1699 : <span class="bleu">THIEULEZ Martin</span> (Boussières-en-Cambrésis, vf MAIRESSE Marie) - <span class="bleu">BRICOULT Jeanne</span>, AD59 2E26-142<br/>
+01/11/1699 : <span class="bleu">THIEULLET Jacques</span> (Boussières-en-Cambrésis) - <span class="bleu">LEFEBVRE Marie Christine</span>, AD59 2E26-208<br/>
+26/09/1699 : <span class="bleu">THUILEZ Jean Baptiste</span> (Esnes) - <span class="bleu">LEFEBVRE Jeanne</span>, AD59 2E26-196<br/>
+16/02/1719 : <span class="bleu">THUILLÉS Olivier</span> (Boussières-en-Cambrésis) - <span class="bleu">de SAINT-AUBERT Adrienne</span>, AD59 2E26-37<br/>
+18/10/1726 : <span class="bleu">TIEULLET François</span> (Wambaix) - <span class="bleu">MAISON Anne Marie</span>, AD59 2E26-220<br/>
+04/07/1687 : <span class="bleu">TIEULLIEZ Médard</span> (Boussières-en-Cambrésis) - <span class="bleu">MAIRESSE Martine</span>, AD59 2E26-178<br/>
+13/05/1690 : <span class="bleu">TISON Jean</span> (Naves) - <span class="bleu">LOBRY Marie Thérèse</span>, AD59 2E26-7<br/>
+07/04/1731 : <span class="bleu">TISON Joseph</span> (Naves) - <span class="bleu">BOUBAIX Marie Jeanne</span>, AD59 2E26-40<br/>
+20/06/1723 : <span class="bleu">TOFFLIN Henri</span> (Fontaine-au-Pire) - <span class="bleu">VERIN Marie</span>, testament, AD59 2E26-540<br/>
+28/05/1718 : <span class="bleu">TOFFLIN Henri et VERIN Marie</span> (Fontaine-au-Pire) - <span class="bleu">TOFFLIN Marie Catherine</span>, donation à sa fille, AD59 3G-84<br/>
+03/12/1652 : <span class="bleu">TOFFLIN Henri Géry ?</span> (Fontaine-au-Pire, vf LEMAIRE Jeanne ?) - <span class="bleu">BASTIEN Julienne</span>, AD59 2E26-178<br/>
+28/06/1723 : <span class="bleu">TOFFLIN Marie Michèle</span> (Fontaine-au-Pire) - <span class="bleu">TOFFIN Henri</span>, donation à son frère, AD59 3G-84<br/>
+20/11/1723 : <span class="bleu">TOURTOIS Paul</span> (Sailly-lez-Cambrai) - <span class="bleu">CRINON Marie Louise</span>, AD59 2E26-360<br/>
+25/06/1737 : <span class="bleu">TRANCHANT Félix</span> (Masnières, vf CARPENTIER Marie Marguerite) - <span class="bleu">LE VERD Marie Françoise</span>, AD59 2E26-240<br/>
+07/01/1683 : <span class="bleu">TRASNOY Jean</span> (Riaucourt) - <span class="bleu">LANCELLE Marie Jeanne</span>, AD59 2E26-403<br/>
+30/05/1647 : <span class="bleu">TRENCHEANT Daniel</span> (Fontaine-au-Pire) - <span class="bleu">BRICOULT Julienne</span>, AD59 2E26-23<br/>
+19/01/1690 : <span class="bleu">TRIBOU Jean</span> (Thun-l'Evêque) - <span class="bleu">JEAN Marie</span>, AD59 2E26-140<br/>
+20/11/1688 : <span class="bleu">TRIGAULT Jean François</span> (Cambrai) - <span class="bleu">SART Marie Barbe</span>, AD59 2E26-29<br/>
+29/01/1724 : <span class="bleu">TRIGAULT Joseph</span> (Escaudœuvres) - <span class="bleu">SEURON Marie Jeanne</span>, AD59 2E26-360/438<br/>
+05/05/1731 : <span class="bleu">TUBOISE Jean Léonard</span> (Bertry) - <span class="bleu">DELBARRE Marie Catherine</span>, AD59 2E26-236<br/>
+26/02/1724 : <span class="bleu">TUROTTE Claude</span> (Bévillers) - <span class="bleu">CATTEGNY Antoinette</span>, AD59 2E26-233</p>
+<p>14/06/1677 : <span class="bleu">VAILLANT Antoine</span> (Eswars) - <span class="bleu">GRÉSYLLION Ursule</span>, AD59 2E26-31<br/>
+01/02/1677 : <span class="bleu">VAILLANT Claude</span> (Cattenières) - <span class="bleu">de NOYELLES Marguerite</span>, AD9 2E26-333<br/>
+17/09/1733 : <span class="bleu">VAILLANT Jacques</span> (Cattenières) - <span class="bleu">LEGUELLE Marie Catherine</span>, AD59 2E26-41<br/>
+26/10/1715 : <span class="bleu">VAILLANT Jean</span> (Bantigny) - <span class="bleu">DUMONT Marie Thérèse</span>, AD59 2E26-353/432<br/>
+16/11/1737 : <span class="bleu">VAILLANT Jean François</span> (Cattenières) - <span class="bleu">THÉRON Marie Anne Thérèse</span>, AD59 J1429-2<br/>
+08/02/1738 : <span class="bleu">VAILLANT Olivier</span> (Fontaine-au-Pire, vf LESAGE Anne Catherine) - <span class="bleu">DAILLENCOURT Jeanne Joseph</span>, AD59 2E26-44<br/>
+07/02/1688 : <span class="bleu">VAILLANT Philippe</span> (Cattenières) - <span class="bleu">DUPUIS Marie Magdeleine</span>, AD59 2E26-32<br/>
+17/01/1665 : <span class="bleu">VAILLIANT Claude</span> (Cattenières) - <span class="bleu">FÉLIX Marie Jeanne</span>, AD59 2E26-178<br/>
+23/06/1722 : <span class="bleu">VAL François</span> (Aubencheul-aux-Bois) - <span class="bleu">MORCRETTE Marie Anne Françoise</span>, AD59 2E26-232<br/>
+25/06/1707 : <span class="bleu">VALLET Cornille</span> (Saint-Aubert) - <span class="bleu">MASCAU Marie</span>, AD59 2E26-408<br/>
+05/02/1735 : <span class="bleu">VERRER Alphonse</span> (Paillencourt) - <span class="bleu">BOULANGER Mérencienne</span>, AD59 2E26-373<br/>
+10/12/1697 : <span class="bleu">VILLAIN Antoine</span> (Avesnes-les-Aubert) - <span class="bleu">COUVER Anne</span>, AD59 2E26-147<br/>
+03/08/1677 : <span class="bleu">VILLAIN Jean</span> (Bévillers) - <span class="bleu">LAGOUGE Marie</span>, AD59 2E26-9<br/>
+07/04/1701 : <span class="bleu">VITOU Adrien</span> (Fontaine-au-Pire) - <span class="bleu">LESAGE Sainte</span>, AD59 2E26-153/424<br/>
+30/07/1753 : <span class="bleu">VITOU Adrien</span> (Ligny-en-Cambrésis) - <span class="bleu">TAISNE Marie Josephe</span>, AD59 2E26-252<br/>
+13/05/1690 : <span class="bleu">VITOU Antoine</span> (Naves) - <span class="bleu">BOUBAIX Marguerite</span>, AD59 2E26-7<br/>
+08/07/1665 : <span class="bleu">VITOU Blaise</span> (Wambaix) - <span class="bleu">CORBIZÉ Jeanne</span>, AD59 2E26-178<br/>
+03/01/1644 : <span class="bleu">VITOU Charles</span> (Beauvois-en-Cambrésis) - <span class="bleu">GRIFFART Magdeleine</span>, AD59 2E26-23<br/>
+01/12/1676 : <span class="bleu">VITOU Jean</span> (Ligny-en-Cambrésis, Beauvois-en-Cambrésis) - <span class="bleu">DELIMAL Noëlle</span>, AD59 2E26-178<br/>
+19/10/1715 : <span class="bleu">VITOU Jean</span> (Ramillies) - <span class="bleu">DORÉMUS Marie Thérèse</span>, AD59 2E26-173<br/>
+24/10/1669 : <span class="bleu">VITOU Philippe</span> (Haucourt-en-Cambrésis) - <span class="bleu">VALLEMBOY Magdeleine</span>, AD59 2E26-178<br/>
+05/10/1676 : <span class="bleu">VITOU Pier</span> (Ribécourt-la-Tour) - <span class="bleu">JORIS Marguerite</span>, AD59 2E26-12<br/>
+24/05/1780 : <span class="bleu">VITOUX Aimable</span> (Proville) - <span class="bleu">CANNESON Marie Louise</span>, AD59 2E26<br/>
+24/02/1641 : <span class="bleu">VITOUX Olivier</span> (Fontaine-au-Pire) - <span class="bleu">PAIEN Gabrielle</span>, AD59 2E26-23<br/>
+09/05/1711 : <span class="bleu">VITRANT Jean Pierre</span> (Viesly) - <span class="bleu">VILETTE Marie Michelle</span>, AD59 2E26-228</p>
+<p>23/05/1699 : <span class="bleu">WAGREZ Jacques</span> (Masnières) - <span class="bleu">TOBOIS Marie Florence</span>, AD59 2E26-148<br/>
+23/01/1689 : <span class="bleu">WARNEZ Jean Baptiste</span> (Lesdain) - <span class="bleu">BAUDUIN Catherine</span>, AD59 2E26-12<br/>
+17/04/1699 : <span class="bleu">WASSON Louys</span> (Séranvillers) - <span class="bleu">FOVEAU Elisabeth</span>, AD59 2E26-407<br/>
+08/06/1748 : <span class="bleu">WATREMEZ Jacques-Joseph</span> (Saint-Hilaire-lez-Cambrai) - <span class="bleu">CARRE Marie Jeanne</span>, AD59 2E26-53<br/>
+30/10/1712 : <span class="bleu">WATREMEZ Marc</span> (Quiévy) - <span class="bleu">BANTIGNY Marie Barbe</span>, AD59 2E26-228<br/>
+19/12/1701 : <span class="bleu">WAXIN Antoine</span> (Quiévy) - <span class="bleu">DELEWARDE Marie Barbe</span>, AD59 2E26-536<br/>
+30/12/1713 : <span class="bleu">WAXIN Grégoire</span> (Bévillers) - <span class="bleu">TUROTTE Marie Magdeleine</span>, AD59 2E26-213<br/>
+03/01/1686 : <span class="bleu">WERIN Amand</span> (Fontaine-au-Pire) - <span class="bleu">LEDUC Thérèse</span>, vente de rente, AD59 3G-840<br/>
+15/02/1701 : <span class="bleu">WERIN Amand</span> (Fontaine-au-Pire) - <span class="bleu">LEDUC Thérèse</span>, confirmation testamentaire<br/>
+23/02/1691 : <span class="bleu">WERIN Jacques</span> (Fontaine-au-Pire) - <span class="bleu">SORLIN Marie-Jeanne</span>, donation</p> 
+</div>
+<div class="pagefoot">
+  <a class="totop" href="#haut" title="Retour en haut de la page" aria-label="Retour en haut de la page">
+    <svg viewBox="0 0 80 84" aria-hidden="true"><path class="totop__trunk" d="M40 82 V48 M40 60 L28 48 M40 56 L53 44 M40 48 L40 36" />
+    <g class="totop__leaves"><circle cx="40" cy="26" r="14" /><circle cx="24" cy="36" r="11" /><circle cx="56" cy="34" r="12" /><circle cx="28" cy="20" r="9" /><circle cx="52" cy="18" r="10" /></g></svg>
+  </a>
+  <p class="date_maj">Page mise à jour le 09/01/2020 à 18h51</p>
+</div>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <nav class="footer__links" aria-label="Pied de page">
+        <a href="contacts.html">Nous écrire</a>
+        <a href="page-2.html">Mentions légales</a>
+        <a href="plan-du-site.html">Plan du site</a>
+      </nav>
+      <p class="copyright">Raphaël WIART © 2010-2026</p>
+    </div>
+  </footer>
+
+  <!-- Bandeau cookies -->
+  <div class="cookies" role="dialog" aria-live="polite" hidden>
+    <p>Bienvenue sur www.ggac.fr !<br />En poursuivant votre navigation, vous acceptez l'utilisation de cookies permettant d'améliorer votre expérience utilisateur.</p>
+    <div class="cookies__actions">
+      <a href="mentions-cookies.html">En savoir plus</a>
+      <button type="button" class="cookies__ok">J'accepte</button>
+    </div>
+  </div>
+
+  <!-- Visionneuse -->
+  <div class="lightbox" aria-hidden="true">
+    <button class="lightbox__close" aria-label="Fermer">×</button>
+    <figure class="lightbox__fig"><img alt="" /><figcaption></figcaption></figure>
+  </div>
+
+  <!-- Rinceau végétal réutilisable (inspiré du feuillage d'origine) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <g id="vine">
+        <path class="vine__stem" d="M30 200 C 80 170, 120 150, 150 110 C 170 80, 175 50, 160 20" />
+        <path class="vine__stem" d="M150 110 C 190 90, 220 60, 250 25" />
+        <path class="vine__stem" d="M120 145 C 100 120, 75 115, 70 95 C 66 78, 82 66, 96 72 C 108 78, 104 94, 92 92" />
+        <path class="vine__stem" d="M165 92 C 190 100, 205 90, 200 74 C 196 62, 182 62, 180 72 C 178 80, 186 84, 190 80" />
+        <path class="vine__stem" d="M100 165 C 110 185, 130 192, 140 180 C 148 168, 136 158, 128 166" />
+        <path class="vine__stem" d="M80 178 C 70 190, 60 192, 48 186" />
+        <g class="vine__leaves">
+          <path class="leaf" style="--r:-30deg" d="M160 20 c -18 -6 -30 2 -34 14 c 14 4 28 -2 34 -14 z" />
+          <path class="leaf" style="--r:20deg" d="M250 25 c -4 16 -14 24 -24 24 c 2 -14 12 -22 24 -24 z" />
+          <path class="leaf" style="--r:10deg" d="M235 60 c 6 14 4 26 -4 32 c -6 -12 -4 -24 4 -32 z" />
+          <path class="leaf" style="--r:-15deg" d="M48 186 c -16 -4 -28 2 -32 12 c 14 4 26 0 32 -12 z" />
+          <path class="leaf" style="--r:25deg" d="M110 200 c 2 16 -4 28 -12 32 c -4 -12 2 -26 12 -32 z" />
+        </g>
+      </g>
+    </defs>
+  </svg>
+
+  
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

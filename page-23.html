@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Les éditions du G.G.A.C. - Groupe des Généalogistes Amateurs du Cambrésis</title>
+  <meta name="author" content="Raphaël WIART" />
+  <meta name="theme-color" content="#f4ede0" />
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+  <link rel="alternate" type="application/rss+xml" title="Flux RSS du site officiel du G.G.A.C." href="https://www.ggac.fr/rss.xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  
+</head>
+<body id="haut" class="">
+
+  <!-- Intro : une goutte d'encre qui révèle la page -->
+  <div class="intro" aria-hidden="true">
+    <svg class="intro__seal" viewBox="0 0 120 140">
+      <path class="intro__shield" d="M10 10 H110 V70 C110 105 85 122 60 132 C35 122 10 105 10 70 Z" />
+    </svg>
+  </div>
+
+  <div class="progress" aria-hidden="true"><span></span></div>
+  <canvas class="dust" aria-hidden="true"></canvas>
+
+  <!-- Barre utilitaire -->
+  <div class="topbar">
+    <div class="wrap topbar__inner">
+      <p class="topbar__maj"><span class="bleu">Mis à jour le 31/10/26</span> - <span class="counter" data-count="119617">119 617</span> visiteurs depuis le 12/03/10</p>
+      <nav class="quick" aria-label="Liens rapides">
+        <a href="agenda.html">Agenda</a>
+        <a href="page-5.html">Adhésion</a>
+        <a href="https://www.ggac.fr/fichiers/file/tarifs_publications.pdf" target="_blank" rel="noopener">Tarifs</a>
+        <a href="https://www.ggac.fr/fichiers/file/commande.pdf" target="_blank" rel="noopener">Commande</a>
+        <a href="https://www.ggac.fr/rss.xml" class="quick__rss">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="3" cy="13" r="2"/><path d="M1 7a8 8 0 0 1 8 8M1 2a13 13 0 0 1 13 13"/></svg>
+          Flux RSS</a>
+      </nav>
+      <form class="search" action="https://www.ggac.fr/rechercher.php" method="post" name="recherche">
+        <label class="sr-only" for="requete">Rechercher sur le site</label>
+        <input name="requete" type="search" id="requete" placeholder="Rechercher sur le site" autocomplete="off" aria-controls="search-results" />
+        <button type="submit" name="ok" id="ok">OK</button>
+        <ul class="search__results" id="search-results" hidden></ul>
+      </form>
+    </div>
+  </div>
+
+  <!-- En-tête -->
+  <header class="hero">
+    <svg class="vine vine--hero" viewBox="0 0 260 240" aria-hidden="true">
+      <use href="#vine" />
+    </svg>
+    <div class="wrap hero__inner">
+      <a class="brand" href="index.html" title="Retour à la page d'accueil">
+        <span class="brand__shields"><img src="assets/img/shields.png" alt="" width="195" height="125" /></span>
+        <span class="brand__name" aria-label="Groupe des Généalogistes Amateurs du Cambrésis">
+          <span class="line"><span class="w"><b>G</b>roupe</span></span>
+          <span class="line">des <span class="w"><b>G</b>énéalogistes</span></span>
+          <span class="line"><span class="w"><b>A</b>mateurs</span> du <span class="w"><b>C</b>ambrésis</span></span>
+        </span>
+      </a>
+      <div class="hero__frames" aria-hidden="true">
+        <figure class="frame frame--manuscrit" data-depth="0.25"><img src="assets/img/manuscrit.jpg" alt="" /></figure>
+        <figure class="frame frame--photo" data-depth="0.6"><img src="assets/img/photo.jpg" alt="" /></figure>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation principale -->
+  <nav class="nav" aria-label="Navigation principale">
+    <div class="wrap nav__inner">
+      <button class="nav__burger" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span><span class="sr-only">Menu</span></button>
+      <ul class="menu" id="menu">
+<li class=""><a class="menu__top" href="index.html">Accueil</a></li>
+<li class="has-sub"><button class="menu__top" aria-expanded="false">L&#x27;association</button><div class="sub"><ul class="sub__col"><li><a href="agenda.html">Agenda</a></li><li><a href="page-3.html">Présentation</a></li><li><a href="page-53.html">Assemblée générale 2025</a></li><li><a href="page-142.html">Scaldobrésia 2025</a></li><li><a href="page-106.html">Retraite et bénévolat</a></li><li><a href="page-4.html">Zone d&#x27;action</a></li><li><a href="page-5.html">Adhésion</a></li><li><a href="page-6.html">Conseil d&#x27;administration</a></li><li><a href="page-7.html">Membres fondateurs</a></li><li><a href="page-8.html">Membres donateurs</a></li></ul></div></li>
+<li class="has-sub is-active"><button class="menu__top" aria-expanded="false">Publications</button><div class="sub sub--wide"><ul class="sub__col"><li><a href="page-62.html">Nouvelles publications</a></li><li class="has-fly"><a href="page-9.html">Farda</a><ul class="fly"><li><a href="page-10.html">Farda n° 1 à 10</a></li><li><a href="page-11.html">Farda n° 11 à 20</a></li><li><a href="page-12.html">Farda n° 21 à 30</a></li><li><a href="page-13.html">Farda n° 31 à 40</a></li><li><a href="page-14.html">Farda n° 41 à 50</a></li><li><a href="page-15.html">Farda n° 51 à 60</a></li><li><a href="page-74.html">Farda n° 61 à 70</a></li><li><a href="page-97.html">Farda n° 71 à 80</a></li><li><a href="page-112.html">Farda n° 81 à 90</a></li><li><a href="page-136.html">Farda n° 91 à 100</a></li><li><a href="page-144.html">Farda n° 101 à 110</a></li></ul></li><li class="has-fly"><a href="page-16.html">Questions des membres</a><ul class="fly"><li><a href="page-17.html">Questions des Farda n° 1 à 10</a></li><li><a href="page-18.html">Questions des Farda n° 11 à 20</a></li><li><a href="page-19.html">Questions des Farda n° 21 à 30</a></li><li><a href="page-20.html">Questions des Farda n° 31 à 40</a></li><li><a href="page-21.html">Questions des Farda n° 41 à 50</a></li><li><a href="page-22.html">Questions des Farda n° 51 à 60</a></li><li><a href="page-75.html">Questions des Farda n° 61 à 70</a></li><li><a href="page-98.html">Questions des Farda n° 71 à 80</a></li><li><a href="page-113.html">Questions des Farda n° 81 à 90</a></li><li><a href="page-137.html">Questions des Farda n° 91 à 100</a></li><li><a href="https://www.ggac.fr/index.php?page=145">Questions des Farda n° 101 à 110</a></li></ul></li><li><a href="page-23.html">Éditions du G.G.A.C.</a></li><li><a href="page-24.html">Généalogies du Cambrésis</a></li><li><a href="page-25.html">Fardes cambrésiennes</a></li></ul><div class="sub__dict"><a class="sub__dict-title" href="page-26.html">Dictionnaires des familles</a><ul class="dict"><li><a href="page-76.html">Anneux</a></li><li><a href="page-30.html">Awoingt</a></li><li><a href="page-122.html">Banteux</a></li><li><a href="page-124.html">Bantouzelle</a></li><li><a href="page-105.html">Baralle</a></li><li><a href="page-27.html">Beaumont-en-Cis</a></li><li><a href="page-28.html">Beauvois-en-Cis</a></li><li><a href="page-31.html">Bertry</a></li><li><a href="page-135.html">Béthencourt</a></li><li><a href="page-103.html">Bévillers</a></li><li><a href="page-88.html">Blécourt</a></li><li><a href="page-32.html">Bourlon</a></li><li><a href="page-92.html">Boursies</a></li><li><a href="page-131.html">Boussières-en-Cambrésis</a></li><li><a href="page-120.html">Briastre</a></li><li><a href="page-99.html">Buissy</a></li><li><a href="page-84.html">Cagnoncles</a></li><li><a href="page-79.html">Cantaing-sur-Escaut</a></li><li><a href="page-33.html">Cattenières</a></li><li><a href="page-116.html">Caudry</a></li><li><a href="page-114.html">Cauroir</a></li><li><a href="page-123.html">Dehéries</a></li><li><a href="page-86.html">Doignies</a></li><li><a href="page-110.html">Épinoy</a></li><li><a href="page-90.html">Escaudœuvres</a></li><li><a href="page-119.html">Esnes</a></li><li><a href="page-139.html">Estourmel</a></li><li><a href="page-34.html">Estrun</a></li><li><a href="page-109.html">Eswars</a></li><li><a href="page-63.html">Flesquières</a></li><li><a href="page-35.html">Fontaine-au-Pire</a></li><li><a href="page-69.html">Fontaine-Notre-Dame</a></li><li><a href="page-132.html">Gonnelieu</a></li><li><a href="page-36.html">Gouy-Saint-André</a></li><li><a href="page-130.html">Graincourt-lès-Havrincourt</a></li><li><a href="page-117.html">Hendecourt-lès-Cagnicourt</a></li><li><a href="page-96.html">Hermies</a></li><li><a href="page-65.html">Honnechy</a></li><li><a href="page-138.html">Honnecourt-sur-Escaut</a></li><li><a href="page-29.html">Inchy</a></li><li><a href="page-71.html">Inchy-en-Artois</a></li><li><a href="page-102.html">Iwuy</a></li><li><a href="page-67.html">Lebucquière</a></li><li><a href="page-141.html">Maretz</a></li><li><a href="page-94.html">Marquion</a></li><li><a href="page-93.html">Masnières</a></li><li><a href="page-87.html">Maurois</a></li><li><a href="page-66.html">Mœuvres</a></li><li><a href="page-128.html">Naves</a></li><li><a href="page-60.html">Niergnies</a></li><li><a href="page-73.html">Noyelles-sur-Escaut</a></li><li><a href="page-121.html">Ors</a></li><li><a href="page-101.html">Pronville-en-Artois</a></li><li><a href="page-37.html">Proville</a></li><li><a href="page-78.html">Quéant</a></li><li><a href="page-80.html">Raillencourt-Sainte-Olle</a></li><li><a href="page-61.html">Ramillies</a></li><li><a href="page-140.html">Reumont</a></li><li><a href="page-127.html">Ribécourt-la-Tour</a></li><li><a href="page-118.html">Rieux-en-Cambrésis</a></li><li><a href="page-89.html">Rumilly-en-Cis</a></li><li><a href="page-81.html">Sailly-lez-Cambrai</a></li><li><a href="page-38.html">Sains-lès-Marquion</a></li><li><a href="page-133.html">Saint-Hilaire-lez-Cambrai</a></li><li><a href="page-134.html">Saint-Vaast-en-Cambrésis</a></li><li><a href="page-82.html">Sancourt</a></li><li><a href="page-107.html">Sauchy-Cauchy</a></li><li><a href="page-108.html">Sauchy-Lestrée</a></li><li><a href="page-91.html">Séranvillers-Forenville</a></li><li><a href="page-70.html">Thun-l&#x27;Évêque</a></li><li><a href="page-39.html">Thun-Saint-Martin</a></li><li><a href="page-72.html">Trescault</a></li><li><a href="page-115.html">Troisvilles</a></li><li><a href="page-68.html">Vélu</a></li><li><a href="page-104.html">Viesly</a></li><li><a href="page-40.html">Villers-en-Cauchies</a></li><li><a href="page-126.html">Villers-Guislain</a></li><li><a href="page-111.html">Villers-lès-Cagnicourt</a></li><li><a href="page-125.html">Villers-Plouich</a></li><li><a href="page-77.html">Wambaix</a></li></ul></div></div></li>
+<li class="has-sub"><button class="menu__top" aria-expanded="false">Bibliothèque</button><div class="sub"><ul class="sub__col"><li><a href="page-41.html">Bulletins et revues</a></li><li><a href="page-42.html">Contrats de mariage et autres...</a></li><li><a href="page-55.html">Catalogue</a></li></ul></div></li>
+<li class="has-sub"><button class="menu__top" aria-expanded="false">Divers</button><div class="sub"><ul class="sub__col"><li><a href="page-85.html">Archives en ligne</a></li><li><a href="page-47.html">Armorial</a></li><li><a href="page-59.html">Pairies du Cambrésis</a></li><li><a href="page-48.html">Paroisses de Cambrai</a></li><li><a href="page-58.html">Carte de CASSINI</a></li><li><a href="page-49.html">Revue des revues</a></li><li><a href="page-51.html">Liens utiles</a></li></ul></div></li>
+<li class="has-sub"><button class="menu__top" aria-expanded="false">Contacts</button><div class="sub"><ul class="sub__col"><li><a href="contacts.html">Nous écrire</a></li><li><a href="page-56.html">Coordonnées</a></li></ul></div></li>
+<li class="menu__member"><a class="menu__top" href="espace-membre.html">Espace membre</a></li>
+      </ul>
+      <span class="menu__ink" aria-hidden="true"></span>
+    </div>
+  </nav>
+
+  <div class="wrap layout">
+
+    <!-- Colonne latérale -->
+    <aside class="side">
+<section class="side__block"><h2 class="side__title">Publications</h2><ul class="side__menu"><li><a href="page-62.html">Nouvelles publications</a></li><li><a href="page-9.html">Farda</a></li><li><a href="page-16.html">Questions des membres</a></li><li><span class="is-current" aria-current="page">Éditions du G.G.A.C.</span></li><li><a href="page-24.html">Généalogies du Cambrésis</a></li><li><a href="page-25.html">Fardes cambrésiennes</a></li><li><a href="page-26.html">Dictionnaires des familles</a></li></ul></section>
+<section class="side__block side__news">
+        <h2 class="side__title">Actualités</h2>
+        <div class="news" tabindex="0">
+          <div class="news__track">
+            <article class="news__item">
+              <h3>PROCHAINE PERMANENCE</h3>
+              <p>Mercredi 4 novembre 2026 de 14h00 à 17h00 au siège de l'association.</p>
+            </article>
+            <article class="news__item">
+              <h3><a href="agenda.html#ev-1">EXPOSITION ET SORTIE OFFICIELLE DES POILUS DE VILLERS-PLOUICH MORTS POUR LA FRANCE ET DU DICTIONNAIRE DES FAMILLES</a></h3>
+              <p>Du samedi 7 au dimanche 8 novembre 2026 - Salle des fêtes Pierre Mauroy à Villers-Plouich (59)</p>
+            </article>
+            <article class="news__item">
+              <h3><a href="agenda.html#ev-2">SALON DE GÉNÉALOGIE ET D'HISTOIRE</a></h3>
+              <p>Du samedi 7 au dimanche 8 novembre 2026 - Palais des sports de Château-Thierry (02)</p>
+            </article>
+            <article class="news__item">
+              <h3><a href="agenda.html#ev-3">5<sup>E</sup> MARCHÉ D'HISTOIRE LOCALE</a></h3>
+              <p>Du samedi 28 au dimanche 29 novembre 2026 - Salle des fêtes de Fontaine-Notre-Dame (59)</p>
+            </article>
+            <article class="news__item">
+              <h3><a href="agenda.html#ev-4">20<sup>ES</sup> PORTES OUVERTES SUR LA GÉNÉALOGIE</a></h3>
+              <p>Du samedi 6 au dimanche 7 février 2027 - Parc des sports Didier Mounier (rue Albert Dauvergne) à Chevry-Cossigny (77)</p>
+            </article>
+            <article class="news__item">
+              <h3><a href="agenda.html#ev-5">EXPOSITION ET SORTIE OFFICIELLE DES POILUS D'ESNES MORTS POUR LA FRANCE ET DU DICTIONNAIRE DES FAMILLES</a></h3>
+              <p>Du samedi 13 au dimanche 14 mars 2027 - Salle des fêtes d'Esnes (59)</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+    </aside>
+
+    <!-- Contenu -->
+    <main class="content">
+<svg class="vine vine--content" viewBox="0 0 260 240" aria-hidden="true"><use href="#vine" /></svg>
+<h1 class="title"><span class="title__text" data-split>Les éditions du G.G.A.C.</span>
+<svg class="title__flourish" viewBox="0 0 320 30" aria-hidden="true"><path d="M4 18 C 60 4, 110 28, 160 16 S 260 4, 316 16" /><path d="M150 16 c 6 -10 14 -10 10 0 c -4 8 -14 6 -10 0" /></svg></h1>
+<div class="prose">
+
+
+<p class="ta-j">Les "Éditions du G.G.A.C." sont une collection d'ouvrages dédiée à l'histoire locale et au devoir de mémoire. Aux côtés de monographies de communes, une large part de cette série rend hommage aux Poilus morts pour la France. Chaque volume retrace, pour une commune donnée, le parcours de ces soldats : service militaire, unités d'affectation, déplacements des troupes et participation aux combats. À travers ces destins individuels, cette collection contribue à faire vivre une page essentielle de l'histoire locale et nationale.</p>
+<p class="ta-j"><strong>Version luxe :</strong> Ces livres peuvent être achetés en version luxe avec couverture rigide bordeaux et marquage du titre en lettres dorées. Le choix de cette version entraîne un supplément de <strong>12 €</strong> sur le prix indiqué.</p>
+<p class="ta-j"><strong>Frais de port pour la France :</strong> <strong>9 €</strong> pour un livre, <strong>12 €</strong> pour 2 livres, <strong>18 €</strong> pour 3 Ã  6 livres et <strong>25 €</strong> pour 7 livres et plus.</p>
+<p class="ta-c"><a href="http://www.ggac.fr/fichiers/file/commande.pdf" rel="noopener" target="_blank"><span class="alerte">Télécharger le bon de commande</span></a></p>
+<div class="issues"><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG01b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG01.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG01 : L'histoire de Beaumont dans le Cambrésis<br/>
+            (Daniel HERBIN)</h2>
+<p class="ta-c">Situation de Beaumont dans le Cambrésis et précis historique du village,<br/>
+            nombreuses illustrations en noir et couleurs.<br/>
+<strong>81 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 15 €<br/>
+</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 5 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG02b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG02.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG02 : Chronique de Villers-en-Cauchies<br/>
+            (Pierre et Nicole MÉRIAUX)</h2>
+<p class="ta-c">Chronique de Villers-en-Cauchies sur différents chapitres de la vie du village.<br/>
+<strong>104 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 20 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG03b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG03.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG03 : Le répertoire de Maître TABARY,<br/>
+            notaire à Cambrai<br/>
+            (Daniel NORMAND)</h2>
+<p class="ta-c"><span class="alerte">Répertoire I :</span> du 28 février 1802 au 29 juin 1804<br/>
+<strong>164 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 20 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG04b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG04.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG04 : Le répertoire de Maître TABARY,<br/>
+            notaire à Cambrai<br/>
+            (Daniel NORMAND)</h2>
+<p class="ta-c"><span class="alerte">Répertoire II :</span> du 29 juin 1804 au 19 octobre 1808.<br/>
+<strong>172 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 20 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG05b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG05.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG05 : Le répertoire de Maître TABARY,<br/>
+            notaire à Cambrai<br/>
+            (Daniel NORMAND)</h2>
+<p class="ta-c"><span class="alerte">Répertoire III :</span> du 20 octobre 1808 au 31 octobre 1811.<br/>
+<strong>200 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG06b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG06.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG06 : Ascendance et parentèle de Jean YANNE<br/>
+            sur Estrun<br/>
+            (Gérard DOMISE-PAGNEN)</h2>
+<p class="ta-c">Jean GOUYÉ (1933-2003) dit Jean YANNE.<br/>
+<strong>28 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 5 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : gratuit<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG08b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG08.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG08 : Les manuscrits de l'abbé MUTTE<br/>
+            (Robert ROLAND (†) et Jean DOFFE)</h2>
+<p class="ta-c">Analyse du manuscrit français 32427 de la Bibliothèque Nationale de France.<br/>
+<strong>50 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 10 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 5 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG09b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG09.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG09 : Tabellion de Cambrai<br/>
+            (Robert ROLAND (†) et Jean DOFFE)</h2>
+<p class="ta-c">Table des contrats de mariage de 1701 à 1740.<br/>
+<strong>208 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG11b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG11.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG11 : La monographie de Fontaine-Notre-Dame<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN<br/>
+            et Christian JARRELOT)</h2>
+<p class="ta-c"><strong>285 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 30 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG12b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG12.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG12 : Voyage en cartes postales et photographies<br/>
+            dans le village de Fontaine-Notre-Dame<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN<br/>
+            et Christian JARRELOT)</h2>
+<p class="ta-c">Voyage en photos dans Fontaine-Notre-Dame d'hier et d'aujourd'hui.<br/>
+<strong>300 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 30 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG21b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG21.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG21 : Louise, la fille de l'éclusier<br/>
+            (Jean-Claude DEFER)</h2>
+<p class="ta-j">Au début du XX<sup>e</sup> siècle, les péniches font la queue sur le canal. Le maître incontesté des lieux depuis 1904 est Henri, l'éclusier, un homme au caractère bien trempé. Louise raconte sa vie d'écolière, d'adolescente, les rigueurs de la guerre, la dure condition féminine. La déroute allemande a semé mort et destructions. Il faut reconstruire, repartir... Pour Louise, c'est l'aube d'une nouvelle vie !</p>
+<p class="ta-c"><strong>120 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 20 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG35b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG35.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG35 : Sainte Saturnine, une sainte européenne<br/>
+            (Bertrand FAUVARQUE)</h2>
+<p class="ta-c"><strong>25 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 5 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : gratuit<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG36b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG36.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG36 : L'histoire de Proville<br/>
+            racontée à Amandine par Papa Charlie<br/>
+            (Jean-Claude DEFER et Michel LEFEBVRE)</h2>
+<p class="ta-c"><span class="alerte">Tome I</span></p>
+<p class="ta-c">À l'aube du XXI<sup>e</sup> siècle. Traces et marques du passé.<br/>
+            Provilloises et Provillois, des origines au XX<sup>e</sup> siècle.<br/>
+<strong>135 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 20 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG70b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG70.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG70 : L'histoire de Proville<br/>
+            racontée à Amandine par Papa Charlie<br/>
+            (Jean-Claude DEFER et Michel LEFEBVRE)</h2>
+<p class="ta-c"><span class="alerte">Tome II</span></p>
+<p class="ta-c">À l'aube du XXI<sup>e</sup> siècle. Traces et marques du passé.<br/>
+             Ballades provilloises, trois circuits pédestres.<br/>
+<strong>155 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 20 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG37b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG37.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG37 : La chapelle CRÉPIN (Notre-Dame-des-Champs)<br/>
+              à Proville<br/>
+            (Jean-Claude DEFER)</h2>
+<p class="ta-c">Petit guide pour mieux comprendre l'architecture à partir d'un exemple local,<br/>
+            suivi d'une étude sur la famille CRÉPIN.<strong><br/>
+            61 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 15 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 5 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG38b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG38.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG38 : Le livre d'or des Petites Sœurs des Pauvres<br/>
+            d'Escaudœuvres<br/>
+            (Gérard DOMISE-PAGNEN)</h2>
+<p class="ta-c"><strong>170 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 20 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG87b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG87.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG87 : 1917-2017, Charlie raconte aux enfants la bataille de Cambrai<br/>
+            (Jean-Claude DEFER)</h2>
+<p class="ta-c">La guerre 14-18 et la bataille de Cambrai racontées à des enfants... venus d’ailleurs. C’est l'idée qu'ont eue deux Provillois, Marie et son époux Jean,<br/>
+            afin d'occuper leurs quatre petits-enfants séjournant durant deux semaines<br/>
+            à Proville au cours des grandes vacances scolaires.<br/>
+<strong>90 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 15 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 5 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG88b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG88.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG88 : Chroniques d'un notable provillois : Jean CHENU<br/>
+            (Jean-Pierre MICHAUT)</h2>
+<p class="ta-c"><strong>53 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 10 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 5 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG71b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG71.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG71 : "Notre village au fil du temps...<br/>
+            Participation à l'histoire de Metz-en-Couture<br/>
+            (Pas-de-Calais)"<br/>
+            (Jacques DUCAMP)</h2>
+<p class="ta-c"><span class="alerte">Tome I</span></p>
+<p class="ta-c">Monographie de Metz-en-Couture des origines à la Guerre de 1870.<strong><br/>
+<strong>264 pages couleurs</strong></strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 30 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG72b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG72.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG72 : "Notre village au fil du temps...<br/>
+            Participation à l'histoire de Metz-en-Couture<br/>
+            (Pas-de-Calais)"<br/>
+            (Jacques DUCAMP)</h2>
+<p class="ta-c"><span class="alerte">Tome II</span></p>
+<p class="ta-c">Metz-en-Couture pendant la Première Guerre mondiale<br/>
+            et le journal de Lucie DAVENNE.<strong><br/>
+<strong>253 pages couleurs</strong></strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 30 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG73b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG73.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG73 : "Notre village au fil du temps...<br/>
+            Participation à l'histoire de Metz-en-Couture<br/>
+            (Pas-de-Calais)"<br/>
+            (Jacques DUCAMP)</h2>
+<p class="ta-c"><span class="alerte">Tome III</span></p>
+<p class="ta-c">Metz-en-Couture pendant la Première Guerre mondiale (suite) :<br/>
+            les mouvements de population, le journal de Charles PARINGAUX,<br/>
+            la 51<sup>e</sup> division d'infanterie Highland, "Barrosa House",<br/>
+            la symbolique de la Première Guerre mondiale, le cimetière britannique<br/>
+            et la Commonwealth War Graves Commission (C.W.G.C.).<strong><br/>
+<strong>257 pages couleurs</strong></strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 30 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG74b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG74.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG74 : "Notre village au fil du temps...<br/>
+            Participation à l'histoire de Metz-en-Couture<br/>
+            (Pas-de-Calais)"<br/>
+            (Jacques DUCAMP)</h2>
+<p class="ta-c"><span class="alerte">Tome IV</span></p>
+<p class="ta-c">Metz-en-Couture avant les destructions de 1917.<br/>
+            Metz-en-Couture pendant la Première Guerre mondiale (fin) :<br/>
+            Halifax, ville marraine de Metz-en-Couture (les généralités, la visite de la délégation anglaise d'Halifax en 1931, l'album de photographies d'Adrian DENAM, la cérémonie de baptême de la place de la mairie "place d'Halifax").<br/>
+            La Deuxième Guerre mondiale.<br/>
+            Le monument aux "morts pour la France".<strong><br/>
+<strong>291 pages couleurs</strong></strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 30 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG75b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG75.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG75 : "Notre village au fil du temps...<br/>
+            Participation à l'histoire de Metz-en-Couture<br/>
+            (Pas-de-Calais)"<br/>
+            (Jacques DUCAMP)</h2>
+<p class="ta-c"><span class="alerte">Tome V</span></p>
+<p class="ta-c">Les églises.<br/>
+            Les chapelles, les calvaires, les processions.<br/>
+            Les baptêmes, les communions, les mariages.<strong><br/>
+<strong>302 pages couleurs</strong></strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 30 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG76b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG76.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG76 : "Notre village au fil du temps...<br/>
+            Participation à l'histoire de Metz-en-Couture<br/>
+            (Pas-de-Calais)"<br/>
+            (Jacques DUCAMP)</h2>
+<p class="ta-c"><span class="alerte">Tome VI</span></p>
+<p class="ta-c">Quelques saints de notre village.<br/>
+            La salle saint Jean BOSCO ou le "patronage".<br/>
+            La forêt d'Arrouaise, l'abbaye et saint Liéphard.<br/>
+            Le "foyer de secours d'urgence".<br/>
+            Les "châteaux" GODIN, BOULANT-CLAVIER et actuel.<br/>
+            Les brasseries.<br/>
+            Les moulins.<br/>
+            Les estaminets.<br/>
+            Quelques arbres remarquables.<br/>
+            Les abreuvoirs, les rues, les sentiers et les chemins.<br/>
+            Évolution de la population depuis 1761.<br/>
+<strong>268 pages couleurs</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 30 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG77b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG77.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG77 : "Notre village au fil du temps...<br/>
+            Participation à l'histoire de Metz-en-Couture<br/>
+            (Pas-de-Calais)"<br/>
+            (Jacques DUCAMP)</h2>
+<p class="ta-c"><span class="alerte">Tome VII</span></p>
+<p class="ta-c">Les écoles avant 1881 jusque la reconstruction.<br/>
+            Quelques photographies de classes.<br/>
+            Les patois.<br/>
+            Les mûches.<br/>
+            Les associations.<br/>
+            Les travaux d'autrefois, les métiers oubliés.<br/>
+            Documents divers inclassables.<br/>
+<strong>309 pages couleurs</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 30 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG79b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG79.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG79 : Histoire et patrimoine de Busigny<br/>
+            depuis la Préhistoire<br/>
+            (Michel CASIEZ)</h2>
+<p class="ta-j">Nouvelle édition enrichie de nombreuses illustrations et photos, vous partirez sur les traces des hommes de Néandertal dont la présence sur les terres du village est attestée par la découverte de nombreux outils en pierre taillée que les archéologues situent entre 100 000 et 30 000 ans avant notre ère.  Sur un registre identique, vous aurez accès à la présentation d'une partie du mobilier funéraire exhumé de la nécropole mérovingienne des VI<sup>e</sup> et VII<sup>e</sup> siècles retrouvée sur une autre partie du village.  Vous ferez également connaissance avec la généalogie, mais aussi l'histoire tumultueuse des seigneurs de Busigny depuis le début du Moyen Âge. Se référant à un mémoire historique publié en 1789, l'auteur vous racontera dans quelles circonstances s'est déroulé le rattachement dès le milieu du XII<sup>e</sup> siècle du fief de Busigny aux comtes hennuyers, qui aboutira au partage des terres du village entre le Cambrésis et le Hainaut jusqu'à la fin de la période  révolutionnaire.  L'époque moderne est bien sûr largement évoquée et illustrée dans ce livre avec le récit des épisodes tragiques et sanglants se rattachant aux deux guerres mondiales et à l'action héroïque de la Résistance.  Le patrimoine communal et industriel, les traditions et métiers d'autrefois font aussi l'objet d'un inventaire très exhaustif. Quelques portraits de personnalités locales sont également à découvrir en fin d'ouvrage. Au fil des différents chapitres, c'est aussi une partie de l'histoire du Cambrésis, du Hainaut et du Vermandois qui est racontée.</p>
+<p class="ta-c"><strong>452 pages couleurs</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 35 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG96b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG96.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG96 : Mes jeunes années neuvilloises<br/>
+            et cambrésiennes<br/>
+            (Jean-Claude DEFER)</h2>
+<p class="ta-c">À la fois album de photos et témoignages d'un Cambrésien attaché à sa terre,<br/>
+            ce livre retrace l'évolution de Neuville-Saint-Rémy et de Cambrai<br/>
+            sur les 75 dernières années.<br/>
+<strong>250 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG125b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG125.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG125 : Les Catillonnais hors du commun<br/>
+            (Pierre DÉMARET)</h2>
+<p class="ta-c"><strong>195 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG126b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG126.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG126 : Catillon-sur-Sambre,<br/>
+              les combats des 17, 18, 19 mai 1940<br/>
+            (Pierre DÉMARET)</h2>
+<p class="ta-c"><strong>156 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 20 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG129b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG129.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG129 : Diocèses de Cambrai et Lille<br/>
+              185 ecclésiastiques morts au champs d'honneur<br/>
+              Guerre 1914-1918<br/>
+              (Pierre DÉMARET)</h2>
+<p class="ta-c"><strong>185 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG27b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG27.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG27 : Les "Poilus" d'Abancourt morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>168 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 20 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG23b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG23.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG23 : Les "Poilus" d'Anneux morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>160 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 20 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG41b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG41.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG41 : Les "Poilus" d'Aubencheul-au-Bac<br/>
+            morts pour la France<br/>
+            (Pierre PIETRZAK, Isabelle PIETRZAK-DELALIN et Christian DUMONT)</h2>
+<p class="ta-c"><strong>173 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 20 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG39b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG39.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG39 : Les "Poilus" d'Awoingt<br/>
+            morts pour la France<br/>
+            (Patrice GUINET et Pierre PIETRZAK)</h2>
+<p class="ta-c"><strong>177 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG31b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG31.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG31 : Les "Poilus" de Banteux morts pour la France<br/>
+              (2<sup>e</sup> édition)<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>200 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/visuel_non_dispo.jpg" width="220"/></div><div class="issue__body">
+<h2 class="ta-c">EG82 : Les "Poilus" de Bantigny<br/>
+            morts pour la France<br/>
+            (Raymond LEFEBVRE, Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><span class="alerte">En cours de réalisation</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG32b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG32.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG32 : Les "Poilus" de Bantouzelle morts pour la France<br/>
+              (2<sup>e</sup> édition)
+              <br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>211 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG86b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG86.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG86 : Les "Poilus" de Baralle<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>216 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG98b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG98.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG98 : Les "Poilus" de Bazuel morts pour la France<br/>
+            (Pierre DÉMARET)</h2>
+<p class="ta-c"><strong>151 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 20 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG62b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG62.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG62 : Les "Poilus" de Beaumont-en-Cambrésis<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>221 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG123b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG123.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG123 : Les "Poilus" de Béthencourt morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>282 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 30 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG66b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG66.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG66 : Les "Poilus" de Blécourt<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>165 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 20 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG61b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG61.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG61 : Les "Poilus" de Boursies<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>178 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG120b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG120.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG120 : Les "Poilus" de Boussières-en-Cambrésis<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>237 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG118b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG118.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG118 : Les "Poilus" de Briastre<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>236 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG83b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG83.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG83 : Les "Poilus" de Buissy<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>169 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 20 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG44b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG44.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG44 : Les "Poilus" de Cagnoncles<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>168 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 20 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG51b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG51.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG51 : Les "Poilus" de Cambrai<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><span class="alerte">Tome I</span></p>
+<p class="ta-c"><strong>391 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 35 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG52b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG52.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG52 : Les "Poilus" de Cambrai<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><span class="alerte">Tome II</span></p>
+<p class="ta-c"><strong>263 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 30 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG13b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG13.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG13 : Les "Poilus" de Cantaing-sur-Escaut<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>150 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 20 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/visuel_non_dispo.jpg" width="220"/></div><div class="issue__body">
+<h2 class="ta-c">EG53 : Les "Poilus" de Carnières<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><span class="alerte">En cours de réalisation</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG103b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG103.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG103 : Les "Poilus" du Cateau-Cambrésis<br/>
+              morts pour la France<br/>
+            (Pierre DÉMARET)</h2>
+<p class="ta-c"><span class="alerte">Tome I : 1914</span></p>
+<p class="ta-c"><strong>357 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 35 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG104b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG104.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG104 : Les "Poilus" du Cateau-Cambrésis<br/>
+              morts pour la France<br/>
+            (Pierre DÉMARET)</h2>
+<p class="ta-c"><span class="alerte">Tome II : 1915</span></p>
+<p class="ta-c"><strong>317 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 30 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG105b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG105.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG105 : Les "Poilus" du Cateau-Cambrésis<br/>
+              morts pour la France<br/>
+            (Pierre DÉMARET)</h2>
+<p class="ta-c"><span class="alerte">Tome III : 1916</span></p>
+<p class="ta-c"><strong>269 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 30 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG106b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG106.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG106 : Les "Poilus" du Cateau-Cambrésis<br/>
+              morts pour la France<br/>
+            (Pierre DÉMARET)</h2>
+<p class="ta-c"><span class="alerte">Tome IV : 1917 et 1918</span></p>
+<p class="ta-c"><strong>303 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 30 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG99b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG99.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG99 : Les "Poilus" de Catillon-sur-Sambre<br/>
+              morts pour la France<br/>
+            (Pierre DÉMARET)</h2>
+<p class="ta-c"><strong>361 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 35 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG55b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG55.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG55 : Les "Poilus" de Caudry<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><span class="alerte">Tome I</span></p>
+<p class="ta-c"><strong>240 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG56b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG56.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG56 : Les "Poilus" de Caudry<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><span class="alerte">Tome II</span></p>
+<p class="ta-c"><strong>234 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG97b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG97.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG97 : Les "Poilus" de Cauroir<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>189 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/visuel_non_dispo.jpg" width="220"/></div><div class="issue__body">
+<h2 class="ta-c">EG25 : Les "Poilus" de Crèvecœur-sur-l'Escaut<br/>
+            et des Rues-des-Vignes morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><span class="alerte">En cours de réalisation</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG78b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG78.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG78 : Les "Poilus" de Cuvillers morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>184 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG111b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG111.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG111 : Les "Poilus" de Dehéries morts pour la France<br/>
+            (Pierre DÉMARET)</h2>
+<p class="ta-c"><strong>53 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 10 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG46b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG46.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG46 : Les "Poilus" de Doignies<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>170 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 20 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG89b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG89.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG89 : Les "Poilus" d'Écourt-Saint-Quentin<br/>
+            morts pour la France<br/>
+            (Thierry WIART, Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>338 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 30 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG94b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG94.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG94 : Les "Poilus" d'Épinoy<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>214 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG19b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG19.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG19 : Les "Poilus" d'Escaudœuvres<br/>
+            morts pour la France<br/>
+            (3<sup>e</sup> édition)<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN<br/>
+            et Gérard DOMISE-PAGNEN             )</h2>
+<p class="ta-c"><strong>402 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 35 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG117b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG117.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG117 : Les "Poilus" d'Esnes<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>300 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 30 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG127b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG127.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG127 : Les "Poilus" d'Estourmel morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>222 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG93b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG93.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG93 : Les "Poilus" d'Eswars<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>147 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 20 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG22b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG22.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG22 : Les "Poilus" de Flesquières morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>178 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG10b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG10.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG10 : Les "Poilus" de Fontaine-Notre-Dame<br/>
+            morts pour la France<br/>
+            (Pierre PIETRZAK et Christian JARRELOT)</h2>
+<p class="ta-c"><strong>316 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 30 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG30b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG30.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG30 : Les "Poilus" de Gonnelieu morts pour la France<br/>
+              (2<sup>e</sup> édition)<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>212 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG28b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG28.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG28 : Les "Poilus" de Gouzeaucourt<br/>
+            morts pour la France<br/>
+            (2<sup>e</sup> édition)<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>308 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 30 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG116b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG116.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG116 : Les "Poilus"<br/>
+			de Graincourt-lès-Havrincourt<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>247 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG42b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG42.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG42 : Les "Poilus" d'Haynecourt<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>184 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG49b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG49.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG49 : Les "Poilus" d'Hem-Lenglet<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>170 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 20 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG115b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG115.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG115 : Les "Poilus" d'Hendecourt-lès-Cagnicourt<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>227 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG58b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG58.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG58 : Les "Poilus" d'Hermies<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>251 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 30 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG65b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG65.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG65 : Les "Poilus" d'Honnechy<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>220 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG29b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG29.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG29 : Les "Poilus" d'Honnecourt-sur-Escaut<br/>
+            morts pour la France (2<sup>e</sup> édition)<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>270 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 30 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG63b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG63.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG63 : Les "Poilus" d'Inchy morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>223 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG84b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG84.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG84 : Les "Poilus" d'Inchy-en-Artois<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>260 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 30 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG40b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG40.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG40 : Les "Poilus" d'Iwuy<br/>
+            morts pour la France (2<sup>e</sup> édition)<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>307 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 30 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG100b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG100.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG100 : Les "Poilus" de La Groise morts pour la France<br/>
+            (Pierre DÉMARET)</h2>
+<p class="ta-c"><strong>139 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 20 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG101b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG101.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG101 : Les "Poilus" de Landrecies morts pour la France<br/>
+            (Pierre DÉMARET)</h2>
+<p class="ta-c"><span class="alerte">Tome I</span></p>
+<p class="ta-c"><strong>370 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 35 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG102b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG102.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG102 : Les "Poilus" de Landrecies morts pour la France<br/>
+            (Pierre DÉMARET)</h2>
+<p class="ta-c"><span class="alerte">Tome II</span></p>
+<p class="ta-c"><strong>284 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 30 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG48b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG48.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG48 : Les "Poilus" de Lebucquière<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>169 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 20 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG26b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG26.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG26 : Les "Poilus" de Lesdain morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>207 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG16b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG16.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG16 : Les "Poilus" de Marcoing morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>225 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG59b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG59.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG59 : Les "Poilus" de Marquion<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>184 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG14b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG14.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG14 : Les "Poilus" de Masnières morts pour la France<br/>
+            (2<sup>e</sup> édition)<br/>
+            (Jean DOFFE, Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>354 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 35 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG67b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG67.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG67 : Les "Poilus" de Maurois<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>209 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG108b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG108.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG108 : Les "Poilus" de Mazinghien morts pour la France<br/>
+            (Pierre DÉMARET)</h2>
+<p class="ta-c"><strong>125 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 20 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG68b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG68.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG68 : Les "Poilus" de Mœuvres<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>194 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG119b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG119.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG119 : Les "Poilus" de Naves<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>239 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG18b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG18.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG18 : Les "Poilus" de Neuville-Saint-Rémy<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>250 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 30 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG17b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG17.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG17 : Les "Poilus" de Noyelles-sur-Escaut<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>150 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 20 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG109b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG109.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG109 : Les "Poilus" d'Ors morts pour la France<br/>
+            (Pierre DÉMARET)</h2>
+<p class="ta-c"><strong>223 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG107b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG107.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG107 : Les "Poilus" de Pommereuil morts pour la France<br/>
+            (Pierre DÉMARET)</h2>
+<p class="ta-c"><strong>346 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 30 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG80b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG80.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG80 : Les "Poilus" de Pronville-en-Artois<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>199 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG15b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG15.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG15 : Les "Poilus" de Proville morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>150 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 20 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG45b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG45.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG45 : Les "Poilus" de Quéant<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>205 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG50b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG50.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG50 : Les "Poilus" de Quiévy<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>353 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 35 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG64b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG64.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG64 : Les "Poilus" de Raillencourt-Sainte-Olle<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>277 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 30 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG85b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG85.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG85 : Les "Poilus" de Ramillies<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>255 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 30 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG110b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG110.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG110 : Les "Poilus" de Rejet-de-Beaulieu<br/>
+              morts pour la France<br/>
+            (Pierre DÉMARET)</h2>
+<p class="ta-c"><strong>136 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 20 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG24b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG24.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG24 : Les "Poilus" de Ribécourt-la-Tour<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>180 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG114b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG114.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG114 : Les "Poilus" de Rieux-en-Cambrésis<br/>
+            morts pour la France<br/>
+              (2<sup>e</sup> édition)<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>272 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 30 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG20b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG20.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG20 : Les "Poilus" de Rumilly-en-Cambrésis<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>370 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 35 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG43b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG43.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG43 : Les "Poilus" de Sailly-lez-Cambrai<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>192 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG81b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG81.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG81 : Les "Poilus" de Sains-lès-Marquion<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>166 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 20 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG121b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG121.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG121 : Les "Poilus" de Saint-Hilaire-lez-Cambrai<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>315 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 30 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG122b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG122.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG122 : Les "Poilus" de Saint-Vaast-en-Cambrésis morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>310 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 30 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG60b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG60.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG60 : Les "Poilus" de Sancourt<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>160 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 20 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG91b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG91.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG91 : Les "Poilus" de Sauchy-Cauchy<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>197 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG90b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG90.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG90 : Les "Poilus" de Sauchy-Lestrée<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>225 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG54b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG54.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG54 : Les "Poilus" de Séranvillers et Forenville<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN<br/>
+            et Bruno BARRIER)</h2>
+<p class="ta-c"><strong>182 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG92b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG92.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG92 : Les "Poilus" de Thun-l'Évêque<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>250 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG57b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG57.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG57 : Les "Poilus" de Trescault<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>162 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 20 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG113b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG113.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG113 : Les "Poilus" de Troisvilles<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>287 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 30 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG47b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG47.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG47 : Les "Poilus" de Vélu<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>144 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 20 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG69b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG69.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG69 : Les "Poilus" de Viesly<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>300 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 30 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG33b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG33.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG33 : Les "Poilus" de Villers-Guislain<br/>
+            morts pour la France (2<sup>e</sup> édition)<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>296 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 30 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG95b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG95.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG95 : Les "Poilus" de Villers-lès-Cagnicourt<br/>
+            morts pour la France<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>187 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div><div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/EG34b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/EG34.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<h2 class="ta-c">EG34 : Les "Poilus" de Villers-Plouich<br/>
+            morts pour la France (2<sup>e</sup> édition)<br/>
+            (Isabelle et Pierre PIETRZAK-DELALIN)</h2>
+<p class="ta-c"><strong>241 pages</strong></p>
+<p class="ta-c"><span class="alerte">Version papier : 25 €</span></p>
+<p class="ta-c"><span class="alerte">Version numérique : 10 €<br/>
+            (uniquement pour les membres)</span></p>
+</div></div></div> 
+</div>
+<div class="pagefoot">
+  <a class="totop" href="#haut" title="Retour en haut de la page" aria-label="Retour en haut de la page">
+    <svg viewBox="0 0 80 84" aria-hidden="true"><path class="totop__trunk" d="M40 82 V48 M40 60 L28 48 M40 56 L53 44 M40 48 L40 36" />
+    <g class="totop__leaves"><circle cx="40" cy="26" r="14" /><circle cx="24" cy="36" r="11" /><circle cx="56" cy="34" r="12" /><circle cx="28" cy="20" r="9" /><circle cx="52" cy="18" r="10" /></g></svg>
+  </a>
+  <p class="date_maj">Page mise à jour le 14/03/2026 à 09h18</p>
+</div>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <nav class="footer__links" aria-label="Pied de page">
+        <a href="contacts.html">Nous écrire</a>
+        <a href="page-2.html">Mentions légales</a>
+        <a href="plan-du-site.html">Plan du site</a>
+      </nav>
+      <p class="copyright">Raphaël WIART © 2010-2026</p>
+    </div>
+  </footer>
+
+  <!-- Bandeau cookies -->
+  <div class="cookies" role="dialog" aria-live="polite" hidden>
+    <p>Bienvenue sur www.ggac.fr !<br />En poursuivant votre navigation, vous acceptez l'utilisation de cookies permettant d'améliorer votre expérience utilisateur.</p>
+    <div class="cookies__actions">
+      <a href="mentions-cookies.html">En savoir plus</a>
+      <button type="button" class="cookies__ok">J'accepte</button>
+    </div>
+  </div>
+
+  <!-- Visionneuse -->
+  <div class="lightbox" aria-hidden="true">
+    <button class="lightbox__close" aria-label="Fermer">×</button>
+    <figure class="lightbox__fig"><img alt="" /><figcaption></figcaption></figure>
+  </div>
+
+  <!-- Rinceau végétal réutilisable (inspiré du feuillage d'origine) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <g id="vine">
+        <path class="vine__stem" d="M30 200 C 80 170, 120 150, 150 110 C 170 80, 175 50, 160 20" />
+        <path class="vine__stem" d="M150 110 C 190 90, 220 60, 250 25" />
+        <path class="vine__stem" d="M120 145 C 100 120, 75 115, 70 95 C 66 78, 82 66, 96 72 C 108 78, 104 94, 92 92" />
+        <path class="vine__stem" d="M165 92 C 190 100, 205 90, 200 74 C 196 62, 182 62, 180 72 C 178 80, 186 84, 190 80" />
+        <path class="vine__stem" d="M100 165 C 110 185, 130 192, 140 180 C 148 168, 136 158, 128 166" />
+        <path class="vine__stem" d="M80 178 C 70 190, 60 192, 48 186" />
+        <g class="vine__leaves">
+          <path class="leaf" style="--r:-30deg" d="M160 20 c -18 -6 -30 2 -34 14 c 14 4 28 -2 34 -14 z" />
+          <path class="leaf" style="--r:20deg" d="M250 25 c -4 16 -14 24 -24 24 c 2 -14 12 -22 24 -24 z" />
+          <path class="leaf" style="--r:10deg" d="M235 60 c 6 14 4 26 -4 32 c -6 -12 -4 -24 4 -32 z" />
+          <path class="leaf" style="--r:-15deg" d="M48 186 c -16 -4 -28 2 -32 12 c 14 4 26 0 32 -12 z" />
+          <path class="leaf" style="--r:25deg" d="M110 200 c 2 16 -4 28 -12 32 c -4 -12 2 -26 12 -32 z" />
+        </g>
+      </g>
+    </defs>
+  </svg>
+
+  
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

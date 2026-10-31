@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Archives en ligne - Groupe des Généalogistes Amateurs du Cambrésis</title>
+  <meta name="author" content="Raphaël WIART" />
+  <meta name="theme-color" content="#f4ede0" />
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+  <link rel="alternate" type="application/rss+xml" title="Flux RSS du site officiel du G.G.A.C." href="https://www.ggac.fr/rss.xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  
+</head>
+<body id="haut" class="">
+
+  <!-- Intro : une goutte d'encre qui révèle la page -->
+  <div class="intro" aria-hidden="true">
+    <svg class="intro__seal" viewBox="0 0 120 140">
+      <path class="intro__shield" d="M10 10 H110 V70 C110 105 85 122 60 132 C35 122 10 105 10 70 Z" />
+    </svg>
+  </div>
+
+  <div class="progress" aria-hidden="true"><span></span></div>
+  <canvas class="dust" aria-hidden="true"></canvas>
+
+  <!-- Barre utilitaire -->
+  <div class="topbar">
+    <div class="wrap topbar__inner">
+      <p class="topbar__maj"><span class="bleu">Mis à jour le 31/10/26</span> - <span class="counter" data-count="119617">119 617</span> visiteurs depuis le 12/03/10</p>
+      <nav class="quick" aria-label="Liens rapides">
+        <a href="agenda.html">Agenda</a>
+        <a href="page-5.html">Adhésion</a>
+        <a href="https://www.ggac.fr/fichiers/file/tarifs_publications.pdf" target="_blank" rel="noopener">Tarifs</a>
+        <a href="https://www.ggac.fr/fichiers/file/commande.pdf" target="_blank" rel="noopener">Commande</a>
+        <a href="https://www.ggac.fr/rss.xml" class="quick__rss">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="3" cy="13" r="2"/><path d="M1 7a8 8 0 0 1 8 8M1 2a13 13 0 0 1 13 13"/></svg>
+          Flux RSS</a>
+      </nav>
+      <form class="search" action="https://www.ggac.fr/rechercher.php" method="post" name="recherche">
+        <label class="sr-only" for="requete">Rechercher sur le site</label>
+        <input name="requete" type="search" id="requete" placeholder="Rechercher sur le site" autocomplete="off" aria-controls="search-results" />
+        <button type="submit" name="ok" id="ok">OK</button>
+        <ul class="search__results" id="search-results" hidden></ul>
+      </form>
+    </div>
+  </div>
+
+  <!-- En-tête -->
+  <header class="hero">
+    <svg class="vine vine--hero" viewBox="0 0 260 240" aria-hidden="true">
+      <use href="#vine" />
+    </svg>
+    <div class="wrap hero__inner">
+      <a class="brand" href="index.html" title="Retour à la page d'accueil">
+        <span class="brand__shields"><img src="assets/img/shields.png" alt="" width="195" height="125" /></span>
+        <span class="brand__name" aria-label="Groupe des Généalogistes Amateurs du Cambrésis">
+          <span class="line"><span class="w"><b>G</b>roupe</span></span>
+          <span class="line">des <span class="w"><b>G</b>énéalogistes</span></span>
+          <span class="line"><span class="w"><b>A</b>mateurs</span> du <span class="w"><b>C</b>ambrésis</span></span>
+        </span>
+      </a>
+      <div class="hero__frames" aria-hidden="true">
+        <figure class="frame frame--manuscrit" data-depth="0.25"><img src="assets/img/manuscrit.jpg" alt="" /></figure>
+        <figure class="frame frame--photo" data-depth="0.6"><img src="assets/img/photo.jpg" alt="" /></figure>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation principale -->
+  <nav class="nav" aria-label="Navigation principale">
+    <div class="wrap nav__inner">
+      <button class="nav__burger" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span><span class="sr-only">Menu</span></button>
+      <ul class="menu" id="menu">
+<li class=""><a class="menu__top" href="index.html">Accueil</a></li>
+<li class="has-sub"><button class="menu__top" aria-expanded="false">L&#x27;association</button><div class="sub"><ul class="sub__col"><li><a href="agenda.html">Agenda</a></li><li><a href="page-3.html">Présentation</a></li><li><a href="page-53.html">Assemblée générale 2025</a></li><li><a href="page-142.html">Scaldobrésia 2025</a></li><li><a href="page-106.html">Retraite et bénévolat</a></li><li><a href="page-4.html">Zone d&#x27;action</a></li><li><a href="page-5.html">Adhésion</a></li><li><a href="page-6.html">Conseil d&#x27;administration</a></li><li><a href="page-7.html">Membres fondateurs</a></li><li><a href="page-8.html">Membres donateurs</a></li></ul></div></li>
+<li class="has-sub"><button class="menu__top" aria-expanded="false">Publications</button><div class="sub sub--wide"><ul class="sub__col"><li><a href="page-62.html">Nouvelles publications</a></li><li class="has-fly"><a href="page-9.html">Farda</a><ul class="fly"><li><a href="page-10.html">Farda n° 1 à 10</a></li><li><a href="page-11.html">Farda n° 11 à 20</a></li><li><a href="page-12.html">Farda n° 21 à 30</a></li><li><a href="page-13.html">Farda n° 31 à 40</a></li><li><a href="page-14.html">Farda n° 41 à 50</a></li><li><a href="page-15.html">Farda n° 51 à 60</a></li><li><a href="page-74.html">Farda n° 61 à 70</a></li><li><a href="page-97.html">Farda n° 71 à 80</a></li><li><a href="page-112.html">Farda n° 81 à 90</a></li><li><a href="page-136.html">Farda n° 91 à 100</a></li><li><a href="page-144.html">Farda n° 101 à 110</a></li></ul></li><li class="has-fly"><a href="page-16.html">Questions des membres</a><ul class="fly"><li><a href="page-17.html">Questions des Farda n° 1 à 10</a></li><li><a href="page-18.html">Questions des Farda n° 11 à 20</a></li><li><a href="page-19.html">Questions des Farda n° 21 à 30</a></li><li><a href="page-20.html">Questions des Farda n° 31 à 40</a></li><li><a href="page-21.html">Questions des Farda n° 41 à 50</a></li><li><a href="page-22.html">Questions des Farda n° 51 à 60</a></li><li><a href="page-75.html">Questions des Farda n° 61 à 70</a></li><li><a href="page-98.html">Questions des Farda n° 71 à 80</a></li><li><a href="page-113.html">Questions des Farda n° 81 à 90</a></li><li><a href="page-137.html">Questions des Farda n° 91 à 100</a></li><li><a href="https://www.ggac.fr/index.php?page=145">Questions des Farda n° 101 à 110</a></li></ul></li><li><a href="page-23.html">Éditions du G.G.A.C.</a></li><li><a href="page-24.html">Généalogies du Cambrésis</a></li><li><a href="page-25.html">Fardes cambrésiennes</a></li></ul><div class="sub__dict"><a class="sub__dict-title" href="page-26.html">Dictionnaires des familles</a><ul class="dict"><li><a href="page-76.html">Anneux</a></li><li><a href="page-30.html">Awoingt</a></li><li><a href="page-122.html">Banteux</a></li><li><a href="page-124.html">Bantouzelle</a></li><li><a href="page-105.html">Baralle</a></li><li><a href="page-27.html">Beaumont-en-Cis</a></li><li><a href="page-28.html">Beauvois-en-Cis</a></li><li><a href="page-31.html">Bertry</a></li><li><a href="page-135.html">Béthencourt</a></li><li><a href="page-103.html">Bévillers</a></li><li><a href="page-88.html">Blécourt</a></li><li><a href="page-32.html">Bourlon</a></li><li><a href="page-92.html">Boursies</a></li><li><a href="page-131.html">Boussières-en-Cambrésis</a></li><li><a href="page-120.html">Briastre</a></li><li><a href="page-99.html">Buissy</a></li><li><a href="page-84.html">Cagnoncles</a></li><li><a href="page-79.html">Cantaing-sur-Escaut</a></li><li><a href="page-33.html">Cattenières</a></li><li><a href="page-116.html">Caudry</a></li><li><a href="page-114.html">Cauroir</a></li><li><a href="page-123.html">Dehéries</a></li><li><a href="page-86.html">Doignies</a></li><li><a href="page-110.html">Épinoy</a></li><li><a href="page-90.html">Escaudœuvres</a></li><li><a href="page-119.html">Esnes</a></li><li><a href="page-139.html">Estourmel</a></li><li><a href="page-34.html">Estrun</a></li><li><a href="page-109.html">Eswars</a></li><li><a href="page-63.html">Flesquières</a></li><li><a href="page-35.html">Fontaine-au-Pire</a></li><li><a href="page-69.html">Fontaine-Notre-Dame</a></li><li><a href="page-132.html">Gonnelieu</a></li><li><a href="page-36.html">Gouy-Saint-André</a></li><li><a href="page-130.html">Graincourt-lès-Havrincourt</a></li><li><a href="page-117.html">Hendecourt-lès-Cagnicourt</a></li><li><a href="page-96.html">Hermies</a></li><li><a href="page-65.html">Honnechy</a></li><li><a href="page-138.html">Honnecourt-sur-Escaut</a></li><li><a href="page-29.html">Inchy</a></li><li><a href="page-71.html">Inchy-en-Artois</a></li><li><a href="page-102.html">Iwuy</a></li><li><a href="page-67.html">Lebucquière</a></li><li><a href="page-141.html">Maretz</a></li><li><a href="page-94.html">Marquion</a></li><li><a href="page-93.html">Masnières</a></li><li><a href="page-87.html">Maurois</a></li><li><a href="page-66.html">Mœuvres</a></li><li><a href="page-128.html">Naves</a></li><li><a href="page-60.html">Niergnies</a></li><li><a href="page-73.html">Noyelles-sur-Escaut</a></li><li><a href="page-121.html">Ors</a></li><li><a href="page-101.html">Pronville-en-Artois</a></li><li><a href="page-37.html">Proville</a></li><li><a href="page-78.html">Quéant</a></li><li><a href="page-80.html">Raillencourt-Sainte-Olle</a></li><li><a href="page-61.html">Ramillies</a></li><li><a href="page-140.html">Reumont</a></li><li><a href="page-127.html">Ribécourt-la-Tour</a></li><li><a href="page-118.html">Rieux-en-Cambrésis</a></li><li><a href="page-89.html">Rumilly-en-Cis</a></li><li><a href="page-81.html">Sailly-lez-Cambrai</a></li><li><a href="page-38.html">Sains-lès-Marquion</a></li><li><a href="page-133.html">Saint-Hilaire-lez-Cambrai</a></li><li><a href="page-134.html">Saint-Vaast-en-Cambrésis</a></li><li><a href="page-82.html">Sancourt</a></li><li><a href="page-107.html">Sauchy-Cauchy</a></li><li><a href="page-108.html">Sauchy-Lestrée</a></li><li><a href="page-91.html">Séranvillers-Forenville</a></li><li><a href="page-70.html">Thun-l&#x27;Évêque</a></li><li><a href="page-39.html">Thun-Saint-Martin</a></li><li><a href="page-72.html">Trescault</a></li><li><a href="page-115.html">Troisvilles</a></li><li><a href="page-68.html">Vélu</a></li><li><a href="page-104.html">Viesly</a></li><li><a href="page-40.html">Villers-en-Cauchies</a></li><li><a href="page-126.html">Villers-Guislain</a></li><li><a href="page-111.html">Villers-lès-Cagnicourt</a></li><li><a href="page-125.html">Villers-Plouich</a></li><li><a href="page-77.html">Wambaix</a></li></ul></div></div></li>
+<li class="has-sub"><button class="menu__top" aria-expanded="false">Bibliothèque</button><div class="sub"><ul class="sub__col"><li><a href="page-41.html">Bulletins et revues</a></li><li><a href="page-42.html">Contrats de mariage et autres...</a></li><li><a href="page-55.html">Catalogue</a></li></ul></div></li>
+<li class="has-sub is-active"><button class="menu__top" aria-expanded="false">Divers</button><div class="sub"><ul class="sub__col"><li><a href="page-85.html">Archives en ligne</a></li><li><a href="page-47.html">Armorial</a></li><li><a href="page-59.html">Pairies du Cambrésis</a></li><li><a href="page-48.html">Paroisses de Cambrai</a></li><li><a href="page-58.html">Carte de CASSINI</a></li><li><a href="page-49.html">Revue des revues</a></li><li><a href="page-51.html">Liens utiles</a></li></ul></div></li>
+<li class="has-sub"><button class="menu__top" aria-expanded="false">Contacts</button><div class="sub"><ul class="sub__col"><li><a href="contacts.html">Nous écrire</a></li><li><a href="page-56.html">Coordonnées</a></li></ul></div></li>
+<li class="menu__member"><a class="menu__top" href="espace-membre.html">Espace membre</a></li>
+      </ul>
+      <span class="menu__ink" aria-hidden="true"></span>
+    </div>
+  </nav>
+
+  <div class="wrap layout">
+
+    <!-- Colonne latérale -->
+    <aside class="side">
+<section class="side__block"><h2 class="side__title">Divers</h2><ul class="side__menu"><li><span class="is-current" aria-current="page">Archives en ligne</span></li><li><a href="page-47.html">Armorial</a></li><li><a href="page-59.html">Pairies du Cambrésis</a></li><li><a href="page-48.html">Paroisses de Cambrai</a></li><li><a href="page-58.html">Carte de CASSINI</a></li><li><a href="page-49.html">Revue des revues</a></li><li><a href="page-51.html">Liens utiles</a></li></ul></section>
+<section class="side__block side__news">
+        <h2 class="side__title">Actualités</h2>
+        <div class="news" tabindex="0">
+          <div class="news__track">
+            <article class="news__item">
+              <h3>PROCHAINE PERMANENCE</h3>
+              <p>Mercredi 4 novembre 2026 de 14h00 à 17h00 au siège de l'association.</p>
+            </article>
+            <article class="news__item">
+              <h3><a href="agenda.html#ev-1">EXPOSITION ET SORTIE OFFICIELLE DES POILUS DE VILLERS-PLOUICH MORTS POUR LA FRANCE ET DU DICTIONNAIRE DES FAMILLES</a></h3>
+              <p>Du samedi 7 au dimanche 8 novembre 2026 - Salle des fêtes Pierre Mauroy à Villers-Plouich (59)</p>
+            </article>
+            <article class="news__item">
+              <h3><a href="agenda.html#ev-2">SALON DE GÉNÉALOGIE ET D'HISTOIRE</a></h3>
+              <p>Du samedi 7 au dimanche 8 novembre 2026 - Palais des sports de Château-Thierry (02)</p>
+            </article>
+            <article class="news__item">
+              <h3><a href="agenda.html#ev-3">5<sup>E</sup> MARCHÉ D'HISTOIRE LOCALE</a></h3>
+              <p>Du samedi 28 au dimanche 29 novembre 2026 - Salle des fêtes de Fontaine-Notre-Dame (59)</p>
+            </article>
+            <article class="news__item">
+              <h3><a href="agenda.html#ev-4">20<sup>ES</sup> PORTES OUVERTES SUR LA GÉNÉALOGIE</a></h3>
+              <p>Du samedi 6 au dimanche 7 février 2027 - Parc des sports Didier Mounier (rue Albert Dauvergne) à Chevry-Cossigny (77)</p>
+            </article>
+            <article class="news__item">
+              <h3><a href="agenda.html#ev-5">EXPOSITION ET SORTIE OFFICIELLE DES POILUS D'ESNES MORTS POUR LA FRANCE ET DU DICTIONNAIRE DES FAMILLES</a></h3>
+              <p>Du samedi 13 au dimanche 14 mars 2027 - Salle des fêtes d'Esnes (59)</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+    </aside>
+
+    <!-- Contenu -->
+    <main class="content">
+<svg class="vine vine--content" viewBox="0 0 260 240" aria-hidden="true"><use href="#vine" /></svg>
+<h1 class="title"><span class="title__text" data-split>Archives en ligne</span>
+<svg class="title__flourish" viewBox="0 0 320 30" aria-hidden="true"><path d="M4 18 C 60 4, 110 28, 160 16 S 260 4, 316 16" /><path d="M150 16 c 6 -10 14 -10 10 0 c -4 8 -14 6 -10 0" /></svg></h1>
+<div class="prose">
+
+
+<h2>France métropolitaine :</h2>
+<p class="ta-c"><div class="map-wrap"><img alt="" decoding="async" height="489" loading="lazy" src="https://www.ggac.fr/fichiers/image/france.jpg" usemap="#Map_Dep" width="528"/></div></p>
+<h2>Outre-Mer :</h2>
+<p><a href="http://anom.archivesnationales.culture.gouv.fr/caomec2/" rel="noopener" target="_blank">http://anom.archivesnationales.culture.gouv.fr/caomec2/</a></p>
+<h2>Assistance publique et hôpitaux de Paris :</h2>
+<p><a href="https://archives.aphp.fr/archives-en-ligne/" rel="noopener" target="_blank">https://archives.aphp.fr/archives-en-ligne/</a></p>
+<h2>Pays étrangers :</h2>
+<div class="table-wrap"><table class="ta-c">
+<tbody>
+<tr>
+<td>
+<ul>
+<li><a href="https://agatha.arch.be/fr/search/genealogie/" rel="noopener" target="_blank">Belgique</a></li>
+<li><a href="https://soeg.rigsarkivet.dk" rel="noopener" target="_blank">Danemark</a></li>
+<li><a href="http://www.nationalarchives.gov.uk" rel="noopener" target="_blank">Grande-Bretagne</a></li>
+<li><a href="https://antenati.cultura.gov.it/?lang=fr" rel="noopener" target="_blank">Italie</a></li>
+<li><a href="https://data.matricula-online.eu/de/LU/luxemburg/" rel="noopener" target="_blank">Luxembourg</a></li>
+</ul>
+</td>
+<td>
+<ul>
+<li><a href="https://archives-nationales.gouv.mc/page/moteurs-de-recherche" rel="noopener" target="_blank">Monaco</a></li>
+<li><a href="https://www.nationaalarchief.nl/onderzoeken" rel="noopener" target="_blank">Pays-Bas</a></li>
+<li><a href="https://www.szukajwarchiwach.gov.pl/en/strona_glowna" rel="noopener" target="_blank">Pologne</a></li>
+<li><a href="https://tombo.pt/" rel="noopener" target="_blank">Portugal</a></li>
+<li><a href="https://www.recherche.bar.admin.ch/recherche/#/fr/recherche/simple" rel="noopener" target="_blank">Suisse</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table></div>
+
+<h2>Portail européen des archives :</h2>
+<p><a href="http://www.archivesportaleurope.net/fr/home" rel="noopener" target="_blank">http://www.archivesportaleurope.net/fr/home</a></p>
+<p><map name="Map_Dep">
+<area alt="Ain (2007)" coords="451,272, 453,278, 447,287, 441,289, 443,301, 442,308, 435,313, 430,305, 425,302, 421,307, 409,307, 404,296, 408,281, 411,267, 420,265, 423,271, 427,271, 430,277, 434,274, 440,278, 451,272" href="http://www.archives-numerisees.ain.fr/archives/recherche/etatcivil/n:88" shape="poly" target="_blank" title="Ain (2007)"/>
+<area alt="Aisne (2010)" coords="352,82, 350,87, 352,90, 351,92, 348,92, 346,103, 347,116, 342,127, 347,128, 347,131, 349,139, 356,150, 360,149, 365,139, 363,135, 367,130, 366,127, 368,120, 380,121, 380,118, 379,105, 384,103, 383,99, 389,91, 383,87, 380,88, 373,84, 363,85, 352,82" href="https://archives.aisne.fr/archive/recherche/etatcivil/n:11" shape="poly" target="_blank" title="Aisne (2010)"/>
+<area alt="Allier (2011)" coords="377,267, 379,281, 374,284, 373,280, 367,282, 368,292, 364,294, 340,286, 338,282, 339,279, 335,278, 328,283, 322,282, 321,279, 314,275, 314,269, 327,261, 328,255, 347,252, 356,257, 356,260, 361,259, 360,255, 367,256, 373,265, 377,267" href="https://archives.allier.fr/rechercher/archives-numerisees/genealogie-histoire-des-familles/etat-civil-en-ligne?arko_default_5f992f52cfc55--ficheFocus=" shape="poly" target="_blank" title="Allier (2011)"/>
+<area alt="Alpes-de-Haute-Provence (2008)" coords="484,377, 478,378, 475,386, 477,396, 480,398, 480,402, 474,407, 468,407, 462,411, 457,409, 448,412, 442,410, 441,411, 437,411, 436,405, 430,399, 431,392, 435,392, 437,389, 437,386, 441,385, 447,378, 454,376, 458,377, 460,374, 467,375, 474,370, 475,367, 483,366, 484,377" href="https://www.archives04.fr/rechercher/archives-en-ligne/etat-civil" shape="poly" target="_blank" title="Alpes-de-Haute-Provence (2008)"/>
+<area alt="Hautes-Alpes (2007)" coords="443,362, 436,363, 434,370, 430,373, 437,386, 441,385, 447,378, 454,376, 458,377, 460,374, 467,375, 474,370, 475,367, 483,366, 488,359, 486,353, 481,352, 471,340, 459,338, 461,349, 453,355, 449,353, 445,359, 445,359, 443,362" href="http://www.archives05.fr/3_ressources-numerisees/index.php" shape="poly" target="_blank" title="Hautes-Alpes (2007)"/>
+<area alt="Alpes-Maritimes (2005)" coords="484,377, 496,389, 505,390, 511,398, 505,405, 508,411, 493,418, 492,425, 487,421, 484,424, 480,420, 479,411, 474,407, 480,402, 480,398, 477,396, 475,386, 478,378, 484,377" href="https://archives06.fr/n/recherche-guidee-dans-les-archives/n:92" shape="poly" target="_blank" title="Alpes-Maritimes (2005)"/>
+<area alt="Ardèche (2006)" coords="370,363,374,364,377,372,378,379,382,380,386,378,394,378,399,383,399,377,400,370,408,356,406,343,405,329,406,323,400,327,400,331,395,334,393,333,390,341,386,343,383,348,376,351,374,355,370,356,370,363" href="https://archives.ardeche.fr/n/familles-et-individus/n:163" shape="poly" target="_blank" title="Ardèche (2006)"/>
+<area alt="Ardennes (2009)" coords="403,80, 409,80, 407,87, 413,100, 420,101, 429,111, 426,112, 417,109, 413,130, 409,129, 400,126, 394,126, 386,118, 380,118, 379,105, 384,103, 383,99, 389,91, 403,80" href="https://archives.cd08.fr/archives-numerisees" shape="poly" target="_blank" title="Ardennes (2009)"/>
+<area alt="Ariège" coords="252,448, 254,442, 258,437, 269,435, 268,432, 272,430, 269,426, 271,425, 274,425, 275,427, 279,426, 284,428, 287,433, 292,433, 295,439, 294,443, 288,450, 299,458, 292,461, 283,462, 282,460, 277,459, 271,459, 268,454, 252,448" href="https://archives.ariege.fr/rechercher-et-consulter/archives-en-ligne/" shape="poly" target="_blank" title="Ariège"/>
+<area alt="Aube (2006)" coords="359,160,362,162,366,165,373,167,377,160,388,160,392,166,400,168,409,185,401,186,401,189,394,189,393,192,386,194,383,189,377,192,371,183,366,183,360,173,357,171" href="https://www.archives-aube.fr/actualites-1/les-actualites-anterieures-a-2010/validation-pages-1/documents-numerises-copie-de-travail/genealogie--faire-lhistoire-de-ma-famille" shape="poly" target="_blank" title="Aube (2006)"/>
+<area alt="Aude (2013)" coords="318,447, 310,449, 310,453, 309,455, 299,458, 288,450, 294,443, 295,439, 292,433, 287,433, 284,428, 287,423, 289,423, 291,420, 294,421, 298,417, 300,421, 313,423, 320,420, 319,427, 322,428, 326,431, 333,424, 342,437, 339,443, 336,439, 335,441, 336,444, 336,453, 329,452, 328,448, 321,450,
+318,447" href="https://archivesdepartementales.aude.fr/les-archives-en-ligne" shape="poly" target="_blank" title="Aude (2013)"/>
+<area alt="Aveyron" coords="351,393, 348,390, 353,387, 345,382, 342,377, 342,366, 338,359, 330,345, 323,354, 313,362, 311,360, 307,364, 297,367, 291,373, 296,377, 295,384, 304,384, 311,385, 319,391, 320,398, 334,406, 337,407, 339,399, 344,401, 350,396, 351,393" href="https://archives.aveyron.fr/n/archives-numerisees/n:119" shape="poly" target="_blank" title="Aveyron"/>
+<area alt="Bouches-du-Rhône (2006)" coords="384,421, 385,426, 392,426, 396,431, 403,431, 406,428, 410,430, 410,433, 421,433, 422,435, 420,438, 425,441, 428,438, 437,442, 439,432, 436,429, 438,426, 441,427, 441,423, 437,420, 442,413, 441,411, 437,411, 429,414, 423,409, 415,409, 405,401, 397,406, 396,411, 389,414, 390,418, 384,421" href="https://www.archives13.fr/n/archives-numerisees/n:1" shape="poly" target="_blank" title="Bouches-du-Rhône (2006)"/>
+<area alt="Calvados (2009)" coords="209,110, 205,114, 207,117, 206,122, 211,120, 212,128, 204,141, 213,144, 221,139, 236,140, 247,134, 255,137, 257,132, 254,130, 254,112, 241,113, 238,118, 231,121, 232,118, 225,115, 209,110" href="https://archives.calvados.fr/page/genealogie" shape="poly" target="_blank" title="Calvados (2009)"/>
+<area alt="Cantal (2008)" coords="304,356, 309,356, 311,360, 313,362, 323,354, 330,345, 338,359, 342,354, 342,348, 348,351, 351,346, 349,341, 351,337, 342,327, 338,327, 334,321, 328,322, 325,317, 322,319, 323,322, 321,326, 316,319, 313,326, 306,330, 302,344, 304,356" href="https://archives.cantal.fr/rechercher/genealogie" shape="poly" target="_blank" title="Cantal (2008)"/>
+<area alt="Charente (2012)" coords="257,282, 260,287, 253,303, 246,306, 246,311, 238,317, 238,322, 232,326, 226,326, 227,322, 221,317, 218,318, 219,311, 215,297, 217,293, 224,294, 227,288, 232,283, 234,279, 238,280, 246,282, 250,280, 252,283, 257,282" href="https://lasource.archives.lacharente.fr/n/faire-sa-genealogie/n:114" shape="poly" target="_blank" title="Charente (2012)"/>
+<area alt="Charente-Maritime (2008)" coords="203,319, 200,312, 198,306, 194,304, 190,300, 186,297, 186,294, 190,292, 191,290, 192,288, 191,282, 193,284, 194,282, 192,275, 189,273, 191,271, 192,268, 201,269, 204,266, 206,266, 206,272, 208,276, 217,276, 227,288, 224,294, 217,293, 215,297, 219,311, 218,318, 221,317, 227,322, 226,326,
+222,330, 216,327, 209,316, 203,319" href="https://archives.charente-maritime.fr/consulter-documents-numerises" shape="poly" target="_blank" title="Charente-Maritime (2008)"/>
+<area alt="Cher" coords="341,209, 337,214, 345,229, 347,252, 328,255, 327,261, 314,269, 312,267, 309,261, 310,256, 308,253, 307,249, 310,242, 300,231, 304,224, 309,223, 309,220, 315,217, 311,209, 314,207, 328,205, 332,208, 341,209" href="https://www.archives18.fr/archives-numerisees" shape="poly" target="_blank" title="Cher"/>
+<area alt="Corrèze (2007)" coords="274,318,294,306,304,306,303,310,318,310,319,316,323,323,317,318,313,322,309,325,305,330,302,343,290,341,287,335,281,339,274,333,278,328,273,325" href="https://www.archives.correze.fr/" shape="poly" target="_blank" title="Corrèze (2007)"/>
+<area alt="Corse du Sud (2015)" coords=" 527,452, 523,458, 521,471, 516,477, 521,480, 517,482, 517,488, 513,488, 511,481, 504,481, 500,477, 502,473, 504,471, 498,468, 498,460, 494,459 " href="https://archives.isula.corsica/Internet_THOT/FrmSommaireFrame.asp" shape="poly" target="_blank" title="Corse du Sud (2015)"/>
+<area alt="Haute-Corse (2010)" coords="518,405, 524,404, 524,411, 523,419, 527,452,   493,456, 498,455, 494,447, 491,445, 495,442, 492,439, 499,425, 508,425, 506,421, 513,417, 514,422, 516,421,518,405" href="https://archives.isula.corsica/Internet_THOT/FrmSommaireFrame.asp" shape="poly" target="_blank" title="Haute-Corse (2010)"/>
+<area alt="Côte-d'Or (2006)" coords="383,223, 381,228, 384,234, 386,238, 402,244, 423,245, 424,240, 430,235, 431,226, 427,218, 430,214, 428,211, 421,212, 411,208, 414,203, 412,200, 409,200, 401,191, 396,191, 394,194, 385,194, 385,197, 388,200, 383,216, 379,222, 383,223" href="https://archives.cotedor.fr/v2/site/AD21/Rechercher/Archives_en_ligne" shape="poly" target="_blank" title="Côte-d'Or (2006)"/>
+<area alt="Côte-d'Armor (2005)" coords="163,170, 152,169, 151,174, 147,171, 146,171, 137,168, 126,169, 119,163, 118,153, 119,147, 116,142, 118,137, 123,132, 133,133, 138,134, 145,143, 145,146, 149,150, 157,144, 163,142, 165,144, 167,147, 174,153, 173,162, 164,167, 163,170, 163,170" href="https://archives.cotesdarmor.fr/archives-numerisees-0" shape="poly" target="_blank" title="Côte-d'Armor (2005)"/>
+<area alt="Creuse (2012)" coords="314,269, 314,275, 321,279, 322,282, 325,292, 317,299, 320,301, 321,309, 306,308, 305,304, 297,304, 285,291, 287,284, 282,279, 285,270, 290,270, 295,267, 311,269, 312,267, 314,269" href="https://archives.creuse.fr/rechercher/archives-numerisees" shape="poly" target="_blank" title="Creuse (2012)"/>
+<area alt="Dordogne (2009)" coords="275,328, 272,325, 274,316, 272,313, 269,315, 261,308, 256,309, 253,303, 246,306, 246,311, 238,317, 238,322, 232,326, 226,326, 229,331, 226,338, 228,342, 237,342, 237,350, 241,354, 255,354, 257,357, 260,356, 263,361, 272,355, 278,347, 279,340, 272,330, 275,328" href="https://archives.dordogne.fr/archives-numerisees" shape="poly" target="_blank" title="Dordogne (2009)"/>
+<area alt="Doubs (2008)" coords="486,231, 481,238, 469,245, 454,264, 450,260, 451,254, 444,244, 439,241, 441,230, 451,223, 451,220, 455,220, 462,215, 466,217, 471,214, 478,215, 483,222, 486,231" href="https://archives.doubs.fr/page/formulaires-de-recherche" shape="poly" target="_blank" title="Doubs (2008)"/>
+<area alt="Drôme (2008)" coords="405,343, 407,356, 399,370, 398,377, 406,378, 407,375, 409,373, 412,375, 409,380, 411,381, 415,381, 419,384, 424,383, 431,392, 435,392, 437,389, 437,386, 430,373, 434,370, 436,363, 443,362, 445,359, 442,359, 435,357, 430,351, 432,345, 428,341, 419,340, 416,332, 412,328, 404,329, 405,343" href="https://archives.ladrome.fr/page/archives-numerisees" shape="poly" target="_blank" title="Drôme (2008)"/>
+<area alt="Eure (2006)" coords="253,111,256,109,270,116,269,120,278,124,286,114,303,118,299,122,300,125,289,133,289,136,279,146,265,147,264,142,256,141,255,136,257,133,254,130" href="https://archives.eure.fr/search/home" shape="poly" target="_blank" title="Eure (2006)"/>
+<area alt="Eure-et-Loir (2006)" coords="296,147, 293,152, 302,164, 306,165, 307,173, 307,176, 302,181, 292,186, 286,189, 279,187, 274,183, 266,183, 267,179, 264,176, 266,169, 273,165, 269,155, 267,157, 265,148, 274,148, 282,146, 288,139, 292,139, 296,147" href="https://archives28.fr/archives-et-inventaires-en-ligne/histoire-des-individus-des-populations-et-genealogie" shape="poly" target="_blank" title="Eure-et-Loir (2006)"/>
+<area alt="Finistère (2012)" coords="80,139, 85,139, 87,135, 94,135, 95,138, 100,134, 105,133, 106,137, 111,139, 112,136, 118,137, 116,142, 119,147, 118,153, 119,163, 111,167, 113,173, 121,175, 122,180, 116,181, 114,184, 108,183, 106,182, 103,179, 103,175, 99,179, 97,172, 95,177, 92,180, 86,179, 88,173, 85,168, 81,166, 76,164,
+83,161, 91,162, 93,160, 86,157, 82,156, 83,152, 90,154, 93,156, 95,154, 91,150, 88,149, 81,149, 75,150, 80,139" href="https://recherche.archives.finistere.fr/n/faire-l-histoire-de-sa-famille/n:130" shape="poly" target="_blank" title="Finistère (2012)"/>
+<area alt="Gard" coords="349,390, 353,386, 358,384, 363,385, 370,388, 372,371, 376,370, 378,379, 385,380, 392,378, 398,383, 406,402, 398,407, 391,413, 385,423, 379,414, 366,399, 358,401, 347,389" href="https://archives.gard.fr/histoires-familiales-et-genealogie.html" shape="poly" target="_blank" title="Gard"/>
+<area alt="Haute-Garonne (2009)" coords="239,453, 241,451, 243,453, 249,448, 252,448, 254,442, 258,437, 269,435, 268,432, 272,430, 269,426, 271,425, 274,425, 275,427, 279,426, 284,428, 287,423, 289,423, 291,420, 294,421, 294,418, 287,412, 285,401, 281,394, 272,396, 268,402, 265,399, 259,401, 264,410, 259,415, 259,418, 254,417,
+248,423, 243,422, 237,427, 237,429, 241,432, 239,436, 242,438, 244,444, 240,446, 239,453" href="https://archives.haute-garonne.fr/n/consulter-les-archives-numerisees/n:112" shape="poly" target="_blank" title="Haute-Garonne (2009)"/>
+<area alt="Gers" coords="211,403, 218,397, 215,391, 220,387, 224,391, 228,388, 250,388, 255,397, 260,405, 262,412, 256, 419,254, 417,246, 424,238, 417,233, 419,227, 412,230, 406,225, 405,219, 407,212, 404" href="https://www.archives32.fr/archives_numerisees/portail/" shape="poly" target="_blank" title="Gers"/>
+<area alt="Gironde (2007)" coords="176,357, 180,353, 187,353, 188,352, 187,351, 188,349, 184,346, 179,351, 181,339, 185,321, 186,308, 190,306, 201,327, 203,331, 206,333, 205,330, 203,325, 203,321, 203,319, 209,316, 216,327, 222,330, 226,326, 229,331, 226,338, 228,342, 237,342, 237,350, 232,351, 230,349, 229,352, 230,356,
+220,375, 216,373, 214,375, 208,371, 210,369, 207,365, 204,365, 200,361, 188,363, 188,358, 176,357, 176,357" href="https://archives.gironde.fr/archive/recherche/etatcivil/n:629" shape="poly" target="_blank" title="Gironde (2007)"/>
+<area alt="Hérault (2008)" coords="385,421,382,424,377,422,365,426,363,429,358,432,354,432,349,432,343,437,334,424,327,431,323,428,320,427,321,420,322,408,324,407,330,411,334,410,335,406,338,407,340,399,345,401,351,396,358,400,368,396,383,412,382,417,385,421" href="https://archives-pierresvives.herault.fr/n/archives-en-ligne/n:1" shape="poly" target="_blank" title="Hérault (2008)"/>
+<area alt="Ille-et-Vilaine (2009)" coords="173,162, 174,153, 167,147, 170,146, 174,145, 180,143, 180,148, 186,149, 188,151, 193,157, 200,154, 204,156, 200,172, 203,179, 197,186, 195,191, 187,187, 184,190, 179,189, 176,195, 162,199, 166,183, 162,180, 163,170, 164,167, 173,162, 174,153, 167,147, 173,162" href="https://archives-en-ligne.ille-et-vilaine.fr/thot_internet/FrmSommaireFrame.asp" shape="poly" target="_blank" title="Ille-et-Vilaine (2009)"/>
+<area alt="Indre (2013)" coords="264,253, 274,268, 279,268, 285,270, 290,270, 295,267, 311,269, 312,267, 309,261, 310,256, 308,253, 307,249, 310,242, 300,231, 301,228, 295,224, 284,229, 281,229, 279,237, 270,237, 268,248, 264,253" href="https://www.archives36.fr/fonds-numerises/recherches-genealogiques" shape="poly" target="_blank" title="Indre (2013)"/>
+<area alt="Indre-et-Loire (2009)" coords="281,229, 279,237, 270,237, 268,248, 264,253, 257,245, 258,238, 255,236, 253,238, 244,238, 241,230, 237,229, 236,223, 241,211, 245,207, 248,205, 248,202, 253,203, 259,200, 265,200, 266,205, 270,205, 272,208, 274,213, 272,219, 281,229" href="https://archives.touraine.fr/page/des-personnes-et-des-familles" shape="poly" target="_blank" title="Indre-et-Loire (2009)"/>
+<area alt="Isère (2010)" coords="435,313, 439,322, 443,324, 445,321, 453,324, 453,328, 452,334, 459,338, 461,349, 453,355, 449,353, 445,359, 442,359, 435,357, 430,351, 432,345, 428,341, 419,340, 416,332, 412,328, 404,329, 405,323, 405,313, 409,307, 421,307, 425,302, 430,305, 435,313" href="https://archivesenligne1.archives-isere.fr/archives-en-ligne-acces-salle-de-lecture-1" shape="poly" target="_blank" title="Isère (2010)"/>
+<area alt="Jura" coords="431,227,440,229,440,242,450,253,449,260,454,266,453,271,440,277,437,275,436,275,429,271,426,254,430,250,423,244,425,236,431,228" href="https://archives39.fr/page/acces-aux-documents-numerises" shape="poly" target="_blank" title="Jura"/>
+<area alt="Landes (2009)" coords="188,358, 188,363, 200,361, 204,365, 207,365, 210,369, 208,371, 214,375, 216,373, 220,375, 221,377, 227,379, 227,388, 225,390, 220,388, 217,391, 218,397, 212,401, 212,405, 201,408, 191,406, 185,409, 175,407, 171,408, 163,406, 174,381, 175,374, 176,357, 188,358" href="https://archives.landes.fr/faire-une-recherche/archives-numerisees/rechercher-une-personne" shape="poly" target="_blank" title="Landes (2009)"/>
+<area alt="Loir-et-Cher (2011)" coords="292,186, 294,189, 291,196, 297,205, 301,203, 308,205, 311,203, 314,207, 311,209, 315,217, 309,220, 309,223, 304,224, 301,228, 295,224, 284,229, 281,229, 272,219, 274,213, 272,208, 270,205, 266,205, 265,200, 259,200, 263,191, 266,183, 274,183, 279,187, 286,189, 292,186" href="https://www.archives41.fr" shape="poly" target="_blank" title="Loir-et-Cher (2011)"/>
+<area alt="Loire (2010)" coords="389,282, 392,285, 385,295, 389,300, 392,315, 396,316, 405,323, 399,327, 399,331, 394,334, 392,333, 384,325, 373,323, 373,316, 366,307, 364,294, 368,292, 367,282, 373,280, 374,284, 379,281, 389,282" href="https://archives.loire.fr/n/histoire-des-familles-et-des-personnes/n:91" shape="poly" target="_blank" title="Loire (2010)"/>
+<area alt="Haute-Loire (2011)" coords="373,323, 384,325, 392,333, 389,341, 385,343, 382,348, 375,351, 373,355, 369,356, 365,355, 362,349, 354,352, 351,346, 349,341, 351,337, 342,327, 343,323, 354,320, 363,325, 373,323" href="https://www.archives43.fr/archives-en-ligne/familles-et-individus-en-haute-loire" shape="poly" target="_blank" title="Haute-Loire (2011)"/>
+<area alt="Loire-Atlantique (2006)" coords="151,203, 156,203, 162,199, 176,195, 179,189, 184,190, 187,187, 195,191, 199,201, 196,207, 203,208, 204,213, 192,217, 195,220, 194,228, 187,233, 184,231, 183,232, 184,238, 163,230, 163,224, 157,222, 160,217, 161,214, 162,211, 155,214, 151,212, 148,215, 146,213, 148,211, 147,206, 150,207,
+151,203" href="https://archives.loire-atlantique.fr/44/archives-numerisees/c_23000" shape="poly" target="_blank" title="Loire-Atlantique (2006)"/>
+<area alt="Loiret (2013)" coords="314,169, 316,172, 323,171, 323,181, 329,181, 332,185, 332,178, 341,180, 344,183, 345,191, 337,202, 341,209, 332,208, 328,205, 314,207, 311,203, 308,205, 301,203, 297,205, 291,196, 294,189, 292,186, 302,181, 307,176, 307,173, 313,172, 314,169" href="https://www.archives-loiret.fr/faire-vos-recherches/archives-numerisees" shape="poly" target="_blank" title="Loiret (2013)"/>
+<area alt="Lot (2011)" coords="279,340, 278,347, 272,355, 263,361, 261,362, 265,371, 277,378, 281,375, 287,376, 291,373, 297,367, 307,364, 311,360, 309,356, 304,356, 302,344, 288,340, 286,337, 279,340" href="https://archives.lot.fr/recherche-en-ligne/archives-numerisees" shape="poly" target="_blank" title="Lot (2011)"/>
+<area alt="Lot-et-Garonne (2011)" coords="265,371, 259,370, 257,374, 260,377, 260,380, 251,387, 246,387, 240,387, 235,387, 227,388, 227,379, 221,377, 220,375, 230,356, 229,352, 230,349, 232,351, 237,350, 241,354, 255,354, 257,357, 260,356, 263,361, 261,362, 265,371" href="https://lotetgaronne.archives.prismia.fr/Recherche/recherchePersonne" shape="poly" target="_blank" title="Lot-et-Garonne (2011)"/>
+<area alt="Lozère (2006)" coords="369,387,364,382,356,387,352,382,348,380,344,377,344,363,339,358,343,355,343,351,348,353,350,347,355,353,362,350,362,354,366,356,367,363,372,366,374,369,368,371,369,376,370,383" href="https://archives.lozere.fr/n/a-partir-des-archives-numerisees/n:326" shape="poly" target="_blank" title="Lozère (2006)"/>
+<area alt="Maine-et-Loire (2008)" coords="195,191, 203,194, 223,197, 228,198, 230,203, 233,201, 245,207, 241,211, 236,223, 237,229, 233,231, 231,228, 229,232, 226,229, 223,230, 219,229, 209,235, 205,234, 197,232, 194,228, 195,220, 192,217, 204,213, 203,208, 196,207, 199,201, 195,191" href="https://archives.maine-et-loire.fr/recherche-et-consulter/archives-numerisees#c3280" shape="poly" target="_blank" title="Maine-et-Loire (2008)"/>
+<area alt="Manche (2010)" coords="188,151, 195,148, 195,143, 192,144, 188,142, 190,132, 189,126, 190,120, 188,117, 187,111, 185,110, 182,104, 182,97, 180,94, 181,93, 187,95, 189,97, 191,98, 195,97, 198,96, 202,97, 203,100, 201,103, 203,108, 201,112, 204,113, 207,117, 206,122, 211,120, 212,128, 204,141, 213,144, 213,154,
+204,156, 200,154, 193,157, 188,151" href="https://www.archives-manche.fr/rechercher" shape="poly" target="_blank" title="Manche (2010)"/>
+<area alt=" Marne (2012)" coords="377,157, 373,165, 364,163, 362,160, 359,160, 356,150, 360,149, 365,139, 363,135, 367,130, 366,127, 368,120, 380,121, 380,118, 386,118, 394,126, 400,126, 409,129, 413,130, 413,136, 416,139, 412,145, 414,148, 413,157, 405,155, 407,160, 405,161, 404,166, 402,166, 393,164, 388,158, 377,157" href="https://archives.marne.fr/page/archives-numerisees" shape="poly" target="_blank" title=" Marne (2012)"/>
+<area alt="Haute-Marne (2006)" coords="405,155, 413,157, 417,160, 419,165, 428,169, 429,174, 434,180, 437,180, 439,181, 435,188, 438,189, 441,194, 445,194, 445,197, 436,203, 439,205, 437,208, 430,207, 428,211, 421,212, 411,208, 414,203, 412,200, 409,200, 401,191, 402,188, 409,187, 410,185, 402,170, 402,166, 404,166, 405,161,
+407,160, 405,155" href="https://archives.haute-marne.fr/rechercher/consulter-en-ligne/les-fonds-numerises" shape="poly" target="_blank" title="Haute-Marne (2006)"/>
+<area alt="Mayenne (2003)" coords="213,154, 216,158, 234,154, 237,163, 228,180, 229,184, 223,190, 223,197, 203,194, 195,191, 197,186, 203,179, 200,172, 204,156, 213,154" href="https://archives.lamayenne.fr/page/rechercher-une-personne" shape="poly" target="_blank" title="Mayenne (2003)"/>
+<area alt="Meurthe-et-Moselle (2008)" coords="445,111, 450,116, 449,138, 458,142, 460,149, 483,162, 489,165, 489,168, 478,173, 462,171, 458,170, 455,173, 448,173, 444,169, 438,166, 439,145, 442,139, 439,134, 439,121, 433,117, 431,120, 432,113, 445,111" href="https://archives.meurthe-et-moselle.fr/archives-en-ligne" shape="poly" target="_blank" title="Meurthe-et-Moselle (2008)"/>
+<area alt="Meuse (2010)" coords="418,110,426,111,427,109,431,113,430,120,438,123,438,134,442,138,438,142,436,163,433,168,430,165,427,168,420,164,414,157,415,148,413,146,419,140,413,133" href="https://archives.meuse.fr/page/archives-en-ligne" shape="poly" target="_blank" title="Meuse (2010)"/>
+<area alt="Morbihan (2007)" coords="119,163, 126,169, 137,168, 146,171, 147,171, 151,174, 152,169, 163,170, 163,170, 162,180, 166,183, 162,199, 156,203, 151,203, 148,199, 146,200, 144,198, 143,194, 135,193, 135,195, 131,195, 129,195, 127,193, 127,190, 123,189, 123,186, 122,185, 119,186, 116,181, 122,180, 121,175, 113,173,
+111,167, 119,163, 119,163" href="https://patrimoines-archives.morbihan.fr/rechercher/archives/archives-en-ligne" shape="poly" target="_blank" title="Morbihan (2007)"/>
+<area alt="Moselle " coords="489,165, 483,162, 460,149, 458,142, 449,138, 450,116, 463,117, 472,128, 505,134, 501,142, 489,140, 487,137, 484,144, 493,150, 491,156, 493,159, 489,165" href="https://www.archives57.com/index.php/recherches/archives-en-ligne" shape="poly" target="_blank" title="Moselle "/>
+<area alt="Nièvre (2011)" coords="379,238, 378,242, 380,243, 379,253, 367,256, 360,255, 361,259, 356,260, 356,257, 347,252, 345,229, 337,214, 341,209, 352,213, 357,211, 366,216, 367,220, 371,218, 376,225, 379,222, 383,223, 381,228, 384,234, 379,238" href="https://archives.nievre.fr/page/archives-en-ligne" shape="poly" target="_blank" title="Nièvre (2011)"/>
+<area alt="Nord (2008)" coords="352,82, 347,83, 347,83, 349,77, 345,70, 346,65, 344,61, 330,55, 327,52, 328,48, 323,47, 320,35, 333,32, 335,45, 339,49, 343,52, 347,49, 350,47, 358,52, 358,55, 358,59, 358,62, 363,62, 367,63, 369,72, 382,69, 387,75, 383,87, 380,88, 373,84, 363,85, 352,82" href="https://archivesdepartementales.lenord.fr/search/form/dc4e871d-0b62-41fb-9921-5ded573781b8" shape="poly" target="_blank" title="Nord (2008)"/>
+<area alt="Oise(2007)" coords="303,120, 300,124, 302,128, 317,126, 330,134, 332,132, 343,135, 347,131, 347,128, 342,127, 347,116, 346,103, 335,103, 331,106, 326,105, 323,101, 313,100, 305,97, 301,105, 305,110, 302,117, 303,120" href="https://archives.oise.fr/rechercher/archives-en-ligne" shape="poly" target="_blank" title="Oise(2007)"/>
+<area alt="Orne (2007)" coords="247,134, 236,140, 221,139, 213,144, 213,154, 216,158, 234,154, 237,163, 247,160, 252,161, 254,168, 261,172, 264,176, 266,169, 273,165, 269,155, 267,157, 265,148, 263,143, 255,140, 255,137, 247,134" href="https://archives.orne.fr/consulter-nos-archives-en-ligne" shape="poly" target="_blank" title="Orne (2007)"/>
+<area alt="Pas-de-Calais (2009)" coords="347,83, 347,83, 331,83, 333,79, 321,75, 319,77, 316,77, 314,72, 299,65, 300,57, 300,50, 300,43, 320,35, 323,47, 328,48, 327,52, 330,55, 344,61, 346,65, 345,70, 349,77, 347,83" href="https://www.archivespasdecalais.fr/Chercher/Archives-numerisees" shape="poly" target="_blank" title="Pas-de-Calais (2009)"/>
+<area alt="Puy-de-Dôme (2009)" coords="373,323, 363,325, 354,320, 343,323, 342,327, 338,327, 334,321, 328,322, 325,317, 322,319, 320,315, 321,309, 320,301, 317,299, 325,292, 322,282, 328,283, 335,278, 339,279, 338,282, 340,286, 364,294, 366,307, 373,316, 373,323" href="https://www.archivesdepartementales.puy-de-dome.fr/n/rechercher/n:149#sous_rubriques_1" shape="poly" target="_blank" title="Puy-de-Dôme (2009)"/>
+<area alt="Pyrénées-Atlantiques (2010)" coords="163,406, 162,407, 160,409, 154,410, 155,412, 158,415, 161,416, 164,420, 166,422, 163,429, 164,431, 168,431, 171,429, 174,430, 177,432, 180,435, 182,438, 184,437, 187,436, 189,437, 191,437, 193,439, 194,441, 195,443, 196,444, 200,445, 203,444, 207,445, 211,434, 217,425, 214,423, 215,419,
+220,421, 218,412, 221,411, 220,407, 212,405, 201,408, 191,406, 185,409, 175,407, 171,408, 163,406" href="https://earchives.le64.fr/archives-en-ligne/etat-civil-search-form.html" shape="poly" target="_blank" title="Pyrénées-Atlantiques (2010)"/>
+<area alt="Hautes-Pyrénées (2016)" coords="220,407, 226,406, 230,409, 227,412, 232,417, 239,419, 243,422, 237,427, 237,429, 241,432, 239,436, 242,438, 244,444, 240,446, 239,453, 220,452, 216,450, 213,452, 207,445, 211,434, 217,425, 214,423, 215,419, 220,421, 218,412, 221,411, 220,407" href="https://archivesenligne65.fr/archives/acces-thematique" shape="poly" target="_blank" title="Hautes-Pyrénées (2016)"/>
+<area alt="Pyrénées-Orientales (2014)" coords="343,478, 332,474, 321,478, 307,474, 304,473, 299,476, 294,475, 288,469, 284,470, 283,462, 292,461, 299,458, 309,455, 310,453, 310,449, 318,447, 321,450, 328,448, 329,452, 336,453, 335,458, 337,464, 340,466, 343,478" href="https://www.ledepartement66.fr/lesarchivesenligne/" shape="poly" target="_blank" title="Pyrénées-Orientales (2014)"/>
+<area alt="Bas-Rhin (2010)" coords="495,175, 507,186, 513,168, 512,160, 527,145, 521,136, 505,134, 501,142, 489,140, 487,137, 484,144, 493,150, 491,156, 493,159, 489,165, 489,168, 488,173, 492,176, 495,175" href="https://archives67.alsace.eu/n/archives-numerisees/n:124" shape="poly" target="_blank" title="Bas-Rhin (2010)"/>
+<area alt="Haut-Rhin (2010)" coords="500,221, 506,211, 504,200, 509,195, 507,186, 495,175, 492,176, 489,183, 483,188, 480,195, 481,198, 477,201, 485,206, 491,219, 496,221, 500,221" href="https://archives68.alsace.eu/page/archives-numerisees" shape="poly" target="_blank" title="Haut-Rhin (2010)"/>
+<area alt="Rhône (2011)" coords="393,278, 402,277, 405,281, 408,281, 404,296, 409,307, 405,313, 405,323, 396,316, 392,315, 389,300, 385,295, 392,285, 389,282, 393,278" href="https://archives.rhone.fr/page/archives-consultables-en-ligne" shape="poly" target="_blank" title="Rhône (2011)"/>
+<area alt="Haute-Saône" coords="451,223, 451,220, 455,220, 462,215, 466,217, 471,214, 478,215, 477,201, 462,193, 452,193, 445,194, 445,197, 436,203, 439,205, 437,208, 430,207, 428,211, 430,214, 427,218, 431,226, 441,230, 451,223" href="https://archives.haute-saone.fr/archive/recherche/etatcivil2/n:119" shape="poly" target="_blank" title="Haute-Saône"/>
+<area alt="Saône-et-Loire (2008)" coords="428,251, 425,254, 427,271, 423,271, 420,265, 411,267, 408,281, 405,281, 402,277, 393,278, 389,282, 379,281, 377,267, 373,265, 367,256, 379,253, 380,243, 378,242, 379,238, 384,234, 386,238, 402,244, 423,245, 428,251" href="https://www.archives71.fr/consulter/en-ligne/familles-et-individus" shape="poly" target="_blank" title="Saône-et-Loire (2008)"/>
+<area alt="Sarthe (2005)" coords="237,163, 247,160, 252,161, 254,168, 261,172, 264,176, 267,179, 266,183, 263,191, 259,200, 253,203, 248,202, 248,205, 245,207, 233,201, 230,203, 228,198, 223,197, 223,190, 229,184, 228,180, 237,163" href="https://archives.sarthe.fr/archives-en-ligne" shape="poly" target="_blank" title="Sarthe (2005)"/>
+<area alt="Savoie (2003)" coords="471,340, 489,327, 488,319, 478,307, 471,305, 467,301, 459,310, 452,307, 450,304, 443,301, 442,308, 435,313, 439,322, 443,324, 445,321, 453,324, 453,328, 452,334, 459,338, 471,340" href="https://patrimoines.savoie.fr/web/psp_8412/chercher" shape="poly" target="_blank" title="Savoie (2003)"/>
+<area alt="Haute-Savoie (2011)" coords="460,277, 458,283, 447,287, 441,289, 443,301, 450,304, 452,307, 459,310, 467,301, 471,305, 478,307, 486,299, 484,293, 476,287, 478,274, 473,273, 471,275, 468,274, 465,276, 462,274, 460,277" href="https://archives.hautesavoie.fr/n/consulter-les-archives-numerisees/n:95" shape="poly" target="_blank" title="Haute-Savoie (2011)"/>
+<area alt="Paris (2009)" coords="104,276, 102,276, 101,277, 97,276, 93,278, 91,281, 93,284, 97,284, 100,286, 104,284, 105,282, 107,283, 107,281, 105,278, 104,276, 104,276" href="https://archives.paris.fr/archives-numerisees" shape="poly" target="_blank" title="Paris (2009)"/>
+<area alt="Seine-Maritime (2012)" coords="261,110, 255,107, 248,108, 246,107, 250,99, 254,96, 268,90, 275,91, 283,88, 292,82, 295,86, 299,87, 305,97, 301,105, 305,110, 302,117, 286,112, 278,122, 270,119, 271,115, 261,110" href="https://www.archivesdepartementales76.net/n/archives-numerisees/n:164" shape="poly" target="_blank" title="Seine-Maritime (2012)"/>
+<area alt="Seine-et-Marne (2007)" coords="323,171, 326,167, 327,157, 330,151, 332,148, 333,139, 332,137, 330,134, 332,132, 343,135, 347,131, 349,139, 356,150, 359,160, 355,172, 344,170, 341,180, 332,178, 332,185, 329,181, 323,181, 323,171, 323,171" href="https://archives.seine-et-marne.fr/fr/etat-civil" shape="poly" target="_blank" title="Seine-et-Marne (2007)"/>
+<area alt="Yvelines (2004)" coords="92,265, 91,261, 85,256, 76,258, 62,249, 59,252, 44,242, 32,249, 38,263, 47,284, 41,296, 61,322, 63,316, 69,313, 69,308, 75,306, 80,289, 82,288, 80,283, 80,279, 83,277, 84,269, 89,268, 92,265" href="https://archives.yvelines.fr/rechercher/archives-en-ligne" shape="poly" target="_blank" title="Yvelines (2004)"/>
+<area alt="Deux-Sèvres (2008)" coords="207,268,212,263,209,237,218,231,226,232,231,248,229,251,231,257,230,267,234,271,235,276,232,281,227,287,218,276,209,277" href="https://archives-deux-sevres-vienne.fr/n/archives-en-ligne/n:88" shape="poly" target="_blank" title="Deux-Sèvres (2008)"/>
+<area alt="Somme (2010)" coords="292,82, 296,76, 301,77, 302,76, 298,72, 299,65, 314,72, 316,77, 319,77, 321,75, 333,79, 331,83, 347,83, 352,82, 350,87, 352,90, 351,92, 348,92, 346,103, 335,103, 331,106, 326,105, 323,101, 313,100, 305,97, 299,87, 295,86, 292,82" href="https://archives.somme.fr/page/archives-en-ligne-1" shape="poly" target="_blank" title="Somme (2010)"/>
+<area alt="Tarn (2005)" coords="281,394, 285,401, 287,412, 294,418, 294,421, 298,417, 300,421, 313,423, 320,420, 321,408, 323,407, 329,411, 333,410, 334,406, 320,398, 319,391, 311,385, 304,384, 295,384, 288,383, 283,387, 284,392, 281,394" href="https://archives.tarn.fr/rechercher/archives-et-images-en-ligne/documents-numerises" shape="poly" target="_blank" title="Tarn (2005)"/>
+<area alt="Tarn-et-Garonne (2010)" coords="296,377, 295,384, 288,383, 283,387, 284,392, 281,394, 272,396, 268,402, 265,399, 259,401, 255,400, 255,395, 254,392, 251,392, 251,387, 260,380, 260,377, 257,374, 259,370, 265,371, 277,378, 281,375, 287,376, 291,373, 296,377" href="http://www.archives82.fr/index.php?id=2151" shape="poly" target="_blank" title="Tarn-et-Garonne (2010)"/>
+<area alt="Var (2007)" coords="479,411, 480,420, 484,424, 482,429, 475,426, 477,430, 471,434, 477,435, 477,438, 474,441, 471,438, 464,441, 465,444, 462,444, 459,441, 456,442, 455,445, 452,443, 444,441, 444,444, 441,445, 437,445, 437,442, 439,432, 436,429, 438,426, 441,427, 441,423, 437,420, 442,413, 441,411, 442,410,
+448,412, 457,409, 462,411, 468,407, 474,407, 479,411" href="https://archives.var.fr/recherche/rechercher-dans-les-archives-numerisees-et-les-inventaires" shape="poly" target="_blank" title="Var (2007)"/>
+<area alt="Vaucluse (2012)" coords="415,409, 423,409, 429,414, 437,411, 436,405, 430,399, 431,392, 424,383, 419,384, 415,381, 411,381, 409,380, 412,375, 409,373, 407,375, 406,378, 398,377, 398,383, 400,389, 404,394, 405,401, 415,409" href="https://archives.vaucluse.fr/mes-recherches/documents-numerises-1162.html" shape="poly" target="_blank" title="Vaucluse (2012)"/>
+<area alt="Vendée (2003)" coords="205,234, 208,241, 211,265, 206,266, 204,266, 201,269, 192,268, 189,267, 180,262, 179,259, 166,257, 163,241, 159,237, 161,235, 163,230, 184,238, 183,232, 184,231, 187,233, 194,228, 197,232, 205,234" href="https://archives.vendee.fr/consulter" shape="poly" target="_blank" title="Vendée (2003)"/>
+<area alt="Vienne (2005)" coords="238,280, 246,282, 250,280, 252,283, 257,282, 262,274, 269,273, 274,268, 264,253, 257,245, 258,238, 255,236, 253,238, 244,238, 241,230, 237,229, 233,231, 231,228, 229,232, 233,249, 231,251, 233,256, 231,268, 236,269, 235,274, 239,275, 238,280" href="https://archives-deux-sevres-vienne.fr/n/archives-en-ligne/n:88" shape="poly" target="_blank" title="Vienne (2005)"/>
+<area alt="Haute-Vienne" coords="285,270, 282,279, 287,284, 285,291, 297,304, 290,308, 283,310, 274,316, 272,313, 269,315, 261,308, 256,309, 253,303, 260,287, 257,282, 262,274, 269,273, 274,268, 279,268, 285,270" href="https://archives.haute-vienne.fr/rechercher/archives-en-ligne" shape="poly" target="_blank" title="Haute-Vienne"/>
+<area alt="Vosges (2010)" coords="445,194, 452,193, 462,193, 477,201, 477,201, 481,198, 480,195, 483,188, 489,183, 492,176, 488,173, 489,168, 478,173, 462,171, 458,170, 455,173, 448,173, 444,169, 438,166, 431,170, 430,168, 428,169, 429,174, 434,180, 437,180, 439,181, 435,188, 438,189, 441,194, 445,194, 445,194" href="https://archives.vosges.fr/recherches-en-ligne/" shape="poly" target="_blank" title="Vosges (2010)"/>
+<area alt="Yonne (2009)" coords="385,194, 385,197, 388,200, 383,216, 379,222, 376,225, 371,218, 367,220, 366,216, 357,211, 352,213, 341,209, 337,202, 345,191, 344,183, 341,180, 344,170, 355,172, 358,172, 361,177, 363,182, 367,183, 375,193, 382,191, 385,194" href="https://archives.yonne.fr/n/archives-en-ligne/n:156" shape="poly" target="_blank" title="Yonne (2009)"/>
+<area alt="Territoire de Belfort (2009)" coords="483,222, 478,215, 477,201, 477,201, 485,206, 491,219, 483,222" href="https://archives.territoiredebelfort.fr/page/acceder-aux-fonds-numerises" shape="poly" target="_blank" title="Territoire de Belfort (2009)"/>
+<area alt="Essonne (2009)" coords="61,322, 63,316, 69,313, 69,308, 75,306, 80,289, 82,288, 90,294, 92,292, 99,293, 100,297, 103,296, 105,300, 107,300, 108,298, 111,300, 120,307, 118,329, 111,339, 95,341, 90,334, 87,342, 73,343, 70,326, 61,322" href="https://archives.essonne.fr/page/par-thematique" shape="poly" target="_blank" title="Essonne (2009)"/>
+<area alt="Hauts-de-Seine (2012)" coords="103,266, 100,264, 92,265, 89,268, 84,269, 83,277, 80,279, 80,283, 82,288, 90,294, 92,292, 99,293, 100,286, 97,284, 93,284, 91,281, 93,278, 97,276, 101,277, 102,276, 103,266" href="https://archives.hauts-de-seine.fr/n/archives-en-ligne/n:89" shape="poly" target="_blank" title="Hauts-de-Seine (2012)"/>
+<area alt="Seine-Saint-Denis" coords="108,281, 103,274, 102,265, 111,265, 117,261, 127,260, 131,260, 129,285, 125,288, 115,279" href="https://archives.seinesaintdenis.fr/n/archives-en-ligne/n:140" shape="poly" target="_blank" title="Seine-Saint-Denis"/>
+<area alt="Val-de-Marne (2006)" coords="107,281, 107,283, 105,282, 104,284, 100,286, 99,293, 100,297, 103,296, 105,300, 107,300, 108,298, 111,300, 120,307, 127,292, 114,280, 107,281, 107,281" href="https://archives.valdemarne.fr/recherches/archives-en-ligne" shape="poly" target="_blank" title="Val-de-Marne (2006)"/>
+<area alt="Val d'Oise (2013)" coords="44,242, 59,252, 62,249, 76,258, 85,256, 91,261, 92,265, 100,264, 103,266, 115,264, 118,261, 131,260, 127,251, 96,233, 61,237, 57,229, 44,242" href="https://archives.valdoise.fr/n/archives-numerisees/n:418" shape="poly" target="_blank" title="Val d'Oise (2013)"/>
+<area alt="Saint-Pierre-et-Miquelon" coords="45,63,4" href="https://www.arche-musee-et-archives.net/fr/105/" shape="circle" target="_blank" title="Saint-Pierre-et-Miquelon"/>
+<area alt="Martinique (2010)" coords="39,87, 35,91, 31,87, 35,84, 39,87" href="https://www.patrimoines-martinique.org/page/archives-numerisees" shape="poly" target="_blank" title="Martinique (2010)"/>
+<area alt="Guyane" coords="43,99,4" href="http://anom.archivesnationales.culture.gouv.fr/caomec2/recherche.php?territoire=GUYANE" shape="circle" target="_blank" title="Guyane"/>
+<area alt="Polynésie Française" coords="20,117, 16,120, 12,117, 16,113, 20,117" href="https://www.archives.pf" shape="poly" target="_blank" title="Polynésie Française"/>
+<area alt="Mayotte" coords="98,103,4" href="http://anom.archivesnationales.culture.gouv.fr/caomec2/recherche.php?territoire=MAYOTTE" shape="circle" target="_blank" title="Mayotte"/>
+<area alt="La Réunion" coords="102,116,4" href="https://departement974.fr/mdr/" shape="circle" target="_blank" title="La Réunion"/>
+</map></p> 
+</div>
+<div class="pagefoot">
+  <a class="totop" href="#haut" title="Retour en haut de la page" aria-label="Retour en haut de la page">
+    <svg viewBox="0 0 80 84" aria-hidden="true"><path class="totop__trunk" d="M40 82 V48 M40 60 L28 48 M40 56 L53 44 M40 48 L40 36" />
+    <g class="totop__leaves"><circle cx="40" cy="26" r="14" /><circle cx="24" cy="36" r="11" /><circle cx="56" cy="34" r="12" /><circle cx="28" cy="20" r="9" /><circle cx="52" cy="18" r="10" /></g></svg>
+  </a>
+  <p class="date_maj">Page mise à jour le 06/04/2026 à 00h14</p>
+</div>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <nav class="footer__links" aria-label="Pied de page">
+        <a href="contacts.html">Nous écrire</a>
+        <a href="page-2.html">Mentions légales</a>
+        <a href="plan-du-site.html">Plan du site</a>
+      </nav>
+      <p class="copyright">Raphaël WIART © 2010-2026</p>
+    </div>
+  </footer>
+
+  <!-- Bandeau cookies -->
+  <div class="cookies" role="dialog" aria-live="polite" hidden>
+    <p>Bienvenue sur www.ggac.fr !<br />En poursuivant votre navigation, vous acceptez l'utilisation de cookies permettant d'améliorer votre expérience utilisateur.</p>
+    <div class="cookies__actions">
+      <a href="mentions-cookies.html">En savoir plus</a>
+      <button type="button" class="cookies__ok">J'accepte</button>
+    </div>
+  </div>
+
+  <!-- Visionneuse -->
+  <div class="lightbox" aria-hidden="true">
+    <button class="lightbox__close" aria-label="Fermer">×</button>
+    <figure class="lightbox__fig"><img alt="" /><figcaption></figcaption></figure>
+  </div>
+
+  <!-- Rinceau végétal réutilisable (inspiré du feuillage d'origine) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <g id="vine">
+        <path class="vine__stem" d="M30 200 C 80 170, 120 150, 150 110 C 170 80, 175 50, 160 20" />
+        <path class="vine__stem" d="M150 110 C 190 90, 220 60, 250 25" />
+        <path class="vine__stem" d="M120 145 C 100 120, 75 115, 70 95 C 66 78, 82 66, 96 72 C 108 78, 104 94, 92 92" />
+        <path class="vine__stem" d="M165 92 C 190 100, 205 90, 200 74 C 196 62, 182 62, 180 72 C 178 80, 186 84, 190 80" />
+        <path class="vine__stem" d="M100 165 C 110 185, 130 192, 140 180 C 148 168, 136 158, 128 166" />
+        <path class="vine__stem" d="M80 178 C 70 190, 60 192, 48 186" />
+        <g class="vine__leaves">
+          <path class="leaf" style="--r:-30deg" d="M160 20 c -18 -6 -30 2 -34 14 c 14 4 28 -2 34 -14 z" />
+          <path class="leaf" style="--r:20deg" d="M250 25 c -4 16 -14 24 -24 24 c 2 -14 12 -22 24 -24 z" />
+          <path class="leaf" style="--r:10deg" d="M235 60 c 6 14 4 26 -4 32 c -6 -12 -4 -24 4 -32 z" />
+          <path class="leaf" style="--r:-15deg" d="M48 186 c -16 -4 -28 2 -32 12 c 14 4 26 0 32 -12 z" />
+          <path class="leaf" style="--r:25deg" d="M110 200 c 2 16 -4 28 -12 32 c -4 -12 2 -26 12 -32 z" />
+        </g>
+      </g>
+    </defs>
+  </svg>
+
+  
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

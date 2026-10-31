@@ -19,11 +19,35 @@
     $$(".leaf", g).forEach((l, i) => l.style.setProperty("--i", i));
   });
 
-  /* ---------- Titre : découpe en lettres ---------- */
+  /* ---------- Titre : découpe en lettres (en conservant <sup>…) ---------- */
   $$("[data-split]").forEach((el) => {
-    const txt = el.textContent;
-    el.setAttribute("aria-label", txt);
-    el.innerHTML = [...txt].map((c, i) => `<span class="ch" aria-hidden="true" style="--i:${i}">${c}</span>`).join("");
+    el.setAttribute("aria-label", el.textContent.replace(/\s+/g, " ").trim());
+    let i = 0;
+    const frag = document.createDocumentFragment();
+    let word = null;
+    const newWord = () => { word = document.createElement("span"); word.className = "wd"; word.setAttribute("aria-hidden", "true"); frag.appendChild(word); };
+    [...el.childNodes].forEach((node) => {
+      if (node.nodeType === 3) {
+        node.textContent.split(/(\s+)/).forEach((part) => {
+          if (!part) return;
+          if (/^\s+$/.test(part)) { frag.appendChild(document.createTextNode(" ")); word = null; return; }
+          if (!word) newWord();
+          [...part].forEach((c) => {
+            const s = document.createElement("span");
+            s.className = "ch"; s.style.setProperty("--i", Math.min(i++, 40)); s.textContent = c;
+            word.appendChild(s);
+          });
+        });
+      } else {
+        if (!word) newWord();
+        const s = document.createElement("span");
+        s.className = "ch"; s.style.setProperty("--i", Math.min(i++, 40));
+        s.appendChild(node.cloneNode(true));
+        word.appendChild(s);
+      }
+    });
+    el.textContent = "";
+    el.appendChild(frag);
   });
 
   /* ---------- Intro puis entrée de l'en-tête ---------- */
@@ -107,9 +131,16 @@
         io.unobserve(e.target);
       });
     },
-    { rootMargin: "0px 0px -12% 0px", threshold: 0.12 }
+    { rootMargin: "0px 0px -8% 0px", threshold: 0 }
   );
-  $$(".reveal, .block__title, .stamp, .event, .title, .vine--content").forEach((el) => io.observe(el));
+  const big = document.body.classList.contains("is-big");
+  $$(".prose > *:not(.reveal)").slice(0, big ? 12 : 120).forEach((el, i) => {
+    if (el.matches(".cassini, .table-wrap, form, .embed")) return;
+    el.classList.add("reveal");
+    el.style.setProperty("--d", `${Math.min(i, 4) * 0.06}s`);
+  });
+  $$(".books .book").forEach((b, i) => { b.classList.add("reveal"); b.style.setProperty("--d", `${(i % 4) * 0.09}s`); });
+  $$(".reveal, .block__title, .stamp, .event, .title, .vine--content, .prose h2").forEach((el) => io.observe(el));
 
   /* ---------- Barre de progression + nav collante + parallaxe ---------- */
   const bar = $(".progress span");
@@ -335,12 +366,13 @@
     return toEl.animate(reverse ? frames.reverse() : frames, { duration: reverse ? 450 : 650, easing: ease, fill: "both" });
   }
 
-  $$(".event__poster").forEach((a) =>
+  $$(".event__poster, [data-lightbox]").forEach((a) =>
     a.addEventListener("click", (e) => {
       e.preventDefault();
-      origin = $("img", a);
+      origin = $("img", a) || a;
       lbImg.src = a.href;
-      lbCap.textContent = a.title;
+      const im = $("img", a);
+      lbCap.textContent = a.title || (im && (im.title || im.alt)) || "";
       lb.classList.add("is-open");
       lb.setAttribute("aria-hidden", "false");
       origin.style.visibility = "hidden";
@@ -357,6 +389,109 @@
     flip(origin, lbImg, true).finished.then(done);
   }
   lb?.addEventListener("click", (e) => { if (e.target !== lbImg) closeLightbox(); });
+
+
+  /* ---------- Éditoriaux dépliables ---------- */
+  $$(".toggle[aria-controls]").forEach((btn) => {
+    const target = document.getElementById(btn.getAttribute("aria-controls"));
+    if (!target) return;
+    btn.addEventListener("click", () => {
+      const open = btn.getAttribute("aria-expanded") !== "true";
+      btn.setAttribute("aria-expanded", String(open));
+      target.classList.toggle("is-open", open);
+      if (open && !reduce) {
+        $$(".collapsible__inner > *", target).forEach((p, i) =>
+          p.animate([{ opacity: 0, transform: "translateY(10px)" }, { opacity: 1, transform: "none" }],
+            { duration: 600, delay: 120 + Math.min(i, 8) * 60, easing: ease, fill: "backwards" }));
+      }
+    });
+  });
+
+  /* ---------- Adresses électroniques reconstituées (anti-spam) ---------- */
+  $$(".js-mail").forEach((a) => {
+    const m = `${a.dataset.u}@${a.dataset.d}`;
+    a.href = `mailto:${m}`;
+    a.textContent = m;
+  });
+
+  /* ---------- Carte de Cassini : visualiseur zoomable (tuiles Zoomify d'origine) ---------- */
+  const cassini = $(".cassini");
+  if (cassini) {
+    const init = () => {
+      if (!window.OpenSeadragon) return;
+      const viewer = window.OpenSeadragon({
+        element: cassini,
+        prefixUrl: "https://cdn.jsdelivr.net/npm/openseadragon@4.1.1/build/openseadragon/images/",
+        tileSources: {
+          type: "zoomifytileservice",
+          width: +cassini.dataset.w,
+          height: +cassini.dataset.h,
+          tilesUrl: cassini.dataset.tiles,
+        },
+        showNavigator: true,
+        navigatorPosition: "BOTTOM_RIGHT",
+        animationTime: 1.1,
+        springStiffness: 8,
+        gestureSettingsMouse: { scrollToZoom: true },
+        visibilityRatio: 1,
+        crossOriginPolicy: false,
+      });
+      // entrée cinématique : on part d'un détail puis on recule sur la carte entière
+      viewer.addOnceHandler("open", () => {
+        if (reduce) return;
+        const vp = viewer.viewport;
+        vp.zoomTo(vp.getHomeZoom() * 3.2, null, true);
+        setTimeout(() => vp.goHome(), 400);
+      });
+    };
+    if (window.OpenSeadragon) init();
+    else window.addEventListener("load", init);
+  }
+
+  /* ---------- Recherche instantanée (titres des pages du site) ---------- */
+  const q = $("#requete");
+  const results = $("#search-results");
+  let index = null, sel = -1;
+  const norm = (t) => t.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  const loadIndex = () => index || fetch("assets/search-index.json").then((r) => r.json()).then((d) => (index = d.map((p) => ({ ...p, n: norm(p.t + " " + p.s), nx: norm(p.x) })))).catch(() => (index = []));
+  q?.addEventListener("focus", loadIndex, { once: true });
+  const escH = (t) => t.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  function mark(text, term) {
+    const i = norm(text).indexOf(term);
+    if (i < 0) return escH(text);
+    return escH(text.slice(0, i)) + "<mark>" + escH(text.slice(i, i + term.length)) + "</mark>" + escH(text.slice(i + term.length));
+  }
+  q?.addEventListener("input", async () => {
+    const term = norm(q.value.trim());
+    if (term.length < 4) { results.hidden = true; return; }
+    await loadIndex();
+    const hits = index
+      .map((p) => ({ p, score: p.n.includes(term) ? 2 : p.nx.includes(term) ? 1 : 0 }))
+      .filter((h) => h.score)
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 8);
+    sel = -1;
+    if (!hits.length) { results.hidden = true; return; }
+    results.innerHTML = hits.map(({ p }) => {
+      const at = norm(p.x).indexOf(term);
+      const snip = at >= 0 ? p.x.slice(Math.max(0, at - 30), at + 90) : p.x.slice(0, 110);
+      return `<li><a href="${p.u}"><b>${mark(p.t, term)}</b><small>${mark(snip, term)}</small></a></li>`;
+    }).join("");
+    results.hidden = false;
+  });
+  q?.addEventListener("keydown", (e) => {
+    const links = $$("a", results);
+    if (results.hidden || !links.length) return;
+    if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+      e.preventDefault();
+      sel = (sel + (e.key === "ArrowDown" ? 1 : -1) + links.length) % links.length;
+      links.forEach((l, i) => l.classList.toggle("is-sel", i === sel));
+    } else if (e.key === "Enter" && sel >= 0) {
+      e.preventDefault();
+      location.href = links[sel].href;
+    } else if (e.key === "Escape") results.hidden = true;
+  });
+  document.addEventListener("click", (e) => { if (results && !e.target.closest(".search")) results.hidden = true; });
 
   /* ---------- Poussière d'archives (particules sépia) ---------- */
   const cv = $(".dust");

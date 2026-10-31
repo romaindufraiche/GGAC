@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sommaire des numéros 31 à 40 de Farda - Groupe des Généalogistes Amateurs du Cambrésis</title>
+  <meta name="author" content="Raphaël WIART" />
+  <meta name="theme-color" content="#f4ede0" />
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+  <link rel="alternate" type="application/rss+xml" title="Flux RSS du site officiel du G.G.A.C." href="https://www.ggac.fr/rss.xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  
+</head>
+<body id="haut" class="">
+
+  <!-- Intro : une goutte d'encre qui révèle la page -->
+  <div class="intro" aria-hidden="true">
+    <svg class="intro__seal" viewBox="0 0 120 140">
+      <path class="intro__shield" d="M10 10 H110 V70 C110 105 85 122 60 132 C35 122 10 105 10 70 Z" />
+    </svg>
+  </div>
+
+  <div class="progress" aria-hidden="true"><span></span></div>
+  <canvas class="dust" aria-hidden="true"></canvas>
+
+  <!-- Barre utilitaire -->
+  <div class="topbar">
+    <div class="wrap topbar__inner">
+      <p class="topbar__maj"><span class="bleu">Mis à jour le 31/10/26</span> - <span class="counter" data-count="119617">119 617</span> visiteurs depuis le 12/03/10</p>
+      <nav class="quick" aria-label="Liens rapides">
+        <a href="agenda.html">Agenda</a>
+        <a href="page-5.html">Adhésion</a>
+        <a href="https://www.ggac.fr/fichiers/file/tarifs_publications.pdf" target="_blank" rel="noopener">Tarifs</a>
+        <a href="https://www.ggac.fr/fichiers/file/commande.pdf" target="_blank" rel="noopener">Commande</a>
+        <a href="https://www.ggac.fr/rss.xml" class="quick__rss">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="3" cy="13" r="2"/><path d="M1 7a8 8 0 0 1 8 8M1 2a13 13 0 0 1 13 13"/></svg>
+          Flux RSS</a>
+      </nav>
+      <form class="search" action="https://www.ggac.fr/rechercher.php" method="post" name="recherche">
+        <label class="sr-only" for="requete">Rechercher sur le site</label>
+        <input name="requete" type="search" id="requete" placeholder="Rechercher sur le site" autocomplete="off" aria-controls="search-results" />
+        <button type="submit" name="ok" id="ok">OK</button>
+        <ul class="search__results" id="search-results" hidden></ul>
+      </form>
+    </div>
+  </div>
+
+  <!-- En-tête -->
+  <header class="hero">
+    <svg class="vine vine--hero" viewBox="0 0 260 240" aria-hidden="true">
+      <use href="#vine" />
+    </svg>
+    <div class="wrap hero__inner">
+      <a class="brand" href="index.html" title="Retour à la page d'accueil">
+        <span class="brand__shields"><img src="assets/img/shields.png" alt="" width="195" height="125" /></span>
+        <span class="brand__name" aria-label="Groupe des Généalogistes Amateurs du Cambrésis">
+          <span class="line"><span class="w"><b>G</b>roupe</span></span>
+          <span class="line">des <span class="w"><b>G</b>énéalogistes</span></span>
+          <span class="line"><span class="w"><b>A</b>mateurs</span> du <span class="w"><b>C</b>ambrésis</span></span>
+        </span>
+      </a>
+      <div class="hero__frames" aria-hidden="true">
+        <figure class="frame frame--manuscrit" data-depth="0.25"><img src="assets/img/manuscrit.jpg" alt="" /></figure>
+        <figure class="frame frame--photo" data-depth="0.6"><img src="assets/img/photo.jpg" alt="" /></figure>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation principale -->
+  <nav class="nav" aria-label="Navigation principale">
+    <div class="wrap nav__inner">
+      <button class="nav__burger" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span><span class="sr-only">Menu</span></button>
+      <ul class="menu" id="menu">
+<li class=""><a class="menu__top" href="index.html">Accueil</a></li>
+<li class="has-sub"><button class="menu__top" aria-expanded="false">L&#x27;association</button><div class="sub"><ul class="sub__col"><li><a href="agenda.html">Agenda</a></li><li><a href="page-3.html">Présentation</a></li><li><a href="page-53.html">Assemblée générale 2025</a></li><li><a href="page-142.html">Scaldobrésia 2025</a></li><li><a href="page-106.html">Retraite et bénévolat</a></li><li><a href="page-4.html">Zone d&#x27;action</a></li><li><a href="page-5.html">Adhésion</a></li><li><a href="page-6.html">Conseil d&#x27;administration</a></li><li><a href="page-7.html">Membres fondateurs</a></li><li><a href="page-8.html">Membres donateurs</a></li></ul></div></li>
+<li class="has-sub is-active"><button class="menu__top" aria-expanded="false">Publications</button><div class="sub sub--wide"><ul class="sub__col"><li><a href="page-62.html">Nouvelles publications</a></li><li class="has-fly"><a href="page-9.html">Farda</a><ul class="fly"><li><a href="page-10.html">Farda n° 1 à 10</a></li><li><a href="page-11.html">Farda n° 11 à 20</a></li><li><a href="page-12.html">Farda n° 21 à 30</a></li><li><a href="page-13.html">Farda n° 31 à 40</a></li><li><a href="page-14.html">Farda n° 41 à 50</a></li><li><a href="page-15.html">Farda n° 51 à 60</a></li><li><a href="page-74.html">Farda n° 61 à 70</a></li><li><a href="page-97.html">Farda n° 71 à 80</a></li><li><a href="page-112.html">Farda n° 81 à 90</a></li><li><a href="page-136.html">Farda n° 91 à 100</a></li><li><a href="page-144.html">Farda n° 101 à 110</a></li></ul></li><li class="has-fly"><a href="page-16.html">Questions des membres</a><ul class="fly"><li><a href="page-17.html">Questions des Farda n° 1 à 10</a></li><li><a href="page-18.html">Questions des Farda n° 11 à 20</a></li><li><a href="page-19.html">Questions des Farda n° 21 à 30</a></li><li><a href="page-20.html">Questions des Farda n° 31 à 40</a></li><li><a href="page-21.html">Questions des Farda n° 41 à 50</a></li><li><a href="page-22.html">Questions des Farda n° 51 à 60</a></li><li><a href="page-75.html">Questions des Farda n° 61 à 70</a></li><li><a href="page-98.html">Questions des Farda n° 71 à 80</a></li><li><a href="page-113.html">Questions des Farda n° 81 à 90</a></li><li><a href="page-137.html">Questions des Farda n° 91 à 100</a></li><li><a href="https://www.ggac.fr/index.php?page=145">Questions des Farda n° 101 à 110</a></li></ul></li><li><a href="page-23.html">Éditions du G.G.A.C.</a></li><li><a href="page-24.html">Généalogies du Cambrésis</a></li><li><a href="page-25.html">Fardes cambrésiennes</a></li></ul><div class="sub__dict"><a class="sub__dict-title" href="page-26.html">Dictionnaires des familles</a><ul class="dict"><li><a href="page-76.html">Anneux</a></li><li><a href="page-30.html">Awoingt</a></li><li><a href="page-122.html">Banteux</a></li><li><a href="page-124.html">Bantouzelle</a></li><li><a href="page-105.html">Baralle</a></li><li><a href="page-27.html">Beaumont-en-Cis</a></li><li><a href="page-28.html">Beauvois-en-Cis</a></li><li><a href="page-31.html">Bertry</a></li><li><a href="page-135.html">Béthencourt</a></li><li><a href="page-103.html">Bévillers</a></li><li><a href="page-88.html">Blécourt</a></li><li><a href="page-32.html">Bourlon</a></li><li><a href="page-92.html">Boursies</a></li><li><a href="page-131.html">Boussières-en-Cambrésis</a></li><li><a href="page-120.html">Briastre</a></li><li><a href="page-99.html">Buissy</a></li><li><a href="page-84.html">Cagnoncles</a></li><li><a href="page-79.html">Cantaing-sur-Escaut</a></li><li><a href="page-33.html">Cattenières</a></li><li><a href="page-116.html">Caudry</a></li><li><a href="page-114.html">Cauroir</a></li><li><a href="page-123.html">Dehéries</a></li><li><a href="page-86.html">Doignies</a></li><li><a href="page-110.html">Épinoy</a></li><li><a href="page-90.html">Escaudœuvres</a></li><li><a href="page-119.html">Esnes</a></li><li><a href="page-139.html">Estourmel</a></li><li><a href="page-34.html">Estrun</a></li><li><a href="page-109.html">Eswars</a></li><li><a href="page-63.html">Flesquières</a></li><li><a href="page-35.html">Fontaine-au-Pire</a></li><li><a href="page-69.html">Fontaine-Notre-Dame</a></li><li><a href="page-132.html">Gonnelieu</a></li><li><a href="page-36.html">Gouy-Saint-André</a></li><li><a href="page-130.html">Graincourt-lès-Havrincourt</a></li><li><a href="page-117.html">Hendecourt-lès-Cagnicourt</a></li><li><a href="page-96.html">Hermies</a></li><li><a href="page-65.html">Honnechy</a></li><li><a href="page-138.html">Honnecourt-sur-Escaut</a></li><li><a href="page-29.html">Inchy</a></li><li><a href="page-71.html">Inchy-en-Artois</a></li><li><a href="page-102.html">Iwuy</a></li><li><a href="page-67.html">Lebucquière</a></li><li><a href="page-141.html">Maretz</a></li><li><a href="page-94.html">Marquion</a></li><li><a href="page-93.html">Masnières</a></li><li><a href="page-87.html">Maurois</a></li><li><a href="page-66.html">Mœuvres</a></li><li><a href="page-128.html">Naves</a></li><li><a href="page-60.html">Niergnies</a></li><li><a href="page-73.html">Noyelles-sur-Escaut</a></li><li><a href="page-121.html">Ors</a></li><li><a href="page-101.html">Pronville-en-Artois</a></li><li><a href="page-37.html">Proville</a></li><li><a href="page-78.html">Quéant</a></li><li><a href="page-80.html">Raillencourt-Sainte-Olle</a></li><li><a href="page-61.html">Ramillies</a></li><li><a href="page-140.html">Reumont</a></li><li><a href="page-127.html">Ribécourt-la-Tour</a></li><li><a href="page-118.html">Rieux-en-Cambrésis</a></li><li><a href="page-89.html">Rumilly-en-Cis</a></li><li><a href="page-81.html">Sailly-lez-Cambrai</a></li><li><a href="page-38.html">Sains-lès-Marquion</a></li><li><a href="page-133.html">Saint-Hilaire-lez-Cambrai</a></li><li><a href="page-134.html">Saint-Vaast-en-Cambrésis</a></li><li><a href="page-82.html">Sancourt</a></li><li><a href="page-107.html">Sauchy-Cauchy</a></li><li><a href="page-108.html">Sauchy-Lestrée</a></li><li><a href="page-91.html">Séranvillers-Forenville</a></li><li><a href="page-70.html">Thun-l&#x27;Évêque</a></li><li><a href="page-39.html">Thun-Saint-Martin</a></li><li><a href="page-72.html">Trescault</a></li><li><a href="page-115.html">Troisvilles</a></li><li><a href="page-68.html">Vélu</a></li><li><a href="page-104.html">Viesly</a></li><li><a href="page-40.html">Villers-en-Cauchies</a></li><li><a href="page-126.html">Villers-Guislain</a></li><li><a href="page-111.html">Villers-lès-Cagnicourt</a></li><li><a href="page-125.html">Villers-Plouich</a></li><li><a href="page-77.html">Wambaix</a></li></ul></div></div></li>
+<li class="has-sub"><button class="menu__top" aria-expanded="false">Bibliothèque</button><div class="sub"><ul class="sub__col"><li><a href="page-41.html">Bulletins et revues</a></li><li><a href="page-42.html">Contrats de mariage et autres...</a></li><li><a href="page-55.html">Catalogue</a></li></ul></div></li>
+<li class="has-sub"><button class="menu__top" aria-expanded="false">Divers</button><div class="sub"><ul class="sub__col"><li><a href="page-85.html">Archives en ligne</a></li><li><a href="page-47.html">Armorial</a></li><li><a href="page-59.html">Pairies du Cambrésis</a></li><li><a href="page-48.html">Paroisses de Cambrai</a></li><li><a href="page-58.html">Carte de CASSINI</a></li><li><a href="page-49.html">Revue des revues</a></li><li><a href="page-51.html">Liens utiles</a></li></ul></div></li>
+<li class="has-sub"><button class="menu__top" aria-expanded="false">Contacts</button><div class="sub"><ul class="sub__col"><li><a href="contacts.html">Nous écrire</a></li><li><a href="page-56.html">Coordonnées</a></li></ul></div></li>
+<li class="menu__member"><a class="menu__top" href="espace-membre.html">Espace membre</a></li>
+      </ul>
+      <span class="menu__ink" aria-hidden="true"></span>
+    </div>
+  </nav>
+
+  <div class="wrap layout">
+
+    <!-- Colonne latérale -->
+    <aside class="side">
+<section class="side__block side__block--long"><h2 class="side__title">Publications</h2><ul class="side__menu"><li><a href="page-62.html">Nouvelles publications</a></li><li><a href="page-9.html">Farda</a></li><li class="lvl1"><a href="page-10.html">Farda n° 1 à 10</a></li><li class="lvl1"><a href="page-11.html">Farda n° 11 à 20</a></li><li class="lvl1"><a href="page-12.html">Farda n° 21 à 30</a></li><li class="lvl1"><span class="is-current" aria-current="page">Farda n° 31 à 40</span></li><li class="lvl1"><a href="page-14.html">Farda n° 41 à 50</a></li><li class="lvl1"><a href="page-15.html">Farda n° 51 à 60</a></li><li class="lvl1"><a href="page-74.html">Farda n° 61 à 70</a></li><li class="lvl1"><a href="page-97.html">Farda n° 71 à 80</a></li><li class="lvl1"><a href="page-112.html">Farda n° 81 à 90</a></li><li class="lvl1"><a href="page-136.html">Farda n° 91 à 100</a></li><li class="lvl1"><a href="page-144.html">Farda n° 101 à 110</a></li><li><a href="page-16.html">Questions des membres</a></li><li><a href="page-23.html">Éditions du G.G.A.C.</a></li><li><a href="page-24.html">Généalogies du Cambrésis</a></li><li><a href="page-25.html">Fardes cambrésiennes</a></li><li><a href="page-26.html">Dictionnaires des familles</a></li></ul></section>
+<section class="side__block side__news">
+        <h2 class="side__title">Actualités</h2>
+        <div class="news" tabindex="0">
+          <div class="news__track">
+            <article class="news__item">
+              <h3>PROCHAINE PERMANENCE</h3>
+              <p>Mercredi 4 novembre 2026 de 14h00 à 17h00 au siège de l'association.</p>
+            </article>
+            <article class="news__item">
+              <h3><a href="agenda.html#ev-1">EXPOSITION ET SORTIE OFFICIELLE DES POILUS DE VILLERS-PLOUICH MORTS POUR LA FRANCE ET DU DICTIONNAIRE DES FAMILLES</a></h3>
+              <p>Du samedi 7 au dimanche 8 novembre 2026 - Salle des fêtes Pierre Mauroy à Villers-Plouich (59)</p>
+            </article>
+            <article class="news__item">
+              <h3><a href="agenda.html#ev-2">SALON DE GÉNÉALOGIE ET D'HISTOIRE</a></h3>
+              <p>Du samedi 7 au dimanche 8 novembre 2026 - Palais des sports de Château-Thierry (02)</p>
+            </article>
+            <article class="news__item">
+              <h3><a href="agenda.html#ev-3">5<sup>E</sup> MARCHÉ D'HISTOIRE LOCALE</a></h3>
+              <p>Du samedi 28 au dimanche 29 novembre 2026 - Salle des fêtes de Fontaine-Notre-Dame (59)</p>
+            </article>
+            <article class="news__item">
+              <h3><a href="agenda.html#ev-4">20<sup>ES</sup> PORTES OUVERTES SUR LA GÉNÉALOGIE</a></h3>
+              <p>Du samedi 6 au dimanche 7 février 2027 - Parc des sports Didier Mounier (rue Albert Dauvergne) à Chevry-Cossigny (77)</p>
+            </article>
+            <article class="news__item">
+              <h3><a href="agenda.html#ev-5">EXPOSITION ET SORTIE OFFICIELLE DES POILUS D'ESNES MORTS POUR LA FRANCE ET DU DICTIONNAIRE DES FAMILLES</a></h3>
+              <p>Du samedi 13 au dimanche 14 mars 2027 - Salle des fêtes d'Esnes (59)</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+    </aside>
+
+    <!-- Contenu -->
+    <main class="content">
+<svg class="vine vine--content" viewBox="0 0 260 240" aria-hidden="true"><use href="#vine" /></svg>
+<h1 class="title"><span class="title__text" data-split>Sommaire des numéros 31 à 40 de Farda</span>
+<svg class="title__flourish" viewBox="0 0 320 30" aria-hidden="true"><path d="M4 18 C 60 4, 110 28, 160 16 S 260 4, 316 16" /><path d="M150 16 c 6 -10 14 -10 10 0 c -4 8 -14 6 -10 0" /></svg></h1>
+<div class="prose">
+
+
+<h2>Commande de numéros :</h2>
+<p class="ta-j">Tous les numéros de Farda sont disponibles à la vente.</p>
+<p class="ta-j">Deux formats sont proposés :</p>
+<ul>
+<li><span class="rougegras">Version papier :</span> 4 <strong>€</strong> le numéro (+ <strong>frais d'envoi pour la France :</strong> 5 <strong>€</strong> pour une revue, 7 <strong>€</strong> pour 2 revues et 9 <strong>€</strong> pour 3 Ã  5 revues).</li>
+<li><span class="rougegras">Version numérique :</span> <span class="fond_bleu"> gratuite pour les membres </span> ou 3 <strong>€</strong> le numéro pour les non-membres.</li>
+</ul>
+<h2>Farda n° 31 (mars 2003 - 48 pages) :</h2>
+<ul>
+<li><button aria-controls="edito31" aria-expanded="false" class="toggle" type="button">Éditorial</button> (p. 1)</li>
+</ul>
+<div class="collapsible" id="edito31"><div class="collapsible__inner">
+<p class="ta-j">Chers Amis,</p>
+<p class="ta-j">Et voilà ! nous avons déjà entamé un trimestre en 2003, comme le temps passe vite. Nous avons le plaisir de voir notre groupe se développer, grâce à l'action de tous et, surtout, à notre site internet, convivial, bien suivi par Jean-Philippe MAFILLE. Au cours de l'an dernier, nous avons développé certaines rubriques qui ont eu assez de succès, comme "Nous sommes tous cousins" ou la publication des travaux de notre ami Robert ROLAND, dont l'immense travail, qui nous a été aimablement remis par sa veuve, méritait ce développement. Pierre PIETRZAK, quant à lui, s'est mis à contacter la plupart des membres dans l'espoir de réaliser une banque de données, qui sera accessible aux permanences et permettra de répondre, plus aisément, à certaines questions. Aujourd'hui, deux mois après son lancement, elle comporte près de 18 000 personnes, chacune reliée avec son chercheur. Si vous le voulez, vous pouvez adresser votre généalogie, par courrier, sous forme de disquette, cédérom, à notre adresse ou par mél à <a class="js-mail" data-d="9online.fr" data-u="pierrot" href="#"></a>. Si tout le monde travaille dans le même sens, nous aurons un formidable outil de travail.</p>
+<p class="ta-r">Gérard DOMISE-PAGNEN</p>
+</div></div>
+<div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/farda31b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/farda31.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<ul>
+<li class="ta-j"><a href="page-4.html">Localités couvertes</a> par le G.G.A.C. (p. 1)</li>
+<li class="ta-j"><a href="agenda.html">Agenda</a> (p. 2)</li>
+<li class="ta-j">Liste des membres 2003 (Liste arrêtée au 28 février 2003) (p. 2)</li>
+<li class="ta-j">Huitième liste des pensionnaires des Petites Sœurs des Pauvres d'Escaudœuvres (de 1863 à 1895) - JACOB à LEFEBVRE : par Gérard DOMISE-PAGNEN (p. 5)</li>
+<li class="ta-j">Nouveautés (p. 7)</li>
+<li class="ta-j">Carnet (p. 7)</li>
+<li class="ta-j">"Tabellion" du G.G.A.C. (1) - ABRAHAM à BÉTRANCOURT (p. 8)</li>
+<li class="ta-j">Nous sommes tous cousins (p. 8)</li>
+<li class="ta-j">Publications du G.G.A.C. :
+                <ul>
+<li class="ta-j"><a href="page-25.html">Fardes cambrésiennes</a> (p. 11)</li>
+<li class="ta-j"><a href="http://urag5962.free.fr/articles.php?lng=fr&amp;pg=13" rel="noopener" target="_blank">Répertoire des bateliers</a> de la région du Nord - Pas-de-Calais et de la Belgique (p. 12)</li>
+</ul>
+</li>
+<li class="ta-j">Vient de paraître (p. 12)</li>
+<li class="ta-j">Loin du berceau : par Geneviève NEUHEUSSLER (p. 12)</li>
+<li class="ta-j">Emplacement des Troupes en 1893 - Numéros de régiments, indication des garnisons (p. 13)</li>
+<li class="ta-j">Crèvecœur - Un curieux dénombrement en 1674 : par Jean DOFFE (p. 16)</li>
+<li class="ta-j">La famille DOUAY de Cambrai : par Jean DOFFE et Jean-Philippe MAFILLE (p. 17)</li>
+<li class="ta-j">Loin du berceau (suite de la page 12) : par Geneviève NEUHEUSSLER (p. 20)</li>
+<li class="ta-j">Généalogie OUDART : par Jean DOFFE et Gérard DOMISE-PAGNEN (p. 22)</li>
+<li class="ta-j">La jeune veuve - Fable de Jean de La FONTAINE (p. 29)</li>
+<li class="ta-j">Notes généalogiques de Robert ROLAND (3<sup>e</sup> série) : par Jean DOFFE (p. 30)
+                <ul>
+<li class="ta-j">ALTAQUE (p. 30)</li>
+<li class="ta-j">DESORIUS, DESORIEUX (p. 30)</li>
+<li class="ta-j">DESTRAIN, DÉTRAIN (p. 30)</li>
+<li class="ta-j">DUPIRE (p. 31)</li>
+<li class="ta-j">LOBRY, LOUBRY, OUBRY (p. 31)</li>
+<li class="ta-j">MASCLET, MASCLEF (p. 32)</li>
+<li class="ta-j">MASCRÉ, MASCRET, MASSACRÉ (p. 33)</li>
+<li class="ta-j">MASSELOT (p. 33)</li>
+<li class="ta-j">POTAIN, POTIN (p. 33)</li>
+<li class="ta-j">PRÉCOURT (p. 34)</li>
+<li class="ta-j">QUÉVA (p. 34)</li>
+<li class="ta-j">RIZON (p. 34)</li>
+</ul>
+</li>
+<li class="ta-j">Pierre Joseph BERTRAND dit BERTRAND-MILCENT - Maire de Cambrai en 1870-1871, député du Nord : par Jean DOFFE et Geneviève NEUHEUSSLER (p. 35)</li>
+<li class="ta-j">Cambrai - Actes d'échevinage de la Cité, 1666-1690 : par Jean DOFFE (p. 37)</li>
+<li class="ta-j">Questions-Réponses :
+                <ul>
+<li class="ta-j"><a href="page-20.html">Questions</a> (reçues avant le 1<sup>er</sup> février 2003) (p. 40)</li>
+<li class="ta-j">Dernière heure (p. 42)</li>
+<li class="ta-j">Réponses (p. 42)</li>
+</ul>
+</li>
+</ul>
+</div></div>
+<h2>Farda n° 32 (juillet 2003 - 48 pages) :</h2>
+<ul>
+<li><button aria-controls="edito32" aria-expanded="false" class="toggle" type="button">Éditorial</button> (p. 1)</li>
+</ul>
+<div class="collapsible" id="edito32"><div class="collapsible__inner">
+<p class="ta-j">Chers Amis,</p>
+<p class="ta-j">Vous remarquerez que nous avons, grâce aux recherches de Jean-Philippe MAFILLE et Jean DOFFE, développé et expliqué notre couverture. Charles SÉGARD vient de mettre en place les microfilms de Cambrai, ce qui nous permet de répondre à toutes les demandes de nos communes du Nord, dont nous avons tous les actes encore existants. Toutes ces archives sont à votre entière disposition lors de nos permanences. Le prochain achat concernera les microfilms des communes de l'Aisne situées dans notre zone géographique.</p>
+<p class="ta-r">Gérard DOMISE-PAGNEN</p>
+</div></div>
+<div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/farda32b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/farda32.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<ul>
+<li class="ta-j"><a href="page-4.html">Zone géographique d'action</a> du G.G.A.C. (p. 1)</li>
+<li class="ta-j"><a href="agenda.html">Agenda</a> (p. 2)</li>
+<li class="ta-j">Liste des membres 2003 (Liste arrêtée au 1<sup>er</sup> juin 2003) (p. 2)</li>
+<li class="ta-j">Neuvième liste des pensionnaires des Petites Sœurs des Pauvres d'Escaudœuvres (de 1863 à 1895) - LEGRAND à QUINCHON : par Gérard DOMISE-PAGNEN (p. 3)</li>
+<li class="ta-j">Nouveautés (p. 7)</li>
+<li class="ta-j">Carnet (p. 8)</li>
+<li class="ta-j">"Tabellion" du G.G.A.C. (2) (p. 8)</li>
+<li class="ta-j">Nous sommes tous cousins (p. 9)</li>
+<li class="ta-j">Publications du G.G.A.C. :
+                <ul>
+<li class="ta-j"><a href="page-25.html">Fardes cambrésiennes</a> (p. 11)</li>
+<li class="ta-j"><a href="http://urag5962.free.fr/articles.php?lng=fr&amp;pg=13" rel="noopener" target="_blank">Répertoire des bateliers</a> de la région du Nord - Pas-de-Calais et de la Belgique (p. 12)</li>
+</ul>
+</li>
+<li class="ta-j">Vient de paraître (p. 12)</li>
+<li class="ta-j">Loin du berceau : par Geneviève NEUHEUSSLER (p. 12)</li>
+<li class="ta-j">Famille BERSÉE, BERSER, BERSEZ. Marcoing, Naves, Banteux, Viesly, Cambrai. (Farda n° 30 page 21). Rectifications et compléments : par Jean DOFFE (p. 12)</li>
+<li class="ta-j">La famille DRUON. 1<sup>re</sup> partie : par Philippe DERIEUX (p. 16)</li>
+<li class="ta-j">Miliciens du Cambrésis. Fonds Robert ROLAND : transcrit et mis en forme par Jean DOFFE (p. 23)</li>
+<li class="ta-j">Notes généalogiques de Robert ROLAND (4<sup>e</sup> série) : mises en forme et complétées par Jean DOFFE (p. 29)
+                <ul>
+<li class="ta-j">BANS, BENS (p. 29)</li>
+<li class="ta-j">BLONDEAU, BLONDIAU (p. 29)</li>
+</ul>
+</li>
+<li class="ta-j">Raymond GERNEZ. Député du Nord, Maire de Cambrai de 1945 à 1977 : par Jean DOFFE (p. 32)</li>
+<li class="ta-j">Questions-Réponses :
+                <ul>
+<li class="ta-j"><a href="page-20.html">Questions</a> (reçues avant le 15 mai 2003) (p. 34)</li>
+<li class="ta-j">Dernière heure (p. 32)</li>
+<li class="ta-j">Réponses (p. 39)</li>
+</ul>
+</li>
+</ul>
+</div></div>
+<h2>Farda n° 33 (novembre 2003 - 48 pages) :</h2>
+<ul>
+<li><button aria-controls="edito33" aria-expanded="false" class="toggle" type="button">Éditorial</button> (p. 2)</li>
+</ul>
+<div class="collapsible" id="edito33"><div class="collapsible__inner">
+<p class="ta-j">Chers Amis,</p>
+<p class="ta-j">Nous voici à l'automne qui annonce le froid et les longues nuits. Pour vous occuper, les membres ont beaucoup travaillé et vous trouverez, sous la rubrique des publications, les nouveautés qui pourront vous aider dans vos recherches. De plus en plus, nous essayons de reserver un chapitre, à chaque individu, avec sa vie et sa filiation. Il suffit ainsi, aux chercheurs de suivre, pas à pas, ces renseignements, pour reconstituer leur propre généalogie.<br/>
+Nous cherchons de l'aide ! En effet, avec la santé chancelante des uns et les problèmes des autres, nous avons été très peu, ces quatre derniers mois, pour assurer la gestion du groupe. Nous avons même songé à supprimer la permanence du mercredi. Fort heureusement, Lucienne ERESMAN-LEFEBVRE, les a sauvegardées, en se proposant, depuis juillet, d'épauler Pierre MÉRIAUX et Albert LEMOINE. Il nous faut, cependant et malgré la bonne volonté de chaque administrateur, lancer un appel, à tous les membres qui peuvent avoir un peu de temps, le mercredi matin, pour nous aider. Il s'agit simplement de classement, de mises à jour informatiques (bibliothèque et membres) et d'assurer un suivi pour la bonne marche du groupe.<br/>
+Jean DOFFE, infatigable, continue de répondre aux questions. Néanmoins il vous rappelle qu'il est preneur de toutes les réponses que les membres pourraient adresser.<br/>
+Je me permets, dès à présent, de vous souhaiter de bonnes fêtes de fin d'année ainsi qu'une bonne santé tout au long de 2004.</p>
+<p class="ta-r">Gérard DOMISE-PAGNEN</p>
+</div></div>
+<div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/farda33b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/farda33.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<ul>
+<li class="ta-j"><a href="page-4.html">Zone géographique d'action</a> du G.G.A.C. (p. 1)</li>
+<li class="ta-j"><a href="agenda.html">Agenda</a> (p. 2)</li>
+<li class="ta-j">Liste des membres 2003 (Liste arrêtée au 15 octobre 2003) (p. 2)</li>
+<li class="ta-j">Dixième et dernière liste des pensionnaires des Petites Sœurs des Pauvres d'Escaudœuvres (de 1863 à 1895) - RAMETTE à WILMOT : par Gérard DOMISE-PAGNEN (p. 3)</li>
+<li class="ta-j">Nouveautés (p. 7)</li>
+<li class="ta-j">Carnet (p. 7)</li>
+<li class="ta-j">"Tabellion" du G.G.A.C. (3) (p. 8)</li>
+<li class="ta-j">Protection des bases de données : par Olvier ITEANU (p. 9)</li>
+<li class="ta-j">Publications du G.G.A.C. :
+                <ul>
+<li class="ta-j"><a href="page-25.html">Fardes cambrésiennes</a> (p. 11)</li>
+<li class="ta-j"><a href="http://urag5962.free.fr/articles.php?lng=fr&amp;pg=13" rel="noopener" target="_blank">Répertoire des bateliers</a> de la région du Nord - Pas-de-Calais et de la Belgique (p. 12)</li>
+</ul>
+</li>
+<li class="ta-j">Vient de paraître (p. 12)</li>
+<li class="ta-j">Loin du berceau : par Armelle GILLION, Josiane HACQUIN et Geneviève NEUHEUSSLER (p. 12)</li>
+<li class="ta-j">La famille DRUON. Suite et fin : par Philippe DERIEUX (p. 13)</li>
+<li class="ta-j">La famille DESTRAIN, DÉTRAIN. Cambrai, Le Cateau, Solesmes : par Jean DOFFE (p. 22)</li>
+<li class="ta-j">Notes généalogiques de Robert ROLAND (5<sup>e</sup> série) : mises en forme et complétées par Jean DOFFE)
+                <ul>
+<li class="ta-j">DOISE, DOIZE (p. 26)</li>
+<li class="ta-j">GAILLARD (p. 27)</li>
+<li class="ta-j">MILLET (p. 28)</li>
+<li class="ta-j">NAZÉ, NAZET (p. 28)</li>
+<li class="ta-j">PIPART, PIPPART (p. 29)</li>
+</ul>
+</li>
+<li class="ta-j">Actes divers : relevés par Jean DOFFE)</li>
+<li class="ta-j">Gustave DELTOUR. Maire de Cambrai, 1933-1940, 1944-1945 : par Jean DOFFE (p. 31)</li>
+<li class="ta-j">Questions-Réponses :
+                <ul>
+<li class="ta-j"><a href="page-20.html">Questions</a> (reçues avant le 30 octobre 2003) (p. 33)</li>
+<li class="ta-j">Dernière heure (p. 36)</li>
+<li class="ta-j">Réponses (p. 36)</li>
+</ul>
+</li>
+</ul>
+</div></div>
+<h2>Farda n° 34 (mars 2004 - 48 pages) :</h2>
+<ul>
+<li><button aria-controls="edito34" aria-expanded="false" class="toggle" type="button">Éditorial</button> (p. 2)</li>
+</ul>
+<div class="collapsible" id="edito34"><div class="collapsible__inner">
+<p class="ta-j">Chers Amis,</p>
+<p class="ta-j">Au décès de Charles SÉGARD, nous avons dû nous réorganiser, car il était la cheville ouvrière de la bibliothèque. Ainsi, Pierre MÉRIAUX, qui assure l'intérim de la vice-présidence, a repris la gestion des <a href="page-25.html">Fardes cambrésiennes</a> et de Farda. Daniel NORMAND, reprend les tatistiques et s'occupe de l'entretion du matériel. Richard DEPREUX et Jacky FOUBERT, recensent et classent les contrats de mariage. Lucienne ERESMAN et Jean DOFFE font des recherches pour répondre aux questions des membres. Maurice LEVEUGLE reste attentionné à nos finances. Quant à moi, j'ai repris le suivi des membres et continu la mise en forme des éditions. restait le problème de la mise à jour de la bibliothèque. Le problème semble résolu puisque nous accueillons Jean-Marc THELLIEZ qui accepte de reprendre la charge.<br/>
+Nous venons d'acquérir les 44 micofilms qui couvrent les communes de notre zone géographique, dans le département de l'Aisne. Nous pourrons ainsi répondre à toutes les demandes sur ces localités. Nous avons aussi acheté une imprimante laser, qui nous permet d'imprimer les fardes à la demande, ce qui évite un stock très important et très couteux.<br/>
+C'est grâce à votre fidélité que nous pouvons réaliser toutes ces améliorations qui nous permettent de vous aider, au maximum, dans vos recherches.<br/>
+Nous avons également acquis et mis à la disposition des membres, les relevés effectués par d'autres associations, concernant : Angres, Aubigny-au-Bac, Auberchicourt, Bazuel, Barzy-en-Thiérache, Becquigny, Bouchain, Bohain-en-Vermandois, Bugnicourt, Bus, Capelle, Douai, Douchy-les-Mines, Écaillon, Hamel, Haussy, Haspres, Maing, Marquette-en-Ostrevant, Maubeuge, Noyelles-sur-Selle, Solesmes, Sorel, Saint-Python, Saint-Quentin, Valenciennes, Vertain et Wasnes-au-Bac, d'autres vont suivre pour encore mieux vous aider.</p>
+<p class="ta-r">Gérard DOMISE-PAGNEN</p>
+</div></div>
+<div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/farda34b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/farda34.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<ul>
+<li class="ta-j"><a href="page-4.html">Zone géographique d'action</a> du G.G.A.C. (p. 1)</li>
+<li class="ta-j"><a href="agenda.html">Agenda</a> (p. 2)</li>
+<li class="ta-j">Liste des membres 2004 (Liste arrêtée au 15 février 2004) (p. 2)</li>
+<li class="ta-j">Soldat morts pour la patrie. Campagne 1870-1871 pour le Cambrésis (p. 7)</li>
+<li class="ta-j">Insinuations du Catelet (1<sup>re</sup> partie) - AILLOT à BUTO (p. 8)</li>
+<li class="ta-j">Nouveautés (p. 11)</li>
+<li class="ta-j">Carnet (p. 11)</li>
+<li class="ta-j">"Tabellion" du G.G.A.C. (4) (p. 12)</li>
+<li class="ta-j">Publications du G.G.A.C. :
+                <ul>
+<li class="ta-j"><a href="page-25.html">Fardes cambrésiennes</a> (p. 13)</li>
+<li class="ta-j"><a href="http://urag5962.free.fr/articles.php?lng=fr&amp;pg=13" rel="noopener" target="_blank">Répertoire des bateliers</a> de la région du Nord - Pas-de-Calais et de la Belgique (p. 14)</li>
+</ul>
+</li>
+<li class="ta-j">Vient de paraître (p. 14)</li>
+<li class="ta-j">Actes divers ; relevés par Jean DOFFE et Arnaud GABET (p. 15)
+                <ul>
+<li class="ta-j">Archives de l'Aisne</li>
+<li class="ta-j">Archives de la Somme (suite page 16)</li>
+</ul>
+</li>
+<li class="ta-j">Fiche technique <a href="http://urag5962.free.fr/" rel="noopener" target="_blank">U.R.A.G. 59/62</a> - Dévolution du nom de famille (p. 16)</li>
+<li class="ta-j">Actes divers ; relevés par Arnaud GABET
+                <ul>
+<li class="ta-j">Archives de la Somme (suite de la page 15) (p. 16)</li>
+</ul>
+</li>
+<li class="ta-j">Notions de base de la généalogie (p. 17)
+                <ul>
+<li class="ta-j">Abréviations utilisées</li>
+<li class="ta-j">Numérotations des généalogies</li>
+<li class="ta-j">Généalogies descendantes</li>
+<li class="ta-j">Lexique de termes fréquemment rencontrés</li>
+</ul>
+</li>
+<li class="ta-j">Notes généalogiques de Robert ROLAND (6<sup>e</sup> série) : mises en forme et complétées par Jean DOFFE
+                <ul>
+<li class="ta-j">PARINGAUX, PARINGAULT (p. 18)</li>
+<li class="ta-j">PETIT (p. 18)</li>
+<li class="ta-j">PICART, PICCART (p. 23)</li>
+<li class="ta-j">PIGO, PIGOU (p. 23)</li>
+</ul>
+</li>
+<li class="ta-j">Archives hospitalières de Cambrai : Les registres des enfants trouvés, enfants abandonnés, des orphelins et orphelines, des nourrices, des layettes et vêtements, des mouvements de population de l'hospice, des familles indigentes (p. 24)</li>
+<li class="ta-j">Jules Eugène Amédée BRABANT. Maire de Cambrai 1865-1870, Député du Nord 1871-1876 : par Jean DOFFE (p. 25)</li>
+<li class="ta-j">Généalogie DRUON. Rectifications et compléments (p. 26)
+                <ul>
+<li class="ta-j">Première partie. Farda n° 32</li>
+<li class="ta-j">Deuxième partie. Farda n° 33 (suite page 34)</li>
+</ul>
+</li>
+<li class="ta-j">Miliciens du Cambrésis. Document AD59, C 20634, provenant du Fonds Roland : saisi et mis en forme par Claude CERF (p. 27)</li>
+<li class="ta-j">Cambrai - Actes d'échevinage de la Cité, 1691-1730 : par Jean DOFFE (p. 32)</li>
+<li class="ta-j">Généalogie DRUON. Rectifications et compléments (p. 34)
+                <ul>
+<li class="ta-j">Deuxième partie. Farda n° 33 (suite de la page 26)</li>
+</ul>
+</li>
+<li class="ta-j">Questions-Réponses :
+                <ul>
+<li class="ta-j"><a href="page-20.html">Questions</a> (reçues avant le 1<sup>er</sup> février 2004) (p. 35)</li>
+<li class="ta-j">Dernière heure (p. 38)</li>
+<li class="ta-j">Réponses (p. 38)</li>
+</ul>
+</li>
+<li class="ta-j">Lettre à un assureur (p. 48)</li>
+</ul>
+</div></div>
+<h2>Farda n° 35 (juillet 2004 - 48 pages) :</h2>
+<ul>
+<li><button aria-controls="edito35" aria-expanded="false" class="toggle" type="button">Éditorial</button> (p. 2)</li>
+</ul>
+<div class="collapsible" id="edito35"><div class="collapsible__inner">
+<p class="ta-j">Chers Amis,</p>
+<p class="ta-j">En cette période de vacances, les permanences vont s'arrêter un temps, jusque septembre. Les membres actifs, au nombre d'une dizaine actuellement, vont continuer à travailler pour vous permettre de bénéficier, de plus en plus de nos moyens et documents. Si une réforme du classement a été entreprise par Pierre MÉRIAUX et Jean-Marc THELLIEZ, nous manquons encore de bras, surtout pour la mise en place du réseau numérisé, déjà bien fourni, grâce au travail de Daniel VÉREZ, qui permettra de travailler directement sur informatique. Si, parmi vous, quelqu'un a quelques heures à consacrer pour ce travail, il est le bienvenu.<br/>
+D'un autre côté, Jean DOFFE et moi, avons recueilli le reste du fond "Roland", ce qui représente une dizaine de mètres de rayonnage à classer et enregistrer. Ce travail va prendre plusieurs mois. Les contrats des patronymes A à BE - plus de mille pièces - ont déjà été saisis. Il en reste une dizaine de milliers. Ce travail est énorme. Nous avons également commencé à numériser l'enregistrement de la série 3Q des Archives départementales du Nord. Cela permettra de répondre aux questions sur les communes dépourvues de registres, comme Neuville-Saint-Rémy ou Masnières.<br/>
+Comme vous le voyez, nous ne sommes pas prêt d'être au chômage et accueillons, de ce fait, tous ceux qui veulent s'investir, que ce soit en gestion, en numérisation ou en saisie systématique des actes.<br/>
+Avis aux amateurs et bonnes vacances !</p>
+<p class="ta-r">Gérard DOMISE-PAGNEN</p>
+</div></div>
+<div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/farda35b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/farda35.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<ul>
+<li class="ta-j"><a href="page-4.html">Zone géographique d'action</a> du G.G.A.C. (p. 1)</li>
+<li class="ta-j"><a href="agenda.html">Agenda</a> (p. 2)</li>
+<li class="ta-j">Liste des membres 2004 (Liste arrêtée au 1<sup>er</sup> juin 2004) (p. 2)</li>
+<li class="ta-j">Insinuations du Catelet (2<sup>e</sup> partie) - CABAYE à CUISINIER (p. 4)</li>
+<li class="ta-j">Nouveautés (p. 6)</li>
+<li class="ta-j">"Tabellion" du G.G.A.C. (5) (p. 7)</li>
+<li class="ta-j">Carnet (p. 9)</li>
+<li class="ta-j">Appel à l'aide : Cagnoncles (p. 9)</li>
+<li class="ta-j">Les déportés du Cambrésis (Conflit 1939-1945) (p. 10)</li>
+<li class="ta-j">Chronogramme (p. 12)</li>
+<li class="ta-j">Publications du G.G.A.C. :
+                <ul>
+<li class="ta-j"><a href="page-25.html">Fardes cambrésiennes</a> (p. 13)</li>
+<li class="ta-j"><a href="http://urag5962.free.fr/articles.php?lng=fr&amp;pg=13" rel="noopener" target="_blank">Répertoire des bateliers</a> de la région du Nord - Pas-de-Calais et de la Belgique (p. 14)</li>
+</ul>
+</li>
+<li class="ta-j">Vient de paraître (p. 14)</li>
+<li class="ta-j">Loin du berceau : par Geneviève NEUHEUSSLER
+                <ul>
+<li class="ta-j">Mariages à Saint-Quentin (Aisne) (p. 15)</li>
+<li class="ta-j">Mariages à Fluquières (Aisne) (p. 15)</li>
+<li class="ta-j">Mariages à Jeancourt (Aisne) (p. 16)</li>
+<li class="ta-j">Mariages à Germaine (Aisne) (p. 16)</li>
+<li class="ta-j">Mariages à Pontru (Aisne) (p. 16)</li>
+</ul>
+</li>
+<li class="ta-j">Famille FARET, FAREZ - Branche de Villers-Plouich, Avesnes-le-Sec : par Jean DOFFE (p. 17)</li>
+<li class="ta-j">Affaires judiciaires dans le Cambrésis : rélevées par Robert ROLAND
+                <ul>
+<li class="ta-j">Un suicide à Fontaine-au-Pire (p. 26)</li>
+<li class="ta-j">Une affaire de sorcellerie à Busigny (p. 27)</li>
+</ul>
+</li>
+<li class="ta-j">Les BRICOU, BRICOUT, BRICOULT du Cambrésis - Relevé chronologique avec les cotes aux AD59 : par Robert ROLAND (†) (p. 28)</li>
+<li class="ta-j">Les MORTIER du Cateau - Parentèle du Maréchal MORTIER : par Jean DOFFE (p. 130)</li>
+<li class="ta-j">Miliciens du Cambrésis en 1747 - Document AD59, C 20634 : rélevé par Robert ROLAND (p. 32)</li>
+<li class="ta-j">Flesquières - Les plus anciens patronymes rencontrés dans les archives : rélevés en ordre chronologique par Robert ROLAND (†) (p. 35)</li>
+<li class="ta-j">Questions-Réponses :
+                <ul>
+<li class="ta-j"><a href="page-20.html">Questions</a> (reçues avant le 15 mai 2004) (p. 36)</li>
+<li class="ta-j">Dernière heure (p. 38)</li>
+<li class="ta-j">Réponses (p. 39)</li>
+</ul>
+</li>
+</ul>
+</div></div>
+<h2>Farda n° 36 (novembre 2004 - 48 pages) :</h2>
+<ul>
+<li><button aria-controls="edito36" aria-expanded="false" class="toggle" type="button">Éditorial</button> (p. 2)</li>
+</ul>
+<div class="collapsible" id="edito36"><div class="collapsible__inner">
+<p class="ta-j">Chers Amis,</p>
+<p class="ta-j">Voici déjà Noël qui pointe à l'horizon, avec ses cadeaux et ses festins qui seront suivis de l'an nouveau. Déjà 2005 ! Comme le temps passe, quatre années depuis le début du XXI<sup>e</sup> siècle ! Nous avons bien œuvré en cette année qui se termine, plusieurs Fardes (voir liste des publications) sont parues et nous vous proposons maintenant une nouvelle collection sous le titre générique "<a href="page-26.html">Dictionnaires des familles de...</a>". Ces productions sont réalisées, uniquement quand la totalité des registres et des individus d'une commune sont relevés avec leurs filiations, depuis les premiers actes encore existants et ce jusque 1905. Ces données sont rassemblées sous forme de biographies individuelles avec classement alphabétique des patronymes (en rouge) en un ou plusieurs volumes de 200 à 250 pages pour une participation financière entre 30 et 40 euros. Une version "luxe" avec couverture rigide grenat et lettrage doré, présentation idéale pour une bibliothèque, sera proposée moyennant un supplément de 10 euros. Paraît actuellement sous cette forme, Beaumont-en-Cambrésis, puis viendront Bertry, Cagnoncles, Thun-Saint-Martin, Thun-l'Évêque, Eswars, Bourlon, Aubencheul-au-Bac, etc. Autre innovation 2005, la mise à disposition gratuite aux membres de l'internet par A.D.S.L. (quatre postes sont prévus), pour des recherches uniquement généalogiques. Ces serveurs vous permettront également de consulter les actes originaux des communes au fur et à mesure de leur numérisation. Le catalogue de notre bibliothèque est en refonte et nous projettons de l'éditer et de le mettre en ligne sur notre site web. Vous voyez, avec nos éditions et la numérisation, notre groupe est à la pointe du progrès et propose, à ses membres, toujours plus de facilités pour leurs recherches. Nous savons que plus de 80 % d'entre vous reconnaît notre efficacité en renouvelant depuis de nombreuses années leur cotisation. Celle-ci n'a pas bougé depuis trois ans, malgré l'augmentation des coûts d'impression et celui prochain des frais d'acheminement.</p>
+<p class="ta-j">À TOUS, UN JOYEUX NOËL ET UNE BONNE SANTÉ, POUR VOUS ET VOS PROCHES, POUR L'ANNÉE 2005.</p>
+<p class="ta-r">Gérard DOMISE-PAGNEN</p>
+</div></div>
+<div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/farda36b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/farda36.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<ul>
+<li class="ta-j"><a href="page-4.html">Zone géographique d'action</a> du G.G.A.C. (p. 1)</li>
+<li class="ta-j"><a href="agenda.html">Agenda</a> :
+                <ul>
+<li class="ta-j">Permanences (p. 2)</li>
+<li class="ta-j">Assemblée générale (p. 2)</li>
+</ul>
+</li>
+<li class="ta-j">Liste des membres 2004 (Ajout des derniers membres sur la liste 2004) (p. 3)</li>
+<li class="ta-j">Insinuations du Catelet (3<sup>e</sup> partie) - GALLEZ à GUION (p. 4)</li>
+<li class="ta-j">Nouveautés (p. 5)</li>
+<li class="ta-j">"Tabellion" du G.G.A.C. (6) (p. 7)</li>
+<li class="ta-j">Carnet (p. 9)</li>
+<li class="ta-j">Dépouillement de Paris (p. 9)</li>
+<li class="ta-j">Famille de VILLAVICENCIO - Les de VILLAVICENCIO (TIO), famille andalouse - Branche française, descendance de dom Laurenço : par Gérard DOMISE-PAGNEN (p. 9)</li>
+<li class="ta-j">Nouvelle base (p. 13)</li>
+<li class="ta-j">Boussières-en-Cambrésis (p. 13)</li>
+<li class="ta-j">Cour d'assises de l'Aisne (p. 13)</li>
+<li class="ta-j"><a href="http://urag5962.free.fr/articles.php?lng=fr&amp;pg=5" rel="noopener" target="_blank">Code de déontologie du généalogiste</a> (p. 14)</li>
+<li class="ta-j">Glossaire et anciennes mesures (p. 15)</li>
+<li class="ta-j">Loin du berceau : par Geneviève NEUHEUSSLER
+                <ul>
+<li class="ta-j">Mariages à Fluquières (Aisne) (p. 17)</li>
+<li class="ta-j">Mariages à Saint-Quentin (Aisne) (p. 19)</li>
+</ul>
+</li>
+<li class="ta-j">Notes généalogiques de Robert ROLAND (7<sup>e</sup> série) : mises en forme et complétées par Jean DOFFE
+                <ul>
+<li class="ta-j">BARBOTIN (p. 20)</li>
+<li class="ta-j">LAGRUE (p. 20)</li>
+<li class="ta-j">LEGROS (p. 20)</li>
+</ul>
+</li>
+<li class="ta-j">Actes d'échevinages de Cattenières - AD59, E 2465/13 : rélevés par Robert ROLAND (†) (p. 22)</li>
+<li class="ta-j">Curiosité généalogique (p. 22)</li>
+<li class="ta-j">Famille LERICHE - Crèvecœur et Lesdain : par Jean DOFFE
+                <ul>
+<li class="ta-j">Crèvecœur (p. 26)</li>
+<li class="ta-j">Lesdain (p. 30)</li>
+</ul>
+</li>
+<li class="ta-j">Les liens de parenté à travers les baux de terres : par Robert ROLAND (†) (p. 33)</li>
+<li class="ta-j">Généalogie FAREZ - Rectifications et compléments à l'article paru dans Farda n° 35 (p. 36)</li>
+<li class="ta-j">Publications du G.G.A.C. :
+                <ul>
+<li class="ta-j"><a href="page-25.html">Fardes cambrésiennes</a> (p. 35)</li>
+<li class="ta-j"><a href="http://urag5962.free.fr/articles.php?lng=fr&amp;pg=13" rel="noopener" target="_blank">Répertoire des bateliers</a> de la région du Nord - Pas-de-Calais et de la Belgique (p. 36)</li>
+</ul>
+</li>
+<li class="ta-j">Vient de paraître (p. 36)</li>
+<li class="ta-j">Testaments, successions, partages, tutelles et autres actes collectifs - Fonds ROLAND du G.G.A.C. (p. 37)</li>
+<li class="ta-j">BÉTHUNE-HOURIEZ maire de Cambrai en 1797, 1799 et de 1817 à 1830 : par Jean DOFFE (p. 38)</li>
+<li class="ta-j">Questions-Réponses :
+                <ul>
+<li class="ta-j"><a href="page-20.html">Questions</a> (reçues avant le 15 octobre 2004) (p. 40)</li>
+<li class="ta-j">Dernière heure (p. 42)</li>
+<li class="ta-j">Réponses (p. 42)</li>
+</ul>
+</li>
+</ul>
+</div></div>
+<h2>Farda n° 37 (mars 2005 - 48 pages) :</h2>
+<ul>
+<li><button aria-controls="edito37" aria-expanded="false" class="toggle" type="button">Éditorial</button> (p. 2)</li>
+</ul>
+<div class="collapsible" id="edito37"><div class="collapsible__inner">
+<p class="ta-j">Chers Amis,</p>
+<p class="ta-j">On n'oubliera pas, bien sûr, tous ces morts de la catastrophe du tsunami en Asie qui a balayé, en quelques minutes, tous ces gens insouciants du danger qui les menaçait. Nous présentons nos condoléances à tous ceux qui ont eu des parents et des amis qui ont disparus dans ce déluge. Cette année 2005, déjà bien entamée, puisqu'un trimestre est déjà consommé, a débuté, pour notre Groupe, sur les chapeaux de roues. D'abord, grâce à vous, nous avons pu investir pour mieux vous servir. Nous avons acquis une nouvelle photocopieuse laser qui nous facilite les éditions de nos fardes. Nous imprimons ainsi, à la demande, ce qui diminue, pratiquement à zéro, notre stock de livres. Daniel HERBIN et notre président ont travaillé d'arrache pieds, pour monter, présenter une exposition dans le village de Beaumont-en-Cambrésis. L'accueil du maire, Monsieur BACCOUT a été chaleureux et la fréquentation du public a dépassé nos espérances. En effet, cette commune compte 423 habitants et nous avons accueilli plus de 700 visiteurs qui nous ont commandé 70 dictionnaires de Beaumont. Plusieurs jours ont été nécessaires pour fabriquer et fournir les livres. Daniel HERBIN avait aussi, pour l'occasion, rédigé un précis historique de Beaumont-en-Cambrésis qui, monté, imprimé et assemblé par le groupe a été acheté à 150 exemplaires. Cette opération a été fructueuse puisque, en plus du bénéfice acquis, nous avons l'assurance d'une subvention annuelle votée par la mairie. Nous allons pouvoir acquérir tout le matériel nécessaire pour mettre à votre disposition des lecteurs pour la lecture numérique des actes. Jean-Philippe MAFILLE, notre webmestre, s'emploie à mettre notre bibliothèque de microfilms sur notre site. Il va, aussi mettre à jour la liste des revues que nous possédons. Celle-ci s'enrichie, chaque mois, grâce aux échanges et aux abonnements avec les autres associations de France et de Belgique. Petit à petit, notre site va devenir un outil utile, pour nos membres éloignés et nos consultants en bibliothèque qui pourront ainsi préparer leurs recherches d'avance.</p>
+<p class="ta-r">Gérard DOMISE-PAGNEN</p>
+</div></div>
+<div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/farda37b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/farda37.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<ul>
+<li class="ta-j"><a href="page-4.html">Zone géographique d'action</a> du G.G.A.C. (p. 1)</li>
+<li class="ta-j"><a href="agenda.html">Agenda</a> :
+                <ul>
+<li class="ta-j">Permanences (p. 2)</li>
+<li class="ta-j">Assemblée générale (p. 2)</li>
+</ul>
+</li>
+<li class="ta-j">Liste des membres 2005 (Liste arrêtée au 10 février 2005) (p. 3)</li>
+<li class="ta-j">"Tabellion" du G.G.A.C. (7) (p. 9)</li>
+<li class="ta-j">Carnet (p. 12)</li>
+<li class="ta-j">Nouveautés (p. 12)</li>
+<li class="ta-j">Publications du G.G.A.C. :
+                <ul>
+<li class="ta-j"><a href="page-25.html">Fardes cambrésiennes</a> (p. 13)</li>
+<li class="ta-j"><a href="http://urag5962.free.fr/articles.php?lng=fr&amp;pg=13" rel="noopener" target="_blank">Répertoire des bateliers</a> de la région du Nord - Pas-de-Calais et de la Belgique (p. 14)</li>
+</ul>
+</li>
+<li class="ta-j">Vient de paraître (p. 14)</li>
+<li class="ta-j">Loin du berceau : par Pierre MAYEUR et Geneviève NEUHEUSSLER
+                <ul>
+<li class="ta-j">Mariages à Tourpes (Belgique) (p. 15)</li>
+<li class="ta-j">Mariages à Douchy (Aisne) (p. 15)</li>
+<li class="ta-j">Mariages à Saint-Quentin (Aisne) (p. 15)</li>
+</ul>
+</li>
+<li class="ta-j">Famille LERICHE (Errata à la généalogie publiée dans Farda n° 36) (p. 16)</li>
+<li class="ta-j">Testaments, successions, partages, tutelles et autres actes collectifs - Fonds ROLAND du G.G.A.C. (p. 17)</li>
+<li class="ta-j">Famille d'AVESNES, DAVESNES, DAVESNE, DAVENNE : par Jean DOFFE
+                <ul>
+<li class="ta-j">Marcoing (p. 21)</li>
+<li class="ta-j">Fressies (p. 22)</li>
+<li class="ta-j">Villers-Plouich (p. 23)</li>
+<li class="ta-j">Metz-en-Couture (p. 23)</li>
+<li class="ta-j">Trescault (p. 23)</li>
+</ul>
+</li>
+<li class="ta-j">Notes généalogiques de Robert ROLAND (8<sup>e</sup> série) : mises en forme et complétées par Jean DOFFE
+                <ul>
+<li class="ta-j">CARPENTIER, CHARPENTIER (p. 25)</li>
+<li class="ta-j">CARPENTRIE, DECARPENTRIE (p. 28)</li>
+<li class="ta-j">DE FRUIT, DE FRUICT, FRUIT (p. 28)</li>
+</ul>
+</li>
+<li class="ta-j">Famille DELOFFRE, DELOFFE : par Jean DOFFE
+                <ul>
+<li class="ta-j">Paillencourt, Cambrai, Thun-Saint-Martin (p. 29)</li>
+<li class="ta-j">Wambaix (p. 33)</li>
+</ul>
+</li>
+<li class="ta-j">Ascendance de Jean YANNE à Paillencourt (p. 33)</li>
+<li class="ta-j">Ascendance d'André DEWAVRIN, dit "Colonel PASSY", compagnon de la Libération, chef des services de renseignements des Forces Françaises Libres : par Jean DOFFE (p. 34)</li>
+<li class="ta-j">Famille MICHEL de Clary : par Jean DOFFE (p. 36)</li>
+<li class="ta-j">Jean CRINON, l'apôtre du sport : par Gérard DOMISE-PAGNEN et Jean DOFFE (p. 37)</li>
+<li class="ta-j">Questions-Réponses :
+                <ul>
+<li class="ta-j"><a href="page-20.html">Questions</a> (reçues avant le 1<sup>er</sup> février 2005) (p. 39)</li>
+<li class="ta-j">Dernière heure (p. 41)</li>
+<li class="ta-j">Réponses (p. 42)</li>
+</ul>
+</li>
+</ul>
+</div></div>
+<h2>Farda n° 38 (juillet 2005 - 48 pages) :</h2>
+<ul>
+<li><button aria-controls="edito38" aria-expanded="false" class="toggle" type="button">Éditorial</button> (p. 2)</li>
+</ul>
+<div class="collapsible" id="edito38"><div class="collapsible__inner">
+<p class="ta-j">Chers Amis,</p>
+<p class="ta-j">Depuis le précédent éditorial nous avons beaucoup investi en temps mais aussi financièrement. Lors de l'assemblée générale du 2 avril dernier, dont vous avez le compte-rendu page 2, j'avais annoncé l'achat de cinq nouveaux ordinateurs afin de mettre le numérique à la disposition des lecteurs de la "généathèque". Voilà qui est fait ! Ainsi vous pouvez, comme chaque membre, accéder aux communes numérisées en totalité ou en partie, une trentaine à ce jour, avec leurs tables décennales. La compilation se fera au fur et à mesure de la réalisation des numérisations. Vous aurez également accès, gratuitement, à l'A.D.S.L., pour vos recherches sur l'Internet. Nous avons pour cela investi près de 4 000 euros.</p>
+<p class="ta-j">L'autre investissement important (16 000 euros) s'est porté, sur l'achat, en fin d'année, d'un photocopieur numérique couleur. Il nous permettra de répondre plus rapidement à vos commandes de publications, évitant ainsi un stockage important et coûteux de notre cinquantaine d'ouvrages.</p>
+<p class="ta-j">Vous pouvez, ainsi, vous rendre-compte que nous ne thésaurisons pas. Nos rentrées sont aussitôt investies afin de faciliter vos recherches.</p>
+<p class="ta-j">Les administrateurs anciens et nouveaux se joignent à moi pour vous remercier de votre confiance, en espérant que vous profiterez encore longtemps des services de l'association et de leur bénévolat.</p>
+<p class="ta-r">Gérard DOMISE-PAGNEN</p>
+</div></div>
+<div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/farda38b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/farda38.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<ul>
+<li class="ta-j"><a href="page-4.html">Zone géographique d'action</a> du G.G.A.C. (p. 1)</li>
+<li class="ta-j"><a href="agenda.html">Agenda</a> (p. 2)</li>
+<li class="ta-j">Assemblée générale du 2 avril 2005 (p. 2)</li>
+<li class="ta-j">Liste des membres 2005 (Liste arrêtée au 15 mai 2005) (p. 7)</li>
+<li class="ta-j">"Tabellion" du G.G.A.C. (8) (p. 8)</li>
+<li class="ta-j">Cousinades (p. 8)</li>
+<li class="ta-j">Carnet (p. 10)</li>
+<li class="ta-j">L'espérance de vie : par Roméo DELSAUT (p. 10)</li>
+<li class="ta-j">Publications du G.G.A.C. :
+                <ul>
+<li class="ta-j"><a href="page-25.html">Fardes cambrésiennes</a> (p. 13)</li>
+<li class="ta-j"><a href="http://urag5962.free.fr/articles.php?lng=fr&amp;pg=13" rel="noopener" target="_blank">Répertoire des bateliers</a> de la région du Nord - Pas-de-Calais et de la Belgique (p. 14)</li>
+</ul>
+</li>
+<li class="ta-j">Vient de paraître (p. 14)</li>
+<li class="ta-j">Loin du berceau : par Dominique CARPENTIER et Geneviève NEUHEUSSLER
+                <ul>
+<li class="ta-j">Mariages à Rouen (Seine-Maritime) (p. 15)</li>
+<li class="ta-j">Mariages à Saint-Quentin (Aisne) et Foreste (Aisne) (p. 15)</li>
+</ul>
+</li>
+<li class="ta-j">Modifications des règles de dévolution du nom de famille : par Pierre MAYEUR (p. 16)</li>
+<li class="ta-j">Notes généalogiques de Robert ROLAND (9<sup>e</sup> série) : mises en forme et complétées par Jean DOFFE
+                <ul>
+<li class="ta-j">GOBERT (p. 18)</li>
+<li class="ta-j">LEDIEU (p. 18)</li>
+<li class="ta-j">TAFFIN, TAFFAIN (p. 20)</li>
+</ul>
+</li>
+<li class="ta-j">Testaments, successions, partages, tutelles et autres actes collectifs - Fonds Roland du G.G.A.C. (p. 21)</li>
+<li class="ta-j">Ascendance du peintre Henri Eugène DELACROIX : par Claudine PARDON et Michel BLAS (p. 24)</li>
+<li class="ta-j">PIPART, PIPPART Valenciennes, Cambrésis : par Jean DOFFE (p. 26)</li>
+<li class="ta-j">Questions-Réponses :
+                <ul>
+<li class="ta-j"><a href="page-20.html">Questions</a> (reçues avant le 15 mai 2005) (p. 33)</li>
+<li class="ta-j">Dernière heure (p. 36)</li>
+<li class="ta-j">Réponses (p. 36)</li>
+</ul>
+</li>
+</ul>
+</div></div>
+<h2>Farda n° 39 (novembre 2005 - 48 pages) :</h2>
+<ul>
+<li><button aria-controls="edito39" aria-expanded="false" class="toggle" type="button">Éditorial</button> (p. 2)</li>
+</ul>
+<div class="collapsible" id="edito39"><div class="collapsible__inner">
+<p class="ta-j">Chers Amis,</p>
+<p class="ta-j">Voici déjà le dernier numéro de l'année. Depuis quatre mois, nous avons travaillé d'arrache-pied pour alimenter le serveur des documents numérisés par Daniel VÉREZ. Quelques autres documents ont été recueillis par Jean DOFFE et moi-même, surtout pour la période entre 1880 et 1905.</p>
+<p class="ta-j">Ce sont quelques 320 000 photographies pour 123 communes qui sont, à ce jour, mises à la disposition des membres mais beaucoup de travail reste à faire. Plusieurs personnes se rendent désormais en mairie, pour numériser les actes, après quelques conseils sur la manière d'opérer.</p>
+<p class="ta-j">Cela nous est utile et nous cherchons à recevoir de plus en plus de documents pour compléter notre banque de données.</p>
+<p class="ta-j">Malheureusement, Daniel VÉREZ, grand artisan de ce développement, nous a quitté. C'est une grande perte pour notre groupe. Il avait également réalisé plusieurs relevés publiés dans les <a href="page-25.html">Fardes cambrésiennes</a> ainsi que le dictionnaire des familles de Thun-Saint-Martin. Celui-ci sera officiellement remis au maire de la commune, au cours du vernissage de l'exposition-vente du 25 novembre prochain, salle Jean Bar à Thun-Saint-Martin.</p>
+<p class="ta-j">La maladie fait de grand ravage parmi la "fourmilière" du groupe depuis le début du siècle et c'est, de nouveau, un appel vibrant, à tous ceux qui voudraient donner un peu de leur temps pour aider les membres les plus éloignés en exécutant quelques tâches, lors des séances de travail des mercredis matin. C'est toujours le problème de la succession, de la passation de savoir qui nous préoccupent pour le devenir et la pérennité du G.G.A.C.</p>
+<p class="ta-j">Pour nous rejoindre, il suffit, comme l'a fait la dizaine de "fourmis" actuelle, de s'adresser aux membres du conseil d'administration et de dire : "Vous pouvez compter sur moi". Il y a toujours quelque chose à faire au service de tous.</p>
+<p class="ta-j">Vous trouverez ci-joint, l'appel à cotisation 2006. Il y a aussi possibilité de cotiser, avec une réduction, pour deux années. Cette opération permettra de nous doter, plus vite, du matériel nécessaire à reproduire et à éditer, plus facilement et de meilleure qualité, les documents que vous nous demanderez à l'avenir.</p>
+<p class="ta-r">Gérard DOMISE-PAGNEN</p>
+</div></div>
+<div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/farda39b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/farda39.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<ul>
+<li class="ta-j"><a href="page-4.html">Zone géographique d'action</a> du G.G.A.C. (p. 1)</li>
+<li class="ta-j"><a href="agenda.html">Agenda</a> (p. 2)</li>
+<li class="ta-j">Liste des membres 2005 (Liste arrêtée au 1<sup>er</sup> octobre 2005) (p. 3)</li>
+<li class="ta-j">Rappel (p. 3)</li>
+<li class="ta-j">"Tabellion" du G.G.A.C. (9) (p. 4)</li>
+<li class="ta-j">Carnet (p. 6)</li>
+<li class="ta-j">Avis (p. 6)</li>
+<li class="ta-j">Bienvenue à la généathèque (p. 7)</li>
+<li class="ta-j">Les LAINE, LAISNE, LANE, LENNE, LESNE, LESNES : par Gérard DOMISE-PAGNEN (p. 8)
+                <ul>
+<li class="ta-j">Descendance de Jérôme LAINE (p. 9)</li>
+</ul>
+</li>
+<li class="ta-j">Publications du G.G.A.C. :
+                <ul>
+<li class="ta-j"><a href="page-25.html">Fardes cambrésiennes</a> (p. 13)</li>
+<li class="ta-j"><a href="page-26.html">Dictionnaires des familles</a> (p. 14)</li>
+<li class="ta-j"><a href="http://urag5962.free.fr/articles.php?lng=fr&amp;pg=13" rel="noopener" target="_blank">Répertoire des bateliers</a> de la région du Nord - Pas-de-Calais et de la Belgique (p. 14)</li>
+</ul>
+</li>
+<li class="ta-j">Vient de paraître (p. 14)</li>
+<li class="ta-j">Loin du berceau : par Geneviève NEUHEUSSLER (p. 15)</li>
+<li class="ta-j">PIPART, PIPPART Valenciennes, Cambrésis : par Jean DOFFE (Erratum à la généalogie publiée dans Farda n° 38) (p. 15)</li>
+<li class="ta-j">Tabellions de Douai - Actes concernant des familles originaires du Cambrésis relevés aux AD59 : par Pierre MAYEUR (p. 16)</li>
+<li class="ta-j">Notes généalogiques de Robert ROLAND (10<sup>e</sup> série) : mises en forme et complétées par Jean DOFFE
+                <ul>
+<li class="ta-j">DORÉMUS (p. 17)</li>
+<li class="ta-j">FAUVEAU, FOVEAU (p. 18)</li>
+<li class="ta-j">TASSOU (p. 20)</li>
+</ul>
+</li>
+<li class="ta-j">Testaments, successions, partages, tutelles et autres actes collectifs - Fonds ROLAND du G.G.A.C. (p. 21)</li>
+<li class="ta-j">Henry Ernest Édouard Marie MALLEZ - Imprimeur, Maire de Cambrai, 1941-1944, Député du Nord, 1946-1955 : par Jean DOFFE (p. 23)</li>
+<li class="ta-j">Famille PAGNIEN, PAIGNIEN, PANIEN, PAINIEN, PAGNEN : par Jean DOFFE
+                <ul>
+<li class="ta-j">Branche de Fontaine-Notre-Dame (p. 25)</li>
+<li class="ta-j">Branche de Cantaing (p. 27)</li>
+<li class="ta-j">Branche d'Awoingt (p. 27)</li>
+<li class="ta-j">Branche de Cauroir, Iwuy (p. 28)</li>
+<li class="ta-j">Branche de Wambaix, Cambrai (p. 28)</li>
+<li class="ta-j">Branche de Sainte-Olle (p. 29)</li>
+<li class="ta-j">Branche de Sauchy-Lestrée, Sauchy-Cauchy, Haucourt, Douai (p. 29)</li>
+<li class="ta-j">Branche d'Inchy-en-Artois (p. 30)</li>
+<li class="ta-j">Divers non rattachés (p. 30)</li>
+<li class="ta-j">Renvois (p. 30)</li>
+</ul>
+</li>
+<li class="ta-j">Testaments, exécutions testamentaires de chanoines et chapelains publiés par le chanoine Théodore LEURIDAN (p. 34)</li>
+<li class="ta-j">Cambrai sous la terreur - Les atroces exploits sanguinaires du Conventionnel LEBON : par Jean DIST (p. 35)</li>
+<li class="ta-j">Questions-Réponses :
+                <ul>
+<li class="ta-j"><a href="page-20.html">Questions</a> (reçues avant le 15 octobre 2005) (p. 37)</li>
+<li class="ta-j">Dernière heure (p. 39)</li>
+<li class="ta-j">Réponses (p. 39)</li>
+</ul>
+</li>
+</ul>
+</div></div>
+<h2>Farda n° 40 (mars 2006 - 48 pages) :</h2>
+<ul>
+<li><button aria-controls="edito40" aria-expanded="false" class="toggle" type="button">Éditorial</button> (p. 2)</li>
+</ul>
+<div class="collapsible" id="edito40"><div class="collapsible__inner">
+<p class="ta-j">Chers Amis,</p>
+<p class="ta-j">Cette nouvelle année est déjà bien entamée et nous nous acheminons, doucement mais sûrement, vers le printemps - Hier encore nous présentions nos vœux ! Le temps passe très vite mais pour nous, généalogistes amateurs, il est comme arrêté. Nous naviguons à travers les siècles, parfois un millénaire, sans nous en rendre compte et c'est lorsque nous avançons en âge que nos douleurs nous rappellent à la réalité. Notre passion nous aide alors à les oublier en nous offrant de relater nos découvertes de "voyageurs du temps".<br/>
+Nous avons reçu notre photocopieuse numérique qui, grâce à votre générosité, nous permettra de répondre encore plus vite à vos demandes. Notre prochain achat portera sur un numériseur professionnel de films afin de les mettre en consultation directe sur les ordinateurs de la salle de lecture. Nous avons également commencé la numérisation en mairies des actes d'état civil de 1880 à 1905. C'est un travail immense et les volontaires sont les bienvenus. Qui aurait pu croire, il y a seulement treize ans, lorsque Charles SÉGARD a commencé à installer notre "généathèque", que nous pourrions nous offrir aujourd'hui cette haute technologie ? Ce formidable essor n'a été possible que grâce à l'énorme travail de la dizaine de bénévoles passionnés dont les travaux vous ont si intéressé qu'ils ont décuplé depuis. Fasse qu'en 2006 nous soyons toujours plus intéressants car recevoir vos remerciements est notre récompense préférée.<br/>
+Nous avons atteint le numéro 40 de Farda, notre bulletin interne. C'est l'occasion de rappeler que l'on doit celui-ci à Jean-Philippe MAFILLE et qu'il perdure grâce à la qualité des recherches et travaux prolifiques de Jean DOFFE, aidé en cela par Lucie ERESMAN et moi-même ainsi que par tous ceux qui répondent aux questions. Cet outil d'échanges est très attendu de nos membres éloignés toujours impatients de le recevoir.<br/>
+Avec ce numéro, vous recevrez votre carte de membres 2006 et votre reçu fiscal à déduire, en partie, de vos impôts.</p>
+<p class="ta-r">Gérard DOMISE-PAGNEN</p>
+</div></div>
+<div class="issue"><div class="issue__cover"><a class="zoom" data-lightbox="" href="https://www.ggac.fr/fichiers/image/farda40b.jpg"><img alt="" decoding="async" height="310" loading="lazy" src="https://www.ggac.fr/fichiers/image/farda40.jpg" width="220"/><span class="zoom__label">Agrandir</span></a></div><div class="issue__body">
+<ul>
+<li class="ta-j"><a href="page-4.html">Zone géographique d'action</a> du G.G.A.C. (p. 1)</li>
+<li class="ta-j">Éditorial (p. 2)</li>
+<li class="ta-j"><a href="agenda.html">Agenda</a> (p. 2)</li>
+<li class="ta-j">Liste des membres 2006 (Liste arrêtée au 31 janvier 2006) (p. 2)</li>
+<li class="ta-j">"Tabellion" du G.G.A.C. (10) (p. 9)</li>
+<li class="ta-j">Carnet (p. 12)</li>
+<li class="ta-j">Dictionnaires (p. 12)</li>
+<li class="ta-j">Nouveau (p. 12)</li>
+<li class="ta-j">Publications du G.G.A.C. :
+                <ul>
+<li class="ta-j"><a href="page-25.html">Fardes cambrésiennes</a> (p. 13)</li>
+<li class="ta-j"><a href="page-26.html">Dictionnaires des familles</a> (p. 14)</li>
+<li class="ta-j"><a href="page-23.html">Éditions du G.G.A.C.</a> (p. 14)</li>
+<li class="ta-j">Répertoire des bateliers de la région du Nord - Pas-de-Calais et de la Belgique (p. 14)</li>
+</ul>
+</li>
+<li class="ta-j">Loin du berceau : par Jean &amp; Mireille MASSE, Jacky FOUBERT et Geneviève NEUHEUSSLER
+                <ul>
+<li class="ta-j">Mariages à Rouen (Seine-Maritime) (p. 15)</li>
+<li class="ta-j">Actes divers (p. 15)</li>
+<li class="ta-j">Mariages à Saint-Quentin (Aisne) (p. 15)</li>
+</ul>
+</li>
+<li class="ta-j">Notes généalogiques de Robert ROLAND (11<sup>e</sup> série) : mises en forme et complétées par Jean DOFFE
+                <ul>
+<li class="ta-j">BLUTTE (p. 16)</li>
+<li class="ta-j">CLAUEZ, CLAUIÉ, CLAUIER, CLAUIEZ, CLAÙIEZ, CLAÚÚET, CLAÚÚEZ, CLAUVET, CLAUVEZ, CLAÚVEZ, CLAUWET, CLAUWEZ, CLAVIÉ, CLAVIER, CLAVIEZ, GLAUIEZ, GLAVIEZ (p. 17)</li>
+<li class="ta-j">TANIER, TANIÈRE (p. 19)</li>
+<li class="ta-j">TARLIER (p. 19)</li>
+</ul>
+</li>
+<li class="ta-j">Famille SANTER, SANTERRE, SANS TERRE. Ascendance du général SANTERRE : par Jean DOFFE
+                <ul>
+<li class="ta-j">Branche de Cambrai, Estourmel (p. 20)</li>
+<li class="ta-j">Branche de Saint-Michel (Aisne), Paris (p. 21)</li>
+<li class="ta-j">Branche du Cateau-Cambrésis, Troisvilles, Bertry (p. 22)</li>
+<li class="ta-j">Branche d'Avesnes-lès-Aubert (p. 23)</li>
+<li class="ta-j">Non rattachés (p. 25)</li>
+<li class="ta-j">Renvois (p. 25)</li>
+</ul>
+</li>
+<li class="ta-j">Vient de paraître (p. 26)</li>
+<li class="ta-j">Famille de SENAY, SENET, SENEZ, SENÉ, SENEL. Meuniers de Carnières, Boussières, Bévillers, Esnes, Cattenières : par Jean DOFFE
+                <ul>
+<li class="ta-j">Branche de Carnières (p. 27)</li>
+<li class="ta-j">Branche de Boussières, Bévillers (p. 28)</li>
+<li class="ta-j">Branche d'Esnes (p. 28)</li>
+<li class="ta-j">Branche de Cattenières (p. 28)</li>
+<li class="ta-j">Renvois (p. 29)</li>
+</ul>
+</li>
+<li class="ta-j">Questions-Réponses :
+                <ul>
+<li class="ta-j"><a href="page-20.html">Questions</a> (reçues avant le 1<sup>er</sup> févier 2006) (p. 30)</li>
+<li class="ta-j">Dernière heure (p. 33)</li>
+<li class="ta-j">Réponses (p. 34)</li>
+</ul>
+</li>
+</ul>
+</div></div> 
+</div>
+<div class="pagefoot">
+  <a class="totop" href="#haut" title="Retour en haut de la page" aria-label="Retour en haut de la page">
+    <svg viewBox="0 0 80 84" aria-hidden="true"><path class="totop__trunk" d="M40 82 V48 M40 60 L28 48 M40 56 L53 44 M40 48 L40 36" />
+    <g class="totop__leaves"><circle cx="40" cy="26" r="14" /><circle cx="24" cy="36" r="11" /><circle cx="56" cy="34" r="12" /><circle cx="28" cy="20" r="9" /><circle cx="52" cy="18" r="10" /></g></svg>
+  </a>
+  <p class="date_maj">Page mise à jour le 03/02/2026 à 00h13</p>
+</div>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <nav class="footer__links" aria-label="Pied de page">
+        <a href="contacts.html">Nous écrire</a>
+        <a href="page-2.html">Mentions légales</a>
+        <a href="plan-du-site.html">Plan du site</a>
+      </nav>
+      <p class="copyright">Raphaël WIART © 2010-2026</p>
+    </div>
+  </footer>
+
+  <!-- Bandeau cookies -->
+  <div class="cookies" role="dialog" aria-live="polite" hidden>
+    <p>Bienvenue sur www.ggac.fr !<br />En poursuivant votre navigation, vous acceptez l'utilisation de cookies permettant d'améliorer votre expérience utilisateur.</p>
+    <div class="cookies__actions">
+      <a href="mentions-cookies.html">En savoir plus</a>
+      <button type="button" class="cookies__ok">J'accepte</button>
+    </div>
+  </div>
+
+  <!-- Visionneuse -->
+  <div class="lightbox" aria-hidden="true">
+    <button class="lightbox__close" aria-label="Fermer">×</button>
+    <figure class="lightbox__fig"><img alt="" /><figcaption></figcaption></figure>
+  </div>
+
+  <!-- Rinceau végétal réutilisable (inspiré du feuillage d'origine) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <g id="vine">
+        <path class="vine__stem" d="M30 200 C 80 170, 120 150, 150 110 C 170 80, 175 50, 160 20" />
+        <path class="vine__stem" d="M150 110 C 190 90, 220 60, 250 25" />
+        <path class="vine__stem" d="M120 145 C 100 120, 75 115, 70 95 C 66 78, 82 66, 96 72 C 108 78, 104 94, 92 92" />
+        <path class="vine__stem" d="M165 92 C 190 100, 205 90, 200 74 C 196 62, 182 62, 180 72 C 178 80, 186 84, 190 80" />
+        <path class="vine__stem" d="M100 165 C 110 185, 130 192, 140 180 C 148 168, 136 158, 128 166" />
+        <path class="vine__stem" d="M80 178 C 70 190, 60 192, 48 186" />
+        <g class="vine__leaves">
+          <path class="leaf" style="--r:-30deg" d="M160 20 c -18 -6 -30 2 -34 14 c 14 4 28 -2 34 -14 z" />
+          <path class="leaf" style="--r:20deg" d="M250 25 c -4 16 -14 24 -24 24 c 2 -14 12 -22 24 -24 z" />
+          <path class="leaf" style="--r:10deg" d="M235 60 c 6 14 4 26 -4 32 c -6 -12 -4 -24 4 -32 z" />
+          <path class="leaf" style="--r:-15deg" d="M48 186 c -16 -4 -28 2 -32 12 c 14 4 26 0 32 -12 z" />
+          <path class="leaf" style="--r:25deg" d="M110 200 c 2 16 -4 28 -12 32 c -4 -12 2 -26 12 -32 z" />
+        </g>
+      </g>
+    </defs>
+  </svg>
+
+  
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
