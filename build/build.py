@@ -17,9 +17,10 @@ from pathlib import Path
 from bs4 import BeautifulSoup, Comment, NavigableString, Tag
 
 ROOT = Path(__file__).resolve().parent.parent
-RAW = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "build" / "raw"
+RAW = ROOT / "build" / "raw"
 PARTIALS = ROOT / "build" / "partials"
 ORIGIN = "https://www.ggac.fr/"
+OUT_HTML = "--html" in sys.argv  # génère aussi les pages statiques (ancien mode)
 
 # Pages annexes (hors index.php?page=N) : fichier d'origine -> fichier généré
 SPECIAL = {
@@ -496,6 +497,7 @@ def build():
         nav.append(a if a["children"] or a["href"] else b)
 
     index = []
+    seed_pages = []
     jobs = [(p.name, p.name) for p in pages]
     jobs += [(k.replace(".php", ".html"), v) for k, v in SPECIAL.items() if v != "agenda.html" and (RAW / k.replace(".php", ".html")).exists()]
 
@@ -519,7 +521,10 @@ def build():
             extra_body=extra_body,
             body_class="is-big" if big else "",
         )
-        (ROOT / out).write_text(html_doc)
+        if OUT_HTML:
+            (ROOT / out).write_text(html_doc)
+        seed_pages.append({"slug": out[:-5], "title": d["title"], "section": d["section"], "side": d["side"],
+                           "h1": d["h1"], "content": content, "date_maj": d["date_maj"], "cassini": flags["cassini"]})
         index.append({"u": out, "t": BeautifulSoup(d["h1"], "lxml").get_text(" ", strip=True),
                       "s": d["section"] or "", "x": plain_text(content, 600)})
 
@@ -531,10 +536,15 @@ def build():
         doc = page_html(tpl, title=d["title"], nav_html=render_nav(nav, d["section"]),
                         side_html=render_side(d["side"], news_html), main_html=agenda_main,
                         body_class="is-agenda" + (" is-home" if out == "index.html" else ""))
-        (ROOT / out).write_text(doc)
+        if OUT_HTML:
+            (ROOT / out).write_text(doc)
     index.insert(0, {"u": "agenda.html", "t": "Agenda", "s": "L'association", "x": plain_text(agenda_main, 600)})
 
-    (ROOT / "assets" / "search-index.json").write_text(json.dumps(index, ensure_ascii=False, separators=(",", ":")))
+    import gzip
+    seed = {"nav": nav, "agenda": {"title": d["title"], "section": d["section"], "side": d["side"]}, "pages": seed_pages}
+    with gzip.open(ROOT / "server" / "seed" / "pages.json.gz", "wt", encoding="utf-8") as fh:
+        json.dump(seed, fh, ensure_ascii=False)
+    # (l'index de recherche est désormais produit par le serveur à partir de la base)
     print(f"{len(index) + 1} pages générées")
 
 
